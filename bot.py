@@ -41,6 +41,8 @@ async def on_ready():
     await tree.sync()
     print("Ready!")
 
-token = 'MTAzOTM0MjA4MTI0NTcyNDcyMw.GRNUKI.mvXH25mYHEKqr_Q4SYYzRVyQUoxr2kOR8_0XjI'
+token = ''
+with open('token.txt') as f:
+    token = f.read()
 
 client.run(token)
