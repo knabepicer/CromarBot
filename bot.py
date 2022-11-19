@@ -22,6 +22,8 @@ def bob_get_ranks(row):
         ranks += "Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
+    else:
+        ranks = "None"
     return ranks
 
 def bob_get_gains(row):
@@ -72,7 +74,7 @@ bob = bot.create_group("bob", "Get Bells of Byelen data")
 
 
  #Add the guild ids in which the slash command will appear. If it should be in all, remove the argument, but note that it will take some time (up to an hour) to register the command if it's for all guilds.
-@bob.command(description = "Get Bells of Byelen unit data", guild_ids=[1039354532167176303])
+@bob.command(description = "Get Bells of Byelen unit data", guild_ids=[1039354532167176303, 828646591471550474])
 async def unit(ctx, name: str):
     with open('bob unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -92,7 +94,8 @@ async def unit(ctx, name: str):
                 unitembed.add_field(name="Growths", value=growths, inline=False)
                 ranks = bob_get_ranks(row)
                 unitembed.add_field(name="Ranks", value=ranks, inline=False)
-                unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
+                if (row['Skills'] != "None"):
+                    unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
                 if (row['Promotes'] == "Yes"):
                     gains = bob_get_gains(row)
                     unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
