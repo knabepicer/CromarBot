@@ -48,21 +48,45 @@ def bob_get_gains(row):
     gains = gains[:-3]
     gains += "\n"
     if (row['Sword Gains'] != 'None'):
-        gains += "Sword: " + row['Sword Gains'] + " | "
+        if (row['Sword Gains'].isdigit()):
+            gains += "Sword: +" + row['Sword Gains'] + " | "
+        else:
+            gains += "Sword: " + row['Sword Gains'] + " | "
     if (row['Lance Gains'] != 'None'):
-        gains += "Lance: " + row['Lance Gains'] + " | "
+        if (row['Lance Gains'].isdigit()):
+            gains += "Lance: +" + row['Lance Gains'] + " | "
+        else:
+            gains += "Lance: " + row['Lance Gains'] + " | "
     if (row['Axe Gains'] != 'None'):
-        gains += "Axe: " + row['Axe Gains'] + " | "
+        if (row['Axe Gains'].isdigit()):
+            gains += "Axe: +" + row['Axe Gains'] + " | "
+        else:
+            gains += "Axe: " + row['Axe Gains'] + " | "
     if (row['Bow Gains'] != 'None'):
-        gains += "Bow: " + row['Bow Gains'] + " | "
+        if (row['Bow Gains'].isdigit()):
+            gains += "Bow: +" + row['Bow Gains'] + " | "
+        else:
+            gains += "Bow: " + row['Bow Gains'] + " | "
     if (row['Staff Gains'] != 'None'):
-        gains += "Staff: " + row['Staff Gains'] + " | "
+        if (row['Staff Gains'].isdigit()):
+            gains += "Staff: +" + row['Staff Gains'] + " | "
+        else:
+            gains += "Staff: " + row['Staff Gains'] + " | "
     if (row['Anima Gains'] != 'None'):
-        gains += "Anima: " + row['Anima Gains'] + " | "
+        if (row['Anima Gains'].isdigit()):
+            gains += "Anima: +" + row['Anima Gains'] + " | "
+        else:
+            gains += "Anima: " + row['Anima Gains'] + " | "
     if (row['Light Gains'] != 'None'):
-        gains += "Light: " + row['Light Gains'] + " | "
+        if (row['Light Gains'].isdigit()):
+            gains += "Light: +" + row['Light Gains'] + " | "
+        else:
+            gains += "Light: " + row['Light Gains'] + " | "
     if (row['Dark Gains'] != 'None'):
-        gains += "Dark: " + row['Dark Gains'] + " | "
+        if (row['Dark Gains'].isdigit()):
+            gains += "Dark: +" + row['Dark Gains'] + " | "
+        else:
+            gains += "Dark: " + row['Dark Gains'] + " | "
     gains = gains[:-3]
     return gains
 
@@ -90,7 +114,7 @@ async def unit(ctx, name: str):
                 unitembed.add_field(name="Leadership: ", value=row['Leadership'], inline=True)
                 bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | " + "Mag " + row['Mag']+ " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Bld " + row['Bld'] + " | " + "Mov " + row['Mov']
                 unitembed.add_field(name="Bases", value=bases, inline=False)
-                growths = "HP " + row['HP Growth'] + " | " + "Str " + row['Str Growth'] + " | " + "Mag " + row['Mag Growth']+ " | Skl " + row['Skl Growth'] + " | " + "Spd " + row['Spd Growth'] + " | " + "Lck " + row['Luck Growth'] + " | " + "Def " + row['Def Growth'] + " | " + "Res " + row['Res Growth'] + " | " + "Bld " + row['Bld Growth'] + " | Mov " + row['Mov Growth']
+                growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth']+ "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "% | " + "Bld " + row['Bld Growth'] + "% | Mov " + row['Mov Growth'] + "%"
                 unitembed.add_field(name="Growths", value=growths, inline=False)
                 ranks = bob_get_ranks(row)
                 unitembed.add_field(name="Ranks", value=ranks, inline=False)
