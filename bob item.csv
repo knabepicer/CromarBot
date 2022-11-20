@@ -1,239 +1,245 @@
-Name,Display Name,Description,Type,Weapon Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Weapon Level,WEXP
-IronSword,Iron Sword,None,Weapon,Sword,40,7,80,6,0,1,10,E,1
-SlimSword,Slim Sword,None,Weapon,Sword,30,3,100,2,0,1,10,E,1
-SteelSword,Steel Sword,None,Weapon,Sword,30,10,70,10,0,1,20,D,1
-SilverSword,Silver Sword,None,Weapon,Sword,20,13,75,8,0,1,50,B,1
-IronBlade,Iron Blade,None,Weapon,Sword,30,14,60,13,0,1,30,C,1
-Longsword,Longsword,None,Weapon,Sword,30,12,70,12,0,1,25,D,1
-Greatsword,Greatsword,None,Weapon,Sword,20,16,65,14,0,1,50,B,1
-FlameSword,Flame Sword,Casts magical flame. Mag +5.,Weapon,Sword,20,9,80,9,0,1-2,100,B,1
-Rapier,Rapier,Effective against cavalry and armors.,Weapon,Sword,20,4,100,3,10,1,50,C,1
-ShortSword,Short Sword,None,Weapon,Sword,40,6,90,8,0,1,10,E,1
-BraveSword,Brave Sword,Doubles strikes dealt.,Weapon,Sword,40,13,85,12,0,1,60,A,1
-KingSword,King Sword,Doubles strikes dealt. Grants +10 Hit/Avoid to allies  within 3 tiles while equipped.,Weapon,Sword,60,10,80,10,10,1,50,B,1
-KillingEdge,Killing Edge,Improves critical hit rate.,Weapon,Sword,30,9,80,8,30,1,60,C,1
-Armorslayer,Armorslayer,Effective against armors.,Weapon,Sword,30,10,70,12,0,1,50,B,1
-ParagonSword,Paragon Sword,Def +5. Doubles  combat experience gained while equipped.,Weapon,Sword,40,9,75,9,0,1,150,E,1
-ThunderSword,Thunder Sword,Casts magical thunder. Skl +5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
-WindSword,Wind Sword,Casts magical wind. Spd +5. Effective against fliers.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
-SleepSword,Sleep Sword,Puts enemies to sleep for one turn if it hits.,Weapon,Sword,10,8,70,20,0,1,200,A,1
-MasterSword,Master Sword,Doubles strikes dealt.,Weapon,Sword,20,14,75,13,0,1,80,A,1
-IronLance,Iron Lance,None,Weapon,Lance,40,8,75,7,0,1,10,E,1
-SlimLance,Slim Lance,None,Weapon,Lance,20,4,100,6,0,1,10,E,1
-SteelLance,Steel Lance,None,Weapon,Lance,30,11,65,11,0,1,20,D,1
-SilverLance,Silver Lance,None,Weapon,Lance,20,14,70,9,0,1,60,B,1
-ShortLance,Short Lance,None,Weapon,Lance,20,7,85,9,0,1,10,E,1
-BraveLance,Brave Lance,Doubles strikes dealt.,Weapon,Lance,40,14,80,13,10,1,250,A,1
-KillerLance,Killer Lance,Improves critical hit rate.,Weapon,Lance,20,10,75,9,30,1,60,C,1
-Horseslayer,Horseslayer,Effective against cavalry.,Weapon,Lance,20,14,70,13,0,1,100,B,1
-Javelin,Javelin,Ranged weapon.,Weapon,Lance,20,6,75,12,0,1-2,20,D,1
-LongLance,Long Lance,None,Weapon,Lance,30,13,65,13,0,1,25,D,1
-GreatLance,Great Lance,None,Weapon,Lance,20,17,60,15,0,1,50,C,1
-IronAxe,Iron Axe,None,Weapon,Axe,30,9,70,8,0,1,10,E,1
-SteelAxe,Steel Axe,None,Weapon,Axe,25,12,60,12,0,1,20,D,1
-SilverAxe,Silver Axe,None,Weapon,Axe,20,15,65,10,0,1,60,B,1
-BerserkSword,Berserk Sword,Drives enemies mad for one turn if it hits.,Weapon,Sword,10,8,65,20,0,1,300,A,1
-BraveAxe,Brave Axe,Doubles strikes dealt.,Weapon,Axe,40,15,75,14,10,1,250,A,1
-KillerAxe,Killer Axe,Improves critical hit rate.,Weapon,Axe,20,12,70,10,30,1,50,C,1
-Poleaxe,Poleaxe,Effective against cavalry.,Weapon,Axe,20,15,70,17,0,1,40,C,1
-Hammer,Hammer,Effective against armors.,Weapon,Axe,20,12,60,18,0,1,50,C,2
-DevilAxe,Devil Axe,21 - Luck% chance of backfire.,Weapon,Axe,20,20,80,20,0,1,45,E,1
-HandAxe,Hand Axe,Ranged weapon.,Weapon,Axe,20,6,70,12,0,1-2,15,D,1
-MasterAxe,Master Axe,Doubles strikes  dealt. Ranged weapon.,Weapon,Axe,20,13,65,15,0,1-2,200,A,1
-MasterLance,Master Lance,Doubles strikes  dealt. Ranged weapon.,Weapon,Lance,20,12,70,14,0,1-2,200,A,1
-Shortbow,Shortbow,Effective against fliers.,Weapon,Bow,20,5,85,6,0,2,40,E,1
-Greatbow,Greatbow,Effective against fliers.,Weapon,Bow,20,15,65,15,0,2,50,C,1
-IronBow,Iron Bow,Effective against fliers.,Weapon,Bow,40,7,80,7,0,2,10,E,1
-SteelBow,Steel Bow,Effective against fliers.,Weapon,Bow,30,10,70,10,0,2,24,D,1
-SilverBow,Silver Bow,Effective against fliers.,Weapon,Bow,20,13,75,8,0,2,80,B,1
-MasterBow,Master Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,20,13,75,14,0,2,150,A,1
-KillerBow,Killer Bow,Improves critical hit rate. Effective against fliers.,Weapon,Bow,20,10,80,8,30,2,70,C,1
-BraveBow,Brave Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,40,13,85,12,10,2,250,A,1
-Bolganone,Bolganone,None,Weapon,Anima,10,20,90,18,0,1-2,220,A,1
-Longbow,Longbow,Effective against fliers.,Weapon,Bow,30,12,70,12,0,2,25,D,1
-LongArch,Long Arch,Ballista only. Long-range weapon. Effective against fliers.,Weapon,Bow,10,15,85,20,0,3-10,300,E,1
-IronArch,Iron Arch,Ballista only. Super long-range weapon. Effective against fliers.,Weapon,Bow,10,20,85,20,0,3-15,400,D,1
-KillerArch,Killer Arch,Ballista only. Long-range weapon that improves critical hit rate. Effective against fliers.,Weapon,Bow,10,12,85,20,20,3-10,500,C,1
-Fire,Fire,None,Weapon,Anima,40,5,80,5,0,1-2,20,E,1
-Thunder,Thunder,None,Weapon,Anima,30,7,75,7,0,1-2,30,D,1
-Elfire,Elfire,None,Weapon,Anima,25,11,75,9,0,1-2,40,C,1
-Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,3-10,600,A,1
-Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,1-2,200,A,1
-Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,1-2,40,D,1
-Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,1-2,100,B,1
-Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,1-2,50,E,1
-Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,3-10,600,A,2
-Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,1-2,100,B,1
-Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,3-10,600,A,1
-Aura,Aura,None,Weapon,Light,20,20,90,14,0,1-2,250,A,1
-Again,Again,Allow an ally to move again.,Staff,Staff,3,0,100,0,0,1-Mag/2,1000,A,0
-Flux,Flux,None,Weapon,Dark,30,10,75,8,0,1-2,20,E,1
-Sigil,Sigil,Creates a light rune that blocks off paths.,Staff,Staff,5,0,100,8,0,1-Mag/2,140,C,3
-Jormungand,Jormungand,None,Weapon,Dark,20,14,70,11,0,1-2,50,C,1
-Fenrir,Fenrir,Casts long-range shadows.,Weapon,Dark,5,10,80,20,0,3-10,600,A,1
-Hel,Hel,None,Weapon,Dark,20,15,80,16,0,1-2,200,A,1
-Meteor,Meteor,Casts long-range flames.,Weapon,Dark,5,5,80,20,0,3-10,500,A,1
-Heal,Heal,Restores HP to an adjacent ally.,Staff,Staff,20,0,100,4,0,1,20,E,1
-Mend,Mend,Restores a large amount of HP to an adjacent ally.,Staff,Staff,15,0,100,6,0,1,50,D,2
-Maharaghi,Maharaghi,Zhara only. Can be used to restore all HP to an adjacent ally.,Weapon,Sword,30,8,90,14,20,1,10000,Prf,1
-Physic,Physic,Restores HP to an ally at a distance.,Staff,Staff,5,0,100,8,0,1-Mag/2,250,C,3
-Fortify,Fortify,Restores HP to all allies in range.,Staff,Staff,8,0,100,10,0,1-Mag/2,500,B,5
-Restore,Restore,Restores ally to normal condition.,Staff,Staff,10,0,100,8,0,1,100,C,3
-Silence,Silence,Prevents target from using magic for a turn.,Staff,Staff,3,0,80,10,0,1-Mag/2,500,B,4
-Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2,1000,C,3
-Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2,1000,A,4
-Warp,Warp,Teleports adjacent ally to a distance.,Staff,Staff,5,0,100,12,0,1,1000,A,5
-Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2,600,B,4
-TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2,100,D,2
-Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,3,0,100,12,0,1,600,A,5
-Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2,150,C,3
-Barrier,Barrier,"Increases resistance of adjacent ally, decays each turn.",Staff,Staff,5,0,100,8,0,1,150,C,3
-Rewarp,Rewarp,Teleports caster to another area.,Staff,Staff,5,0,100,12,0,1-Mag/2,150,A,5
-AngelicRobe,Angelic Robe,Increases HP by 3 points when used.,Item,,1,0,10,0,0,1,8000,NoRank,0
-EnergyRing,Energy Ring,Increases Strength by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
-SecretBook,Secret Book,Increases Skill by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
-Speedwings,Speedwings,Increases Speed by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
-GoddessIcon,Goddess Icon,Increases Luck by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
-Dragonshield,Dragonshield,Increases Defense by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
-Talisman,Talisman,Increases Resistance by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
-Swiftsoles,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,NoRank,0
-BodyRing,Body Ring,Increases Build by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
-SlimBow,Slim Bow,A lightweight bow. Effective against fliers.,Weapon,,30,4,100,2,0,2,15,E,1
-DevilsDagger,Devil's Dagger,Mish only. Ignores user's Str and enemy's Def. 21-Luck% chance of backfire.,Weapon,Bow,30,10,100,5,20,1-2,10000,Prf,1
-BalladOfWar,Ballad Of War,Cadenza only. +10 Hit/Avoid to allies within 3 tiles.,Weapon,Sword,30,2,90,2,10,1,20,Prf,1
-TheBreaker,The Breaker,Ellerey only. Effective against armors.,Weapon,Anima,25,13,70,11,0,1,0,Prf,1
-Muramasa,Muramasa,Carl only. Increases critical hit rate.,Weapon,Lance,60,8,75,9,35,1,0,Prf,1
-ChestKey,Chest Key,Opens chests.,Item,Sword,1,0,10,0,0,1,300,NoRank,0
-DoorKey,Door Key,Opens doors.,Item,,1,0,10,0,0,1,50,NoRank,0
-Vulnerary,Vulnerary,Heals user for 15 HP when used.,Item,,3,0,10,0,0,1,100,NoRank,0
-Elixir,Elixir,Heals user for all HP when used.,Item,,3,0,10,0,0,1,500,NoRank,0
-PureWater,Pure Water,"Grants +7 Res when used, which decays each turn.",Item,,3,0,10,0,0,1,300,NoRank,0
-SpiritDust,Spirit Dust,Increases Mag by 1 point when used.,Item,,1,0,0,0,0,1,2000,NoRank,0
-Torch,Torch,"Grants increased fog vision to unit, which decays each turn.",Item,,5,0,10,0,0,1,100,NoRank,0
-Thief,Thief,Can steal an item from target if user's Mag > target's Res.,Staff,Staff,3,0,100,12,0,1-Mag/2,1500,A,5
-MemberCard,Member Card,Grants access to secret shops while in inventory.,Item,,1,0,10,0,0,1,6000,NoRank,0
-SilverCard,Silver Card,Halves price at all shops while in inventory.,Item,,1,0,10,0,0,1,4000,NoRank,0
-WhiteGem,White Gem,"A valuable gemstone that sells for 5,000 gold.",Item,,1,0,10,0,0,1,10000,NoRank,0
-BlueGem,Blue Gem,"A rare gemstone that sells for 2,000 gold.",Item,,1,0,10,0,0,1,5000,NoRank,0
-RedGem,Red Gem,"An uncommon gemstone that sells for 1,000 gold.",Item,,1,0,10,0,0,1,2000,NoRank,0
-Kaiserschwert,Kaiserschwert,Loewe only. Follow-up attacks strike consecutively.,Weapon,Sword,255,9,90,7,0,1,160,Prf,1
-LightRune,Light Rune,Use to create a light rune that blocks off paths.,Item,,3,0,0,0,0,1,400,NoRank,0
-HoplonGuard,Hoplon Guard,A device that negates enemy critical attacks.,Item,,0,0,10,0,0,1,5000,NoRank,0
-StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
-IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
-Argilabrys,Argilabrys,Cleo only. Magic weapon. Brave.,Weapon,Axe,40,5,100,8,0,1,0,Prf,1
-TemperedRing,Tempered Ring,Restores 4 HP after combat while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
-CivilianProof,CivilianProof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,NoRank,0
-BattleAxe,Battle Axe,"Strong, but difficult to wield.",Weapon,Axe,20,15,70,16,0,1,50,B,1
-Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,1-2,0,Prf,1
-KnightProof,Knight Proof,Can be used to promote units Lv. 10 and up.,Item,,1,0,10,0,0,1,1000,NoRank,0
-WindBow,Wind Bow,Magic weapon. +5 Speed. Effective against fliers.,Weapon,Bow,20,7,70,7,0,2,100,B,1
-FireDrive,Fire Drive,Magic weapon.,Weapon,Axe,25,14,70,15,0,1,75,B,1
-SlimArch,Slim Arch,Ballista only. Mid-long-range weapon. Effective against fliers.,Weapon,Bow,10,10,90,20,0,3-7,200,E,1
-Stinger,Stinger,Hornet only. +5 Speed. Effective against fliers.,Weapon,Bow,40,3,85,4,30,2,10000,NoRank,1
-MysticLance,Mystic Lance,Magic weapon.,Weapon,Lance,20,14,70,9,0,1,100,B,1
-LunarAxe,Lunar Axe,Magic weapon.,Weapon,Axe,25,11,80,12,0,1,70,C,1
-Stormbrand,Stormbrand,Iskra only. Brave.,Weapon,Sword,30,15,70,12,0,1,10000,Prf,1
-Darkbrand,Darkbrand,Tiberius only. Magic weapon. Can be used to increase Res temporarily.,Weapon,Sword,45,12,70,10,0,1-2,10000,Prf,1
-HoundingBow,Hounding Bow,Darby only. Effective against cavalry.,Weapon,Bow,30,7,75,7,0,2,50,Prf,1
-Daybreak,Daybreak,The night sky will not hide you. Effective against fliers.,Weapon,Bow,30,18,100,9,0,2-3,10000,A,1
-Heavy Lance,Heavy Lance,Effective against armors.,Weapon,Lance,16,9,80,14,0,1,75,D,1
-Holyspear,Holyspear,Cannot be stolen. +5 Def/Res.,Weapon,Lance,255,12,100,10,0,1-3,10000,A,1
-Crusher,Crusher,A mighty magic axe gifted by Mihail.,Weapon,Axe,20,20,75,18,0,1,1000,A,1
-ArgymosCrest,Argymos Crest,Allows Cleo to promote.,Item,,1,0,10,0,0,1,0,NoRank,0
-CrownsPyre,Crown's Pyre,Apsis only. Ignores 50% of enemy's Res. Adds 25% of enemy's current HP to damage dealt.,Weapon,Anima,255,8,90,7,0,1-2,0,Prf,0
-Stormbreaker,Stormbreaker,"Apsis only. Adds 15 Hit/Crit if at max range, and +30 if also moved full move.",Weapon,Anima,255,13,65,13,10,2-3,0,Prf,0
-AbsoluteZero,Absolute Zero,"Apsis only. Penalizes -2 Atk/AS to foes in 2 spaces, -6 if user is on terrain.",Weapon,Anima,255,2,85,9,0,1-2,0,Prf,0
-EyeofDawn,Eye of Dawn,"Apsis only. Adds Str to damage dealt, and restores HP equal to damage dealt.",Weapon,Anima,255,4,110,10,0,1,0,Prf,0
-Faith'sWind,Faith's Wind,"Apsis only. If Spd is higher, +3 Spd, and also Brave if foe cannot counter.",Weapon,Anima,255,6,75,5,5,1-2,0,Prf,0
-DancingBlade,Dancing Blade,Ojasvi only. Long range magic weapon.,Weapon,Sword,20,0,80,3,0,1-Mag/2,1,Prf,1
-BoneClub,Bone Club,Groto only. Ranged weapon.,Weapon,Axe,40,4,40,17,20,1-2,5000,Prf,1
-Taodao,Taodao,"Tao only. Brave, increased range. Effective against fliers.",Weapon,Bow,40,7,90,8,10,2-3,100,Prf,1
-RuneArrow,Rune Arrow,Tao only. Adds Mag to Crit while equipped.,Item,,40,0,100,0,0,1,100,NoRank,0
-BlackAnklet,Black Anklet,Str/Mag +4 and Def/Res +2 while equipped. -10 HP after combat/healing. Min HP after effect is 1.,Item,,1,0,0,0,0,1,100,NoRank,0
-Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,1-2,0,NoRank,0
-DawnPendant,Dawn Pendant,Cromar only. Banishes the darkness.,Item,,255,0,0,0,0,1,0,NoRank,0
-Dragonstone,Dragonstone,Augur only. Magic weapon. +10 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,12,90,0,0,1,0,Prf,0
-Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,1-2,6000,A,0
-Impaler,Impaler,Boro only. Negates defenses. A Chouwoujian lance.,Weapon,Lance,40,15,100,16,0,1,10000,Prf,1
-Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,1-2,100,A,1
-ZykhraScroll,Zykhra Scroll,"While equipped, +10% HP/Str/Def/Bld growths, -10% Spd growth.",Item,,255,0,0,0,0,1,10000,NoRank,0
-BeiyrScroll,Beiyr Scroll,"While equipped, +10% Str/Skl/Lck growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-RaioScroll,Raio Scroll,"While equipped, +10% Mag/Skl/Spd growths, -10% HP growth.",Item,,255,0,0,0,0,1,10000,NoRank,0
-LuzenScroll,Luzen Scroll,"While equipped, +20% HP/Luck growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-CherneScroll,Cherne Scroll,"Scrawlings of a raving mind. While equipped, +13% Str/Mag/Skl/Spd/Def/Res growths, -66% HP/Lck/Bld/Mov growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-DreedurScroll,Dreedur Scroll,"While equipped, +20% Mag/Res, +5% Str/Skl, -5% HP, -10% Def growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-WornScroll,Worn Scroll,"Some power still lingers within this faded scroll. While equipped, +5% HP/Str/Mag/Skl growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-AmserScroll,Amser Scroll,"While equipped, +10% Mov growth, -15% Def/Res growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
-Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,1-2,10000,Prf,0
-MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,2-3,33,C,1
-Claymore,Claymore,A high quality blade. Effective against cavalry.,Weapon,Sword,30,13,80,13,0,1,46,B,1
-SlimAxe,Slim Axe,A lightweight axe.,Weapon,Axe,20,6,90,5,0,1,10,E,1
-BlackGem,Black Gem,"A valuable gemstone that sells for 10,000 gold.",Item,,1,0,10,0,0,1,20000,NoRank,0
-GoldGem,Gold Gem,"A valuable gemstone that sells for 20,000 gold.",Item,,1,0,10,0,0,1,0,NoRank,1
-Azurium,Azurium,Grants the Azurium Might skill when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
-GaleBow,Gale Bow,Increased range. Magic weapon. Effective against fliers.,Weapon,Bow,15,6,75,10,0,2-3,50,C,1
-Dullahan,Dullahan,Cromar only. Revives user upon defeat.,Weapon,Sword,30,10,50,14,0,1,0,E,1
-Burn,Burn,Effective against enemies on terrain.,Weapon,Anima,15,6,75,6,0,1-2,150,C,1
-CounterBow,Counter Bow,Reflects melee damage.,Weapon,Bow,20,7,75,8,0,2,95,B,1
-Conversion,Conversion,Swaps HP against higher HP targets before damage.,Weapon,Light,15,8,80,5,0,1-2,200,B,1
-RitualKnife,Ritual Knife,Restores HP equal to damage dealt.,Weapon,Sword,60,0,90,1,5,1,20,B,1
-Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,1-2,400,A,1
-SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,1-2,100,B,1
-AlairsGale,Alairs Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,C,1
-SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped.,Item,,255,0,10,20,0,1,2000,NoRank,1
-Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,1-2,50,D,1
-Arachnid,Arachnid,Doubles strikes dealt.,Weapon,Dark,35,3,95,12,15,1,55,D,1
-YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,1-2,90,D,1
-BreakArc,Break Arc,Effective against cavalry and armors.,Weapon,Axe,20,12,100,20,0,2,100,C,1
-BigIron,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,D,1
-Axle1,Axle,Axel only. Uncounterable. Lck +13.,Weapon,Axe,25,11,100,10,0,1,50,Prf,1
-Axle2,Axle,Alex only. Increased range.,Weapon,Axe,25,6,80,15,0,1-3,50,Prf,1
-Miaodao,Miaodao,Doubles strikes dealt.,Weapon,Sword,20,11,70,6,20,1,100,C,1
-KingShield,King Shield,Armors only. Provokes enemies in range while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
-EdgedArrow,Edged Arrow,Bow users only. Attacks pierce defenses while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
-RedScarf,Red Scarf,"While equipped, restores 25% of HP after defeating an enemy.",Item,,20,0,0,0,0,1,0,NoRank,0
-Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,2-3,50,C,1
-TrainedEdge,Trained Edge,None,Weapon,Sword,25,9,85,8,0,1,30,C,1
-TrainedPike,Trained Pike,None,Weapon,Lance,25,10,75,9,0,1,30,C,1
-TrainedAxe,TrainedAxe,None,Weapon,Axe,25,11,70,10,0,1,30,C,1
-TrainedArc,Trained Arc,Effective against fliers.,Weapon,Bow,25,9,80,8,0,2,30,C,1
-AquaBrand,Aqua Brand,Varga only. +5 Speed. Magic weapon.,Weapon,Sword,30,7,90,5,0,1,40,Prf,1
-Charge,Charge,Emil only. +1 damage per tile moved.,Weapon,Lance,30,8,60,6,0,1,40,Prf,1
-Poincare,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,Prf,1
-Sink,Sink,Effective against Mages/Mage Knights/Bards/Sages.,Weapon,Dark,20,8,70,6,0,1-2,40,C,1
-WoodlandsHuke,Woodlands Huke,"Grants +2 Skl/Res while equipped, and +1 range to bow users.",Item,,20,0,0,0,0,1,0,NoRank,0
-CaptainsHelm,Captains Helm,Grants +1 Str/Mag/Skl/Spd/Def/Res while equipped.,Item,,255,0,0,0,0,1,0,NoRank,0
-FealtyBow,Fealty Bow,"Grants -3 Dmg taken, +15 Hit when within 2 space of a Lord (Cleo and Loewe).",Weapon,Bow,25,7,85,6,0,2,25,D,1
-Lamfada,Lamfada,Effective against infantry Sword-type classes.,Weapon,Lance,25,10,65,12,0,2-3,25,C,1
-BoldBlade,Bold Blade,Def/Res -5 while equipped.,Weapon,Sword,25,14,105,10,0,1,25,B,1
-BoldPike,Bold Pike,Def/Res -5 while equipped.,Weapon,Lance,25,15,100,12,0,1,25,B,1
-BoldCleaver,Bold Cleaver,Def/Res -5 while equipped.,Weapon,Axe,25,16,95,14,0,1,25,B,1
-Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,1-2,25,D,1
-EarthGreataxe,Earth Greataxe,Doubles strikes dealt.,Weapon,Axe,20,10,70,25,0,1,25,A,0
-Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,1-2,25,Prf,0
-FangAndClaw,Fang And Claw,Taraji only. Brave.,Weapon,Sword,255,12,95,12,0,1,0,Prf,1
-Starcutter,Starcutter,Catrin only. Magic weapon.,Weapon,Sword,50,6,85,9,15,1,0,Prf,5
-FullHelm,Full Helm,Grants +2 Def/Res and blocks critical hits while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
-Swordslayer,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,B,2
-Shieldbearer,Shieldbearer,"Grants +5 Def, +2 Res, -1 Move while equipped.",Weapon,Lance,10,0,60,14,255,1,210,B,1
-Malkhut,Malkhut,Increases critical hit rate.,Weapon,Light,18,9,80,11,40,1-2,65,C,1
-Sagittae,Sagittae,Extended range.,Weapon,Anima,16,6,95,13,255,2-3,80,C,2
-Kukri,Kukri,A lethal sword common in Chouwouj.,Weapon,Sword,22,10,80,10,50,1,70,B,1
-SlamBrace,Slam Brace,Allows user to Smite adjacent units 2 tiles away while equipped.,Weapon,,1,0,0,0,0,1,0,NoRank,0
-Zweihander,Zweihander,Incredible blade. Effective against cavalry.,Weapon,Sword,30,18,60,17,0,1,70,A,2
-DeadeyeBow,Deadeye Bow,Powerful bow with extended range.,Weapon,Bow,25,13,60,15,0,2-3,100,A,2
-MoonlightBlade,Moonlight Blade,Magic weapon. +5 Mag while equipped.,Weapon,Sword,40,13,75,14,0,1-2,0,A,2
-Glaive,Glaive,Incredible lance. Effective against cavalry.,Weapon,Lance,30,18,55,18,0,1,68,A,2
-Predestination,Predestination,This battle is already won.,Weapon,Light,255,16,95,8,0,1-3,1,A,1
-TitansFang,Titan's Fang,Become the storm.,Weapon,Lance,255,17,75,12,0,1,0,A,0
-Svarog,Svarog,Life is to die. Magic.,Weapon,Sword,255,14,85,10,0,1,0,A,0
-Worldcleaver,Worldcleaver,Shake the firmament.,Weapon,Axe,255,20,60,18,0,1,0,A,0
-Indra,Indra,Barod only. Grants +6 Speed while equipped.,Weapon,Bow,255,14,95,12,0,2,0,Prf,0
-Agni,Agni,Barod only. Grants +6 Strength while equipped.,Weapon,Axe,255,16,75,14,15,1,0,Prf,0
-SmolderingSeal,Smoldering Seal,Orfeas only. Adds Str to magic attacks while equipped.,Item,None,255,0,0,0,0,1,0,NoRank,0
-Apotheosis,Apotheosis,Apsis only. Enables all mainhand/offhand skills.,Weapon,Anima,255,14,85,10,10,1-3,0,Prf,0
-ByelensBell,Byelen's Bell,"While equipped, follow-up attacks strike consecutively.",Item,None,255,0,0,0,0,1,0,NoRank,0
-Ragnarok,Ragnarok,"While equipped, self and allies cannot miss.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
-KaliYuga,Kali Yuga,"While equipped, self and allies can move through enemies.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
-Armageddon,Armageddon,"While equipped, self and allies cannot be critically hit.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
+Name,Display Name,Description,Type,Weapon Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Display Price,Weapon Level,WEXP
+IronSword,Iron Sword,None,Weapon,Sword,40,7,80,6,0,1,10,Yes,E,1
+SlimSword,Slim Sword,None,Weapon,Sword,30,3,100,2,0,1,10,Yes,E,1
+SteelSword,Steel Sword,None,Weapon,Sword,30,10,70,10,0,1,20,Yes,D,1
+SilverSword,Silver Sword,None,Weapon,Sword,20,13,75,8,0,1,50,Yes,B,1
+IronBlade,Iron Blade,None,Weapon,Sword,30,14,60,13,0,1,30,Yes,C,1
+Longsword,Longsword,None,Weapon,Sword,30,12,70,12,0,1,25,Yes,D,1
+Greatsword,Greatsword,None,Weapon,Sword,20,16,65,14,0,1,50,Yes,B,1
+FlameSword,Flame Sword,Casts magical flame. Mag +5.,Weapon,Sword,20,9,80,9,0,1-2,100,Yes,B,1
+Rapier,Rapier,Effective against cavalry and armors.,Weapon,Sword,20,4,100,3,10,1,50,Yes,C,1
+ShortSword,Short Sword,None,Weapon,Sword,40,6,90,8,0,1,10,Yes,E,1
+BraveSword,Brave Sword,Doubles strikes dealt.,Weapon,Sword,40,13,85,12,0,1,60,Yes,A,1
+KingSword,King Sword,Doubles strikes dealt. Grants +10 Hit/Avoid to allies  within 3 tiles while equipped.,Weapon,Sword,60,10,80,10,10,1,50,Yes,B,1
+KillingEdge,Killing Edge,Improves critical hit rate.,Weapon,Sword,30,9,80,8,30,1,60,Yes,C,1
+Armorslayer,Armorslayer,Effective against armors.,Weapon,Sword,30,10,70,12,0,1,50,Yes,B,1
+ParagonSword,Paragon Sword,Def +5. Doubles  combat experience gained while equipped.,Weapon,Sword,40,9,75,9,0,1,150,Yes,E,1
+ThunderSword,Thunder Sword,Casts magical thunder. Skl +5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1
+WindSword,Wind Sword,Casts magical wind. Spd +5. Effective against fliers.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1
+SleepSword,Sleep Sword,Puts enemies to sleep for one turn if it hits.,Weapon,Sword,10,8,70,20,0,1,200,Yes,A,1
+MasterSword,Master Sword,Doubles strikes dealt.,Weapon,Sword,20,14,75,13,0,1,80,Yes,A,1
+IronLance,Iron Lance,None,Weapon,Lance,40,8,75,7,0,1,10,Yes,E,1
+SlimLance,Slim Lance,None,Weapon,Lance,20,4,100,6,0,1,10,Yes,E,1
+SteelLance,Steel Lance,None,Weapon,Lance,30,11,65,11,0,1,20,Yes,D,1
+SilverLance,Silver Lance,None,Weapon,Lance,20,14,70,9,0,1,60,Yes,B,1
+ShortLance,Short Lance,None,Weapon,Lance,20,7,85,9,0,1,10,Yes,E,1
+BraveLance,Brave Lance,Doubles strikes dealt.,Weapon,Lance,40,14,80,13,10,1,250,Yes,A,1
+KillerLance,Killer Lance,Improves critical hit rate.,Weapon,Lance,20,10,75,9,30,1,60,Yes,C,1
+Horseslayer,Horseslayer,Effective against cavalry.,Weapon,Lance,20,14,70,13,0,1,100,Yes,B,1
+Javelin,Javelin,Ranged weapon.,Weapon,Lance,20,6,75,12,0,1-2,20,Yes,D,1
+LongLance,Long Lance,None,Weapon,Lance,30,13,65,13,0,1,25,Yes,D,1
+GreatLance,Great Lance,None,Weapon,Lance,20,17,60,15,0,1,50,Yes,C,1
+IronAxe,Iron Axe,None,Weapon,Axe,30,9,70,8,0,1,10,Yes,E,1
+SteelAxe,Steel Axe,None,Weapon,Axe,25,12,60,12,0,1,20,Yes,D,1
+SilverAxe,Silver Axe,None,Weapon,Axe,20,15,65,10,0,1,60,Yes,B,1
+BerserkSword,Berserk Sword,Drives enemies mad for one turn if it hits.,Weapon,Sword,10,8,65,20,0,1,300,Yes,A,1
+BraveAxe,Brave Axe,Doubles strikes dealt.,Weapon,Axe,40,15,75,14,10,1,250,Yes,A,1
+KillerAxe,Killer Axe,Improves critical hit rate.,Weapon,Axe,20,12,70,10,30,1,50,Yes,C,1
+Poleaxe,Poleaxe,Effective against cavalry.,Weapon,Axe,20,15,70,17,0,1,40,Yes,C,1
+Hammer,Hammer,Effective against armors.,Weapon,Axe,20,12,60,18,0,1,50,Yes,C,2
+DevilAxe,Devil Axe,21 - Luck% chance of backfire.,Weapon,Axe,20,20,80,20,0,1,45,Yes,E,1
+HandAxe,Hand Axe,Ranged weapon.,Weapon,Axe,20,6,70,12,0,1-2,15,Yes,D,1
+MasterAxe,Master Axe,Doubles strikes  dealt. Ranged weapon.,Weapon,Axe,20,13,65,15,0,1-2,200,Yes,A,1
+MasterLance,Master Lance,Doubles strikes  dealt. Ranged weapon.,Weapon,Lance,20,12,70,14,0,1-2,200,Yes,A,1
+Shortbow,Shortbow,Effective against fliers.,Weapon,Bow,20,5,85,6,0,2,40,Yes,E,1
+Greatbow,Greatbow,Effective against fliers.,Weapon,Bow,20,15,65,15,0,2,50,Yes,C,1
+IronBow,Iron Bow,Effective against fliers.,Weapon,Bow,40,7,80,7,0,2,10,Yes,E,1
+SteelBow,Steel Bow,Effective against fliers.,Weapon,Bow,30,10,70,10,0,2,24,Yes,D,1
+SilverBow,Silver Bow,Effective against fliers.,Weapon,Bow,20,13,75,8,0,2,80,Yes,B,1
+MasterBow,Master Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,20,13,75,14,0,2,150,Yes,A,1
+KillerBow,Killer Bow,Improves critical hit rate. Effective against fliers.,Weapon,Bow,20,10,80,8,30,2,70,Yes,C,1
+BraveBow,Brave Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,40,13,85,12,10,2,250,Yes,A,1
+Bolganone,Bolganone,None,Weapon,Anima,10,20,90,18,0,1-2,220,Yes,A,1
+Longbow,Longbow,Effective against fliers.,Weapon,Bow,30,12,70,12,0,2,25,Yes,D,1
+LongArch,Long Arch,Ballista only. Long-range weapon. Effective against fliers.,Weapon,Bow,10,15,85,20,0,3-10,300,Yes,E,1
+IronArch,Iron Arch,Ballista only. Super long-range weapon. Effective against fliers.,Weapon,Bow,10,20,85,20,0,3-15,400,Yes,D,1
+KillerArch,Killer Arch,Ballista only. Long-range weapon that improves critical hit rate. Effective against fliers.,Weapon,Bow,10,12,85,20,20,3-10,500,Yes,C,1
+Fire,Fire,None,Weapon,Anima,40,5,80,5,0,1-2,20,Yes,E,1
+Thunder,Thunder,None,Weapon,Anima,30,7,75,7,0,1-2,30,Yes,D,1
+Elfire,Elfire,None,Weapon,Anima,25,11,75,9,0,1-2,40,Yes,C,1
+Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,3-10,600,Yes,A,1
+Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,1-2,200,Yes,A,1
+Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,1-2,40,Yes,D,1
+Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,1-2,100,Yes,B,1
+Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,1-2,50,Yes,E,1
+Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,3-10,600,Yes,A,2
+Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,1-2,100,Yes,B,1
+Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,3-10,600,Yes,A,1
+Aura,Aura,None,Weapon,Light,20,20,90,14,0,1-2,250,Yes,A,1
+Again,Again,Allow an ally to move again.,Staff,Staff,3,0,100,0,0,1-Mag/2,1000,Yes,A,0
+Flux,Flux,None,Weapon,Dark,30,10,75,8,0,1-2,20,Yes,E,1
+Sigil,Sigil,Creates a light rune that blocks off paths.,Staff,Staff,5,0,100,8,0,1-Mag/2,140,Yes,C,3
+Jormungand,Jormungand,None,Weapon,Dark,20,14,70,11,0,1-2,50,Yes,C,1
+Fenrir,Fenrir,Casts long-range shadows.,Weapon,Dark,5,10,80,20,0,3-10,600,Yes,A,1
+Hel,Hel,None,Weapon,Dark,20,15,80,16,0,1-2,200,Yes,A,1
+Meteor,Meteor,Casts long-range flames.,Weapon,Dark,5,5,80,20,0,3-10,500,Yes,A,1
+Heal,Heal,Restores HP to an adjacent ally.,Staff,Staff,20,0,100,4,0,1,20,Yes,E,1
+Mend,Mend,Restores a large amount of HP to an adjacent ally.,Staff,Staff,15,0,100,6,0,1,50,Yes,D,2
+Maharaghi,Maharaghi,Zhara only. Can be used to restore all HP to an adjacent ally.,Weapon,Sword,30,8,90,14,20,1,10000,No,Prf,1
+Physic,Physic,Restores HP to an ally at a distance.,Staff,Staff,5,0,100,8,0,1-Mag/2,250,Yes,C,3
+Fortify,Fortify,Restores HP to all allies in range.,Staff,Staff,8,0,100,10,0,1-Mag/2,500,Yes,B,5
+Restore,Restore,Restores ally to normal condition.,Staff,Staff,10,0,100,8,0,1,100,Yes,C,3
+Silence,Silence,Prevents target from using magic for a turn.,Staff,Staff,3,0,80,10,0,1-Mag/2,500,Yes,B,4
+Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2,1000,Yes,C,3
+Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2,1000,Yes,A,4
+Warp,Warp,Teleports adjacent ally to a distance.,Staff,Staff,5,0,100,12,0,1,1000,Yes,A,5
+Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2,600,Yes,B,4
+TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2,100,Yes,D,2
+Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,3,0,100,12,0,1,600,Yes,A,5
+Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2,150,Yes,C,3
+Barrier,Barrier,"Increases resistance of adjacent ally, decays each turn.",Staff,Staff,5,0,100,8,0,1,150,Yes,C,3
+Rewarp,Rewarp,Teleports caster to another area.,Staff,Staff,5,0,100,12,0,1-Mag/2,150,Yes,A,5
+AngelicRobe,Angelic Robe,Increases HP by 3 points when used.,Item,,1,0,10,0,0,1,8000,Yes,NoRank,0
+EnergyRing,Energy Ring,Increases Strength by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0
+SecretBook,Secret Book,Increases Skill by 2 points when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0
+Speedwings,Speedwings,Increases Speed by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0
+GoddessIcon,Goddess Icon,Increases Luck by 2 points when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0
+Dragonshield,Dragonshield,Increases Defense by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0
+Talisman,Talisman,Increases Resistance by 2 points when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0
+Boots,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,Yes,NoRank,0
+Swiftsoles,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,Yes,NoRank,0
+BodyRing,Body Ring,Increases Build by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0
+SlimBow,Slim Bow,A lightweight bow. Effective against fliers.,Weapon,,30,4,100,2,0,2,15,Yes,E,1
+DevilsDagger,Devil's Dagger,Mish only. Ignores user's Str and enemy's Def. 21-Luck% chance of backfire.,Weapon,Bow,30,10,100,5,20,1-2,10000,No,Prf,1
+BalladOfWar,Ballad Of War,Cadenza only. +10 Hit/Avoid to allies within 3 tiles.,Weapon,Sword,30,2,90,2,10,1,20,No,Prf,1
+TheBreaker,The Breaker,Ellerey only. Effective against armors.,Weapon,Anima,25,13,70,11,0,1,0,No,Prf,1
+Muramasa,Muramasa,Carl only. Increases critical hit rate.,Weapon,Lance,60,8,75,9,35,1,0,No,Prf,1
+ChestKey,Chest Key,Opens chests.,Item,Sword,1,0,10,0,0,1,300,Yes,NoRank,0
+DoorKey,Door Key,Opens doors.,Item,,1,0,10,0,0,1,50,Yes,NoRank,0
+Vulnerary,Vulnerary,Heals user for 15 HP when used.,Item,,3,0,10,0,0,1,100,Yes,NoRank,0
+Elixir,Elixir,Heals user for all HP when used.,Item,,3,0,10,0,0,1,500,Yes,NoRank,0
+PureWater,Pure Water,"Grants +7 Res when used, which decays each turn.",Item,,3,0,10,0,0,1,300,Yes,NoRank,0
+SpiritDust,Spirit Dust,Increases Mag by 1 point when used.,Item,,1,0,0,0,0,1,2000,Yes,NoRank,0
+Torch,Torch,"Grants increased fog vision to unit, which decays each turn.",Item,,5,0,10,0,0,1,100,Yes,NoRank,0
+Thief,Thief,Can steal an item from target if user's Mag > target's Res.,Staff,Staff,3,0,100,12,0,1-Mag/2,1500,Yes,A,5
+MemberCard,Member Card,Grants access to secret shops while in inventory.,Item,,1,0,10,0,0,1,6000,Yes,NoRank,0
+SilverCard,Silver Card,Halves price at all shops while in inventory.,Item,,1,0,10,0,0,1,4000,Yes,NoRank,0
+WhiteGem,White Gem,"A valuable gemstone that sells for 5,000 gold.",Item,,1,0,10,0,0,1,10000,Yes,NoRank,0
+BlueGem,Blue Gem,"A rare gemstone that sells for 2,000 gold.",Item,,1,0,10,0,0,1,5000,Yes,NoRank,0
+RedGem,Red Gem,"An uncommon gemstone that sells for 1,000 gold.",Item,,1,0,10,0,0,1,2000,Yes,NoRank,0
+Kaiserschwert,Kaiserschwert,Loewe only. Follow-up attacks strike consecutively.,Weapon,Sword,255,9,90,7,0,1,160,No,Prf,1
+LightRune,Light Rune,Use to create a light rune that blocks off paths.,Item,,3,0,0,0,0,1,400,Yes,NoRank,0
+HoplonGuard,Hoplon Guard,A device that negates enemy critical attacks.,Item,,0,0,10,0,0,1,5000,Yes,NoRank,0
+StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1
+IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1
+Argilabrys,Argilabrys,Cleo only. Magic weapon. Brave.,Weapon,Axe,40,5,100,8,0,1,0,No,Prf,1
+TemperedRing,Tempered Ring,Restores 4 HP after combat while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0
+CivilianProof,CivilianProof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,No,NoRank,0
+BattleAxe,Battle Axe,"Strong, but difficult to wield.",Weapon,Axe,20,15,70,16,0,1,50,Yes,B,1
+Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,1-2,0,No,Prf,1
+KnightProof,Knight Proof,Can be used to promote units Lv. 10 and up.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0
+WindBow,Wind Bow,Magic weapon. +5 Speed. Effective against fliers.,Weapon,Bow,20,7,70,7,0,2,100,Yes,B,1
+FireDrive,Fire Drive,Magic weapon.,Weapon,Axe,25,14,70,15,0,1,75,Yes,B,1
+SlimArch,Slim Arch,Ballista only. Mid-long-range weapon. Effective against fliers.,Weapon,Bow,10,10,90,20,0,3-7,200,Yes,E,1
+Stinger,Stinger,Hornet only. +5 Speed. Effective against fliers.,Weapon,Bow,40,3,85,4,30,2,10000,No,Prf,1
+MysticLance,Mystic Lance,Magic weapon.,Weapon,Lance,20,14,70,9,0,1,100,Yes,B,1
+LunarAxe,Lunar Axe,Magic weapon.,Weapon,Axe,25,11,80,12,0,1,70,Yes,C,1
+Stormbrand,Stormbrand,Iskra only. Brave.,Weapon,Sword,30,15,70,12,0,1,10000,No,Prf,1
+Darkbrand,Darkbrand,Tiberius only. Magic weapon. Can be used to increase Res temporarily.,Weapon,Sword,45,12,70,10,0,1-2,10000,No,Prf,1
+HoundingBow,Hounding Bow,Darby only. Effective against cavalry.,Weapon,Bow,30,7,75,7,0,2,50,Yes,Prf,1
+Daybreak,Daybreak,The night sky will not hide you. Effective against fliers.,Weapon,Bow,255,18,100,9,0,2-3,10000,No,A,1
+Heavy Lance,Heavy Lance,Effective against armors.,Weapon,Lance,16,9,80,14,0,1,75,Yes,D,1
+Holyspear,Holyspear,Cannot be stolen. +5 Def/Res.,Weapon,Lance,255,12,100,10,0,1-3,10000,Yes,A,1
+Crusher,Crusher,A mighty magic axe gifted by Mihail.,Weapon,Axe,20,20,75,18,0,1,1000,Yes,A,1
+ArgymosCrest,Argymos Crest,Allows Cleo to promote.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+CrownsPyre,Crown's Pyre,Apsis only. Ignores 50% of enemy's Res. Adds 25% of enemy's current HP to damage dealt.,Weapon,Anima,255,8,90,7,0,1-2,0,No,Prf,0
+Stormbreaker,Stormbreaker,"Apsis only. Adds 15 Hit/Crit if at max range, and +30 if also moved full move.",Weapon,Anima,255,13,65,13,10,2-3,0,No,Prf,0
+AbsoluteZero,Absolute Zero,"Apsis only. Penalizes -2 Atk/AS to foes in 2 spaces, -6 if user is on terrain.",Weapon,Anima,255,2,85,9,0,1-2,0,No,Prf,0
+EyeofDawn,Eye of Dawn,"Apsis only. Adds Str to damage dealt, and restores HP equal to damage dealt.",Weapon,Anima,255,4,110,10,0,1,0,No,Prf,0
+Faith'sWind,Faith's Wind,"Apsis only. If Spd is higher, +3 Spd, and also Brave if foe cannot counter.",Weapon,Anima,255,6,75,5,5,1-2,0,No,Prf,0
+DancingBlade,Dancing Blade,Ojasvi only. Long range magic weapon.,Weapon,Sword,20,0,80,3,0,1-Mag/2,1,No,Prf,1
+BoneClub,Bone Club,Groto only. Ranged weapon.,Weapon,Axe,40,4,40,17,20,1-2,5000,No,Prf,1
+Taodao,Taodao,"Tao only. Brave, increased range. Effective against fliers.",Weapon,Bow,40,7,90,8,10,2-3,100,No,Prf,1
+RuneArrow,Rune Arrow,Tao only. Adds Mag to Crit while equipped.,Item,,40,0,100,0,0,1,100,No,NoRank,0
+BlackAnklet,Black Anklet,Str/Mag +4 and Def/Res +2 while equipped. -10 HP after combat/healing. Min HP after effect is 1.,Item,,1,0,0,0,0,1,100,No,NoRank,0
+Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,1-2,0,No,NoRank,0
+DawnPendant,Dawn Pendant,Cromar only. Banishes the darkness.,Item,,255,0,0,0,0,1,0,No,NoRank,0
+Dragonstone,Dragonstone,Augur only. Magic weapon. +10 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,12,90,0,0,1,0,No,Prf,0
+Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,1-2,6000,Yes,A,0
+Impaler,Impaler,Boro only. Negates defenses. A Chouwoujian lance.,Weapon,Lance,40,15,100,16,0,1,10000,No,Prf,1
+Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1
+ZykhraScroll,Zykhra Scroll,"While equipped, +10% HP/Str/Def/Bld growths, -10% Spd growth.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+BeiyrScroll,Beiyr Scroll,"While equipped, +10% Str/Skl/Lck growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+RaioScroll,Raio Scroll,"While equipped, +10% Mag/Skl/Spd growths, -10% HP growth.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+LuzenScroll,Luzen Scroll,"While equipped, +20% HP/Luck growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+CherneScroll,Cherne Scroll,"Scrawlings of a raving mind. While equipped, +13% Str/Mag/Skl/Spd/Def/Res growths, -66% HP/Lck/Bld/Mov growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+DreedurScroll,Dreedur Scroll,"While equipped, +20% Mag/Res, +5% Str/Skl, -5% HP, -10% Def growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+WornScroll,Worn Scroll,"Some power still lingers within this faded scroll. While equipped, +5% HP/Str/Mag/Skl growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+AmserScroll,Amser Scroll,"While equipped, +10% Mov growth, -15% Def/Res growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0
+Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,1-2,10000,No,Prf,0
+MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,2-3,33,Yes,C,1
+Claymore,Claymore,A high quality blade. Effective against cavalry.,Weapon,Sword,30,13,80,13,0,1,46,Yes,B,1
+SlimAxe,Slim Axe,A lightweight axe.,Weapon,Axe,20,6,90,5,0,1,10,Yes,E,1
+BlackGem,Black Gem,"A valuable gemstone that sells for 10,000 gold.",Item,,1,0,10,0,0,1,20000,Yes,NoRank,0
+GoldGem,Gold Gem,"A valuable gemstone that sells for 20,000 gold.",Item,,1,0,10,0,0,1,0,Yes,NoRank,1
+Azurium,Azurium,Grants the Azurium Might skill when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0
+GaleBow,Gale Bow,Increased range. Magic weapon. Effective against fliers.,Weapon,Bow,15,6,75,10,0,2-3,50,Yes,C,1
+Dullahan,Dullahan,Cromar only. Revives user upon defeat.,Weapon,Sword,30,10,50,14,0,1,0,No,E,1
+Burn,Burn,Effective against enemies on terrain.,Weapon,Anima,15,6,75,6,0,1-2,150,Yes,C,1
+CounterBow,Counter Bow,Reflects melee damage.,Weapon,Bow,20,7,75,8,0,2,95,Yes,B,1
+Conversion,Conversion,Swaps HP against higher HP targets before damage.,Weapon,Light,15,8,80,5,0,1-2,200,Yes,B,1
+RitualKnife,Ritual Knife,Restores HP equal to damage dealt.,Weapon,Sword,60,0,90,1,5,1,20,Yes,B,1
+Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,1-2,400,Yes,A,1
+SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,1-2,100,Yes,B,1
+AraisGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1
+AlairsGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1
+SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped.,Item,,255,0,10,20,0,1,2000,Yes,NoRank,1
+Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,1-2,50,Yes,D,1
+Arachnid,Arachnid,Doubles strikes dealt.,Weapon,Dark,35,3,95,12,15,1,55,Yes,D,1
+YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,1-2,90,Yes,D,1
+DaShoota,Break Arc,Effective against cavalry and armors.,Weapon,Axe,20,12,100,20,0,2,100,Yes,C,1
+BreakArc,Break Arc,Effective against cavalry and armors.,Weapon,Axe,20,12,100,20,0,2,100,Yes,C,1
+BigIron,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,Yes,D,1
+MeatCleaver,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,Yes,D,1
+Axle1,Axle,Axel only. Uncounterable. Lck +13.,Weapon,Axe,25,11,100,10,0,1,50,No,Prf,1
+Axle2,Axle,Alex only. Increased range.,Weapon,Axe,25,6,80,15,0,1-3,50,No,Prf,1
+Miaodao,Miaodao,Doubles strikes dealt.,Weapon,Sword,20,11,70,6,20,1,100,Yes,C,1
+KingShield,King Shield,Armors only. Provokes enemies in range while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0
+EdgedArrow,Edged Arrow,Bow users only. Attacks pierce defenses while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0
+RedScarf,Red Scarf,"While equipped, restores 25% of HP after defeating an enemy.",Item,,20,0,0,0,0,1,0,No,NoRank,0
+Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,2-3,50,Yes,C,1
+TrainedEdge,Trained Edge,None,Weapon,Sword,25,9,85,8,0,1,30,Yes,C,1
+TrainedPike,Trained Pike,None,Weapon,Lance,25,10,75,9,0,1,30,Yes,C,1
+TrainedAxe,TrainedAxe,None,Weapon,Axe,25,11,70,10,0,1,30,Yes,C,1
+TrainedArc,Trained Arc,Effective against fliers.,Weapon,Bow,25,9,80,8,0,2,30,Yes,C,1
+AquaBrand,Aqua Brand,Varga only. +5 Speed. Magic weapon.,Weapon,Sword,30,7,90,5,0,1,40,No,Prf,1
+Charge,Charge,Emil only. +1 damage per tile moved.,Weapon,Lance,30,8,60,6,0,1,40,No,Prf,1
+Poincare,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,No,Prf,1
+Archival,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,No,Prf,1
+Sink,Sink,Effective against Mages/Mage Knights/Bards/Sages.,Weapon,Dark,20,8,70,6,0,1-2,40,Yes,C,1
+WoodlandsHuke,Woodlands Huke,"Grants +2 Skl/Res while equipped, and +1 range to bow users.",Item,,20,0,0,0,0,1,0,No,NoRank,0
+CaptainsHelm,Captains Helm,Grants +1 Str/Mag/Skl/Spd/Def/Res while equipped.,Item,,255,0,0,0,0,1,0,No,NoRank,0
+FealtyBow,Fealty Bow,"Grants -3 Dmg taken, +15 Hit when within 2 space of a Lord (Cleo and Loewe).",Weapon,Bow,25,7,85,6,0,2,25,Yes,D,1
+Lamfada,Lamfada,Effective against infantry Sword-type classes.,Weapon,Lance,25,10,65,12,0,2-3,25,Yes,C,1
+BoldBlade,Bold Blade,Def/Res -5 while equipped.,Weapon,Sword,25,14,105,10,0,1,25,Yes,B,1
+BoldPike,Bold Pike,Def/Res -5 while equipped.,Weapon,Lance,25,15,100,12,0,1,25,Yes,B,1
+BoldCleaver,Bold Cleaver,Def/Res -5 while equipped.,Weapon,Axe,25,16,95,14,0,1,25,Yes,B,1
+Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,1-2,25,Yes,D,1
+EarthGreataxe,Earth Greataxe,Doubles strikes dealt.,Weapon,Axe,20,10,70,25,0,1,25,No,A,0
+Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,1-2,25,No,Prf,0
+FangAndClaw,Fang And Claw,Taraji only. Brave.,Weapon,Sword,255,12,95,12,0,1,0,No,Prf,1
+Starcutter,Starcutter,Catrin only. Magic weapon.,Weapon,Sword,50,6,85,9,15,1,0,No,Prf,5
+FullHelm,Full Helm,Grants +2 Def/Res and blocks critical hits while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0
+Swordslayer,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,Yes,B,2
+Swordslayer,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,Yes,B,2
+Shieldbearer,Shieldbearer,"Grants +5 Def, +2 Res, -1 Move while equipped.",Weapon,Lance,10,0,60,14,255,1,210,Yes,B,1
+Malkhut,Malkhut,Increases critical hit rate.,Weapon,Light,18,9,80,11,40,1-2,65,Yes,C,1
+Sagittae,Sagittae,Extended range.,Weapon,Anima,16,6,95,13,255,2-3,80,Yes,C,2
+Kukri,Kukri,A lethal sword common in Chouwouj.,Weapon,Sword,22,10,80,10,50,1,70,Yes,B,1
+SlamBrace,Slam Brace,Allows user to Smite adjacent units 2 tiles away while equipped.,Weapon,,1,0,0,0,0,1,0,No,NoRank,0
+Zweihander,Zweihander,Incredible blade. Effective against cavalry.,Weapon,Sword,30,18,60,17,0,1,70,Yes,A,2
+DeadeyeBow,Deadeye Bow,Powerful bow with extended range.,Weapon,Bow,25,13,60,15,0,2-3,100,Yes,A,2
+MoonlightBlade,Moonlight Blade,Magic weapon. +5 Mag while equipped.,Weapon,Sword,40,13,75,14,0,1-2,0,No,A,2
+Glaive,Glaive,Incredible lance. Effective against cavalry.,Weapon,Lance,30,18,55,18,0,1,68,No,A,2
+Predestination,Predestination,This battle is already won.,Weapon,Light,255,16,95,8,0,1-3,1,No,A,1
+TitansFang,Titan's Fang,Become the storm.,Weapon,Lance,255,17,75,12,0,1,0,No,A,0
+Svarog,Svarog,Life is to die. Magic.,Weapon,Sword,255,14,85,10,0,1,0,No,A,0
+Worldcleaver,Worldcleaver,Shake the firmament.,Weapon,Axe,255,20,60,18,0,1,0,No,A,0
+Indra,Indra,Barod only. Grants +6 Speed while equipped.,Weapon,Bow,255,14,95,12,0,2,0,No,Prf,0
+Agni,Agni,Barod only. Grants +6 Strength while equipped.,Weapon,Axe,255,16,75,14,15,1,0,No,Prf,0
+SmolderingSeal,Smoldering Seal,Orfeas only. Adds Str to magic attacks while equipped.,Item,None,255,0,0,0,0,1,0,No,NoRank,0
+Apotheosis,Apotheosis,Apsis only. Enables all mainhand/offhand skills.,Weapon,Anima,255,14,85,10,10,1-3,0,No,Prf,0
+ByelensBell,Byelen's Bell,"While equipped, follow-up attacks strike consecutively.",Item,None,255,0,0,0,0,1,0,No,NoRank,0
+Ragnarok,Ragnarok,"While equipped, self and allies cannot miss.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1
+KaliYuga,Kali Yuga,"While equipped, self and allies can move through enemies.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1
+Armageddon,Armageddon,"While equipped, self and allies cannot be critically hit.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1

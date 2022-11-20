@@ -131,45 +131,48 @@ async def unit(ctx, name: str):
 
 @bob.command(description = "Get Bells of Byelen item data", guild_ids=[1039354532167176303, 828646591471550474])
 async def item(ctx, name: str):
-    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)               
-    with open('bob item.csv', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        was_found = False
-        for row in reader:
-            if(row['Name'].lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Display Name'], color=0xac6c6c)
-                if(row['Type'] == 'Weapon'):
-                    stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
-                    if (row['Uses'] == '255'):
-                        stats += " | Unbreakable"
-                    else:
-                        stats += " | Uses: " + row['Uses']
-                    if (row['Description'] != "None"):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    if (stripped_name.lower() == 'axle'):
+        await ctx.response.send_message("For Axel's Axle, search 'Axle1'. For Alex's Axle, search 'Axle2'.")  
+    else:             
+        with open('bob item.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            was_found = False
+            for row in reader:
+                if(row['Name'].lower() == stripped_name.lower()):
+                    unitembed=discord.Embed(title=row['Display Name'], color=0xac6c6c)
+                    if(row['Type'] == 'Weapon'):
+                        stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
+                        if (row['Uses'] == '255'):
+                            stats += " | Unbreakable"
+                        else:
+                            stats += " | Uses: " + row['Uses']
+                        if (row['Description'] != "None"):
+                            stats += '\n'
+                            stats += row['Description']
+                        unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
+                    elif(row['Type'] == 'Staff'):
+                        stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
                         stats += '\n'
                         stats += row['Description']
-                    unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
-                elif(row['Type'] == 'Staff'):
-                    stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
-                    stats += '\n'
-                    stats += row['Description']
-                    unitembed.add_field(name='Staff', value=stats, inline=False)
-                elif(row['Type'] == 'Item'):
-                    stats = ""
-                    if (row['Uses'] == '255'):
-                        stats += "Unbreakable"
-                    else:
-                        stats += "Uses: " + row['Uses']
-                    stats += '\n'
-                    stats += row['Description']
-                    unitembed.add_field(name='Item', value=stats, inline=False)
-                if(row['Uses'] != '255'):
-                    price = int(row['Uses']) * int(row['Price Per Use'])
-                    price_string = str(price) + "G"
-                    unitembed.add_field(name='Price: ', value=price_string, inline=False)
-                await ctx.response.send_message(embed=unitembed)
-                was_found = True
-        if (not was_found):
-            await ctx.response.send_message("That item does not exist.")
+                        unitembed.add_field(name='Staff', value=stats, inline=False)
+                    elif(row['Type'] == 'Item'):
+                        stats = ""
+                        if (row['Uses'] == '255'):
+                            stats += "Unbreakable"
+                        else:
+                            stats += "Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Item', value=stats, inline=False)
+                    if(row['Display Price'] == 'Yes'):
+                        price = int(row['Uses']) * int(row['Price Per Use'])
+                        price_string = str(price) + "G"
+                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
+                    await ctx.response.send_message(embed=unitembed)
+                    was_found = True
+            if (not was_found):
+                await ctx.response.send_message("That item does not exist.")
 
 
 @bot.event
