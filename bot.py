@@ -141,6 +141,7 @@ async def item(ctx, name: str):
             for row in reader:
                 if(row['Name'].lower() == stripped_name.lower()):
                     unitembed=discord.Embed(title=row['Display Name'], color=0xac6c6c)
+                    unitembed.set_thumbnail(url=row['Icon'])
                     if(row['Type'] == 'Weapon'):
                         stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
                         if (row['Uses'] == '255'):
