@@ -1,256 +1,239 @@
-Name,Description,Type,ItemAbility,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Weapon Level,WEXP
-Iron Sword,EmptyDesc,0x0,IsWeapon,40,7,80,6,0,0x11,10,ERank,1
-Slim Sword,EmptyDesc,0x0,IsWeapon,30,3,100,2,0,0x11,10,ERank,1
-Steel Sword,EmptyDesc,0x0,IsWeapon,30,10,70,10,0,0x11,20,DRank,1
-Silver Sword,0x407,0x0,IsWeapon,20,13,75,8,0,0x11,50,BRank,1
-Iron Blade,0x408,0x0,IsWeapon,30,14,60,13,0,0x11,30,CRank,1
-Longsword,0x409,0x0,IsWeapon,30,12,70,12,0,0x11,25,DRank,1
-Greatsword,0x40a,0x0,IsWeapon,20,16,65,14,0,0x11,50,BRank,1
-Flame Sword,FlameSwordDesc,0x0,IsWeapon|MagicDamage,20,9,80,9,0,0x12,100,BRank,1
-Rapier,RapierDesc,0x0,IsWeapon,20,4,100,3,10,0x11,50,CRank,1
-Short Sword,0x404,0x0,IsWeapon,40,6,90,8,0,0x11,10,ERank,1
-Brave Sword,0x40d,0x0,IsWeapon|Unsellable|IsBrave,40,13,85,12,0,0x11,60,ARank,1
-King Sword,KingSwordDesc,0x0,IsWeapon|Unsellable|IsBrave,60,10,80,10,10,0x11,50,BRank,1
-Killing Edge,0x40f,0x0,IsWeapon,30,9,80,8,30,0x11,60,CRank,1
-Armorslayer,TheBreakerDesc,0x0,IsWeapon,30,10,70,12,0,0x11,50,BRank,1
-Paragon Sword,ParagonSwordDesc,0x0,IsWeapon,40,9,75,9,0,0x11,150,ERank,1
-Thunder Sword,ThunderSwordDesc,0x0,IsWeapon|MagicDamage,20,9,80,9,0,0x12,50,BRank,1
-Wind Sword,WindSwordDesc,0x0,IsWeapon|MagicDamage,20,9,80,9,0,0x12,50,BRank,1
-Sleep Sword,SleepSwordDesc,0x0,IsWeapon,10,8,70,20,0,0x11,200,ARank,1
-Master Sword,0x40d,0x0,IsWeapon|IsBrave,20,14,75,13,0,0x11,80,ARank,1
-Iron Lance,0x419,0x1,IsWeapon,40,8,75,7,0,0x11,10,ERank,1
-Slim Lance,0x41a,0x1,IsWeapon,20,4,100,6,0,0x11,10,ERank,1
-Steel Lance,0x41b,0x1,IsWeapon,30,11,65,11,0,0x11,20,DRank,1
-Silver Lance,0x41c,0x1,IsWeapon,20,14,70,9,0,0x11,60,BRank,1
-Short Lance,0x404,0x1,IsWeapon,20,7,85,9,0,0x11,10,ERank,1
-Brave Lance,0x41e,0x1,IsWeapon|Unsellable|IsBrave,40,14,80,13,10,0x11,250,ARank,1
-Killer Lance,0x41f,0x1,IsWeapon,20,10,75,9,30,0x11,60,CRank,1
-Horseslayer,0x420,0x1,IsWeapon,20,14,70,13,0,0x11,100,BRank,1
-Javelin,0x421,0x1,IsWeapon,20,6,75,12,0,0x12,20,DRank,1
-Long Lance,0x404,0x1,IsWeapon,30,13,65,13,0,0x11,25,DRank,1
-Great Lance,0x404,0x1,IsWeapon,20,17,60,15,0,0x11,50,CRank,1
-Iron Axe,0x42a,0x2,IsWeapon,30,9,70,8,0,0x11,10,ERank,1
-Steel Axe,0x42b,0x2,IsWeapon,25,12,60,12,0,0x11,20,DRank,1
-Silver Axe,0x42c,0x2,IsWeapon,20,15,65,10,0,0x11,60,BRank,1
-Berserk Sword,BerserkSwordDesc,0x0,IsWeapon,10,8,65,20,0,0x11,300,ARank,1
-Brave Axe,0x42e,0x2,IsWeapon|Unsellable|IsBrave,40,15,75,14,10,0x11,250,ARank,1
-Killer Axe,0x42f,0x2,IsWeapon,20,12,70,10,30,0x11,50,CRank,1
-Poleaxe,0x430,0x2,IsWeapon,20,15,70,17,0,0x11,40,CRank,1
-Hammer,TheBreakerDesc,0x2,IsWeapon,20,12,60,18,0,0x11,50,CRank,2
-Devil Axe,0x432,0x2,IsWeapon,20,20,80,20,0,0x11,45,ERank,1
-Hand Axe,0x433,0x2,IsWeapon,20,6,70,12,0,0x12,15,DRank,1
-Master Axe,0x40d,0x2,IsWeapon|IsBrave,20,13,65,15,0,0x12,200,ARank,1
-Master Lance,0x40d,0x1,IsWeapon|IsBrave,20,12,70,14,0,0x12,200,ARank,1
-Shortbow,0x404,0x3,IsWeapon,20,5,85,6,0,0x22,40,ERank,1
-Greatbow,0x404,0x3,IsWeapon,20,15,65,15,0,0x22,50,CRank,1
-Iron Bow,0x43b,0x3,IsWeapon,40,7,80,7,0,0x22,10,ERank,1
-Steel Bow,0x43c,0x3,IsWeapon,30,10,70,10,0,0x22,24,DRank,1
-Silver Bow,0x43d,0x3,IsWeapon,20,13,75,8,0,0x22,80,BRank,1
-Master Bow,0x40d,0x3,IsWeapon|IsBrave,20,13,75,14,0,0x22,150,ARank,1
-Killer Bow,0x43f,0x3,IsWeapon,20,10,80,8,30,0x22,70,CRank,1
-Brave Bow,0x440,0x3,IsWeapon|Unsellable|IsBrave,40,13,85,12,10,0x22,250,ARank,1
-Bolganone,0x45a,0x5,IsWeapon|IsMagic,10,20,90,18,0,0x12,220,ARank,1
-Longbow,0x43b,0x3,IsWeapon,30,12,70,12,0,0x22,25,DRank,1
-Long Arch,0x443,0x3,IsWeapon|Uncounterable|BallisticianLock,10,15,85,20,0,0x3a,300,ERank,1
-Iron Arch,0x444,0x3,IsWeapon|Uncounterable|BallisticianLock,10,20,85,20,0,0x3f,400,DRank,1
-Killer Arch,0x445,0x3,IsWeapon|Uncounterable|BallisticianLock,10,12,85,20,20,0x3a,500,CRank,1
-Fire,0x458,0x5,IsWeapon|IsMagic,40,5,80,5,0,0x12,20,ERank,1
-Thunder,0x459,0x5,IsWeapon|IsMagic,30,7,75,7,0,0x12,30,DRank,1
-Elfire,0x45a,0x5,IsWeapon|IsMagic,25,11,75,9,0,0x12,40,CRank,1
-Bolting,0x45c,0x5,IsWeapon|IsMagic|Uncounterable,5,7,70,20,0,0x3a,600,ARank,1
-Thoron,0x45d,0x5,IsWeapon|IsMagic,20,18,80,13,20,0x12,200,ARank,1
-Wind,0x404,0x5,IsWeapon|IsMagic,30,6,90,6,0,0x12,40,DRank,1
-Tornado,0x404,0x5,IsWeapon|IsMagic,25,13,90,10,0,0x12,100,BRank,1
-Lightning,0x45f,0x6,IsWeapon|IsMagic,20,9,85,7,20,0x12,50,ERank,1
-Blizzard,BlizzardDesc,0x5,IsWeapon|IsMagic,5,4,80,20,0,0x3a,600,ARank,2
-Nosferatu,0x467,0x6,IsWeapon|IsMagic,20,12,75,12,0,0x12,100,BRank,1
-Purge,0x462,0x6,IsWeapon|IsMagic|Uncounterable,5,10,85,20,0,0x3a,600,ARank,1
-Aura,0x463,0x6,IsWeapon|IsMagic,20,20,90,14,0,0x12,250,ARank,1
-Again,AgainStaffDesc,0x4,IsStaff,3,0,100,0,0,0x10,1000,ARank,0
-Flux,0x465,0x7,IsWeapon|IsMagic,30,10,75,8,0,0x12,20,ERank,1
-Sigil ,SigilStaffDesc,0x4,IsStaff,5,0,100,8,0,0x10,140,CRank,3
-Jormungand,0x404,0x7,IsWeapon|IsMagic,20,14,70,11,0,0x12,50,CRank,1
-Fenrir,FenrirDesc,0x7,IsWeapon|IsMagic|Uncounterable,5,10,80,20,0,0x3a,600,ARank,1
-Hel,0x404,0x7,IsWeapon|IsMagic,20,15,80,16,0,0x12,200,ARank,1
-Meteor,MeteorDesc,0x5,IsWeapon|IsMagic,5,5,80,20,0,0x3a,500,ARank,1
-Heal,0x471,0x4,IsStaff,20,0,100,4,0,0x11,20,ERank,1
-Mend,0x472,0x4,IsStaff,15,0,100,6,0,0x11,50,DRank,2
-Maharaghi,MaharaghiDesc,0x0,IsWeapon|MaharaghiLock|Unsellable,30,8,90,14,20,0x11,10000,0,1
-Physic,0x474,0x4,IsStaff,5,0,100,8,0,0x10,250,CRank,3
-Fortify,0x475,0x4,IsStaff,8,0,100,10,0,0x10,500,BRank,5
-Restore,0x476,0x4,IsStaff,10,0,100,8,0,0x11,100,CRank,3
-Silence,0x477,0x4,IsStaff,3,0,80,10,0,0x10,500,BRank,4
-Sleep,0x478,0x4,IsStaff,3,0,75,8,0,0x10,1000,CRank,3
-Berserk,0x479,0x4,IsStaff,3,0,70,12,0,0x10,1000,ARank,4
-Warp,0x47a,0x4,IsStaff,5,0,100,12,0,0x11,1000,ARank,5
-Rescue,0x47b,0x4,IsStaff,3,0,100,10,0,0x10,600,BRank,4
-Torch,0x47c,0x4,IsStaff,10,0,100,6,0,0x10,100,DRank,2
-Hammerne,0x47d,0x4,IsStaff,3,0,100,12,0,0x11,600,ARank,5
-Unlock,BurglarStaffDesc,0x4,IsStaff,3,0,100,6,0,0x10,150,CRank,3
-Barrier,0x47f,0x4,IsStaff,5,0,100,8,0,0x11,150,CRank,3
-Rewarp,RewarpStaffDesc,0x4,IsStaff,5,0,100,12,0,0x10,150,ARank,5
-Angelic Robe,AngelicRobeDesc,0x9,Unsellable,1,0,10,0,0,0x11,8000,NoRank,0
-Energy Ring,EnergyRingDesc,0x9,Unsellable,1,0,10,0,0,0x11,2000,0,0
-Secret Book,SkillBookDesc,0x9,Unsellable,1,0,10,0,0,0x11,1000,0,0
-Speedwings,SpeedwingDesc,0x9,Unsellable,1,0,10,0,0,0x11,2000,0,0
-Goddess Icon,GoddessIconDesc,0x9,Unsellable,1,0,10,0,0,0x11,1000,0,0
-Dragonshield,DragonshieldDesc,0x9,Unsellable,1,0,10,0,0,0x11,2000,0,0
-Talisman,TalismanDesc,0x9,Unsellable,1,0,10,0,0,0x11,1000,0,0
-Swiftsoles,BootsDesc,0x9,Unsellable,1,0,10,0,0,0x11,5000,0,0
-Body Ring,BodyRingDesc,0x9,Unsellable,1,0,10,0,0,0x11,2000,NoRank,0
-Slim Bow,0x48c,0x3,IsWeapon,30,4,100,2,0,0x22,15,ERank,1
-Devil's Dagger,DevilDaggerDesc,0x0,IsWeapon|NegateDef|DevilDaggerLock|Unsellable,30,10,100,5,20,0x12,10000,0,1
-Ballad Of War,BalladOfWarDesc,0x6,IsWeapon|IsMagic|Unsellable|BalladOfWarLock,30,2,90,2,10,0x11,20,NoRank,1
-The Breaker,TheBreakerDesc,0x1,IsWeapon|Unsellable|BreakerLock,25,13,70,11,0,0x11,0,0,1
-Muramasa,0x404,0x0,IsWeapon|Unsellable|MuramasaLock,60,8,75,9,35,0x11,0,0,1
-Chest Key,0x491,0x9,0x0,1,0,10,0,0,0x11,300,0,0
-Door Key,0x492,0x9,0x0,1,0,10,0,0,0x11,50,0,0
-Lockpick,0x493,0x9,0x0,15,0,10,0,0,0x11,80,0,0
-Vulnerary,VulneraryDesc,0x9,0x0,3,0,10,0,0,0x11,100,0,0
-Elixir,0x495,0x9,0x0,3,0,10,0,0,0x11,500,0,0
-Pure Water,0x496,0x9,0x0,3,0,10,0,0,0x11,300,0,0
-Spirit Dust,SpiritDustDesc,0x9,0x0,1,0,0,0,0,0x11,2000,0,0
-Torch,0x498,0x9,0x0,5,0,10,0,0,0x11,100,0,0
-Thief,StealStaffDesc,0x4,IsStaff,3,0,100,12,0,0x10,1500,ARank,5
-Member Card,0x49a,0x9,0x0,1,0,10,0,0,0x11,6000,0,0
-Silver Card,0x49b,0x9,0x0,1,0,10,0,0,0x11,4000,0,0
-White Gem,0x49e,0x9,0x0,1,0,10,0,0,0x11,10000,NoRank,0
-Blue Gem,0x49f,0x9,0x0,1,0,10,0,0,0x11,5000,NoRank,0
-Red Gem,0x4a0,0x9,0x0,1,0,10,0,0,0x11,2000,NoRank,0
-Kaiserschwert_Fake,KaiserschwertFakeDesc,0x0,IsWeapon|Unsellable|KaiserschwertLock|Indestructible,255,9,90,7,0,0x11,160,ERank,1
-Kaiserschwert,KaiserschwertDesc,0x0,IsWeapon|Unsellable|KaiserschwertLock|Indestructible,255,9,90,7,0,0x11,160,NoRank,1
-Chest Key (5),0x491,0x9,0x0,5,0,10,0,0,0x11,300,0,0
-Mine (DUMMY),0x4ab,0x9,0x0,1,0,10,0,0,0x11,500,0,0
-Light Rune,SigilStaffDesc,0x9,0x0,3,0,0,0,0,0x11,400,NoRank,0
-Hoplon Guard,0x4a4,0x9,Indestructible|NegateCriticals,0,0,10,0,0,0x11,5000,0,0
-Filla's Might (DUMMY),0x4ab,0xc,CannotRepair,15,0,10,0,0,0x11,0,0,0
-Ninis's Grace (DUMMY),0x4ab,0xc,CannotRepair,15,0,10,0,0,0x11,0,0,0
-Thor's Ire (DUMMY),0x4ab,0xc,CannotRepair,15,0,10,0,0,0x11,0,0,0
-Set's Litany (DUMMY),0x4ab,0xc,CannotRepair,15,0,10,0,0,0x11,0,0,0
-Stone Sword,0x454,0x0,IsWeapon|MagicDamage,20,9,80,9,0,0x12,50,BRank,1
-Ice Sword,0x455,0x0,IsWeapon|MagicDamage,20,9,80,9,0,0x12,50,BRank,1
-Argilabrys,0x456,0x2,IsWeapon|Unsellable|IsBrave|MagicDamage|ArgilabrysLock,40,5,100,8,0,0x11,0,NoRank,1
-Tempered Ring,TemperedDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-CivilianProof,CivilianProofDesc,0x9,Indestructible|Unsellable|PassiveBoosts,1,0,10,40,0,0x11,0,0,0
-Battle Axe,0x439,0x2,IsWeapon,20,15,70,16,0,0x11,50,BRank,1
-Lumen,LumenDesc,0x6,IsWeapon|IsMagic|Unsellable|LumenLock,30,8,90,6,10,0x12,0,0,1
-Knight Proof,0x4a5,0x9,0x0,1,0,10,0,0,0x11,1000,NoRank,0
-Wind Bow,WindBowDesc,0x3,IsWeapon|MagicDamage,20,7,70,7,0,0x22,100,BRank,1
-Fire Drive,FireDriveDesc,0x2,IsWeapon|MagicDamage,25,14,70,15,0,0x11,75,BRank,1
-Sharp Claw,0x44d,0x0,0x0,1,0,10,0,0,0x11,10000,0,0
-Slim Arch,0x443,0x3,IsWeapon|Uncounterable|BallisticianLock,10,10,90,20,0,0x37,200,ERank,1
-Stinger,StingerDesc,0x3,IsWeapon|Unsellable|StingerLock,40,3,85,4,30,0x22,10000,NoRank,1
-MysticLance,LunarAxeDesc,0x1,IsWeapon|MagicDamage,20,14,70,9,0,0x11,100,BRank,1
-LunarAxe,LunarAxeDesc,0x2,IsWeapon|MagicDamage,25,11,80,12,0,0x11,70,CRank,1
-Wretched Air,0x447,0xb,IsWeapon|Indestructible|MonsterWeapon|NegateDef,0,10,110,0,0,0x12,0,181,0
-Stormbrand,StormbrandDesc,0x0,IsWeapon|Unsellable|IsBrave|StormbrandLock,30,15,70,12,0,0x11,10000,ERank,1
-Darkbrand,DarkbrandDesc,0x0,IsWeapon|Unsellable|MagicDamage|DarkbrandLock,45,12,70,10,0,0x12,10000,ERank,1
-HoundingBow,HoundingBowDesc,0x3,IsWeapon|Unsellable|HoundingBowLock,30,7,75,7,0,0x22,50,NoRank,1
-Daybreak,DaybreakDesc,0x3,IsWeapon|Unsellable|Indestructible,30,18,100,9,0,0x23,10000,ARank,1
-Heavy Lance,TheBreakerDesc,0x1,IsWeapon,16,9,80,14,0,0x11,75,51,1
-Holyspear,HolyspearDesc,0x1,IsWeapon,255,12,100,10,0,0x13,10000,ARank,1
-Crusher,CrusherDesc,0x2,IsWeapon|MagicDamage,20,20,75,18,0,0x11,1000,ARank,1
-Argymos Crest,ArgymosCrestDesc,0x9,Unsellable,1,0,10,0,0,0x11,0,0,0
-Solar Brace,0x4a9,0x9,Unsellable,1,0,10,0,0,0x11,0,0,0
-Crown's Pyre,CrownPyreDesc,0x5,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,255,8,90,7,0,0x12,0,0,0
-Stormbreaker,StormbreakerDesc,0x5,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,255,13,65,13,10,0x23,0,0,0
-Absolute Zero,AbsoluteZeroDesc,0x5,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,255,2,85,9,0,0x12,0,0,0
-Eye of Dawn,DawnEyeDesc,0x6,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,255,4,110,10,0,0x11,0,0,0
-Faith's Wind,FaithWindDesc,0x7,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,255,6,75,5,5,0x12,0,0,0
-Dancing Blade,DancingBladeDesc,0x0,IsWeapon|Unsellable|MagicDamage|DancingBladeLock,20,0,80,3,0,0x10,1,0,1
-Bone Club,BoneClubDesc,0x2,IsWeapon|BoneClubLock|Unsellable,40,4,40,17,20,0x12,5000,0,1
-Maharaghi,MaharaghiDesc,0x0,IsWeapon|MaharaghiLock|Unsellable,30,8,90,14,20,0x11,10000,0,1
-Taodao,TaodaoDesc,0x3,IsWeapon|Unsellable|TaodaoLock|IsBrave,40,7,90,8,10,0x23,100,0,1
-Rune Arrow,RuneArrowDesc,0x9,Unsellable,40,0,100,0,0,0x11,100,0,0
-Black Anklet,BlackAnkletDesc,0x9,Unsellable|Indestructible,1,0,0,0,0,0x11,100,0,0
-Dance,0x481,0xc,0x0,0,0,10,0,0,0x11,0,0,0
-Nightmare,0x44c,0x4,IsStaff,1,0,80,8,0,0x13,0,0,0
-Demon Stone (DUMMY),0x449,0xb,IsWeapon|Indestructible|MonsterWeapon,0,10,75,0,0,0x11,0,0,0
-Boltbrand,BoltbrandDesc,0x0,IsWeapon|MagicDamage|Unsellable|DarkbrandLock|IsBrave,30,12,80,12,0,0x12,0,NoRank,0
-Dawn Pendant,DawnPendantDesc,0x9,Unsellable|Indestructible,255,0,0,0,0,0x11,0,0,0
-Dragonstone,DragonstoneDesc,0xb,IsWeapon|Unsellable|IsMagic|Indestructible|DragonstoneLock,255,12,90,0,0,0x11,0,NoRank,0
-Unmoor,UnmoorDesc,0x7,IsWeapon|IsMagic|Indestructible,1,15,100,3,0,0x12,6000,ARank,0
-Impaler,ImpalerDesc,0x1,IsWeapon|NegateDef|Unsellable|ImpalerLock,40,15,100,16,0,0x11,10000,0,1
-RagnarokVantage,RagnarokVantageDesc,0x7,IsWeapon|Indestructible|IsMagic,255,20,90,24,0,0x12,100,ARank,1
-Zykhra Scroll,ZykhraScrollDesc,0x9,Unsellable|NegateCriticals|Indestructible,255,0,0,0,0,0x11,10000,0,0
-Amser Scroll,AmserScrollDesc,0x9,Unsellable|NegateCriticals|Indestructible,255,0,0,0,0,0x11,10000,0,0
-DUMMY,0x451,0x0,0x0,1,0,10,0,0,0x11,10000,0,0
-DUMMY,0x452,0x0,0x0,1,0,10,0,0,0x11,10000,0,0
-Firestone,FirestoneDesc,0xb,IsWeapon|Unsellable|Indestructible|DragonstoneLock,255,6,90,0,0,0x12,10000,0,0
-Marksman Bow,MarksmanBowDesc,0x3,IsWeapon,30,7,70,11,0,0x23,33,CRank,1
-Claymore,ClaymoreDesc,0x0,IsWeapon,30,13,80,13,0,0x11,46,BRank,1
-Stone,0x46c,0x7,IsWeapon|IsMagic,5,0,75,8,0,0x13,0,0,5
-SlimAxe,SlimAxeDesc,0x2,IsWeapon,20,6,90,5,0,0x11,10,ERank,1
-Juna Fruit,0x4aa,0x9,0x0,1,0,10,0,0,0x11,0,0,0
-150G,0x4a1,0x9,0x0,1,0,10,0,0,0x11,150,0,0
-200G,0x4a1,0x9,0x0,1,0,10,0,0,0x11,200,0,0
-Black Gem,0x49d,0x9,0x0,1,0,10,0,0,0x11,20000,NoRank,0
-Gold Gem,0x49c,0x9,0x0,1,0,10,0,0,0x11,0,NoRank,1
-Skill Scroll,0xFFFF,0x9,0x0,1,0,10,0,0,0x11,1000,NoRank,0
-0xbd GaleBow,GaleBowDesc,0x3,IsWeapon|MagicDamage,15,6,75,10,0,0x23,50,CRank,1
-0xbe GrowthScroll,GrowthScrollDesc,0x9,Unsellable|NegateCriticals|Indestructible,0xFF,0,0,0,0,0x00,0,0,0
-0xbf Dullahan,DullahanDesc,0x0,IsWeapon|Unsellable|DullahanLock,30,10,50,14,0,0x11,0,ERank,1
-0xc0 Burn,BurnDesc,0x5,IsWeapon|IsMagic,15,6,75,6,0,0x12,150,CRank,1
-0xc1 CounterBow,CounterBowDesc,0x3,IsWeapon,20,7,75,8,0,0x22,95,BRank,1
-0xc2 Conversion,ConversionDesc,0x7,IsWeapon|IsMagic,15,8,80,5,0,0x12,200,BRank,1
-0xc3 RitualKnife,RitualKnifeDesc,0x0,IsWeapon,60,0,90,1,5,0x11,20,BRank,1
-0xc4 Brenthunder,BrenthunderDesc,0x5,IsWeapon|IsMagic|Unsellable|IsBrave,30,8,85,12,0,0x12,400,ARank,1
-0xc5 SpellMirror,SpellMirrorDesc,0x6,IsWeapon|IsMagic,20,8,80,4,0,0x12,100,BRank,1
-0xc6 AlairsGale,AlairsGaleDesc,0x5,IsWeapon|IsMagic|IsBrave,30,2,90,2,10,0x22,60,CRank,1
-0xc7 SisterRing,SisterRingDesc,0x9,Indestructible,1,0,10,20,0,0x11,2000,0,1
-0xc8 Hurlbat,0x404,0x2,IsWeapon,30,5,85,5,0,0x12,50,DRank,1
-0xc9 Arachnid,ArachnidDesc,0x7,IsWeapon|IsMagic|IsBrave,35,3,95,12,15,0x11,55,DRank,1
-0xca Yor's Yari,YorsYariDesc,0x1,IsWeapon|NegateDef,20,3,100,8,0,0x12,90,DRank,1
-0xcb Break Arc,DaShootaDesc,0x3,IsWeapon,20,12,100,20,0,0x22,100,CRank,1
-0xcc Big Iron,0x404,0x0,IsWeapon,6,14,55,14,42,0x11,50,DRank,1
-0xcd Axle,Axle1Desc,0x2,IsWeapon|AxleLock|Unsellable,25,11,100,10,0,0x11,50,NoRank,1
-0xce Axle,Axle2Desc,0x2,IsWeapon|AxleLock|Unsellable,25,6,80,15,0,0x13,50,NoRank,1
-0xcf Miaodao,MiaodaoDesc,0x0,IsWeapon|IsBrave,20,11,70,6,20,0x11,100,CRank,1
-0xd0 King Shield,KingShieldDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-0xd1 Edged Arrow,EdgedArrowDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-0xd2 Red Scarf,RedScarfDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-0xd3 Saunion,SaunionDesc,0x1,IsWeapon,40,9,80,12,0,0x23,50,CRank,1
-0xd4 Trained Edge,0x404,0x0,IsWeapon,25,9,85,8,0,0x11,30,CRank,1
-0xd5 Trained Pike,0x404,0x1,IsWeapon,25,10,75,9,0,0x11,30,CRank,1
-0xd6 Trained Axe,0x404,0x2,IsWeapon,25,11,70,10,0,0x11,30,CRank,1
-0xd7 Trained Arc,0x404,0x3,IsWeapon,25,9,80,8,0,0x22,30,CRank,1
-0xd8 Aqua Brand,AquaBrandDesc,0x0,IsWeapon|IsMagic|VargaLock|Unsellable,30,7,90,5,0,0x11,40,NoRank,1
-0xd9 Charge,ChargeLanceDesc,0x1,IsWeapon|EmilLock|Unsellable,30,8,60,6,0,0x11,40,NoRank,1
-0xda Poincare,PoincareDesc,0x3,IsWeapon|RashidLock|Unsellable,25,8,75,8,0,0x23,40,NoRank,1
-0xdb Sink,SinkDesc,0x7,IsWeapon|IsMagic,20,8,70,6,0,0x12,40,CRank,1
-0xdc WoodlandsHuke,WoodlandsHukeDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-0xdd CaptainsHelm,CaptainsHelmDesc,0x9,Indestructible|Unsellable,1,0,0,0,0,0x11,0,NoRank,0
-0xde Fealty Bow,FealtyBowDesc,0x3,IsWeapon,25,7,85,6,0,0x22,25,DRank,1
-0xdf Lamfada,LamfadaDesc,0x1,IsWeapon,25,10,65,12,0,0x23,25,CRank,1
-0xe0 Bold Blade,BoldWeaponDesc,0x0,IsWeapon,25,14,105,10,0,0x11,25,BRank,1
-0xe1 Bold Pike,BoldWeaponDesc,0x1,IsWeapon,25,15,100,12,0,0x11,25,BRank,1
-0xe2 Bold Cleaver,BoldWeaponDesc,0x2,IsWeapon,25,16,95,14,0,0x11,25,BRank,1
-0xe3 Luna,LunaDesc,0x7,IsWeapon|NegateDef,30,0,100,8,0,0x12,25,DRank,1
-0xe4 Earth Greataxe,EarthGreataxeDesc,0x2,IsWeapon|Unsellable|IsBrave,20,10,70,25,0,0x11,25,ARank,0
-0xe5 Runespear,RunespearDesc,0x1,IsWeapon|MagicDamage|RunespearLock,30,12,75,16,0,0x12,25,NoRank,0
-0xE6 FangAndClaw,FangAndClawDesc,0x0,IsWeapon|IsBrave|TarajiLock|Indestructible|Unsellable,1,12,95,12,0,0x11,0,NoRank,1
-0xE7 Starcutter,StarcutterDesc,0x0,IsWeapon|MagicDamage|CatrinLock|Unsellable,50,6,85,9,15,0x11,0,NoRank,5
-0xE8 FullHelm,FullHelmDesc,0x9,Unsellable,20,0,0,0,0,0x11,0,NoRank,0
-0xe9 Swordslayer,SwordslayerDesc,0x2,IsWeapon|ReverseTriangle,20,13,75,13,0,0x11,95,BRank,2
-0xeA Shieldbearer,ShieldbearerDesc,0x1,IsWeapon,10,0,60,14,255,0x11,210,BRank,1
-0xEB Malkhut,MalkhutDesc,0x6,IsWeapon|IsMagic,18,9,80,11,40,0x12,65,CRank,1
-0xEC Sagittae,SagittaeDesc,0x5,IsWeapon|IsMagic,16,6,95,13,255,0x23,80,CRank,2
-0xED Kukri,KukriDesc,0x0,IsWeapon,22,10,80,10,50,0x11,70,BRank,1
-0xEE Slam Brace,SlamBraceDesc,0x9,Unsellable|Indestructible,1,0,0,0,0,0x11,0,NoRank,0
-0xEF Zweihander,ZweihanderDesc,0x0,IsWeapon,30,18,60,17,0,0x11,70,ARank,2
-0xF0 DeadeyeBow,DeadeyeBowDesc,0x3,IsWeapon,25,13,60,15,0,0x23,100,ARank,2
-0xF1 MoonlightBlade,MoonlightBladeDesc,0x0,IsWeapon|MagicDamage|Unsellable,40,13,75,14,0,0x12,0,ARank,2
-0xF2 Glaive,GlaiveDesc,0x1,IsWeapon,30,18,55,18,0,0x11,68,ARank,2
-0xF3 Predestination,PredestinationDesc,0x6,IsWeapon|IsMagic|Indestructible,1,16,95,8,0,0x13,1,ARank,1
-0xF4 TitansFang,TitansFangDesc,0x1,IsWeapon|Indestructible,1,17,75,12,0,0x11,0,ARank,0
-0xF5 Svarog,SvarogDesc,0x0,IsWeapon|MagicDamage|Indestructible,1,14,85,10,0,0x11,0,ARank,0
-0xF6 Worldcleaver,WorldcleaverDesc,0x2,IsWeapon|Indestructible,1,20,60,18,0,0x11,0,ARank,0
-0xF7 Indra,IndraDesc,0x3,IsWeapon|BarodLock|Indestructible|Unsellable,1,14,95,12,0,0x22,0,0,0
-0xF8 Agni,AgniDesc,0x2,IsWeapon|BarodLock|Indestructible|Unsellable,1,16,75,14,15,0x11,0,0,0
-0xF9 SmolderingSeal,SmolderingSealDesc,0x9,Unsellable|Indestructible,1,0,0,0,0,0x11,0,0,0
-0xFA Apotheosis,ApotheosisDesc,0x5,IsWeapon|Unsellable|Indestructible|IsMagic|ApsisLock,1,14,85,10,10,0x13,0,NoRank,0
-0xFB ByelensBell,ByelensBellDesc,0x9,Unsellable|Indestructible,1,0,0,0,0,0x11,0,0,0
-0xFC RagnarokHawkeye,RagnarokHawkeyeDesc,0x7,IsWeapon|IsMagic|Indestructible,255,20,90,24,0,0x12,100,ARank,1
-0xFD RagnarokPass,RagnarokPassDesc,0x7,IsWeapon|IsMagic|Indestructible,255,20,90,24,0,0x12,100,ARank,1
-0xFE RagnarokFortune,RagnarokFortuneDesc,0x7,IsWeapon|IsMagic|Indestructible,255,20,90,24,0,0x12,100,ARank,1
-DUMMY,0x404,0x0,IsWeapon,1,0,0,0,0,0x11,0,0,0
+Name,Display Name,Description,Type,Weapon Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Weapon Level,WEXP
+IronSword,Iron Sword,None,Weapon,Sword,40,7,80,6,0,1,10,E,1
+SlimSword,Slim Sword,None,Weapon,Sword,30,3,100,2,0,1,10,E,1
+SteelSword,Steel Sword,None,Weapon,Sword,30,10,70,10,0,1,20,D,1
+SilverSword,Silver Sword,None,Weapon,Sword,20,13,75,8,0,1,50,B,1
+IronBlade,Iron Blade,None,Weapon,Sword,30,14,60,13,0,1,30,C,1
+Longsword,Longsword,None,Weapon,Sword,30,12,70,12,0,1,25,D,1
+Greatsword,Greatsword,None,Weapon,Sword,20,16,65,14,0,1,50,B,1
+FlameSword,Flame Sword,Casts magical flame. Mag +5.,Weapon,Sword,20,9,80,9,0,1-2,100,B,1
+Rapier,Rapier,Effective against cavalry and armors.,Weapon,Sword,20,4,100,3,10,1,50,C,1
+ShortSword,Short Sword,None,Weapon,Sword,40,6,90,8,0,1,10,E,1
+BraveSword,Brave Sword,Doubles strikes dealt.,Weapon,Sword,40,13,85,12,0,1,60,A,1
+KingSword,King Sword,Doubles strikes dealt. Grants +10 Hit/Avoid to allies  within 3 tiles while equipped.,Weapon,Sword,60,10,80,10,10,1,50,B,1
+KillingEdge,Killing Edge,Improves critical hit rate.,Weapon,Sword,30,9,80,8,30,1,60,C,1
+Armorslayer,Armorslayer,Effective against armors.,Weapon,Sword,30,10,70,12,0,1,50,B,1
+ParagonSword,Paragon Sword,Def +5. Doubles  combat experience gained while equipped.,Weapon,Sword,40,9,75,9,0,1,150,E,1
+ThunderSword,Thunder Sword,Casts magical thunder. Skl +5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
+WindSword,Wind Sword,Casts magical wind. Spd +5. Effective against fliers.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
+SleepSword,Sleep Sword,Puts enemies to sleep for one turn if it hits.,Weapon,Sword,10,8,70,20,0,1,200,A,1
+MasterSword,Master Sword,Doubles strikes dealt.,Weapon,Sword,20,14,75,13,0,1,80,A,1
+IronLance,Iron Lance,None,Weapon,Lance,40,8,75,7,0,1,10,E,1
+SlimLance,Slim Lance,None,Weapon,Lance,20,4,100,6,0,1,10,E,1
+SteelLance,Steel Lance,None,Weapon,Lance,30,11,65,11,0,1,20,D,1
+SilverLance,Silver Lance,None,Weapon,Lance,20,14,70,9,0,1,60,B,1
+ShortLance,Short Lance,None,Weapon,Lance,20,7,85,9,0,1,10,E,1
+BraveLance,Brave Lance,Doubles strikes dealt.,Weapon,Lance,40,14,80,13,10,1,250,A,1
+KillerLance,Killer Lance,Improves critical hit rate.,Weapon,Lance,20,10,75,9,30,1,60,C,1
+Horseslayer,Horseslayer,Effective against cavalry.,Weapon,Lance,20,14,70,13,0,1,100,B,1
+Javelin,Javelin,Ranged weapon.,Weapon,Lance,20,6,75,12,0,1-2,20,D,1
+LongLance,Long Lance,None,Weapon,Lance,30,13,65,13,0,1,25,D,1
+GreatLance,Great Lance,None,Weapon,Lance,20,17,60,15,0,1,50,C,1
+IronAxe,Iron Axe,None,Weapon,Axe,30,9,70,8,0,1,10,E,1
+SteelAxe,Steel Axe,None,Weapon,Axe,25,12,60,12,0,1,20,D,1
+SilverAxe,Silver Axe,None,Weapon,Axe,20,15,65,10,0,1,60,B,1
+BerserkSword,Berserk Sword,Drives enemies mad for one turn if it hits.,Weapon,Sword,10,8,65,20,0,1,300,A,1
+BraveAxe,Brave Axe,Doubles strikes dealt.,Weapon,Axe,40,15,75,14,10,1,250,A,1
+KillerAxe,Killer Axe,Improves critical hit rate.,Weapon,Axe,20,12,70,10,30,1,50,C,1
+Poleaxe,Poleaxe,Effective against cavalry.,Weapon,Axe,20,15,70,17,0,1,40,C,1
+Hammer,Hammer,Effective against armors.,Weapon,Axe,20,12,60,18,0,1,50,C,2
+DevilAxe,Devil Axe,21 - Luck% chance of backfire.,Weapon,Axe,20,20,80,20,0,1,45,E,1
+HandAxe,Hand Axe,Ranged weapon.,Weapon,Axe,20,6,70,12,0,1-2,15,D,1
+MasterAxe,Master Axe,Doubles strikes  dealt. Ranged weapon.,Weapon,Axe,20,13,65,15,0,1-2,200,A,1
+MasterLance,Master Lance,Doubles strikes  dealt. Ranged weapon.,Weapon,Lance,20,12,70,14,0,1-2,200,A,1
+Shortbow,Shortbow,Effective against fliers.,Weapon,Bow,20,5,85,6,0,2,40,E,1
+Greatbow,Greatbow,Effective against fliers.,Weapon,Bow,20,15,65,15,0,2,50,C,1
+IronBow,Iron Bow,Effective against fliers.,Weapon,Bow,40,7,80,7,0,2,10,E,1
+SteelBow,Steel Bow,Effective against fliers.,Weapon,Bow,30,10,70,10,0,2,24,D,1
+SilverBow,Silver Bow,Effective against fliers.,Weapon,Bow,20,13,75,8,0,2,80,B,1
+MasterBow,Master Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,20,13,75,14,0,2,150,A,1
+KillerBow,Killer Bow,Improves critical hit rate. Effective against fliers.,Weapon,Bow,20,10,80,8,30,2,70,C,1
+BraveBow,Brave Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,40,13,85,12,10,2,250,A,1
+Bolganone,Bolganone,None,Weapon,Anima,10,20,90,18,0,1-2,220,A,1
+Longbow,Longbow,Effective against fliers.,Weapon,Bow,30,12,70,12,0,2,25,D,1
+LongArch,Long Arch,Ballista only. Long-range weapon. Effective against fliers.,Weapon,Bow,10,15,85,20,0,3-10,300,E,1
+IronArch,Iron Arch,Ballista only. Super long-range weapon. Effective against fliers.,Weapon,Bow,10,20,85,20,0,3-15,400,D,1
+KillerArch,Killer Arch,Ballista only. Long-range weapon that improves critical hit rate. Effective against fliers.,Weapon,Bow,10,12,85,20,20,3-10,500,C,1
+Fire,Fire,None,Weapon,Anima,40,5,80,5,0,1-2,20,E,1
+Thunder,Thunder,None,Weapon,Anima,30,7,75,7,0,1-2,30,D,1
+Elfire,Elfire,None,Weapon,Anima,25,11,75,9,0,1-2,40,C,1
+Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,3-10,600,A,1
+Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,1-2,200,A,1
+Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,1-2,40,D,1
+Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,1-2,100,B,1
+Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,1-2,50,E,1
+Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,3-10,600,A,2
+Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,1-2,100,B,1
+Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,3-10,600,A,1
+Aura,Aura,None,Weapon,Light,20,20,90,14,0,1-2,250,A,1
+Again,Again,Allow an ally to move again.,Staff,Staff,3,0,100,0,0,1-Mag/2,1000,A,0
+Flux,Flux,None,Weapon,Dark,30,10,75,8,0,1-2,20,E,1
+Sigil,Sigil,Creates a light rune that blocks off paths.,Staff,Staff,5,0,100,8,0,1-Mag/2,140,C,3
+Jormungand,Jormungand,None,Weapon,Dark,20,14,70,11,0,1-2,50,C,1
+Fenrir,Fenrir,Casts long-range shadows.,Weapon,Dark,5,10,80,20,0,3-10,600,A,1
+Hel,Hel,None,Weapon,Dark,20,15,80,16,0,1-2,200,A,1
+Meteor,Meteor,Casts long-range flames.,Weapon,Dark,5,5,80,20,0,3-10,500,A,1
+Heal,Heal,Restores HP to an adjacent ally.,Staff,Staff,20,0,100,4,0,1,20,E,1
+Mend,Mend,Restores a large amount of HP to an adjacent ally.,Staff,Staff,15,0,100,6,0,1,50,D,2
+Maharaghi,Maharaghi,Zhara only. Can be used to restore all HP to an adjacent ally.,Weapon,Sword,30,8,90,14,20,1,10000,Prf,1
+Physic,Physic,Restores HP to an ally at a distance.,Staff,Staff,5,0,100,8,0,1-Mag/2,250,C,3
+Fortify,Fortify,Restores HP to all allies in range.,Staff,Staff,8,0,100,10,0,1-Mag/2,500,B,5
+Restore,Restore,Restores ally to normal condition.,Staff,Staff,10,0,100,8,0,1,100,C,3
+Silence,Silence,Prevents target from using magic for a turn.,Staff,Staff,3,0,80,10,0,1-Mag/2,500,B,4
+Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2,1000,C,3
+Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2,1000,A,4
+Warp,Warp,Teleports adjacent ally to a distance.,Staff,Staff,5,0,100,12,0,1,1000,A,5
+Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2,600,B,4
+TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2,100,D,2
+Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,3,0,100,12,0,1,600,A,5
+Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2,150,C,3
+Barrier,Barrier,"Increases resistance of adjacent ally, decays each turn.",Staff,Staff,5,0,100,8,0,1,150,C,3
+Rewarp,Rewarp,Teleports caster to another area.,Staff,Staff,5,0,100,12,0,1-Mag/2,150,A,5
+AngelicRobe,Angelic Robe,Increases HP by 3 points when used.,Item,,1,0,10,0,0,1,8000,NoRank,0
+EnergyRing,Energy Ring,Increases Strength by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
+SecretBook,Secret Book,Increases Skill by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
+Speedwings,Speedwings,Increases Speed by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
+GoddessIcon,Goddess Icon,Increases Luck by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
+Dragonshield,Dragonshield,Increases Defense by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
+Talisman,Talisman,Increases Resistance by 2 points when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
+Swiftsoles,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,NoRank,0
+BodyRing,Body Ring,Increases Build by 1 point when used.,Item,,1,0,10,0,0,1,2000,NoRank,0
+SlimBow,Slim Bow,A lightweight bow. Effective against fliers.,Weapon,,30,4,100,2,0,2,15,E,1
+DevilsDagger,Devil's Dagger,Mish only. Ignores user's Str and enemy's Def. 21-Luck% chance of backfire.,Weapon,Bow,30,10,100,5,20,1-2,10000,Prf,1
+BalladOfWar,Ballad Of War,Cadenza only. +10 Hit/Avoid to allies within 3 tiles.,Weapon,Sword,30,2,90,2,10,1,20,Prf,1
+TheBreaker,The Breaker,Ellerey only. Effective against armors.,Weapon,Anima,25,13,70,11,0,1,0,Prf,1
+Muramasa,Muramasa,Carl only. Increases critical hit rate.,Weapon,Lance,60,8,75,9,35,1,0,Prf,1
+ChestKey,Chest Key,Opens chests.,Item,Sword,1,0,10,0,0,1,300,NoRank,0
+DoorKey,Door Key,Opens doors.,Item,,1,0,10,0,0,1,50,NoRank,0
+Vulnerary,Vulnerary,Heals user for 15 HP when used.,Item,,3,0,10,0,0,1,100,NoRank,0
+Elixir,Elixir,Heals user for all HP when used.,Item,,3,0,10,0,0,1,500,NoRank,0
+PureWater,Pure Water,"Grants +7 Res when used, which decays each turn.",Item,,3,0,10,0,0,1,300,NoRank,0
+SpiritDust,Spirit Dust,Increases Mag by 1 point when used.,Item,,1,0,0,0,0,1,2000,NoRank,0
+Torch,Torch,"Grants increased fog vision to unit, which decays each turn.",Item,,5,0,10,0,0,1,100,NoRank,0
+Thief,Thief,Can steal an item from target if user's Mag > target's Res.,Staff,Staff,3,0,100,12,0,1-Mag/2,1500,A,5
+MemberCard,Member Card,Grants access to secret shops while in inventory.,Item,,1,0,10,0,0,1,6000,NoRank,0
+SilverCard,Silver Card,Halves price at all shops while in inventory.,Item,,1,0,10,0,0,1,4000,NoRank,0
+WhiteGem,White Gem,"A valuable gemstone that sells for 5,000 gold.",Item,,1,0,10,0,0,1,10000,NoRank,0
+BlueGem,Blue Gem,"A rare gemstone that sells for 2,000 gold.",Item,,1,0,10,0,0,1,5000,NoRank,0
+RedGem,Red Gem,"An uncommon gemstone that sells for 1,000 gold.",Item,,1,0,10,0,0,1,2000,NoRank,0
+Kaiserschwert,Kaiserschwert,Loewe only. Follow-up attacks strike consecutively.,Weapon,Sword,255,9,90,7,0,1,160,Prf,1
+LightRune,Light Rune,Use to create a light rune that blocks off paths.,Item,,3,0,0,0,0,1,400,NoRank,0
+HoplonGuard,Hoplon Guard,A device that negates enemy critical attacks.,Item,,0,0,10,0,0,1,5000,NoRank,0
+StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
+IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,1-2,50,B,1
+Argilabrys,Argilabrys,Cleo only. Magic weapon. Brave.,Weapon,Axe,40,5,100,8,0,1,0,Prf,1
+TemperedRing,Tempered Ring,Restores 4 HP after combat while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
+CivilianProof,CivilianProof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,NoRank,0
+BattleAxe,Battle Axe,"Strong, but difficult to wield.",Weapon,Axe,20,15,70,16,0,1,50,B,1
+Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,1-2,0,Prf,1
+KnightProof,Knight Proof,Can be used to promote units Lv. 10 and up.,Item,,1,0,10,0,0,1,1000,NoRank,0
+WindBow,Wind Bow,Magic weapon. +5 Speed. Effective against fliers.,Weapon,Bow,20,7,70,7,0,2,100,B,1
+FireDrive,Fire Drive,Magic weapon.,Weapon,Axe,25,14,70,15,0,1,75,B,1
+SlimArch,Slim Arch,Ballista only. Mid-long-range weapon. Effective against fliers.,Weapon,Bow,10,10,90,20,0,3-7,200,E,1
+Stinger,Stinger,Hornet only. +5 Speed. Effective against fliers.,Weapon,Bow,40,3,85,4,30,2,10000,NoRank,1
+MysticLance,Mystic Lance,Magic weapon.,Weapon,Lance,20,14,70,9,0,1,100,B,1
+LunarAxe,Lunar Axe,Magic weapon.,Weapon,Axe,25,11,80,12,0,1,70,C,1
+Stormbrand,Stormbrand,Iskra only. Brave.,Weapon,Sword,30,15,70,12,0,1,10000,Prf,1
+Darkbrand,Darkbrand,Tiberius only. Magic weapon. Can be used to increase Res temporarily.,Weapon,Sword,45,12,70,10,0,1-2,10000,Prf,1
+HoundingBow,Hounding Bow,Darby only. Effective against cavalry.,Weapon,Bow,30,7,75,7,0,2,50,Prf,1
+Daybreak,Daybreak,The night sky will not hide you. Effective against fliers.,Weapon,Bow,30,18,100,9,0,2-3,10000,A,1
+Heavy Lance,Heavy Lance,Effective against armors.,Weapon,Lance,16,9,80,14,0,1,75,D,1
+Holyspear,Holyspear,Cannot be stolen. +5 Def/Res.,Weapon,Lance,255,12,100,10,0,1-3,10000,A,1
+Crusher,Crusher,A mighty magic axe gifted by Mihail.,Weapon,Axe,20,20,75,18,0,1,1000,A,1
+ArgymosCrest,Argymos Crest,Allows Cleo to promote.,Item,,1,0,10,0,0,1,0,NoRank,0
+CrownsPyre,Crown's Pyre,Apsis only. Ignores 50% of enemy's Res. Adds 25% of enemy's current HP to damage dealt.,Weapon,Anima,255,8,90,7,0,1-2,0,Prf,0
+Stormbreaker,Stormbreaker,"Apsis only. Adds 15 Hit/Crit if at max range, and +30 if also moved full move.",Weapon,Anima,255,13,65,13,10,2-3,0,Prf,0
+AbsoluteZero,Absolute Zero,"Apsis only. Penalizes -2 Atk/AS to foes in 2 spaces, -6 if user is on terrain.",Weapon,Anima,255,2,85,9,0,1-2,0,Prf,0
+EyeofDawn,Eye of Dawn,"Apsis only. Adds Str to damage dealt, and restores HP equal to damage dealt.",Weapon,Anima,255,4,110,10,0,1,0,Prf,0
+Faith'sWind,Faith's Wind,"Apsis only. If Spd is higher, +3 Spd, and also Brave if foe cannot counter.",Weapon,Anima,255,6,75,5,5,1-2,0,Prf,0
+DancingBlade,Dancing Blade,Ojasvi only. Long range magic weapon.,Weapon,Sword,20,0,80,3,0,1-Mag/2,1,Prf,1
+BoneClub,Bone Club,Groto only. Ranged weapon.,Weapon,Axe,40,4,40,17,20,1-2,5000,Prf,1
+Taodao,Taodao,"Tao only. Brave, increased range. Effective against fliers.",Weapon,Bow,40,7,90,8,10,2-3,100,Prf,1
+RuneArrow,Rune Arrow,Tao only. Adds Mag to Crit while equipped.,Item,,40,0,100,0,0,1,100,NoRank,0
+BlackAnklet,Black Anklet,Str/Mag +4 and Def/Res +2 while equipped. -10 HP after combat/healing. Min HP after effect is 1.,Item,,1,0,0,0,0,1,100,NoRank,0
+Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,1-2,0,NoRank,0
+DawnPendant,Dawn Pendant,Cromar only. Banishes the darkness.,Item,,255,0,0,0,0,1,0,NoRank,0
+Dragonstone,Dragonstone,Augur only. Magic weapon. +10 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,12,90,0,0,1,0,Prf,0
+Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,1-2,6000,A,0
+Impaler,Impaler,Boro only. Negates defenses. A Chouwoujian lance.,Weapon,Lance,40,15,100,16,0,1,10000,Prf,1
+Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,1-2,100,A,1
+ZykhraScroll,Zykhra Scroll,"While equipped, +10% HP/Str/Def/Bld growths, -10% Spd growth.",Item,,255,0,0,0,0,1,10000,NoRank,0
+BeiyrScroll,Beiyr Scroll,"While equipped, +10% Str/Skl/Lck growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+RaioScroll,Raio Scroll,"While equipped, +10% Mag/Skl/Spd growths, -10% HP growth.",Item,,255,0,0,0,0,1,10000,NoRank,0
+LuzenScroll,Luzen Scroll,"While equipped, +20% HP/Luck growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+CherneScroll,Cherne Scroll,"Scrawlings of a raving mind. While equipped, +13% Str/Mag/Skl/Spd/Def/Res growths, -66% HP/Lck/Bld/Mov growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+DreedurScroll,Dreedur Scroll,"While equipped, +20% Mag/Res, +5% Str/Skl, -5% HP, -10% Def growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+WornScroll,Worn Scroll,"Some power still lingers within this faded scroll. While equipped, +5% HP/Str/Mag/Skl growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+AmserScroll,Amser Scroll,"While equipped, +10% Mov growth, -15% Def/Res growths.",Item,,255,0,0,0,0,1,10000,NoRank,0
+Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,1-2,10000,Prf,0
+MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,2-3,33,C,1
+Claymore,Claymore,A high quality blade. Effective against cavalry.,Weapon,Sword,30,13,80,13,0,1,46,B,1
+SlimAxe,Slim Axe,A lightweight axe.,Weapon,Axe,20,6,90,5,0,1,10,E,1
+BlackGem,Black Gem,"A valuable gemstone that sells for 10,000 gold.",Item,,1,0,10,0,0,1,20000,NoRank,0
+GoldGem,Gold Gem,"A valuable gemstone that sells for 20,000 gold.",Item,,1,0,10,0,0,1,0,NoRank,1
+Azurium,Azurium,Grants the Azurium Might skill when used.,Item,,1,0,10,0,0,1,1000,NoRank,0
+GaleBow,Gale Bow,Increased range. Magic weapon. Effective against fliers.,Weapon,Bow,15,6,75,10,0,2-3,50,C,1
+Dullahan,Dullahan,Cromar only. Revives user upon defeat.,Weapon,Sword,30,10,50,14,0,1,0,E,1
+Burn,Burn,Effective against enemies on terrain.,Weapon,Anima,15,6,75,6,0,1-2,150,C,1
+CounterBow,Counter Bow,Reflects melee damage.,Weapon,Bow,20,7,75,8,0,2,95,B,1
+Conversion,Conversion,Swaps HP against higher HP targets before damage.,Weapon,Light,15,8,80,5,0,1-2,200,B,1
+RitualKnife,Ritual Knife,Restores HP equal to damage dealt.,Weapon,Sword,60,0,90,1,5,1,20,B,1
+Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,1-2,400,A,1
+SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,1-2,100,B,1
+AlairsGale,Alairs Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,C,1
+SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped.,Item,,255,0,10,20,0,1,2000,NoRank,1
+Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,1-2,50,D,1
+Arachnid,Arachnid,Doubles strikes dealt.,Weapon,Dark,35,3,95,12,15,1,55,D,1
+YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,1-2,90,D,1
+BreakArc,Break Arc,Effective against cavalry and armors.,Weapon,Axe,20,12,100,20,0,2,100,C,1
+BigIron,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,D,1
+Axle1,Axle,Axel only. Uncounterable. Lck +13.,Weapon,Axe,25,11,100,10,0,1,50,Prf,1
+Axle2,Axle,Alex only. Increased range.,Weapon,Axe,25,6,80,15,0,1-3,50,Prf,1
+Miaodao,Miaodao,Doubles strikes dealt.,Weapon,Sword,20,11,70,6,20,1,100,C,1
+KingShield,King Shield,Armors only. Provokes enemies in range while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
+EdgedArrow,Edged Arrow,Bow users only. Attacks pierce defenses while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
+RedScarf,Red Scarf,"While equipped, restores 25% of HP after defeating an enemy.",Item,,20,0,0,0,0,1,0,NoRank,0
+Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,2-3,50,C,1
+TrainedEdge,Trained Edge,None,Weapon,Sword,25,9,85,8,0,1,30,C,1
+TrainedPike,Trained Pike,None,Weapon,Lance,25,10,75,9,0,1,30,C,1
+TrainedAxe,TrainedAxe,None,Weapon,Axe,25,11,70,10,0,1,30,C,1
+TrainedArc,Trained Arc,Effective against fliers.,Weapon,Bow,25,9,80,8,0,2,30,C,1
+AquaBrand,Aqua Brand,Varga only. +5 Speed. Magic weapon.,Weapon,Sword,30,7,90,5,0,1,40,Prf,1
+Charge,Charge,Emil only. +1 damage per tile moved.,Weapon,Lance,30,8,60,6,0,1,40,Prf,1
+Poincare,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,Prf,1
+Sink,Sink,Effective against Mages/Mage Knights/Bards/Sages.,Weapon,Dark,20,8,70,6,0,1-2,40,C,1
+WoodlandsHuke,Woodlands Huke,"Grants +2 Skl/Res while equipped, and +1 range to bow users.",Item,,20,0,0,0,0,1,0,NoRank,0
+CaptainsHelm,Captains Helm,Grants +1 Str/Mag/Skl/Spd/Def/Res while equipped.,Item,,255,0,0,0,0,1,0,NoRank,0
+FealtyBow,Fealty Bow,"Grants -3 Dmg taken, +15 Hit when within 2 space of a Lord (Cleo and Loewe).",Weapon,Bow,25,7,85,6,0,2,25,D,1
+Lamfada,Lamfada,Effective against infantry Sword-type classes.,Weapon,Lance,25,10,65,12,0,2-3,25,C,1
+BoldBlade,Bold Blade,Def/Res -5 while equipped.,Weapon,Sword,25,14,105,10,0,1,25,B,1
+BoldPike,Bold Pike,Def/Res -5 while equipped.,Weapon,Lance,25,15,100,12,0,1,25,B,1
+BoldCleaver,Bold Cleaver,Def/Res -5 while equipped.,Weapon,Axe,25,16,95,14,0,1,25,B,1
+Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,1-2,25,D,1
+EarthGreataxe,Earth Greataxe,Doubles strikes dealt.,Weapon,Axe,20,10,70,25,0,1,25,A,0
+Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,1-2,25,Prf,0
+FangAndClaw,Fang And Claw,Taraji only. Brave.,Weapon,Sword,255,12,95,12,0,1,0,Prf,1
+Starcutter,Starcutter,Catrin only. Magic weapon.,Weapon,Sword,50,6,85,9,15,1,0,Prf,5
+FullHelm,Full Helm,Grants +2 Def/Res and blocks critical hits while equipped.,Item,,20,0,0,0,0,1,0,NoRank,0
+Swordslayer,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,B,2
+Shieldbearer,Shieldbearer,"Grants +5 Def, +2 Res, -1 Move while equipped.",Weapon,Lance,10,0,60,14,255,1,210,B,1
+Malkhut,Malkhut,Increases critical hit rate.,Weapon,Light,18,9,80,11,40,1-2,65,C,1
+Sagittae,Sagittae,Extended range.,Weapon,Anima,16,6,95,13,255,2-3,80,C,2
+Kukri,Kukri,A lethal sword common in Chouwouj.,Weapon,Sword,22,10,80,10,50,1,70,B,1
+SlamBrace,Slam Brace,Allows user to Smite adjacent units 2 tiles away while equipped.,Weapon,,1,0,0,0,0,1,0,NoRank,0
+Zweihander,Zweihander,Incredible blade. Effective against cavalry.,Weapon,Sword,30,18,60,17,0,1,70,A,2
+DeadeyeBow,Deadeye Bow,Powerful bow with extended range.,Weapon,Bow,25,13,60,15,0,2-3,100,A,2
+MoonlightBlade,Moonlight Blade,Magic weapon. +5 Mag while equipped.,Weapon,Sword,40,13,75,14,0,1-2,0,A,2
+Glaive,Glaive,Incredible lance. Effective against cavalry.,Weapon,Lance,30,18,55,18,0,1,68,A,2
+Predestination,Predestination,This battle is already won.,Weapon,Light,255,16,95,8,0,1-3,1,A,1
+TitansFang,Titan's Fang,Become the storm.,Weapon,Lance,255,17,75,12,0,1,0,A,0
+Svarog,Svarog,Life is to die. Magic.,Weapon,Sword,255,14,85,10,0,1,0,A,0
+Worldcleaver,Worldcleaver,Shake the firmament.,Weapon,Axe,255,20,60,18,0,1,0,A,0
+Indra,Indra,Barod only. Grants +6 Speed while equipped.,Weapon,Bow,255,14,95,12,0,2,0,Prf,0
+Agni,Agni,Barod only. Grants +6 Strength while equipped.,Weapon,Axe,255,16,75,14,15,1,0,Prf,0
+SmolderingSeal,Smoldering Seal,Orfeas only. Adds Str to magic attacks while equipped.,Item,None,255,0,0,0,0,1,0,NoRank,0
+Apotheosis,Apotheosis,Apsis only. Enables all mainhand/offhand skills.,Weapon,Anima,255,14,85,10,10,1-3,0,Prf,0
+ByelensBell,Byelen's Bell,"While equipped, follow-up attacks strike consecutively.",Item,None,255,0,0,0,0,1,0,NoRank,0
+Ragnarok,Ragnarok,"While equipped, self and allies cannot miss.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
+KaliYuga,Kali Yuga,"While equipped, self and allies can move through enemies.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
+Armageddon,Armageddon,"While equipped, self and allies cannot be critically hit.",Weapon,Dark,255,20,90,24,0,1-2,100,A,1
