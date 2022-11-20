@@ -122,7 +122,7 @@ StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,1-2
 IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552366846022/row-149-column-1.png
 Argilabrys,Argilabrys,Cleo only. Magic weapon. Brave.,Weapon,Axe,40,5,100,8,0,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552689795192/row-150-column-1.png
 TemperedRing,Tempered Ring,Restores 4 HP after combat while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936940564676711/row-139-column-1.png
-CivilianProof,CivilianProof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941577510359050/row-207-column-1.png
+CivilianProof,Civilian Proof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941577510359050/row-207-column-1.png
 BattleAxe,Battle Axe,"Strong, but difficult to wield.",Weapon,Axe,20,15,70,16,0,1,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940419932803122/row-185-column-1.png
 Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,1-2,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936937892905122/row-132-column-1.png
 KnightProof,Knight Proof,Can be used to promote units Lv. 10 and up.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942251732144208/row-218-column-1.png

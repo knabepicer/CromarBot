@@ -95,6 +95,23 @@ bot = discord.Bot()
 
 
 bob = bot.create_group("bob", "Get Bells of Byelen data")
+cromar = bot.create_group("cromar", "Get info about Cromar Bot")
+
+@cromar.command(description="Get information about Cromar Bot.", guild_ids=[1039354532167176303, 828646591471550474]) # this decorator makes a slash command
+async def help(ctx): # a slash command will be created with the name "ping"
+    unitembed=discord.Embed(title="Available commands", color=0xac6c6c)
+    unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
+    unitembed.add_field(name='/bob item [name]', value="Get Bells of Byelen item data", inline=False)
+    unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
+    await ctx.response.send_message(embed=unitembed)
+
+""" @bot.slash_command(name = "cromar", description = "Get information about Cromar Bot", guild_ids=[1039354532167176303, 828646591471550474])
+async def cromar(ctx):
+    unitembed=discord.Embed(title="Available commands", color=0xac6c6c)
+    unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
+    unitembed.add_field(name='/bob item [name]', value="Get Bells of Byelen item data", inline=False)
+    unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
+    await ctx.response.send_message(embed=unitembed)  """
 
 
  #Add the guild ids in which the slash command will appear. If it should be in all, remove the argument, but note that it will take some time (up to an hour) to register the command if it's for all guilds.
@@ -174,6 +191,23 @@ async def item(ctx, name: str):
                     was_found = True
             if (not was_found):
                 await ctx.response.send_message("That item does not exist.")
+
+@bob.command(description = "Get Bells of Byelen skill data", guild_ids=[1039354532167176303, 828646591471550474])
+async def skill(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    with open('bob skill.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            if(stripped_row.lower() == stripped_name.lower()):
+                unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
+                unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
+                was_found = True
+                await ctx.response.send_message(embed=unitembed)
+        if (not was_found):
+                await ctx.response.send_message("That skill does not exist.")
+
 
 
 @bot.event
