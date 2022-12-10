@@ -211,7 +211,7 @@ BoldBlade,Bold Blade,Def/Res -5 while equipped.,Weapon,Sword,25,14,105,10,0,1,25
 BoldPike,Bold Pike,Def/Res -5 while equipped.,Weapon,Lance,25,15,100,12,0,1,25,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938976307871754/row-165-column-1.png
 BoldCleaver,Bold Cleaver,Def/Res -5 while equipped.,Weapon,Axe,25,16,95,14,0,1,25,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938976710545479/row-166-column-1.png
 Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,1-2,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939832143032450/row-175-column-1.png
-EarthGreataxe,Earth Greataxe,Doubles strikes dealt.,Weapon,Axe,20,10,70,25,0,1,25,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939833661366342/row-176-column-1.png
+EarthGreataxe,Earth Greataxe,Doubles strikes dealt. Grants Def+5 while equipped.,Weapon,Axe,20,10,70,25,0,1,25,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939833661366342/row-176-column-1.png
 Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,1-2,25,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939834080788570/row-177-column-1.png
 FangAndClaw,Fang And Claw,Taraji only. Brave.,Weapon,Sword,255,12,95,12,0,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936066299777035/row-123-column-1.png
 Starcutter,Starcutter,Catrin only. Magic weapon.,Weapon,Sword,50,6,85,9,15,1,0,No,Prf,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043936066647900200/row-124-column-1.png

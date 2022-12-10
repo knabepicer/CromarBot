@@ -97,7 +97,9 @@ bot = discord.Bot()
 bob = bot.create_group("bob", "Get Bells of Byelen data")
 cromar = bot.create_group("cromar", "Get info about Cromar Bot")
 
-@cromar.command(description="Get information about Cromar Bot.", guild_ids=[1039354532167176303, 828646591471550474]) # this decorator makes a slash command
+current_ids = [1039354532167176303, 828646591471550474, 1030675539314352252]
+
+@cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
 async def help(ctx): # a slash command will be created with the name "ping"
     unitembed=discord.Embed(title="Available commands", color=0xac6c6c)
     unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
@@ -105,17 +107,9 @@ async def help(ctx): # a slash command will be created with the name "ping"
     unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
-""" @bot.slash_command(name = "cromar", description = "Get information about Cromar Bot", guild_ids=[1039354532167176303, 828646591471550474])
-async def cromar(ctx):
-    unitembed=discord.Embed(title="Available commands", color=0xac6c6c)
-    unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
-    unitembed.add_field(name='/bob item [name]', value="Get Bells of Byelen item data", inline=False)
-    unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
-    await ctx.response.send_message(embed=unitembed)  """
-
 
  #Add the guild ids in which the slash command will appear. If it should be in all, remove the argument, but note that it will take some time (up to an hour) to register the command if it's for all guilds.
-@bob.command(description = "Get Bells of Byelen unit data", guild_ids=[1039354532167176303, 828646591471550474])
+@bob.command(description = "Get Bells of Byelen unit data")
 async def unit(ctx, name: str):
     with open('bob unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -146,7 +140,7 @@ async def unit(ctx, name: str):
             await ctx.response.send_message("That unit does not exist.")
 
 
-@bob.command(description = "Get Bells of Byelen item data", guild_ids=[1039354532167176303, 828646591471550474])
+@bob.command(description = "Get Bells of Byelen item data")
 async def item(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     if (stripped_name.lower() == 'axle'):
@@ -192,7 +186,7 @@ async def item(ctx, name: str):
             if (not was_found):
                 await ctx.response.send_message("That item does not exist.")
 
-@bob.command(description = "Get Bells of Byelen skill data", guild_ids=[1039354532167176303, 828646591471550474])
+@bob.command(description = "Get Bells of Byelen skill data")
 async def skill(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('bob skill.csv', newline='') as csvfile:
