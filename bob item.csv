@@ -179,7 +179,7 @@ Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,1-2,400
 SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942249341390859/row-213-column-1.png
 AraisGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576612782100/row-205-column-1.png
 AlairsGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576612782100/row-205-column-1.png
-SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped.,Item,,255,0,10,20,0,1,2000,Yes,NoRank,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942248611594342/row-211-column-1.png
+SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped. Unbreakable.,Item,,1,0,10,20,0,1,2000,Yes,NoRank,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942248611594342/row-211-column-1.png
 Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,1-2,50,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933269459045/row-193-column-1.png
 Arachnid,Arachnid,Doubles strikes dealt.,Weapon,Dark,35,3,95,12,15,1,55,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933621776515/row-194-column-1.png
 YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,1-2,90,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245676900382/row-158-column-1.png
