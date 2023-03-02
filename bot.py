@@ -54,21 +54,21 @@ def cota_get_ranks(row):
 def bob_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
-    if (row['Str Gains'] != 0):
+    if (row['Str Gains'] != '0'):
         gains += "Str: +" + row['Str Gains'] + " | "
-    if (row['Mag Gains'] != 0):
+    if (row['Mag Gains'] != '0'):
         gains += "Mag: +" + row['Mag Gains'] + " | "
-    if (row['Skl Gains'] != 0):
+    if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
-    if (row['Spd Gains'] != 0):
+    if (row['Spd Gains'] != '0'):
         gains += "Spd: +" + row['Spd Gains'] + " | "
-    if (row['Def Gains'] != 0):
+    if (row['Def Gains'] != '0'):
         gains += "Def: +" + row['Def Gains'] + " | "
-    if (row['Res Gains'] != 0):
+    if (row['Res Gains'] != '0'):
         gains += "Res: +" + row['Res Gains'] + " | "
-    if (row['Bld Gains'] != 0):
+    if (row['Bld Gains'] != '0'):
         gains += "Bld: +" + row['Bld Gains'] + " | "
-    if (row['Mov Gains'] != 0):
+    if (row['Mov Gains'] != '0'):
         gains += "Mov: +" + row['Mov Gains'] + " | "
     gains = gains[:-3]
     gains += "\n"
@@ -118,22 +118,25 @@ def bob_get_gains(row):
 def cota_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
-    if (row['HP Gains'] != 0):
+    if (row['HP Gains'] != '0'):
         gains += "HP: +" + row['HP Gains'] + " | "
-    if (row['Atk Gains'] != 0):
+    if (row['Atk Gains'] != '0'):
         gains += "Atk: +" + row['Atk Gains'] + " | "
-    if (row['Skl Gains'] != 0):
+    if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
-    if (row['Spd Gains'] != 0):
+    if (row['Spd Gains'] != '0'):
         gains += "Spd: +" + row['Spd Gains'] + " | "
-    if (row['Def Gains'] != 0):
+    if (row['Def Gains'] != '0'):
         gains += "Def: +" + row['Def Gains'] + " | "
-    if (row['Res Gains'] != 0):
+    if (row['Res Gains'] != '0'):
         gains += "Res: +" + row['Res Gains'] + " | "
-    if (row['Con Gains'] != 0):
+    if (row['Con Gains'] != '0'):
         gains += "Con: +" + row['Con Gains'] + " | "
-    if (row['Mov Gains'] != 0):
-        gains += "Mov: +" + row['Mov Gains'] + " | "
+    if (row['Mov Gains'] != '0'):
+        if (int(row['Mov Gains']) > 0):
+            gains += "Mov: +" + row['Mov Gains'] + " | "
+        else:
+            gains += "Mov: " + row['Mov Gains'] + " | "
     gains = gains[:-3]
     gains += "\n"
     if (row['Sword Gains'] != 'None'):
@@ -179,22 +182,25 @@ def cota_get_gains(row):
     gains = gains[:-3]
     if (row['Promotes 2'] != 'No'): 
         gains += '\n' + row['Promotion Class 2'] + '\n'
-        if (row['HP Gains 2'] != 0):
+        if (row['HP Gains 2'] != '0'):
             gains += "HP: +" + row['HP Gains 2'] + " | "
-        if (row['Atk Gains 2'] != 0):
+        if (row['Atk Gains 2'] != '0'):
             gains += "Atk: +" + row['Atk Gains 2'] + " | "
-        if (row['Skl Gains 2'] != 0):
+        if (row['Skl Gains 2'] != '0'):
             gains += "Skl: +" + row['Skl Gains 2'] + " | "
-        if (row['Spd Gains 2'] != 0):
+        if (row['Spd Gains 2'] != '0'):
             gains += "Spd: +" + row['Spd Gains 2'] + " | "
-        if (row['Def Gains 2'] != 0):
+        if (row['Def Gains 2'] != '0'):
             gains += "Def: +" + row['Def Gains 2'] + " | "
-        if (row['Res Gains 2'] != 0):
+        if (row['Res Gains 2'] != '0'):
             gains += "Res: +" + row['Res Gains 2'] + " | "
-        if (row['Con Gains 2'] != 0):
+        if (row['Con Gains 2'] != '0'):
             gains += "Con: +" + row['Con Gains 2'] + " | "
-        if (row['Mov Gains 2'] != 0):
-            gains += "Mov: +" + row['Mov Gains 2'] + " | "
+        if (row['Mov Gains 2'] != '0'):
+            if (int(row['Mov Gains 2']) > 0):
+                gains += "Mov: +" + row['Mov Gains 2'] + " | "
+            else:
+                gains += "Mov: " + row['Mov Gains 2'] + " | "
         gains = gains[:-3]
         gains += "\n"
         if (row['Sword Gains 2'] != 'None'):
@@ -240,22 +246,25 @@ def cota_get_gains(row):
         gains = gains[:-3]
     if (row['Promotes 3'] != 'No'): 
         gains += '\n' + row['Promotion Class 3'] + '\n'
-        if (row['HP Gains 3'] != 0):
+        if (row['HP Gains 3'] != '0'):
             gains += "HP: +" + row['HP Gains 3'] + " | "
-        if (row['Atk Gains 3'] != 0):
+        if (row['Atk Gains 3'] != '0'):
             gains += "Atk: +" + row['Atk Gains 3'] + " | "
-        if (row['Skl Gains 3'] != 0):
+        if (row['Skl Gains 3'] != '0'):
             gains += "Skl: +" + row['Skl Gains 3'] + " | "
-        if (row['Spd Gains 3'] != 0):
+        if (row['Spd Gains 3'] != '0'):
             gains += "Spd: +" + row['Spd Gains 3'] + " | "
-        if (row['Def Gains 3'] != 0):
+        if (row['Def Gains 3'] != '0'):
             gains += "Def: +" + row['Def Gains 3'] + " | "
-        if (row['Res Gains 3'] != 0):
+        if (row['Res Gains 3'] != '0'):
             gains += "Res: +" + row['Res Gains 3'] + " | "
-        if (row['Con Gains 3'] != 0):
+        if (row['Con Gains 3'] != '0'):
             gains += "Con: +" + row['Con Gains 3'] + " | "
-        if (row['Mov Gains 3'] != 0):
-            gains += "Mov: +" + row['Mov Gains 3'] + " | "
+        if (row['Mov Gains 3'] != '0'):
+            if (int(row['Mov Gains 3']) > 0):
+                gains += "Mov: +" + row['Mov Gains 3'] + " | "
+            else:
+                gains += "Mov: " + row['Mov Gains 3'] + " | "
         gains = gains[:-3]
         gains += "\n"
         if (row['Sword Gains 3'] != 'None'):
@@ -317,6 +326,7 @@ async def help(ctx): # a slash command will be created with the name "ping"
     unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
     unitembed.add_field(name='/bob item [name]', value="Get Bells of Byelen item data", inline=False)
     unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
+    unitembed.add_field(name='/cota unit [name]', value="Get Call of the Armor unit data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
 
@@ -425,7 +435,7 @@ async def skill(ctx, name: str):
 
 
 
-@cota.command(description = "Get Bells of Byelen unit data")
+@cota.command(description = "Get Call of the Armor unit data")
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('cota unit.csv', newline='') as csvfile:
@@ -438,7 +448,7 @@ async def unit(ctx, name: str):
                 unitembed.set_thumbnail(url=row['Portrait'])
                 unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
                 unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
-                bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl" + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+                bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
                 unitembed.add_field(name="Bases", value=bases, inline=False)
                 growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
                 unitembed.add_field(name="Growths", value=growths, inline=False)
