@@ -121,6 +121,8 @@ async def unit(ctx, name: str):
                 unitembed=discord.Embed(title=name.capitalize(), color=0xac6c6c)
                 if (name.lower() == 'cromar' and random.randint(1, 10) == 1):
                     unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080640506473762927/CromarFoggingOutknabepicer_1_1.png')
+                elif (name.lower() == 'sera' and random.randint(1,10) == 1):
+                    unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080644681379106846/SeraZoomingRozeknabepicer_1.png')
                 else:
                     unitembed.set_thumbnail(url=row['Portrait'])
                 unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
