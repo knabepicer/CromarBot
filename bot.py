@@ -191,8 +191,8 @@ def cota_get_gains(row):
             gains += "Def: +" + row['Def Gains 2'] + " | "
         if (row['Res Gains 2'] != 0):
             gains += "Res: +" + row['Res Gains 2'] + " | "
-        if (row['Bld Gains 2'] != 0):
-            gains += "Bld: +" + row['Bld Gains 2'] + " | "
+        if (row['Con Gains 2'] != 0):
+            gains += "Con: +" + row['Con Gains 2'] + " | "
         if (row['Mov Gains 2'] != 0):
             gains += "Mov: +" + row['Mov Gains 2'] + " | "
         gains = gains[:-3]
@@ -252,8 +252,8 @@ def cota_get_gains(row):
             gains += "Def: +" + row['Def Gains 3'] + " | "
         if (row['Res Gains 3'] != 0):
             gains += "Res: +" + row['Res Gains 3'] + " | "
-        if (row['Bld Gains 3'] != 0):
-            gains += "Bld: +" + row['Bld Gains 3'] + " | "
+        if (row['Con Gains 3'] != 0):
+            gains += "Con: +" + row['Con Gains 3'] + " | "
         if (row['Mov Gains 3'] != 0):
             gains += "Mov: +" + row['Mov Gains 3'] + " | "
         gains = gains[:-3]
