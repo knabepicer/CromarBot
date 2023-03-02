@@ -27,6 +27,30 @@ def bob_get_ranks(row):
         ranks = "None"
     return ranks
 
+def cota_get_ranks(row):
+    ranks = ""
+    if (row['Sword'] != 'None'):
+        ranks += "Sword: " + row['Sword'] + " | "
+    if (row['Lance'] != 'None'):
+        ranks += "Lance: " + row['Lance'] + " | "
+    if (row['Axe'] != 'None'):
+        ranks += "Axe: " + row['Axe'] + " | "
+    if (row['Bow'] != 'None'):
+        ranks += "Bow: " + row['Bow'] + " | "
+    if (row['Staff'] != 'None'):
+        ranks += "Staff: " + row['Staff'] + " | "
+    if (row['Anima'] != 'None'):
+        ranks += "Anima: " + row['Anima'] + " | "
+    if (row['Light'] != 'None'):
+        ranks += "Light: " + row['Light'] + " | "
+    if (row['Dark'] != 'None'):
+        ranks += "Dark: " + row['Dark'] + " | "
+    if (len(ranks) > 0):
+        ranks = ranks[:-3]
+    else:
+        ranks = "None"
+    return ranks
+
 def bob_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
@@ -418,7 +442,7 @@ async def unit(ctx, name: str):
                 unitembed.add_field(name="Bases", value=bases, inline=False)
                 growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
                 unitembed.add_field(name="Growths", value=growths, inline=False)
-                ranks = bob_get_ranks(row)
+                ranks = cota_get_ranks(row)
                 unitembed.add_field(name="Ranks", value=ranks, inline=False)
                 if (row['Promotes'] == "Yes"):
                     gains = cota_get_gains(row)
