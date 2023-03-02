@@ -1,6 +1,7 @@
 import discord
 import csv
 import re
+import random
 
 def bob_get_ranks(row):
     ranks = ""
@@ -118,7 +119,10 @@ async def unit(ctx, name: str):
             if(row['Name'].lower() == name.lower()):
                 #await interaction.response.send_message("Name: " + row["Name"] + " HP Growth:" + row["HP Growth"])
                 unitembed=discord.Embed(title=name.capitalize(), color=0xac6c6c)
-                unitembed.set_thumbnail(url=row['Portrait'])
+                if (name.lower() == 'cromar' and random.randint(1, 10) == 1):
+                    unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080640506473762927/CromarFoggingOutknabepicer_1_1.png')
+                else:
+                    unitembed.set_thumbnail(url=row['Portrait'])
                 unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
                 unitembed.add_field(name="PCC: ", value=row['PCC'], inline=True)
                 unitembed.add_field(name="Movement Stars: ", value=row['Vigor'], inline=True)
