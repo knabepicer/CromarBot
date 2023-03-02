@@ -106,8 +106,8 @@ def cota_get_gains(row):
         gains += "Def: +" + row['Def Gains'] + " | "
     if (row['Res Gains'] != 0):
         gains += "Res: +" + row['Res Gains'] + " | "
-    if (row['Bld Gains'] != 0):
-        gains += "Bld: +" + row['Bld Gains'] + " | "
+    if (row['Con Gains'] != 0):
+        gains += "Con: +" + row['Con Gains'] + " | "
     if (row['Mov Gains'] != 0):
         gains += "Mov: +" + row['Mov Gains'] + " | "
     gains = gains[:-3]
