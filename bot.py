@@ -444,7 +444,7 @@ async def unit(ctx, name: str):
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
+                unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
                 unitembed.set_thumbnail(url=row['Portrait'])
                 unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
                 unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
