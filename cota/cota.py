@@ -15,7 +15,7 @@ class Cota(commands.Cog):
     @option("name", description = "Name of the character to get data for")
     async def unit(self, ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-        with open('cota unit.csv', newline='') as csvfile:
+        with open('cota/cota unit.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             was_found = False
             for row in reader:
