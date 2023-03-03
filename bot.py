@@ -216,7 +216,7 @@ async def skill(ctx, name: str):
 
 
 
-bot.load_extension("cota")
+bot.load_extension("cota.cota")
 @bot.event
 async def on_ready():
     #await bot.load_extension("cota")
