@@ -216,11 +216,11 @@ async def skill(ctx, name: str):
 
 
 
-
+bot.load_extension("cota")
 @bot.event
 async def on_ready():
     #await bot.load_extension("cota")
-    await bot.load_extension("cota")
+    
     print("Ready!")
 
 token = ''
