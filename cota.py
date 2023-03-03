@@ -2,10 +2,13 @@ import discord
 import csv
 import re
 import random
-from discord import app_commands
+from discord.ext import commands
 
-class Cota(app_commands.Group):
-    @app_commands.command(description = "Get Call of the Armor unit data")
+class Cota(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command(description = "Get Call of the Armor unit data")
     async def unit(ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
         with open('cota unit.csv', newline='') as csvfile:
