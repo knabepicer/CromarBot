@@ -3,6 +3,7 @@ import csv
 import re
 import random
 from discord.ext import commands
+from discord import option
 
 class Cota(commands.Cog):
     def __init__(self, bot):
