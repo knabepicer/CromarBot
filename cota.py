@@ -257,5 +257,5 @@ def cota_get_gains(row):
         gains = gains[:-3]
     return gains
 
-async def setup(bot):
-    await bot.add_cog(Cota(bot))
+def setup(bot):
+    bot.add_cog(Cota(bot))
