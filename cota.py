@@ -8,7 +8,7 @@ class Cota(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(description = "Get Call of the Armor unit data")
+    @commands.slash_command(description = "Get Call of the Armor unit data")
     async def unit(ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
         with open('cota unit.csv', newline='') as csvfile:
@@ -256,4 +256,4 @@ def cota_get_gains(row):
     return gains
 
 async def setup(bot):
-    await bot.tree.add_command(Cota(name="cota", description="Gets Call of the Armor data"))
+    await bot.add_cog(Cota(bot))

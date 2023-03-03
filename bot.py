@@ -2,7 +2,7 @@ import discord
 import csv
 import re
 import random
-from cota import Cota
+from discord.ext import commands
 
 def bob_get_ranks(row):
     ranks = ""
@@ -92,10 +92,10 @@ def bob_get_gains(row):
     gains = gains[:-3]
     return gains
 
+intents = discord.Intents.default()
+intents.members = True
 
-
-bot = discord.Bot()
-bot.add_cog(Cota(bot))
+bot = discord.Bot(intents=intents)
 
 
 bob = bot.create_group("bob", "Get Bells of Byelen data")
@@ -223,6 +223,7 @@ async def skill(ctx, name: str):
 @bot.event
 async def on_ready():
     #await bot.load_extension("cota")
+    bot.load_extension("cota")
     print("Ready!")
 
 token = ''
