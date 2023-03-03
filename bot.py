@@ -92,10 +92,7 @@ def bob_get_gains(row):
     gains = gains[:-3]
     return gains
 
-intents = discord.Intents.default()
-intents.members = True
-
-bot = discord.Bot(intents=intents)
+bot = discord.Bot()
 
 
 bob = bot.create_group("bob", "Get Bells of Byelen data")

@@ -9,8 +9,8 @@ class Cota(commands.Cog):
         self.bot = bot
 
     cota = discord.SlashCommandGroup("cota", "Get Call of the Armor unit data")
-    
-    @cota.command(description = "Get Call of the Armor unit data")
+
+    @cota.slash_command(description = "Get Call of the Armor unit data")
     async def unit(ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
         with open('cota unit.csv', newline='') as csvfile:
