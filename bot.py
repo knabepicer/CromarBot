@@ -92,10 +92,9 @@ def bob_get_gains(row):
     gains = gains[:-3]
     return gains
 
-intents = discord.Intents.default()
-intents.message_content = True
 
-bot = discord.Client(intents=intents)
+
+bot = discord.Bot()
 
 
 
