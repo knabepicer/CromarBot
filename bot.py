@@ -97,6 +97,7 @@ bot = discord.Bot()
 
 
 bob = bot.create_group("bob", "Get Bells of Byelen data")
+cota = bot.create_group("cota", "Get Call of the Armor data")
 cromar = bot.create_group("cromar", "Get info about Cromar Bot")
 
 current_ids = [1039354532167176303, 828646591471550474, 1030675539314352252]

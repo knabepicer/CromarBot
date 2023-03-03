@@ -3,8 +3,6 @@ import csv
 import re
 import random
 
-cota = bot.create_group("cota", "Get Call of the Armor data")
-
 def cota_get_ranks(row):
     ranks = ""
     if (row['Sword'] != 'None'):
@@ -252,4 +250,4 @@ async def unit(ctx, name: str):
             await ctx.response.send_message("That unit does not exist.")
 
 async def setup(bot):
-    cota = bot.create_group("cota", "Get Call of the Armor data")
+    await bot.sync()
