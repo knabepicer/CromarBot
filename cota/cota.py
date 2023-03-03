@@ -9,7 +9,7 @@ class Cota(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    cota = discord.SlashCommandGroup("cota", "Get Call of the Armor unit data")
+    cota = discord.SlashCommandGroup("cota", "Get Call of the Armor data")
 
     @cota.command(description = "Get Call of the Armor unit data")
     @option("name", description = "Name of the character to get data for")

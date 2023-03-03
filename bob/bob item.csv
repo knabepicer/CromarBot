@@ -6,7 +6,7 @@ SilverSword,Silver Sword,None,Weapon,Sword,20,13,75,8,0,1,50,Yes,B,1,https://cdn
 IronBlade,Iron Blade,None,Weapon,Sword,30,14,60,13,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929432789893120/row-5-column-1.png
 Longsword,Longsword,None,Weapon,Sword,30,12,70,12,0,1,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929433133809725/row-6-column-1.png
 Greatsword,Greatsword,None,Weapon,Sword,20,16,65,14,0,1,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929433481945259/row-7-column-1.png
-FlameSword,Flame Sword,Casts magical flame. Mag +5.,Weapon,Sword,20,9,80,9,0,2-Jan,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929433804914708/row-8-column-1.png
+FlameSword,Flame Sword,Casts magical flame. Mag +5.,Weapon,Sword,20,9,80,9,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929433804914708/row-8-column-1.png
 Rapier,Rapier,Effective against cavalry and armors.,Weapon,Sword,20,4,100,3,10,1,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929434115276920/row-9-column-1.png
 ShortSword,Short Sword,None,Weapon,Sword,40,6,90,8,0,1,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929434501169322/row-10-column-1.png
 BraveSword,Brave Sword,Doubles strikes dealt.,Weapon,Sword,40,13,85,12,0,1,60,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929824105865236/row-11-column-1.png
@@ -14,8 +14,8 @@ KingSword,King Sword,Doubles strikes dealt. Grants +10 Hit/Avoid to allies  with
 KillingEdge,Killing Edge,Improves critical hit rate.,Weapon,Sword,30,9,80,8,30,1,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929824764383242/row-13-column-1.png
 Armorslayer,Armorslayer,Effective against armors.,Weapon,Sword,30,10,70,12,0,1,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929825120890900/row-14-column-1.png
 ParagonSword,Paragon Sword,Def +5. Doubles  combat experience gained while equipped.,Weapon,Sword,40,9,75,9,0,1,150,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929825481609217/row-15-column-1.png
-ThunderSword,Thunder Sword,Casts magical thunder. Skl +5.,Weapon,Sword,20,9,80,9,0,2-Jan,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929825846505502/row-16-column-1.png
-WindSword,Wind Sword,Casts magical wind. Spd +5. Effective against fliers.,Weapon,Sword,20,9,80,9,0,2-Jan,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929826194640957/row-17-column-1.png
+ThunderSword,Thunder Sword,Casts magical thunder. Skl +5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929825846505502/row-16-column-1.png
+WindSword,Wind Sword,Casts magical wind. Spd +5. Effective against fliers.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929826194640957/row-17-column-1.png
 SleepSword,Sleep Sword,Puts enemies to sleep for one turn if it hits.,Weapon,Sword,10,8,70,20,0,1,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929826559537172/row-18-column-1.png
 MasterSword,Master Sword,Doubles strikes dealt.,Weapon,Sword,20,14,75,13,0,1,80,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929826970587146/row-19-column-1.png
 IronLance,Iron Lance,None,Weapon,Lance,40,8,75,7,0,1,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043929827373232209/row-20-column-1.png
@@ -26,7 +26,7 @@ ShortLance,Short Lance,None,Weapon,Lance,20,7,85,9,0,1,10,Yes,E,1,https://cdn.di
 BraveLance,Brave Lance,Doubles strikes dealt.,Weapon,Lance,40,14,80,13,10,1,250,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930513976606780/row-25-column-1.png
 KillerLance,Killer Lance,Improves critical hit rate.,Weapon,Lance,20,10,75,9,30,1,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930514454745119/row-26-column-1.png
 Horseslayer,Horseslayer,Effective against cavalry.,Weapon,Lance,20,14,70,13,0,1,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930514844823672/row-27-column-1.png
-Javelin,Javelin,Ranged weapon.,Weapon,Lance,20,6,75,12,0,2-Jan,20,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930515226509433/row-28-column-1.png
+Javelin,Javelin,Ranged weapon.,Weapon,Lance,20,6,75,12,0,1-2,20,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930515226509433/row-28-column-1.png
 LongLance,Long Lance,None,Weapon,Lance,30,13,65,13,0,1,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930515566235799/row-29-column-1.png
 GreatLance,Great Lance,None,Weapon,Lance,20,17,60,15,0,1,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930515935342632/row-30-column-1.png
 IronAxe,Iron Axe,None,Weapon,Axe,30,9,70,8,0,1,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930874833539072/row-31-column-1.png
@@ -38,9 +38,9 @@ KillerAxe,Killer Axe,Improves critical hit rate.,Weapon,Axe,20,12,70,10,30,1,50,
 Poleaxe,Poleaxe,Effective against cavalry.,Weapon,Axe,20,15,70,17,0,1,40,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930876733558894/row-37-column-1.png
 Hammer,Hammer,Effective against armors.,Weapon,Axe,20,12,60,18,0,1,50,Yes,C,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043930877043941386/row-38-column-1.png
 DevilAxe,Devil Axe,21 - Luck% chance of backfire.,Weapon,Axe,20,20,80,20,0,1,45,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930877337546883/row-39-column-1.png
-HandAxe,Hand Axe,Ranged weapon.,Weapon,Axe,20,6,70,12,0,2-Jan,15,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930877643722752/row-40-column-1.png
-MasterAxe,Master Axe,Doubles strikes  dealt. Ranged weapon.,Weapon,Axe,20,13,65,15,0,2-Jan,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931266317295757/row-41-column-1.png
-MasterLance,Master Lance,Doubles strikes  dealt. Ranged weapon.,Weapon,Lance,20,12,70,14,0,2-Jan,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931266812219462/row-42-column-1.png
+HandAxe,Hand Axe,Ranged weapon.,Weapon,Axe,20,6,70,12,0,1-2,15,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043930877643722752/row-40-column-1.png
+MasterAxe,Master Axe,Doubles strikes  dealt. Ranged weapon.,Weapon,Axe,20,13,65,15,0,1-2,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931266317295757/row-41-column-1.png
+MasterLance,Master Lance,Doubles strikes  dealt. Ranged weapon.,Weapon,Lance,20,12,70,14,0,1-2,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931266812219462/row-42-column-1.png
 Shortbow,Shortbow,Effective against fliers.,Weapon,Bow,20,5,85,6,0,2,40,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931267391045652/row-43-column-1.png
 Greatbow,Greatbow,Effective against fliers.,Weapon,Bow,20,15,65,15,0,2,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931810939273246/row-186-column-1.png
 IronBow,Iron Bow,Effective against fliers.,Weapon,Bow,40,7,80,7,0,2,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931267764326540/row-44-column-1.png
@@ -49,46 +49,46 @@ SilverBow,Silver Bow,Effective against fliers.,Weapon,Bow,20,13,75,8,0,2,80,Yes,
 MasterBow,Master Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,20,13,75,14,0,2,150,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931269026816130/row-47-column-1.png
 KillerBow,Killer Bow,Improves critical hit rate. Effective against fliers.,Weapon,Bow,20,10,80,8,30,2,70,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931269374939136/row-48-column-1.png
 BraveBow,Brave Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,40,13,85,12,10,2,250,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931269739847680/row-49-column-1.png
-Bolganone,Bolganone,None,Weapon,Anima,10,20,90,18,0,2-Jan,220,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931270075400312/row-50-column-1.png
+Bolganone,Bolganone,None,Weapon,Anima,10,20,90,18,0,1-2,220,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931270075400312/row-50-column-1.png
 Longbow,Longbow,Effective against fliers.,Weapon,Bow,30,12,70,12,0,2,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931916681891840/row-51-column-1.png
-LongArch,Long Arch,Ballista only. Long-range weapon. Effective against fliers.,Weapon,Bow,10,15,85,20,0,10-Mar,300,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931917373947904/row-52-column-1.png
+LongArch,Long Arch,Ballista only. Long-range weapon. Effective against fliers.,Weapon,Bow,10,15,85,20,0,3-10,300,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931917373947904/row-52-column-1.png
 IronArch,Iron Arch,Ballista only. Super long-range weapon. Effective against fliers.,Weapon,Bow,10,20,85,20,0,15-Mar,400,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931917948555334/row-53-column-1.png
-KillerArch,Killer Arch,Ballista only. Long-range weapon that improves critical hit rate. Effective against fliers.,Weapon,Bow,10,12,85,20,20,10-Mar,500,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931918288306226/row-54-column-1.png
-Fire,Fire,None,Weapon,Anima,40,5,80,5,0,2-Jan,20,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931918699335730/row-55-column-1.png
-Thunder,Thunder,None,Weapon,Anima,30,7,75,7,0,2-Jan,30,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931919118782595/row-56-column-1.png
-Elfire,Elfire,None,Weapon,Anima,25,11,75,9,0,2-Jan,40,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931919760506880/row-57-column-1.png
-Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,10-Mar,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920284782642/row-58-column-1.png
-Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,2-Jan,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920666480700/row-59-column-1.png
-Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,2-Jan,40,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920960077844/row-60-column-1.png
-Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,2-Jan,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313144266882/row-61-column-1.png
-Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,2-Jan,50,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313517555794/row-62-column-1.png
-Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,10-Mar,600,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313861509201/row-63-column-1.png
-Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,2-Jan,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314184450089/row-64-column-1.png
-Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,10-Mar,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314645843998/row-65-column-1.png
-Aura,Aura,None,Weapon,Light,20,20,90,14,0,2-Jan,250,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315040088094/row-66-column-1.png
-Again,Again,Allow an ally to move again.,Staff,Staff,3,0,100,0,0,1-Mag/2,1000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315384041582/row-67-column-1.png
-Flux,Flux,None,Weapon,Dark,30,10,75,8,0,2-Jan,20,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315744735322/row-68-column-1.png
-Sigil,Sigil,Creates a light rune that blocks off paths.,Staff,Staff,5,0,100,8,0,1-Mag/2,140,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043932317028208680/row-69-column-1.png
-Jormungand,Jormungand,None,Weapon,Dark,20,14,70,11,0,2-Jan,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932317615394816/row-70-column-1.png
-Fenrir,Fenrir,Casts long-range shadows.,Weapon,Dark,5,10,80,20,0,10-Mar,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932730745946272/row-71-column-1.png
-Hel,Hel,None,Weapon,Dark,20,15,80,16,0,2-Jan,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731081510973/row-72-column-1.png
-Meteor,Meteor,Casts long-range flames.,Weapon,Anima,5,5,80,20,0,10-Mar,500,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043933212801519656/row-189-column-1.png
+KillerArch,Killer Arch,Ballista only. Long-range weapon that improves critical hit rate. Effective against fliers.,Weapon,Bow,10,12,85,20,20,3-10,500,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931918288306226/row-54-column-1.png
+Fire,Fire,None,Weapon,Anima,40,5,80,5,0,1-2,20,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931918699335730/row-55-column-1.png
+Thunder,Thunder,None,Weapon,Anima,30,7,75,7,0,1-2,30,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931919118782595/row-56-column-1.png
+Elfire,Elfire,None,Weapon,Anima,25,11,75,9,0,1-2,40,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931919760506880/row-57-column-1.png
+Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,3-10,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920284782642/row-58-column-1.png
+Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,1-2,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920666480700/row-59-column-1.png
+Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,1-2,40,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920960077844/row-60-column-1.png
+Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313144266882/row-61-column-1.png
+Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,1-2,50,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313517555794/row-62-column-1.png
+Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,3-10,600,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313861509201/row-63-column-1.png
+Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314184450089/row-64-column-1.png
+Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,3-10,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314645843998/row-65-column-1.png
+Aura,Aura,None,Weapon,Light,20,20,90,14,0,1-2,250,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315040088094/row-66-column-1.png
+Again,Again,Allow an ally to move again.,Staff,Staff,3,0,100,0,0,1-Mag/2 + 5,1000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315384041582/row-67-column-1.png
+Flux,Flux,None,Weapon,Dark,30,10,75,8,0,1-2,20,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932315744735322/row-68-column-1.png
+Sigil,Sigil,Creates a light rune that blocks off paths.,Staff,Staff,5,0,100,8,0,1-Mag/2 + 5,140,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043932317028208680/row-69-column-1.png
+Jormungand,Jormungand,None,Weapon,Dark,20,14,70,11,0,1-2,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932317615394816/row-70-column-1.png
+Fenrir,Fenrir,Casts long-range shadows.,Weapon,Dark,5,10,80,20,0,3-10,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932730745946272/row-71-column-1.png
+Hel,Hel,None,Weapon,Dark,20,15,80,16,0,1-2,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731081510973/row-72-column-1.png
+Meteor,Meteor,Casts long-range flames.,Weapon,Anima,5,5,80,20,0,3-10,500,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043933212801519656/row-189-column-1.png
 Heal,Heal,Restores HP to an adjacent ally.,Staff,Staff,20,0,100,4,0,1,20,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731924566037/row-74-column-1.png
 Mend,Mend,Restores a large amount of HP to an adjacent ally.,Staff,Staff,15,0,100,6,0,1,50,Yes,D,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043932732264300664/row-75-column-1.png
 Maharaghi,Maharaghi,Zhara only. Can be used to restore all HP to an adjacent ally.,Weapon,Sword,30,8,90,14,20,1,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043933366627610694/row-118-column-1.png
-Physic,Physic,Restores HP to an ally at a distance.,Staff,Staff,5,0,100,8,0,1-Mag/2,250,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043932733191245925/row-77-column-1.png
-Fortify,Fortify,Restores HP to all allies in range.,Staff,Staff,8,0,100,10,0,1-Mag/2,500,Yes,B,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043932733514203176/row-78-column-1.png
+Physic,Physic,Restores HP to an ally at a distance.,Staff,Staff,5,0,100,8,0,1-Mag/2 + 5,250,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043932733191245925/row-77-column-1.png
+Fortify,Fortify,Restores HP to all allies in range.,Staff,Staff,8,0,100,10,0,1-Mag/2 + 5,500,Yes,B,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043932733514203176/row-78-column-1.png
 Restore,Restore,Restores ally to normal condition.,Staff,Staff,10,0,100,8,0,1,100,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043932733820371044/row-79-column-1.png
-Silence,Silence,Prevents target from using magic for a turn.,Staff,Staff,3,0,80,10,0,1-Mag/2,500,Yes,B,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043932734143352922/row-80-column-1.png
-Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2,1000,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933471875272845/row-81-column-1.png
-Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2,1000,Yes,A,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933472231796807/row-82-column-1.png
+Silence,Silence,Prevents target from using magic for a turn.,Staff,Staff,3,0,80,10,0,1-Mag/2 + 5,500,Yes,B,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043932734143352922/row-80-column-1.png
+Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2 + 5,1000,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933471875272845/row-81-column-1.png
+Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2 + 5,1000,Yes,A,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933472231796807/row-82-column-1.png
 Warp,Warp,Teleports adjacent ally to a distance.,Staff,Staff,5,0,100,12,0,1,1000,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933472667996330/row-83-column-1.png
-Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2,600,Yes,B,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473011937351/row-84-column-1.png
-TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2,100,Yes,D,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473301331998/row-85-column-1.png
+Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2 + 5,600,Yes,B,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473011937351/row-84-column-1.png
+TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2 + 5,100,Yes,D,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473301331998/row-85-column-1.png
 Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,3,0,100,12,0,1,600,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473683017909/row-86-column-1.png
-Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2,150,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474043723776/row-87-column-1.png
+Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2 + 5,150,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474043723776/row-87-column-1.png
 Barrier,Barrier,"Increases resistance of adjacent ally, decays each turn.",Staff,Staff,5,0,100,8,0,1,150,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474517684224/row-88-column-1.png
-Rewarp,Rewarp,Teleports caster to another area.,Staff,Staff,5,0,100,12,0,1-Mag/2,150,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474849042502/row-89-column-1.png
+Rewarp,Rewarp,Teleports caster to another area.,Staff,Staff,5,0,100,12,0,1-Mag/2 + 5,150,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474849042502/row-89-column-1.png
 AngelicRobe,Angelic Robe,Increases HP by 3 points when used.,Item,,1,0,10,0,0,1,8000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933475226517535/row-90-column-1.png
 EnergyRing,Energy Ring,Increases Strength by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933757536751667/row-91-column-1.png
 SecretBook,Secret Book,Increases Skill by 2 points when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933757926805694/row-92-column-1.png
@@ -100,7 +100,7 @@ Boots,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,Ye
 Swiftsoles,Swiftsoles,Increases Move by 1 point when used.,Item,,1,0,10,0,0,1,5000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933759646482482/row-97-column-1.png
 BodyRing,Body Ring,Increases Build by 1 point when used.,Item,,1,0,10,0,0,1,2000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933759956865084/row-98-column-1.png
 SlimBow,Slim Bow,A lightweight bow. Effective against fliers.,Weapon,Bow,30,4,100,2,0,2,15,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043934185150230658/row-224-column-1.png
-DevilsDagger,Devil's Dagger,Mish only. Ignores user's Str and enemy's Def. 21-Luck% chance of backfire.,Weapon,Sword,30,10,100,5,20,2-Jan,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043933760422416444/row-99-column-1.png
+DevilsDagger,Devil's Dagger,Mish only. Ignores user's Str and enemy's Def. 21-Luck% chance of backfire.,Weapon,Sword,30,10,100,5,20,1-2,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043933760422416444/row-99-column-1.png
 BalladOfWar,Ballad Of War,Cadenza only. +10 Hit/Avoid to allies within 3 tiles.,Weapon,Anima,30,2,90,2,10,1,20,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043934733379313664/row-101-column-1.png
 TheBreaker,The Breaker,Ellerey only. Effective against armors.,Weapon,Lance,25,13,70,11,0,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043934733672910928/row-102-column-1.png
 Muramasa,Muramasa,Carl only. Increases critical hit rate.,Weapon,Sword,60,8,75,9,35,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043934733966528613/row-103-column-1.png
@@ -111,51 +111,51 @@ Elixir,Elixir,Heals user for all HP when used.,Item,,3,0,10,0,0,1,500,Yes,NoRank
 PureWater,Pure Water,"Grants +7 Res when used, which decays each turn.",Item,,3,0,10,0,0,1,300,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043934736109805599/row-109-column-1.png
 SpiritDust,Spirit Dust,Increases Mag by 1 point when used.,Item,,1,0,0,0,0,1,2000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935194975064255/row-134-column-1.png
 Torch,Torch,"Grants increased fog vision to unit, which decays each turn.",Item,,5,0,10,0,0,1,100,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935297412550736/row-111-column-1.png
-Thief,Thief,Can steal an item from target if user's Mag > target's Res.,Staff,Staff,3,0,100,12,0,1-Mag/2,1500,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043936937444122744/row-131-column-1.png
+Thief,Thief,Can steal an item from target if user's Mag > target's Res.,Staff,Staff,3,0,100,12,0,1-Mag/2 + 5,1500,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043936937444122744/row-131-column-1.png
 MemberCard,Member Card,Grants access to secret shops while in inventory.,Item,,1,0,10,0,0,1,6000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936938207481928/row-133-column-1.png
 WhiteGem,White Gem,"A valuable gemstone that sells for 5,000 gold.",Item,,1,0,10,0,0,1,10000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936938983428227/row-135-column-1.png
 BlueGem,Blue Gem,"A rare gemstone that sells for 2,000 gold.",Item,,1,0,10,0,0,1,5000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936939327365120/row-136-column-1.png
 RedGem,Red Gem,"An uncommon gemstone that sells for 1,000 gold.",Item,,1,0,10,0,0,1,2000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936939688067162/row-137-column-1.png
 Kaiserschwert,Kaiserschwert,Loewe only. Follow-up attacks strike consecutively.,Weapon,Sword,255,9,90,7,0,1,160,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939835058061392/row-180-column-1.png
 LightRune,Light Rune,Use to create a light rune that blocks off paths.,Item,,3,0,0,0,0,1,400,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549644746792/row-142-column-1.png
-StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,2-Jan,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552056471784/row-148-column-1.png
-IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,2-Jan,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552366846022/row-149-column-1.png
+StoneSword,Stone Sword,Casts magical earth. Def +5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552056471784/row-148-column-1.png
+IceSword,Ice Sword,Casts magical ice. Res + 5.,Weapon,Sword,20,9,80,9,0,1-2,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552366846022/row-149-column-1.png
 Argilabrys,Argilabrys,Cleo only. Magic weapon. Brave.,Weapon,Axe,40,5,100,8,0,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937552689795192/row-150-column-1.png
 TemperedRing,Tempered Ring,Restores 4 HP after combat while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936940564676711/row-139-column-1.png
 CivilianProof,Civilian Proof,Holder cannot enter combat.,Item,,255,0,10,40,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941577510359050/row-207-column-1.png
 BattleAxe,Battle Axe,"Strong, but difficult to wield.",Weapon,Axe,20,15,70,16,0,1,50,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940419932803122/row-185-column-1.png
-Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,2-Jan,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936937892905122/row-132-column-1.png
+Lumen,Lumen,Matthias only. Can be used to illuminate.,Weapon,Light,30,8,90,6,10,1-2,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936937892905122/row-132-column-1.png
 KnightProof,Knight Proof,Can be used to promote units Lv. 10 and up.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942251732144208/row-218-column-1.png
 WindBow,Wind Bow,Magic weapon. +5 Speed. Effective against fliers.,Weapon,Bow,20,7,70,7,0,2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245299417088/row-157-column-1.png
 FireDrive,Fire Drive,Magic weapon.,Weapon,Axe,25,14,70,15,0,1,75,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935301128687717/row-120-column-1.png
-SlimArch,Slim Arch,Ballista only. Mid-long-range weapon. Effective against fliers.,Weapon,Bow,10,10,90,20,0,7-Mar,200,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576184958986/row-204-column-1.png
+SlimArch,Slim Arch,Ballista only. Mid-long-range weapon. Effective against fliers.,Weapon,Bow,10,10,90,20,0,3-7,200,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576184958986/row-204-column-1.png
 Stinger,Stinger,Hornet only. +5 Speed. Effective against fliers.,Weapon,Bow,40,3,85,4,30,2,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942250624856196/row-215-column-1.png
 MysticLance,Mystic Lance,Magic weapon.,Weapon,Lance,20,14,70,9,0,1,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245018402856/row-156-column-1.png
 LunarAxe,Lunar Axe,Magic weapon.,Weapon,Axe,25,11,80,12,0,1,70,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942250964586566/row-216-column-1.png
 Stormbrand,Stormbrand,Iskra only. Brave.,Weapon,Sword,30,15,70,12,0,1,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942251350474863/row-217-column-1.png
-Darkbrand,Darkbrand,Tiberius only. Magic weapon. Can be used to increase Res temporarily.,Weapon,Sword,45,12,70,10,0,2-Jan,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068623400990/row-129-column-1.png
+Darkbrand,Darkbrand,Tiberius only. Magic weapon. Can be used to increase Res temporarily.,Weapon,Sword,45,12,70,10,0,1-2,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068623400990/row-129-column-1.png
 HoundingBow,Hounding Bow,Darby only. Effective against cavalry.,Weapon,Bow,30,7,75,7,0,2,50,Yes,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935297966182430/row-112-column-1.png
-Daybreak,Daybreak,The night sky will not hide you. Effective against fliers.,Weapon,Bow,255,18,100,9,0,3-Feb,10000,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068963160234/row-130-column-1.png
+Daybreak,Daybreak,The night sky will not hide you. Effective against fliers.,Weapon,Bow,255,18,100,9,0,2-3,10000,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068963160234/row-130-column-1.png
 HeavySpear,Heavy Spear,Effective against armors.,Weapon,Lance,16,9,80,14,0,1,75,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938977343864903/row-168-column-1.png
-Holyspear,Holyspear,Cannot be stolen. +5 Def/Res.,Weapon,Lance,255,12,100,10,0,3-Jan,10000,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938977801056306/row-169-column-1.png
+Holyspear,Holyspear,Cannot be stolen. +5 Def/Res.,Weapon,Lance,255,12,100,10,0,1-3,10000,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938977801056306/row-169-column-1.png
 Crusher,Crusher,A mighty magic axe gifted by Mihail.,Weapon,Axe,20,20,75,18,0,1,1000,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937551397961879/row-146-column-1.png
 ArgymosCrest,Argymos Crest,Allows Cleo to promote.,Item,,1,0,10,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938244699627621/row-155-column-1.png
-CrownedPyre,Crowned Pyre,Apsis only. Ignores 50% of enemy's Res. Adds 25% of enemy's current HP to damage dealt.,Weapon,Anima,255,8,90,7,0,2-Jan,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933760925749278/row-100-column-1.png
-Stormbreaker,Stormbreaker,"Apsis only. Adds 15 Hit/Crit if at max range, and +30 if also moved full move.",Weapon,Anima,255,13,65,13,10,3-Feb,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935298440146994/row-113-column-1.png
-AbsoluteZero,Absolute Zero,"Apsis only. Penalizes -2 Atk/AS to foes in 2 spaces, -6 if user is on terrain.",Weapon,Anima,255,2,85,9,0,2-Jan,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935298884751370/row-114-column-1.png
+CrownedPyre,Crowned Pyre,Apsis only. Ignores 50% of enemy's Res. Adds 25% of enemy's current HP to damage dealt.,Weapon,Anima,255,8,90,7,0,1-2,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043933760925749278/row-100-column-1.png
+Stormbreaker,Stormbreaker,"Apsis only. Adds 15 Hit/Crit if at max range, and +30 if also moved full move.",Weapon,Anima,255,13,65,13,10,2-3,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935298440146994/row-113-column-1.png
+AbsoluteZero,Absolute Zero,"Apsis only. Penalizes -2 Atk/AS to foes in 2 spaces, -6 if user is on terrain.",Weapon,Anima,255,2,85,9,0,1-2,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935298884751370/row-114-column-1.png
 EyeofDawn,Eye of Dawn,"Apsis only. Adds Str to damage dealt, and restores HP equal to damage dealt.",Weapon,Anima,255,4,110,10,0,1,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935299425808384/row-115-column-1.png
-FaithsWind,Faith's Wind,"Apsis only. If Spd is higher, +3 Spd, and also Brave if foe cannot counter.",Weapon,Anima,255,6,75,5,5,2-Jan,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935299761360997/row-116-column-1.png
-DancingBlade,Dancing Blade,Ojasvi only. Long range magic weapon.,Weapon,Sword,20,0,80,3,0,1-Mag/2,1,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935300084306000/row-117-column-1.png
-BoneClub,Bone Club,Groto only. Ranged weapon.,Weapon,Axe,40,4,40,17,20,2-Jan,5000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549317574877/row-141-column-1.png
-Taodao,Taodao,"Tao only. Brave, increased range. Effective against fliers.",Weapon,Bow,40,7,90,8,10,3-Feb,100,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935300692496384/row-119-column-1.png
+FaithsWind,Faith's Wind,"Apsis only. If Spd is higher, +3 Spd, and also Brave if foe cannot counter.",Weapon,Anima,255,6,75,5,5,1-2,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043935299761360997/row-116-column-1.png
+DancingBlade,Dancing Blade,Ojasvi only. Long range magic weapon.,Weapon,Sword,20,0,80,3,0,1-Mag/2 + 5,1,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935300084306000/row-117-column-1.png
+BoneClub,Bone Club,Groto only. Ranged weapon.,Weapon,Axe,40,4,40,17,20,1-2,5000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549317574877/row-141-column-1.png
+Taodao,Taodao,"Tao only. Brave, increased range. Effective against fliers.",Weapon,Bow,40,7,90,8,10,2-3,100,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043935300692496384/row-119-column-1.png
 RuneArrow,Rune Arrow,Tao only. Adds Mag to Crit while equipped.,Item,,40,0,100,0,0,1,100,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939830893117560/row-171-column-1.png
 BlackAnklet,Black Anklet,Str/Mag +4 and Def/Res +2 while equipped. -10 HP after combat/healing. Min HP after effect is 1.,Item,,1,0,0,0,0,1,100,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937550286458991/row-144-column-1.png
-Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,2-Jan,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549980287036/row-143-column-1.png
+Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,1-2,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549980287036/row-143-column-1.png
 DawnPendant,Dawn Pendant,Cromar only. Banishes the darkness.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937550588465232/row-145-column-1.png
 Dragonstone,Dragonstone,Augur only. Magic weapon. +10 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,12,90,0,0,1,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940934733266954/row-197-column-1.png
-Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,2-Jan,6000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941575048310794/row-201-column-1.png
+Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,1-2,6000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941575048310794/row-201-column-1.png
 Impaler,Impaler,Boro only. Negates defenses. A Chouwoujian lance.,Weapon,Lance,40,15,100,16,0,1,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939834412150945/row-178-column-1.png
-Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,2-Jan,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
+Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
 ZykhraScroll,Zykhra Scroll,"While equipped, +10% HP/Str/Def/Bld growths, -10% Spd growth.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942702435270667/row-225-column-1.png
 BeiyrScroll,Beiyr Scroll,"While equipped, +10% Str/Skl/Lck growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945825857982464/sprite_0.png
 RaioScroll,Raio Scroll,"While equipped, +10% Mag/Skl/Spd growths, -10% HP growth.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945826134802482/sprite_1.png
@@ -164,78 +164,78 @@ CherneScroll,Cherne Scroll,"Scrawlings of a raving mind. While equipped, +13% St
 DreedurScroll,Dreedur Scroll,"While equipped, +20% Mag/Res, +5% Str/Skl, -5% HP, -10% Def growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945827095298148/sprite_4.png
 WornScroll,Worn Scroll,"Some power still lingers within this faded scroll. While equipped, +5% HP/Str/Mag/Skl growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945826759757904/sprite_3.png
 AmserScroll,Amser Scroll,"While equipped, +10% Mov growth, -15% Def/Res growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942702728888430/row-226-column-1.png
-Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,2-Jan,10000,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975397720135/row-163-column-1.png
-MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,3-Feb,33,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940932527063080/row-191-column-1.png
+Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,1-2,10000,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975397720135/row-163-column-1.png
+MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,2-3,33,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940932527063080/row-191-column-1.png
 Claymore,Claymore,A high quality blade. Effective against cavalry.,Weapon,Sword,30,13,80,13,0,1,46,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940932887793784/row-192-column-1.png
 SlimAxe,Slim Axe,A lightweight axe.,Weapon,Axe,20,6,90,5,0,1,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938243864961144/row-152-column-1.png
 Azurium,Azurium,Grants the Azurium Might skill when used.,Item,,1,0,10,0,0,1,1000,Yes,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043944376361041970/New_Piskel.png
-GaleBow,Gale Bow,Increased range. Magic weapon. Effective against fliers.,Weapon,Bow,15,6,75,10,0,3-Feb,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701843890226/row-223-column-1.png
+GaleBow,Gale Bow,Increased range. Magic weapon. Effective against fliers.,Weapon,Bow,15,6,75,10,0,2-3,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701843890226/row-223-column-1.png
 Dullahan,Dullahan,Cromar only. Revives user upon defeat.,Weapon,Sword,30,10,50,14,0,1,0,No,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941578839957654/row-210-column-1.png
-Burn,Burn,Effective against enemies on terrain.,Weapon,Anima,15,6,75,6,0,2-Jan,150,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942249811165274/row-214-column-1.png
+Burn,Burn,Effective against enemies on terrain.,Weapon,Anima,15,6,75,6,0,1-2,150,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942249811165274/row-214-column-1.png
 CounterBow,Counter Bow,Reflects melee damage.,Weapon,Bow,20,7,75,8,0,2,95,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941578475049011/row-209-column-1.png
-Conversion,Conversion,Swaps HP against higher HP targets before damage.,Weapon,Light,15,8,80,5,0,2-Jan,200,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941578076598352/row-208-column-1.png
+Conversion,Conversion,Swaps HP against higher HP targets before damage.,Weapon,Light,15,8,80,5,0,1-2,200,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941578076598352/row-208-column-1.png
 RitualKnife,Ritual Knife,Restores HP equal to damage dealt.,Weapon,Sword,60,0,90,1,5,1,20,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942248921968760/row-212-column-1.png
-Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,2-Jan,400,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941577028022372/row-206-column-1.png
-SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,2-Jan,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942249341390859/row-213-column-1.png
+Brenthunder,Brenthunder,Doubles strikes dealt.,Weapon,Anima,30,8,85,12,0,1-2,400,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941577028022372/row-206-column-1.png
+SpellMirror,Spell Mirror,"Adds enemy Atk to damage dealt, if enemy is magical.",Weapon,Light,20,8,80,4,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942249341390859/row-213-column-1.png
 AraisGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576612782100/row-205-column-1.png
 AlairsGale,Arai's Gale,"Half the power, half the price. Brave.",Weapon,Anima,30,2,90,2,10,2,60,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043941576612782100/row-205-column-1.png
 SisterRing,Sister Ring,Allows access to ancient power: +1 Mov while equipped. Unbreakable.,Item,,1,0,10,20,0,1,2000,Yes,NoRank,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942248611594342/row-211-column-1.png
-Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,2-Jan,50,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933269459045/row-193-column-1.png
+Hurlbat,Hurlbat,Ranged weapon.,Weapon,Axe,30,5,85,5,0,1-2,50,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933269459045/row-193-column-1.png
 Arachnid,Arachnid,Doubles strikes dealt.,Weapon,Dark,35,3,95,12,15,1,55,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933621776515/row-194-column-1.png
-YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,2-Jan,90,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245676900382/row-158-column-1.png
+YorsYari,Yor's Yari,Ranged weapon. Ignores defenses.,Weapon,Lance,20,3,100,8,0,1-2,90,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245676900382/row-158-column-1.png
 DaShoota,Break Arc,Effective against cavalry and armors.,Weapon,Bow,20,12,100,20,0,2,100,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938246272495766/row-160-column-1.png
 BreakArc,Break Arc,Effective against cavalry and armors.,Weapon,Bow,20,12,100,20,0,2,100,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938246272495766/row-160-column-1.png
 BigIron,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245970509905/row-159-column-1.png
 MeatCleaver,Meat Cleaver,None,Weapon,Sword,6,14,55,14,42,1,50,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938245970509905/row-159-column-1.png
 Axle1,Axle,Axel only. Uncounterable. Lck +13.,Weapon,Axe,25,11,100,10,0,1,50,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938974634344468/row-161-column-1.png
-Axle2,Axle,Alex only. Increased range.,Weapon,Axe,25,6,80,15,0,3-Jan,50,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938974634344468/row-161-column-1.png
+Axle2,Axle,Alex only. Increased range.,Weapon,Axe,25,6,80,15,0,1-3,50,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938974634344468/row-161-column-1.png
 Miaodao,Miaodao,Doubles strikes dealt.,Weapon,Sword,20,11,70,6,20,1,100,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975024435342/row-162-column-1.png
 KingShield,King Shield,Armors only. Provokes enemies in range while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043929824407859210/row-12-column-1.png
 EdgedArrow,Edged Arrow,Bow users only. Attacks pierce defenses while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938977016721418/row-167-column-1.png
 RedScarf,Red Scarf,"While equipped, restores 25% of HP after defeating an enemy.",Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936940984115230/row-140-column-1.png
-Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,3-Feb,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731404451970/row-73-column-1.png
+Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,2-3,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731404451970/row-73-column-1.png
 TrainedEdge,Trained Edge,None,Weapon,Sword,25,9,85,8,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942252071895132/row-219-column-1.png
 TrainedPike,Trained Pike,None,Weapon,Lance,25,10,75,9,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942252420018236/row-220-column-1.png
 TrainedAxe,TrainedAxe,None,Weapon,Axe,25,11,70,10,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701269266432/row-221-column-1.png
 TrainedArc,Trained Arc,Effective against fliers.,Weapon,Bow,25,9,80,8,0,2,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701558661290/row-222-column-1.png
 AquaBrand,Aqua Brand,Varga only. +5 Speed. Magic weapon.,Weapon,Sword,30,7,90,5,0,1,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933944758382/row-195-column-1.png
 Charge,Charge,Emil only. +1 damage per tile moved.,Weapon,Lance,30,8,60,6,0,1,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935056248862/row-198-column-1.png
-Poincare,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,3-Feb,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935337250876/row-199-column-1.png
-Archival,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,3-Feb,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935337250876/row-199-column-1.png
-Sink,Sink,Effective against Mages/Mage Knights/Bards/Sages.,Weapon,Dark,20,8,70,6,0,2-Jan,40,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935689568276/row-200-column-1.png
+Poincare,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935337250876/row-199-column-1.png
+Archival,Archival,Rashid only. Effective against fliers and Archers/Snipers.,Weapon,Bow,25,8,75,8,0,2-3,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935337250876/row-199-column-1.png
+Sink,Sink,Effective against Mages/Mage Knights/Bards/Sages.,Weapon,Dark,20,8,70,6,0,1-2,40,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935689568276/row-200-column-1.png
 WoodlandsHuke,Woodlands Huke,"Grants +2 Skl/Res while equipped, and +1 range to bow users.",Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936065498660864/row-121-column-1.png
 CaptainsHelm,Captains Helm,Grants +1 Str/Mag/Skl/Spd/Def/Res while equipped.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936940048785418/row-138-column-1.png
 FealtyBow,Fealty Bow,"Grants -3 Dmg taken, +15 Hit when within 2 space of a Lord (Cleo and Loewe).",Weapon,Bow,25,7,85,6,0,2,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936065934852127/row-122-column-1.png
-Lamfada,Lamfada,Effective against infantry Sword-type classes.,Weapon,Lance,25,10,65,12,0,3-Feb,25,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831811670128/row-174-column-1.png
+Lamfada,Lamfada,Effective against infantry Sword-type classes.,Weapon,Lance,25,10,65,12,0,2-3,25,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831811670128/row-174-column-1.png
 BoldBlade,Bold Blade,Def/Res -5 while equipped.,Weapon,Sword,25,14,105,10,0,1,25,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975838130236/row-164-column-1.png
 BoldPike,Bold Pike,Def/Res -5 while equipped.,Weapon,Lance,25,15,100,12,0,1,25,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938976307871754/row-165-column-1.png
 BoldCleaver,Bold Cleaver,Def/Res -5 while equipped.,Weapon,Axe,25,16,95,14,0,1,25,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938976710545479/row-166-column-1.png
-Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,2-Jan,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939832143032450/row-175-column-1.png
+Luna,Luna,Ignores enemy's Res.,Weapon,Dark,30,0,100,8,0,1-2,25,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939832143032450/row-175-column-1.png
 EarthGreataxe,Earth Greataxe,Doubles strikes dealt. Grants Def+5 while equipped.,Weapon,Axe,20,10,70,25,0,1,25,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939833661366342/row-176-column-1.png
-Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,2-Jan,25,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939834080788570/row-177-column-1.png
+Runespear,Runespear,Tobie only. Magic weapon. Restores HP equal to damage dealt.,Weapon,Lance,30,12,75,16,0,1-2,25,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043939834080788570/row-177-column-1.png
 FangAndClaw,Fang And Claw,Taraji only. Brave.,Weapon,Sword,255,12,95,12,0,1,0,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936066299777035/row-123-column-1.png
 Starcutter,Starcutter,Catrin only. Magic weapon.,Weapon,Sword,50,6,85,9,15,1,0,No,Prf,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043936066647900200/row-124-column-1.png
 FullHelm,Full Helm,Grants +2 Def/Res and blocks critical hits while equipped.,Item,,20,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043936067012788255/row-125-column-1.png
 Swordslayer,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,Yes,B,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043936067449012324/row-126-column-1.png
 BladeCrusher,Blade Crusher,Inverts/doubles weapon triangle. Effective against infantry Sword-type classes.,Weapon,Axe,20,13,75,13,0,1,95,Yes,B,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043936067449012324/row-126-column-1.png
 Shieldbearer,Shieldbearer,"Grants +5 Def, +2 Res, -1 Move while equipped.",Weapon,Lance,10,0,60,14,255,1,210,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936067805511731/row-127-column-1.png
-Malkhut,Malkhut,Increases critical hit rate.,Weapon,Light,18,9,80,11,40,2-Jan,65,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068229152778/row-128-column-1.png
-Sagittae,Sagittae,Extended range.,Weapon,Anima,16,6,95,13,255,3-Feb,80,Yes,C,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043938243567169537/row-151-column-1.png
+Malkhut,Malkhut,Increases critical hit rate.,Weapon,Light,18,9,80,11,40,1-2,65,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043936068229152778/row-128-column-1.png
+Sagittae,Sagittae,Extended range.,Weapon,Anima,16,6,95,13,255,2-3,80,Yes,C,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043938243567169537/row-151-column-1.png
 Kukri,Kukri,A lethal sword common in Chouwouj.,Weapon,Sword,22,10,80,10,50,1,70,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938244129194104/row-153-column-1.png
 SlamBrace,Slam Brace,Allows user to Smite adjacent units 2 tiles away while equipped.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938244393447424/row-154-column-1.png
 Zweihander,Zweihander,Incredible blade. Effective against cavalry.,Weapon,Sword,30,18,60,17,0,1,70,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831522271232/row-173-column-1.png
-DeadeyeBow,Deadeye Bow,Powerful bow with extended range.,Weapon,Bow,25,13,60,15,0,3-Feb,100,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043938978266632351/row-170-column-1.png
-MoonlightBlade,Moonlight Blade,Magic weapon. +5 Mag while equipped.,Weapon,Sword,40,13,75,14,0,2-Jan,0,No,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043937551720910928/row-147-column-1.png
+DeadeyeBow,Deadeye Bow,Powerful bow with extended range.,Weapon,Bow,25,13,60,15,0,2-3,100,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043938978266632351/row-170-column-1.png
+MoonlightBlade,Moonlight Blade,Magic weapon. +5 Mag while equipped.,Weapon,Sword,40,13,75,14,0,1-2,0,No,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043937551720910928/row-147-column-1.png
 Glaive,Glaive,Incredible lance. Effective against cavalry.,Weapon,Lance,30,18,55,18,0,1,68,No,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043940418443817020/row-181-column-1.png
-Predestination,Predestination,This battle is already won.,Weapon,Light,255,16,95,8,0,3-Jan,1,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940420620652715/row-187-column-1.png
+Predestination,Predestination,This battle is already won.,Weapon,Light,255,16,95,8,0,1-3,1,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940420620652715/row-187-column-1.png
 TitansFang,Titan's Fang,Become the storm.,Weapon,Lance,255,17,75,12,0,1,0,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940421010739352/row-188-column-1.png
 Svarog,Svarog,Life is to die. Magic.,Weapon,Sword,255,14,85,10,0,1,0,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940421727965364/row-190-column-1.png
 Worldcleaver,Worldcleaver,Shake the firmament.,Weapon,Axe,255,20,60,18,0,1,0,No,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940934259314748/row-196-column-1.png
 Indra,Indra,Barod only. Grants +6 Speed while equipped.,Weapon,Bow,255,14,95,12,0,2,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941575409016982/row-202-column-1.png
 Agni,Agni,Barod only. Grants +6 Strength while equipped.,Weapon,Axe,255,16,75,14,15,1,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940419542716547/row-184-column-1.png
 SmolderingSeal,Smoldering Seal,Orfeas only. Adds Str to magic attacks while equipped.,Item,None,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940419165237258/row-183-column-1.png
-Apotheosis,Apotheosis,Apsis only. Enables all mainhand/offhand skills.,Weapon,Anima,255,14,85,10,10,3-Jan,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940418800324659/row-182-column-1.png
+Apotheosis,Apotheosis,Apsis only. Enables all mainhand/offhand skills.,Weapon,Anima,255,14,85,10,10,1-3,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940418800324659/row-182-column-1.png
 ByelensBell,Byelen's Bell,"While equipped, follow-up attacks strike consecutively.",Item,None,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043934736453734450/row-110-column-1.png
-Ragnarok,Ragnarok,"While equipped, self and allies cannot miss.",Weapon,Dark,255,20,90,24,0,2-Jan,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
-KaliYuga,Kali Yuga,"While equipped, self and allies can move through enemies.",Weapon,Dark,255,20,90,24,0,2-Jan,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
-Armageddon,Armageddon,"While equipped, self and allies cannot be critically hit.",Weapon,Dark,255,20,90,24,0,2-Jan,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
+Ragnarok,Ragnarok,"While equipped, self and allies cannot miss.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
+KaliYuga,Kali Yuga,"While equipped, self and allies can move through enemies.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
+Armageddon,Armageddon,"While equipped, self and allies cannot be critically hit.",Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
