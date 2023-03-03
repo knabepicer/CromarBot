@@ -202,3 +202,6 @@ def bob_get_gains(row):
             gains += "Dark: " + row['Dark Gains'] + " | "
     gains = gains[:-3]
     return gains
+
+def setup(bot):
+    bot.add_cog(Bob(bot))
