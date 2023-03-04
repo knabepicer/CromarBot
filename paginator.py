@@ -270,29 +270,6 @@ class PageTest(commands.Cog):
         paginator = pages.Paginator(pages=self.get_pages())
         await paginator.respond(ctx.interaction, target=ctx.interaction.user)
 
-    @commands.command()
-    async def pagetest_prefix(self, ctx: commands.Context):
-        """Demonstrates using the paginator with a prefix-based command."""
-        paginator = pages.Paginator(pages=self.get_pages(), use_default_buttons=False)
-        paginator.add_button(
-            pages.PaginatorButton("prev", label="<", style=discord.ButtonStyle.green)
-        )
-        paginator.add_button(
-            pages.PaginatorButton(
-                "page_indicator", style=discord.ButtonStyle.gray, disabled=True
-            )
-        )
-        paginator.add_button(
-            pages.PaginatorButton("next", style=discord.ButtonStyle.green)
-        )
-        await paginator.send(ctx)
-
-    @commands.command()
-    async def pagetest_target(self, ctx: commands.Context):
-        """Demonstrates sending the paginator to a different target than where it was invoked (prefix version)."""
-        paginator = pages.Paginator(pages=self.get_pages())
-        await paginator.send(ctx, target=ctx.author, target_message="Paginator sent!")
-
 
 def setup(bot):
     bot.add_cog(PageTest(bot))
