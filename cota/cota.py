@@ -26,14 +26,14 @@ class Cota(commands.Cog):
         page_groups = [
             pages.PageGroup(
             pages=[unitembed], 
-            label="Main Unit Data"
-            description="Standard unit data: base stats, growths, etc."
+            label="Main Unit Data",
+            description="Standard unit data: base stats, growths, etc.",
             use_default_buttons=False,
             ),
             pages.PageGroup(
-            pages=["Supports will be here"]
-            label="Supports"
-            description="Support data for the unit"
+            pages=["Supports will be here"],
+            label="Supports",
+            description="Support data for the unit",
             use_default_buttons=False,
             )
         ]
