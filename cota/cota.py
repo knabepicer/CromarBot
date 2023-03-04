@@ -31,19 +31,19 @@ class Cota(commands.Cog):
             for supportrow in reader:
                 if(row['Name'] == supportrow['Name']):
                     if(supportrow['Partner 1'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'],inline=False)
                     if(supportrow['Partner 2'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'],inline=False)
                     if(supportrow['Partner 3'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'],inline=False)
                     if(supportrow['Partner 4'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'],inline=False)
                     if(supportrow['Partner 5'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'],inline=False)
                     if(supportrow['Partner 6'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'],inline=False)
                     if(supportrow['Partner 7'] != '0'):
-                        supportembed.add_field(name ="", value=supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'],inline=True)
+                        supportembed.add_field(name ="", value=supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'],inline=False)
         supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
 
 
