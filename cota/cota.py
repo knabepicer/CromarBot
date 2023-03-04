@@ -23,7 +23,20 @@ class Cota(commands.Cog):
         if (row['Promotes'] == "Yes"):
             gains = cota_get_gains(row)
             unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-        pages = [unitembed, "Supports will be here"]
+        page_groups = [
+            pages.PageGroup(
+            pages=[unitembed], 
+            label="Main Unit Data"
+            description="Standard unit data: base stats, growths, etc."
+            use_default_buttons=False,
+            ),
+            pages.PageGroup(
+            pages=["Supports will be here"]
+            label="Supports"
+            description="Support data for the unit"
+            use_default_buttons=False,
+            )
+        ]
         return pages
 
 
@@ -40,8 +53,6 @@ class Cota(commands.Cog):
                 stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
                 if(stripped_row.lower() == stripped_name.lower()):
                     paginator = pages.Paginator(pages=self.get_unit_pages(row))
-                    paginator.remove_button("first")
-                    paginator.remove_button("last")
                     await paginator.respond(ctx.interaction)
                     was_found = True
             if (not was_found):
