@@ -52,7 +52,7 @@ class Cota(commands.Cog):
             for row in reader:
                 stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
                 if(stripped_row.lower() == stripped_name.lower()):
-                    paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True)
+                    paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, use_default_buttons=False)
                     await paginator.respond(ctx.interaction)
                     was_found = True
             if (not was_found):
