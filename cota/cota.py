@@ -58,10 +58,10 @@ class Cota(commands.Cog):
                     promoembed.add_field(name="From " + promorow['Base Class 1'], value="", inline=True)
                     promoembed.add_field(name=promorow['Promo Class 1'], value=cota_get_extra_gains(promorow, "1"), inline=True)
                     promoembed.add_field(name=promorow['Promo Class 2'], value=cota_get_extra_gains(promorow, "2"), inline=True)
-                    promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=False)
+                    promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=True)
                     promoembed.add_field(name=promorow['Promo Class 3'], value=cota_get_extra_gains(promorow, "3"), inline=True)
                     promoembed.add_field(name=promorow['Promo Class 4'], value=cota_get_extra_gains(promorow, "4"), inline=True)
-                    promoembed.add_field(name="From " + promorow['Base Class 3'], value="", inline=False)
+                    promoembed.add_field(name="From " + promorow['Base Class 3'], value="", inline=True)
                     promoembed.add_field(name=promorow['Promo Class 5'], value=cota_get_extra_gains(promorow, "5"), inline=True)
                     promoembed.add_field(name=promorow['Promo Class 6'], value=cota_get_extra_gains(promorow, "6"), inline=True)
                     promofound = True
