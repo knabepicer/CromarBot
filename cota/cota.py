@@ -11,7 +11,9 @@ class Cota(commands.Cog):
 
     def get_unit_pages(self, row):
         unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+        supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
         unitembed.set_thumbnail(url=row['Portrait'])
+        supportembed.set_thumbnail(url=row['Portrait'])
         unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
         unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
         bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
@@ -23,6 +25,28 @@ class Cota(commands.Cog):
         if (row['Promotes'] == "Yes"):
             gains = cota_get_gains(row)
             unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
+        
+        with open('cota/cota supports.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for supportrow in reader:
+                if(row['Name'] == supportrow['Name']):
+                    if(supportrow['Partner 1'] != '0'):
+                        supportembed.add_field(supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'],inline=True)
+                    if(supportrow['Partner 2'] != '0'):
+                        supportembed.add_field(supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'],inline=True)
+                    if(supportrow['Partner 3'] != '0'):
+                        supportembed.add_field(supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'],inline=True)
+                    if(supportrow['Partner 4'] != '0'):
+                        supportembed.add_field(supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'],inline=True)
+                    if(supportrow['Partner 5'] != '0'):
+                        supportembed.add_field(supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'],inline=True)
+                    if(supportrow['Partner 6'] != '0'):
+                        supportembed.add_field(supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'],inline=True)
+                    if(supportrow['Partner 7'] != '0'):
+                        supportembed.add_field(supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'],inline=True)
+        supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
+
+
         page_groups = [
             pages.PageGroup(
             pages=[unitembed], 
@@ -32,7 +56,7 @@ class Cota(commands.Cog):
             default=True,
             ),
             pages.PageGroup(
-            pages=["Supports will be here"],
+            pages=[supportembed],
             label="Supports",
             description="Support data for the unit",
             use_default_buttons=False,

@@ -1,0 +1,62 @@
+Name,Partner 1,Partner 2,Partner 3,Partner 4,Partner 5,Partner 6,Partner 7,Starting Value 1,Starting Value 2,Starting Value 3,Starting Value 4,Starting Value 5,Starting Value 6,Starting Value 7,Growth 1,Growth 2,Growth 3,Growth 4,Growth 5,Growth 6,Growth 7
+Kuijia,Sovnya (Thunder),Srikhandi (Wind),Venus (Wind),Poincare (Light),Expirus (Dark),The Kamuth (Ice),Alderich (Wind),0,0,0,0,0,80,0,22,52,70,70,70,128,128
+Hazel,Mac (Fire),Frances (Ice),Ikechukwu (Ice),Bloody Jeb (Thunder),Kim (Ice),0,0,37,32,0,0,0,30,25,36,64,31,48,31,3,3
+Shale,Fernandez (Light),Youngblood (Thunder),Kim (Ice),Geirhart (Fire),Itoro (Fire),Burdock (Dark),0,0,0,0,0,0,0,0,22,22,31,31,32,72,0
+Floor,Fernandez (Light),William (Ice),Kim (Ice),Itoro (Fire),Adine (Anima),Poincare (Light),0,0,30,0,0,26,0,0,22,25,31,32,38,54,0
+Fernandez,Shale (Ice),Floor (Fire),William (Ice),Gu (Anima),Weber (Ice),0,0,0,0,0,0,0,0,0,22,22,31,50,84,0,0
+Youngblood,Shale (Ice),Sjoerd (Wind),Kilian (Dark),Ansha (Light),Seer (Dark),0,0,0,0,0,0,0,0,0,22,30,26,36,84,0,0
+Sjoerd,Youngblood (Thunder),Giroux (Ice),Mac (Fire),Vivek (Wind),Weber (Ice),Lily (Light),0,0,0,0,0,0,0,0,30,31,31,40,84,40,0
+Philip,Noki (Thunder),William (Ice),Giroux (Ice),Uyama (Light),Bloody Jeb (Thunder),0,0,0,41,0,0,0,0,0,25,26,31,41,49,0,0
+Noki,Philip (Fire),D. Sunwing (Thunder),Lily (Light),Srikhandi (Wind),Burdock (Dark),0,0,0,0,32,0,0,0,0,25,48,48,64,64,0,0
+Kilian,Youngblood (Thunder),Daisy (Fire),Vectar (Ice),Uyama (Light),Ansha (Light),Srikhandi (Wind),0,0,64,0,0,0,0,0,26,48,36,48,48,48,0
+Daisy,Kilian (Dark),Sovnya (Thunder),Alair (Dark),Drouin (Ice),Bar'del (Fire),Alderich (Wind),0,64,64,0,5,64,0,0,48,48,36,52,128,128,0
+D. Sunwing,Noki (Thunder),Weber (Ice),Kalach (Thunder),Vectar (Ice),Frances (Ice),Lily (Light),0,0,0,0,0,0,0,0,48,128,128,36,96,96,0
+Ikechukwu,Sovnya (Thunder),Geirhart (Fire),Luan (Dark),Vectar (Ice),Mac (Fire),Hazel (Fire),Gu (Anima),53,0,0,0,0,0,0,22,36,36,36,36,31,96
+Sovnya,Kuijia (Dark),Daisy (Fire),William (Ice),Ikechukwu (Ice),Geirhart (Fire),Luan (Dark),Bar'del (Fire),0,64,16,53,0,0,64,22,48,48,22,36,36,128
+Josie,Millisent (Fire),Seer (Dark),Burdock (Dark),Adine (Anima),Maluj (Wind),0,0,0,0,0,0,0,15,0,128,128,64,64,72,3,0
+Itoro,Shale (Ice),Alair (Dark),Uyama (Light),Vectar (Ice),Floor (Fire),Kim (Ice),Liam (Wind),0,0,0,0,0,0,0,32,36,64,36,32,36,64
+Alair,Daisy (Fire),Gu (Anima),Itoro (Fire),Abdul (Anima),Geirhart (Fire),0,0,0,0,0,0,0,0,0,36,64,36,64,36,0,0
+Poincare,Frances (Ice),Floor (Fire),Kuijia (Dark),Queijo (Ice),Clothilde (Wind),0,0,64,0,0,0,0,10,0,128,54,70,128,128,2,0
+William,Fernandez (Light),Floor (Fire),Philip (Fire),Sovnya (Thunder),Luan (Dark),Liam (Wind),0,0,30,41,16,0,0,0,31,25,26,48,36,64,0
+Taika,Luan (Dark),Vivek (Wind),Bloody Jeb (Thunder),Adine (Anima),Expirus (Dark),Alderich (Wind),0,0,0,0,0,0,0,0,36,64,64,64,72,128,0
+Abdul,Lily (Light),Vivek (Wind),Alair (Dark),Gu (Anima),Queijo (Ice),Flint (Light),0,16,0,0,0,0,0,0,64,64,64,64,128,128,0
+Lily,Sjoerd (Wind),Abdul (Anima),Noki (Thunder),Arkell (Fire),D. Sunwing (Thunder),0,0,0,16,32,0,0,0,0,40,64,48,64,96,0,0
+Vivek,Ansha (Light),Abdul (Anima),Soma (Fire),Taika (Ice),Sjoerd (Wind),Queijo (Ice),0,0,0,0,0,0,0,0,64,64,64,64,40,128,0
+Uyama,Kilian (Dark),Maluj (Wind),"""Brioche"" (Anima)",Itoro (Fire),Philip (Fire),0,0,0,0,0,0,0,0,0,48,128,128,64,41,0,0
+Ansha,Vivek (Wind),Kilian (Dark),Rienmire (Wind),Luan (Dark),Youngblood (Thunder),Flint (Light),0,0,0,0,0,0,0,0,64,48,128,72,36,64,0
+Gu,Drouin (Ice),Ikechukwu (Ice),Alair (Dark),Fernandez (Light),Abdul (Anima),Arkell (Fire),0,64,0,0,0,0,0,0,96,96,64,50,64,64,0
+Mac,Hazel (Fire),Sjoerd (Wind),Ikechukwu (Ice),Venus (Wind),Flint (Light),0,0,37,0,0,0,0,0,0,36,31,36,96,96,0,0
+Drouin,Gu (Anima),Maluj (Wind),Daisy (Fire),Adine (Anima),Venus (Wind),Arkell (Fire),0,64,0,5,0,0,0,0,96,96,52,128,64,128,0
+Venus,Kuijia (Dark),Kalach (Thunder),Drouin (Ice),Mac (Fire),Giroux (Ice),Liam (Wind),0,0,0,0,0,0,0,0,70,128,64,96,64,128,0
+Soma,Vivek (Wind),Expirus (Dark),Bloody Jeb (Thunder),Strontium (Thunder),Liam (Wind),Alderich (Wind),Millisent (Fire),0,0,0,0,0,0,0,64,64,64,128,64,128,128
+Adine,Drouin (Ice),Taika (Ice),Floor (Fire),Burdock (Dark),Josie (Light),Srikhandi (Wind),0,0,0,26,0,0,0,0,128,64,38,64,64,64,0
+Kalach,Millisent (Fire),D. Sunwing (Thunder),Maluj (Wind),Venus (Wind),0,0,0,242,0,5,0,0,0,0,0,128,128,128,0,0,0
+Millisent,Kalach (Thunder),Frances (Ice),Josie (Light),Soma (Fire),0,0,0,242,0,0,0,20,0,0,0,128,128,128,3,0,0
+Finwald,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alessia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Geirhart,Shale (Ice),Ikechukwu (Ice),Alair (Dark),Sovnya (Thunder),Giroux (Ice),0,0,0,0,0,0,0,0,0,31,36,36,36,36,0,0
+Luan,William (Ice),Ansha (Light),Expirus (Dark),Vectar (Ice),Sovnya (Thunder),Taika (Ice),Ikechukwu (Ice),0,0,0,0,0,0,0,36,72,72,36,36,36,36
+Vectar,Itoro (Fire),Luan (Dark),D. Sunwing (Thunder),Ikechukwu (Ice),Kilian (Dark),0,0,0,0,0,0,0,0,0,36,36,36,36,36,0,0
+Giroux,Geirhart (Fire),Philip (Fire),Sjoerd (Wind),Venus (Wind),Burdock (Dark),Arkell (Fire),0,0,0,0,0,0,0,0,36,31,31,64,64,64,0
+Kim,Shale (Ice),Floor (Fire),Hazel (Fire),Itoro (Fire),Delano (Anima),Flint (Light),0,0,0,0,0,0,0,0,31,31,31,36,128,128,0
+Bloody Jeb,Philip (Fire),Taika (Ice),Soma (Fire),Hazel (Fire),"""Brioche"" (Anima)",0,0,0,0,0,0,0,0,0,49,64,64,48,128,0,0
+Arkell,Drouin (Ice),Gu (Anima),Maluj (Wind),Lily (Light),Giroux (Ice),Liam (Wind),0,0,0,0,0,0,0,0,128,64,128,64,64,64,0
+Srikhandi,Kuijia (Dark),Kilian (Dark),Adine (Anima),Rienmire (Wind),Noki (Thunder),0,0,0,0,0,0,0,0,0,52,48,64,128,64,0,0
+Flint,Burdock (Dark),Abdul (Anima),Ansha (Light),Mac (Fire),Kim (Ice),0,0,0,0,0,0,0,0,0,64,128,64,96,128,0,0
+Clothilde,Delano (Anima),Frances (Ice),Strontium (Thunder),Poincare (Light),0,0,0,0,0,0,0,0,0,0,128,128,128,128,0,0,0
+Delano,Clothilde (Wind),Bar'del (Fire),"""Brioche"" (Anima)",Kim (Ice),0,0,0,0,0,0,0,0,0,0,128,128,128,128,0,0,0
+Strontium,Clothilde (Wind),Soma (Fire),Rienmire (Wind),Seer (Dark),0,0,0,0,0,0,0,0,0,0,128,128,128,128,0,0,0
+"""Brioche""",Weber (Ice),Uyama (Light),Delano (Anima),Bloody Jeb (Thunder),Liam (Wind),0,0,0,0,0,0,0,0,0,128,128,128,128,128,0,0
+Expirus,Kuijia (Dark),Luan (Dark),Taika (Ice),Soma (Fire),Queijo (Ice),Alderich (Wind),0,0,0,0,0,0,0,0,70,72,72,64,128,128,0
+Maluj,Drouin (Ice),Uyama (Light),Kalach (Thunder),Josie (Light),Arkell (Fire),Queijo (Ice),0,0,0,5,0,0,0,0,96,128,128,72,128,128,0
+Weber,D. Sunwing (Thunder),"""Brioche"" (Anima)",Fernandez (Light),Sjoerd (Wind),Queijo (Ice),0,0,0,0,0,0,0,0,0,128,128,84,84,128,0,0
+Burdock,Shale (Ice),The Kamuth (Ice),Josie (Light),Noki (Thunder),Adine (Anima),Giroux (Ice),Flint (Light),0,0,0,0,0,0,0,72,128,64,64,64,64,64
+Bar'del,Sovnya (Thunder),Daisy (Fire),Delano (Anima),0,0,0,0,64,64,0,0,0,0,0,128,128,128,0,0,0,0
+Seer,Josie (Light),Youngblood (Thunder),Strontium (Thunder),The Kamuth (Ice),0,0,0,0,0,0,0,0,0,0,128,84,128,128,0,0,0
+The Kamuth,Burdock (Dark),Kuijia (Dark),Queijo (Ice),Seer (Dark),Alderich (Wind),0,0,0,80,0,0,0,0,0,128,128,128,128,128,0,0
+Rienmire,Ansha (Light),Strontium (Thunder),Srikhandi (Wind),0,0,0,0,0,0,0,0,0,0,0,128,128,128,0,0,0,0
+Frances,Poincare (Light),Hazel (Fire),Millisent (Fire),Clothilde (Wind),D. Sunwing (Thunder),Alderich (Wind),0,64,32,0,0,0,0,0,128,64,128,128,96,128,0
+Queijo,Abdul (Anima),The Kamuth (Ice),Poincare (Light),Weber (Ice),Expirus (Dark),Maluj (Wind),Vivek (Wind),0,0,0,0,0,0,0,128,128,128,128,128,128,128
+Liam,"""Brioche"" (Anima)",Venus (Wind),William (Ice),Itoro (Fire),Arkell (Fire),Soma (Fire),0,0,0,0,0,0,0,0,128,128,64,64,64,64,0
+Alderich,Kuijia (Dark),Taika (Ice),Daisy (Fire),Soma (Fire),Frances (Ice),Expirus (Dark),The Kamuth (Ice),0,0,0,0,0,0,0,128,128,128,128,128,128,128
+Zain,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
