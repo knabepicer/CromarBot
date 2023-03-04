@@ -47,6 +47,7 @@ class Bob(commands.Cog):
                         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
                     await ctx.response.send_message(embed=unitembed)
                     was_found = True
+                    break
             if (not was_found):
                 await ctx.response.send_message("That unit does not exist.")
 
@@ -95,6 +96,7 @@ class Bob(commands.Cog):
                             unitembed.add_field(name='Price: ', value=price_string, inline=False)
                         await ctx.response.send_message(embed=unitembed)
                         was_found = True
+                        break
                 if (not was_found):
                     await ctx.response.send_message("That item does not exist.")
 
@@ -112,6 +114,7 @@ class Bob(commands.Cog):
                     unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
                     was_found = True
                     await ctx.response.send_message(embed=unitembed)
+                    break
             if (not was_found):
                     await ctx.response.send_message("That skill does not exist.")
 

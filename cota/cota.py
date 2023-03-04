@@ -48,6 +48,24 @@ class Cota(commands.Cog):
                     supportembed.add_field(name="", value=supportstring, inline=False)
         supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
 
+        promoembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+        promoembed.set_thumbnail(url=row['Portrait'])
+        promofound = False
+        with open('cota/cota extra promos.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for promorow in reader:
+                if(row['Name'] == promorow['Name']):
+                    promoembed.add_field(name="From " + promorow['Base Class 1'], value="", inline=True)
+                    promoembed.add_field(name=promorow['Promo Class 1'], value=cota_get_extra_gains(promorow, "1"), inline=True)
+                    promoembed.add_field(name=promorow['Promo Class 2'], value=cota_get_extra_gains(promorow, "2"), inline=True)
+                    promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=False)
+                    promoembed.add_field(name=promorow['Promo Class 3'], value=cota_get_extra_gains(promorow, "3"), inline=True)
+                    promoembed.add_field(name=promorow['Promo Class 4'], value=cota_get_extra_gains(promorow, "4"), inline=True)
+                    promoembed.add_field(name="From " + promorow['Base Class 5'], value="", inline=False)
+                    promoembed.add_field(name=promorow['Promo Class 5'], value=cota_get_extra_gains(promorow, "5"), inline=True)
+                    promoembed.add_field(name=promorow['Promo Class 6'], value=cota_get_extra_gains(promorow, "6"), inline=True)
+                    promofound = True
+                    break
 
         page_groups = [
             pages.PageGroup(
@@ -64,6 +82,15 @@ class Cota(commands.Cog):
             use_default_buttons=False,
             )
         ]
+        if (promofound):
+            page_groups.append(pages.PageGroup
+            (
+            pages=[promoembed],
+            label="Second Tier Promotions",
+            description="Data on second tier promotions for trainee unit",
+            use_default_buttons=False,
+            )
+            )
         return page_groups
 
 
@@ -82,6 +109,7 @@ class Cota(commands.Cog):
                     paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
                     await paginator.respond(ctx.interaction)
                     was_found = True
+                    break
             if (not was_found):
                 await ctx.response.send_message("That unit does not exist.")
 
@@ -303,6 +331,46 @@ def cota_get_gains(row):
             else:
                 gains += "Dark: " + row['Dark Gains 3'] + " | "
         gains = gains[:-3]
+    return gains
+
+def cota_get_extra_gains(row, num):
+    gains = ""
+    if (row['HP Gains ' + num] != '0'):
+        gains += "HP: +" + row['HP Gains'] + " | "
+    if (row['Atk Gains ' + num] != '0'):
+        gains += "Atk: +" + row['Atk Gains'] + " | "
+    if (row['Skl Gains ' + num] != '0'):
+        gains += "Skl: +" + row['Skl Gains'] + " | "
+    if (row['Spd Gains ' + num] != '0'):
+        gains += "Spd: +" + row['Spd Gains'] + " | "
+    if (row['Def Gains ' + num] != '0'):
+        gains += "Def: +" + row['Def Gains'] + " | "
+    if (row['Res Gains ' + num] != '0'):
+        gains += "Res: +" + row['Res Gains'] + " | "
+    if (row['Con Gains ' + num] != '0'):
+        gains += "Con: +" + row['Con Gains'] + " | "
+    if (row['Mov Gains ' + num] != '0'):
+            gains += "Mov: " + row['Mov Gains 2'] + " | "
+    gains = gains[:-3]
+    gains += "\n"
+    if (row['Sword Gains ' + num] != 'None'):
+        gains += "Sword: " + row['Sword Gains 3'] + " | "
+    if (row['Lance Gains ' + num] != 'None'):
+        gains += "Lance: " + row['Lance Gains 3'] + " | "
+    if (row['Axe Gains ' + num] != 'None'):
+        gains += "Axe: " + row['Axe Gains 3'] + " | "
+    if (row['Bow Gains ' + num] != 'None'):
+        gains += "Bow: " + row['Bow Gains 3'] + " | "
+    if (row['Staff Gains ' + num] != 'None'):
+        gains += "Staff: " + row['Staff Gains 3'] + " | "
+    if (row['Anima Gains ' + num] != 'None'):
+        gains += "Anima: " + row['Anima Gains 3'] + " | "
+    if (row['Light Gains ' + num] != 'None'):
+        gains += "Light: " + row['Light Gains 3'] + " | "
+    if (row['Dark Gains ' + num] != 'None'):
+        gains += "Dark: " + row['Dark Gains 3'] + " | "
+        gains = gains[:-3]
+
     return gains
 
 def setup(bot):
