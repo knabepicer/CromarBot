@@ -37,7 +37,7 @@ class Cota(commands.Cog):
             use_default_buttons=False,
             )
         ]
-        return pages
+        return page_groups
 
 
     cota = discord.SlashCommandGroup("cota", "Get Call of the Armor data")
