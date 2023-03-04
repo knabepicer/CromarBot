@@ -9,7 +9,7 @@ class Cota(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    def get_unit_pages(row):
+    def get_unit_pages(self, row):
         unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
         unitembed.set_thumbnail(url=row['Portrait'])
         unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
