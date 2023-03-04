@@ -29,6 +29,7 @@ class Cota(commands.Cog):
             label="Main Unit Data",
             description="Standard unit data: base stats, growths, etc.",
             use_default_buttons=False,
+            default=True,
             ),
             pages.PageGroup(
             pages=["Supports will be here"],
@@ -52,7 +53,7 @@ class Cota(commands.Cog):
             for row in reader:
                 stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
                 if(stripped_row.lower() == stripped_name.lower()):
-                    paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False)
+                    paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view")
                     await paginator.respond(ctx.interaction)
                     was_found = True
             if (not was_found):
