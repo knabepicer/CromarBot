@@ -369,7 +369,7 @@ def cota_get_extra_gains(row, num):
         gains += "Light: " + row['Light Gains ' + num] + " | "
     if (row['Dark Gains ' + num] != 'None'):
         gains += "Dark: " + row['Dark Gains ' + num] + " | "
-        gains = gains[:-3]
+    gains = gains[:-3]
 
     return gains
 
