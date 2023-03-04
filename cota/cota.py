@@ -2,12 +2,30 @@ import discord
 import csv
 import re
 import random
-from discord.ext import commands
+from discord.ext import commands, pages
 from discord import option
 
 class Cota(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    def get_unit_pages(self, row):
+        unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+        unitembed.set_thumbnail(url=row['Portrait'])
+        unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+        unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+        bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+        unitembed.add_field(name="Bases", value=bases, inline=False)
+        growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
+        unitembed.add_field(name="Growths", value=growths, inline=False)
+        ranks = cota_get_ranks(row)
+        unitembed.add_field(name="Ranks", value=ranks, inline=False)
+        if (row['Promotes'] == "Yes"):
+            gains = cota_get_gains(row)
+            unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
+        pages = [unitembed, "Supports will be here"]
+        return pages
+
 
     cota = discord.SlashCommandGroup("cota", "Get Call of the Armor data")
 
@@ -21,20 +39,10 @@ class Cota(commands.Cog):
             for row in reader:
                 stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
                 if(stripped_row.lower() == stripped_name.lower()):
-                    unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
-                    unitembed.set_thumbnail(url=row['Portrait'])
-                    unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-                    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
-                    bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
-                    unitembed.add_field(name="Bases", value=bases, inline=False)
-                    growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
-                    unitembed.add_field(name="Growths", value=growths, inline=False)
-                    ranks = cota_get_ranks(row)
-                    unitembed.add_field(name="Ranks", value=ranks, inline=False)
-                    if (row['Promotes'] == "Yes"):
-                        gains = cota_get_gains(row)
-                        unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-                    await ctx.response.send_message(embed=unitembed)
+                    paginator = pages.Paginator(pages=self.get_unit_pages(row))
+                    paginator.remove_button("first")
+                    paginator.remove_button("last")
+                    await paginator.respond(ctx.interaction)
                     was_found = True
             if (not was_found):
                 await ctx.response.send_message("That unit does not exist.")
