@@ -13,7 +13,7 @@ bot = discord.Bot()
 cromar = bot.create_group("cromar", "Get info about Cromar Bot")
 
 test_ids = [1039354532167176303]
-
+public_test_ids = [1039354532167176303,1081749141480288256]
 
 @cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
 async def help(ctx): 
@@ -26,7 +26,7 @@ async def help(ctx):
     await ctx.response.send_message(embed=unitembed)
 
 @cromar.command(guild_ids=test_ids)
-async def numservers(ctx):
+async def numserver(ctx):
     servers = ""
     guilds = await bot.fetch_guilds(limit=150).flatten()
     for guild in guilds:
