@@ -33,6 +33,10 @@ async def help(ctx):
 #         servers += guild.name + '\n'
 #     await ctx.response.send_message(servers)
 
+@cromar.command(guild_ids=test_ids)
+async def test(ctx):
+    await ctx.response.send_message("test")
+
 bot.load_extension("bob.bob")
 bot.load_extension("cota.cota")
 bot.load_extension("7s.sevens")
