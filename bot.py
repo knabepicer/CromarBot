@@ -36,6 +36,7 @@ async def help(ctx):
 bot.load_extension("bob.bob")
 bot.load_extension("cota.cota")
 bot.load_extension("7s.sevens")
+bot.load_extension("trtr.trtr")
 @bot.event
 async def on_ready():
     
