@@ -26,7 +26,7 @@ async def help(ctx):
 
 @cromar.command(guild_ids=test_ids)
 async def numservers(ctx):
-    await ctx.response.send_message(discord.Client.guilds)
+    await ctx.response.send_message(str(len(discord.Client.guilds)))
 
 bot.load_extension("bob.bob")
 bot.load_extension("cota.cota")
