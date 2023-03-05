@@ -26,27 +26,27 @@ class SevenSib(commands.Cog):
             gains = sevens_get_gains(row)
             unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
         
-        # with open('cota/cota supports.csv', newline='') as csvfile:
-        #     reader = csv.DictReader(csvfile)
-        #     for supportrow in reader:
-        #         if(row['Name'] == supportrow['Name']):
-        #             supportstring = ""
-        #             if(supportrow['Partner 1'] != '0'):
-        #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-        #             if(supportrow['Partner 2'] != '0'):
-        #                 supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
-        #             if(supportrow['Partner 3'] != '0'):
-        #                 supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
-        #             if(supportrow['Partner 4'] != '0'):
-        #                 supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
-        #             if(supportrow['Partner 5'] != '0'):
-        #                 supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
-        #             if(supportrow['Partner 6'] != '0'):
-        #                 supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
-        #             if(supportrow['Partner 7'] != '0'):
-        #                 supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n"
-        #             supportembed.add_field(name="", value=supportstring, inline=False)
-        # supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
+        with open('7s/7s supports.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for supportrow in reader:
+                if(row['Name'] == supportrow['Name']):
+                    supportstring = ""
+                    if(supportrow['Partner 1'] != '0'):
+                        supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
+                    if(supportrow['Partner 2'] != '0'):
+                        supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
+                    if(supportrow['Partner 3'] != '0'):
+                        supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
+                    if(supportrow['Partner 4'] != '0'):
+                        supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
+                    if(supportrow['Partner 5'] != '0'):
+                        supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
+                    if(supportrow['Partner 6'] != '0'):
+                        supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
+                    if(supportrow['Partner 7'] != '0'):
+                        supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n"
+                    supportembed.add_field(name="", value=supportstring, inline=False)
+        supportembed.set_footer(text="In Seven Siblings, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
 
 
         page_groups = [
@@ -57,12 +57,12 @@ class SevenSib(commands.Cog):
             use_default_buttons=False,
             default=True,
             ),
-            # pages.PageGroup(
-            # pages=[supportembed],
-            # label="Supports",
-            # description="Support data for the unit",
-            # use_default_buttons=False,
-            # )
+            pages.PageGroup(
+            pages=[supportembed],
+            label="Supports",
+            description="Support data for the unit",
+            use_default_buttons=False,
+            )
         ]
         return page_groups
 

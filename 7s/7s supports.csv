@@ -1,0 +1,40 @@
+Name,Partner 1,Partner 2,Partner 3,Partner 4,Partner 5,Partner 6,Partner 7,Starting Value 1,Starting Value 2,Starting Value 3,Starting Value 4,Starting Value 5,Starting Value 6,Starting Value 7,Growth 1,Growth 2,Growth 3,Growth 4,Growth 5,Growth 6,Growth 7
+Arianna,Scott (Fire),Katie (Thunder),Christine (Wind),0,0,0,0,81,61,79,0,0,0,0,21,21,112,0,0,0,0
+Nancy,Kayla (Light),Scott (Fire),Kristia (Anima),Keegan (Dark),Luke (Wind),Serah (Light),Will (Anima),61,61,61,61,61,61,61,21,21,21,21,21,21,21
+Scott,Arianna (Ice),Nancy (Thunder),Moses (Wind),0,0,0,0,81,61,79,0,0,0,0,21,21,112,0,0,0,0
+Weston,Sarah (Thunder),Shelton (Wind),Alex (Wind),0,0,0,0,61,79,79,0,0,0,0,21,48,80,0,0,0,0
+Sammy,Keegan (Dark),Emily (Wind),Reilly (Thunder),0,0,0,0,61,61,79,0,0,0,0,21,21,24,0,0,0,0
+Kayla,Nancy (Thunder),Kristia (Anima),Johann (Anima),0,0,0,0,61,61,79,0,0,0,0,21,21,80,0,0,0,0
+Sarah,Weston (Wind),Ariel (Wind),Alyssa (Fire),0,0,0,0,61,61,79,0,0,0,0,21,21,112,2,3,0,0
+Joe,Andrew (Light),Jeremiah (Ice),Lydia (Ice),0,0,0,0,79,61,79,0,0,0,0,21,21,112,0,0,0,0
+Jeremiah,Michelle (Fire),Jordan (Dark),Joe (Ice),0,0,0,0,79,61,61,5,10,0,0,24,21,21,2,2,0,0
+Keegan,Will (Anima),Nancy (Thunder),Sammy (Fire),0,0,0,0,79,61,61,5,5,0,0,21,21,21,3,2,0,0
+Katie,Brandon (Light),Arianna (Ice),Michelle (Fire),0,0,0,0,81,61,61,5,10,0,64,22,21,21,3,2,2,5
+Andrew,Joe (Ice),Reid (Fire),Jordan (Dark),0,0,0,0,79,79,61,3,0,0,0,21,112,21,0,0,0,0
+Kristia,Nancy (Thunder),Kayla (Light),Emily (Wind),0,0,0,0,61,61,79,0,0,0,0,21,21,21,0,0,0,0
+Michelle,Jeremiah (Ice),Katie (Thunder),Alex (Wind),0,0,0,0,79,61,79,0,0,0,0,24,21,80,0,0,0,0
+Kenneth,0,0,0,0,0,0,0,0,0,5,5,10,15,0,3,2,2,2,3,3,0
+Nikko,Brandon (Light),Reilly (Thunder),Wade (Anima),0,0,0,0,79,57,57,0,0,0,0,24,22,22,0,0,0,0
+Luke,Nancy (Thunder),Serah (Light),Ryan (Anima),0,0,0,0,61,62,15,0,0,0,0,21,21,64,0,0,0,0
+Shelton,Weston (Wind),Ryan (Anima),Wade (Anima),0,0,0,0,79,31,31,0,0,0,0,48,48,48,0,0,0,0
+Reilly,Sammy (Fire),Nikko (Ice),Cale (Anima),0,0,0,0,79,57,79,0,0,0,0,24,22,32,0,0,0,0
+Reid,Andrew (Light),Brandon (Light),Ariel (Wind),0,0,0,0,79,79,79,0,0,0,0,112,112,112,0,0,0,0
+Ryan,Luke (Wind),Shelton (Wind),Lydia (Ice),0,0,0,0,15,31,79,0,0,0,0,64,48,112,0,0,0,0
+Emily,Nike (Dark),Kristia (Anima),Sammy (Fire),0,0,0,0,31,79,61,5,0,0,0,48,21,21,2,0,0,0
+Will,Nancy (Thunder),Keegan (Dark),Cale (Anima),0,0,0,0,61,79,79,64,5,0,0,21,21,32,4,3,0,0
+Serah,Luke (Wind),Christine (Wind),Nancy (Thunder),0,0,0,0,62,79,61,0,0,0,0,21,112,21,0,0,0,0
+Cale,Will (Anima),Reilly (Thunder),Johann (Anima),0,0,0,0,79,79,79,0,0,0,0,32,32,80,0,0,0,0
+Brandon,Katie (Thunder),Nikko (Ice),Reid (Fire),0,0,0,0,81,79,79,0,0,0,0,22,24,112,0,0,0,0
+Wade,Shelton (Wind),Nikko (Ice),Jordan (Dark),0,0,0,0,31,57,79,0,0,0,0,48,22,22,0,0,0,0
+Nike,Emily (Wind),Moses (Wind),Kjetil (Thunder),0,0,0,0,31,79,79,0,0,0,0,48,112,80,0,0,0,0
+Stephen,Meredith (Thunder),0,0,0,0,0,0,241,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ariel,Reid (Fire),Sarah (Thunder),Alyssa (Fire),0,0,0,0,79,61,79,0,0,0,0,112,21,112,0,0,0,0
+Jordan,Jeremiah (Ice),Andrew (Light),Wade (Anima),0,0,0,0,61,61,79,0,0,0,0,21,21,22,0,0,0,0
+Meredith,Stephen (Anima),0,0,0,0,0,0,241,0,0,0,0,0,0,0,0,0,0,0,0,0
+Moses,Christine (Wind),Nike (Dark),Scott (Fire),0,0,0,0,79,79,79,0,0,0,0,112,112,112,0,0,0,0
+Lydia,Joe (Ice),Ryan (Anima),Alyssa (Fire),0,0,0,0,79,79,79,0,0,0,0,112,112,112,0,0,0,0
+Alyssa,Lydia (Ice),Ariel (Wind),Sarah (Thunder),0,0,0,0,79,79,79,0,0,0,0,112,112,112,0,0,0,0
+Christine,Moses (Wind),Serah (Light),Arianna (Ice),0,0,0,0,79,79,79,0,0,0,0,112,112,112,0,0,0,0
+Kjetil,Nike (Dark),Johann (Anima),Alex (Wind),0,0,0,0,79,79,79,0,0,0,0,80,80,80,0,0,0,0
+Johann,Cale (Anima),Kjetil (Thunder),Kayla (Light),0,0,0,0,79,79,79,0,0,0,0,80,80,80,0,0,0,0
+Alex,Weston (Wind),Kjetil (Thunder),Michelle (Fire),0,0,0,0,79,79,79,0,0,0,0,80,80,80,0,0,0,0
