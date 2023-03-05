@@ -1,2 +1,2 @@
 # CromarBot
- oh boy oh boy
+A discord bot specifically for fetching data for Fire Emblem romhacks.
