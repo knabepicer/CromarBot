@@ -27,7 +27,8 @@ async def help(ctx):
 @cromar.command(guild_ids=test_ids)
 async def numservers(ctx):
     servers = ""
-    for guild in bot.fetch_guilds(limit=150):
+    guilds = await bot.fetch_guilds(limit=150).flatten()
+    for guild in guilds:
         servers += guild.name + '\n'
     await ctx.response.send_message(servers)
 
