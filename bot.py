@@ -28,7 +28,7 @@ async def help(ctx):
 
 bot.load_extension("bob.bob")
 bot.load_extension("cota.cota")
-#bot.load_extension("paginator")
+bot.load_extension("7s.sevens")
 @bot.event
 async def on_ready():
     #await bot.load_extension("cota")
