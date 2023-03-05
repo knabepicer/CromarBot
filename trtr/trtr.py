@@ -67,7 +67,7 @@ class Trtr(commands.Cog):
 
     public_test_ids = [1039354532167176303,1081749141480288256]
 
-    @trtr.command(description = "Get The Road To Ruin unit data", guild_ids=public_test_ids)
+    @trtr.command(description = "Get The Road to Ruin unit data")
     @option("name", description = "Name of the character to get data for")
     async def unit(self, ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)

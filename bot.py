@@ -23,6 +23,7 @@ async def help(ctx):
     unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
     unitembed.add_field(name='/cota unit [name]', value="Get Call of the Armor unit data", inline=False)
     unitembed.add_field(name='/7s unit [name]', value="Get Seven Siblings unit data", inline=False)
+    unitembed.add_field(name='/trtr unit [name]', value="Get The Road to Ruin unit data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
 # @cromar.command(guild_ids=test_ids)
