@@ -26,14 +26,14 @@ class Trtr(commands.Cog):
             gains = trtr_get_gains(row)
             unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
         
-        # with open('7s/7s supports.csv', newline='') as csvfile:
-        #     reader = csv.DictReader(csvfile)
-        #     for supportrow in reader:
-        #         if(row['Name'] == supportrow['Name']):
-        #             supportstring = ""
-        #             if(supportrow['Partner 1'] != '0'):
-        #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-        #             supportembed.add_field(name="", value=supportstring, inline=False)
+        with open('trtr/trtr supports.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for supportrow in reader:
+                if(row['Name'] == supportrow['Name']):
+                    supportstring = ""
+                    if(supportrow['Partner 1'] != 'None'):
+                        supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
+                    supportembed.add_field(name="", value=supportstring, inline=False)
 
 
         page_groups = [
@@ -44,12 +44,12 @@ class Trtr(commands.Cog):
             use_default_buttons=False,
             default=True,
             ),
-            # pages.PageGroup(
-            # pages=[supportembed],
-            # label="Supports",
-            # description="Support data for the unit",
-            # use_default_buttons=False,
-            # )
+            pages.PageGroup(
+            pages=[supportembed],
+            label="Supports",
+            description="Support data for the unit",
+            use_default_buttons=False,
+            )
         ]
 
         if(row['Name'] == "Ava"):
