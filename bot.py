@@ -26,15 +26,6 @@ async def help(ctx):
     unitembed.add_field(name='/trtr unit [name]', value="Get The Road to Ruin unit data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
-test = bot.create_group("test", "private tests")
-@test.command(guild_ids=test_ids)
-async def dddd(ctx):
-    servers = ""
-    guilds = await bot.fetch_guilds().flatten()
-    for guild in guilds:
-        servers += guild.name + '\n'
-    await ctx.response.send_message(servers)
-
 bot.load_extension("bob.bob")
 bot.load_extension("cota.cota")
 bot.load_extension("7s.sevens")
