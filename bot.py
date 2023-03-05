@@ -12,7 +12,8 @@ bot = discord.Bot()
 #bob = bot.create_group("bob", "Get Bells of Byelen data")
 cromar = bot.create_group("cromar", "Get info about Cromar Bot")
 
-test_ids = [1081749141480288256, 1039354532167176303]
+test_ids = [1039354532167176303]
+
 
 @cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
 async def help(ctx): 
