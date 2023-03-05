@@ -22,7 +22,7 @@ class SevenSib(commands.Cog):
         unitembed.add_field(name="Growths", value=growths, inline=False)
         ranks = sevens_get_ranks(row)
         unitembed.add_field(name="Ranks", value=ranks, inline=False)
-        if (row['Promotes'] != "None"):
+        if (row['Promotion Class'] != "None"):
             gains = sevens_get_gains(row)
             unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
         
