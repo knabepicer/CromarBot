@@ -66,7 +66,7 @@ class Tlp(commands.Cog):
         ]
         return page_groups
 
-    tlp = discord.SlashCommandGroup("7s", "Get The Last Promise data")
+    tlp = discord.SlashCommandGroup("tlp", "Get The Last Promise data")
 
     @tlp.command(description = "Get The Last Promise unit data")
     @option("name", description = "Name of the character to get data for")
