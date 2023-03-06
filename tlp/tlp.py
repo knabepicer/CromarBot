@@ -10,8 +10,8 @@ class Tlp(commands.Cog):
         self.bot = bot
 
     def get_unit_pages(self, row):
-        unitembed=discord.Embed(title=row['Name'], color=0xb56c22)
-        supportembed=discord.Embed(title=row['Name'], color=0xb56c22)
+        unitembed=discord.Embed(title=row['Name'], color=0x040f85)
+        supportembed=discord.Embed(title=row['Name'], color=0x040f85)
         unitembed.set_thumbnail(url=row['Portrait'])
         supportembed.set_thumbnail(url=row['Portrait'])
         unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
