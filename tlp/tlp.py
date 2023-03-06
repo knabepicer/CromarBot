@@ -12,9 +12,10 @@ class Tlp(commands.Cog):
     def get_unit_pages(self, row):
         unitembed=discord.Embed(title=row['Name'], color=0x040f85)
         supportembed=discord.Embed(title=row['Name'], color=0x040f85)
-        unitembed.set_thumbnail(url=row['Portrait'])
         if (row['Name'] == 'Liquid' and random.randint(1, 10) == 1):
             unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1082028931571523734/Liquid_Insane.png')
+        else:
+            unitembed.set_thumbnail(url=row['Portrait'])
         supportembed.set_thumbnail(url=row['Portrait'])
         unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
         unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
