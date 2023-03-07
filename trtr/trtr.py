@@ -88,21 +88,21 @@ class Trtr(commands.Cog):
 def trtr_get_ranks(row):
     ranks = ""
     if (row['Sword'] != 'None'):
-        ranks += "Sword: " + row['Sword'] + " | "
+        ranks += "<:TypeSword:1082455058484052089>Sword: " + row['Sword'] + " | "
     if (row['Lance'] != 'None'):
-        ranks += "Lance: " + row['Lance'] + " | "
+        ranks += "<:TypeLance:1082455057242529843>Lance: " + row['Lance'] + " | "
     if (row['Axe'] != 'None'):
-        ranks += "Axe: " + row['Axe'] + " | "
+        ranks += "<:TypeAxe:1082455056143622144>Axe: " + row['Axe'] + " | "
     if (row['Bow'] != 'None'):
-        ranks += "Bow: " + row['Bow'] + " | "
+        ranks += "<:TypeBow:1082455054000341013>Bow: " + row['Bow'] + " | "
     if (row['Staff'] != 'None'):
-        ranks += "Staff: " + row['Staff'] + " | "
+        ranks += "<:TypeStaff:1082455051819298868>Staff: " + row['Staff'] + " | "
     if (row['Anima'] != 'None'):
-        ranks += "Anima: " + row['Anima'] + " | "
+        ranks += "<:TypeAnima:1082455053257932801>Anima: " + row['Anima'] + " | "
     if (row['Light'] != 'None'):
-        ranks += "Light: " + row['Light'] + " | "
+        ranks += "<:TypeLight:1082455050330316810>Light: " + row['Light'] + " | "
     if (row['Dark'] != 'None'):
-        ranks += "Dark: " + row['Dark'] + " | "
+        ranks += "<:TypeDark:1082455049143320649>Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
     else:
@@ -135,21 +135,21 @@ def trtr_get_gains(row):
     gains += "\n"
     gains2 = ""
     if (row['Sword Gains'] != 'None'):
-            gains2 += "Sword: " + row['Sword Gains'] + " | "
+            gains2 += "<:TypeSword:1082455058484052089>" + row['Sword Gains'] + " | "
     if (row['Lance Gains'] != 'None'):
-            gains2 += "Lance: " + row['Lance Gains'] + " | "
+            gains2 += "<:TypeLance:1082455057242529843>" + row['Lance Gains'] + " | "
     if (row['Axe Gains'] != 'None'):
-            gains2 += "Axe: " + row['Axe Gains'] + " | "
+            gains2 += "<:TypeAxe:1082455056143622144>" + row['Axe Gains'] + " | "
     if (row['Bow Gains'] != 'None'):
-            gains2 += "Bow: " + row['Bow Gains'] + " | "
+            gains2 += "<:TypeBow:1082455054000341013>" + row['Bow Gains'] + " | "
     if (row['Staff Gains'] != 'None'):
-            gains2 += "Staff: " + row['Staff Gains'] + " | "
+            gains2 += "<:TypeStaff:1082455051819298868>" + row['Staff Gains'] + " | "
     if (row['Anima Gains'] != 'None'):
-            gains2 += "Anima: " + row['Anima Gains'] + " | "
+            gains2 += "<:TypeAnima:1082455053257932801>" + row['Anima Gains'] + " | "
     if (row['Light Gains'] != 'None'):
-            gains2 += "Light: " + row['Light Gains'] + " | "
+            gains2 += "<:TypeLight:1082455050330316810>" + row['Light Gains'] + " | "
     if (row['Dark Gains'] != 'None'):
-            gains2 += "Dark: " + row['Dark Gains'] + " | "
+            gains2 += "<:TypeDark:1082455049143320649>" + row['Dark Gains'] + " | "
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
     return gains + gains2
