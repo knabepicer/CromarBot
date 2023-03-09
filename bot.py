@@ -22,14 +22,11 @@ public_test_ids = [1039354532167176303,1081749141480288256]
 @cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
-    unitembed.add_field(name='/bob unit [name]', value="Get Bells of Byelen unit data", inline=False)
-    unitembed.add_field(name='/bob item [name]', value="Get Bells of Byelen item data", inline=False)
-    unitembed.add_field(name='/bob skill [name]', value="Get Bells of Byelen skill data", inline=False)
-    unitembed.add_field(name='/cota unit [name]', value="Get Call of the Armor unit data", inline=False)
-    unitembed.add_field(name='/7s unit [name]', value="Get Seven Siblings unit data", inline=False)
-    unitembed.add_field(name='/trtr unit [name]', value="Get The Road to Ruin unit data", inline=False)
-    unitembed.add_field(name='/tlp unit [name]', value="Get The Last Promise unit data", inline=False)
-    unitembed.add_field(name='/tlp boss [name]', value="Get The Last Promise boss data", inline=False)
+    unitembed.add_field(name="Abbreviations", value="",inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr", inline=False)
+    unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
+    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
+    unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
 @bot.slash_command(description = "Get playable unit data", guild_ids=public_test_ids)
