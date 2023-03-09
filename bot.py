@@ -5,7 +5,7 @@ import random
 import Cota
 from discord.ext import commands
 from discord import option
-
+import sys
 
 bot = discord.Bot()
 
@@ -45,8 +45,9 @@ bot.load_extension("trtr.trtr")
 bot.load_extension("tlp.tlp")
 @bot.event
 async def on_ready():
-    
-    print("Ready!")
+    modulenames = set(sys.modules) & set(globals())
+    allmodules = [sys.modules[name] for name in modulenames]
+    print("Ready!" + allmodules)
 
 token = ''
 with open('token.txt') as f:

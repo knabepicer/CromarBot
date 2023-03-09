@@ -4,7 +4,6 @@ import re
 import random
 from discord.ext import pages
 
-
 def get_unit_pages(self, row):
     unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
     supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
