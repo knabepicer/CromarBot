@@ -5,7 +5,7 @@ import random
 from discord.ext import commands, pages
 from discord import option
 
-def get_unit_pages(self, row):
+def get_unit_pages(row):
     unitembed=discord.Embed(title=row['Name'], color=0x67b870)
     supportembed=discord.Embed(title=row['Name'], color=0x67b870)
     unitembed.set_thumbnail(url=row['Portrait'])
