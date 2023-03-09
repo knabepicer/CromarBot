@@ -4,6 +4,7 @@ import re
 import random
 import Cota.cota
 import tlp.tlp
+import sevensibs.sevens
 from discord.ext import commands
 from discord import option
 import sys
@@ -37,6 +38,8 @@ async def unit(ctx, hack: str, name: str):
         await Cota.cota.unit(ctx, name)
     elif (hack == 'tlp'):
         await tlp.tlp.unit(ctx, name)
+    elif (hack == 'tlp'):
+        await sevensibs.sevens.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
