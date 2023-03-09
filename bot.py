@@ -54,16 +54,14 @@ async def boss(ctx, hack: str, name: str):
 
 bot.load_extension("bob.bob")
 #bot.load_extension("cota.cota")
-bot.load_extension("7s.sevens")
+#bot.load_extension("7s.sevens")
 bot.load_extension("trtr.trtr")
 #bot.load_extension("tlp.tlp")
 @bot.event
 async def on_ready():
-    modulenames = set(sys.modules) & set(globals())
-    allmodules = [sys.modules[name] for name in modulenames]
-    for i in allmodules: print (' {}\n'.format(i))
+    
     print("Ready!")
-    print(dir(Cota))
+   
 
 token = ''
 with open('token.txt') as f:
