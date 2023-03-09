@@ -4,7 +4,7 @@ import re
 import random
 from discord.ext import pages
 
-def get_unit_pages(self, row):
+def get_unit_pages(row):
     unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
     supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
     unitembed.set_thumbnail(url=row['Portrait'])
@@ -99,7 +99,7 @@ async def unit(ctx, name: str):
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
+                paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
                 await paginator.respond(ctx.interaction)
                 was_found = True
                 break
