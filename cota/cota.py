@@ -94,7 +94,7 @@ class Cota(commands.Cog):
         return page_groups
 
 
-    cota = discord.SlashCommandGroup("cota", "Get Call of the Armor data")
+    #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
     @cota.command(description = "Get Call of the Armor unit data")
     @option("name", description = "Name of the character to get data for")
