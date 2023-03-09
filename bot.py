@@ -28,7 +28,7 @@ async def help(ctx):
     unitembed.add_field(name='/tlp boss [name]', value="Get The Last Promise boss data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
-@commands.command(description = "Get playable unit data", guild_ids=public_test_ids)
+@bot.slash_command(description = "Get playable unit data", guild_ids=public_test_ids)
 @option("hack", description = "Name of the hack to get data for")
 @option("name", description = "Name of the character to get data for")
 async def unit(ctx, hack: str, name: str):
@@ -37,6 +37,7 @@ async def unit(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
+bot.add_command(unit)
 
 bot.load_extension("bob.bob")
 #bot.load_extension("cota.cota")
