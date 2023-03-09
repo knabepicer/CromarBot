@@ -22,14 +22,14 @@ public_test_ids = [1039354532167176303,1081749141480288256]
 @cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
-    unitembed.add_field(name="Abbreviations", value="",inline=False)
+    unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
-@bot.slash_command(description = "Get playable unit data", guild_ids=public_test_ids)
+@bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for")
 @option("name", description = "Name of the character to get data for")
 async def unit(ctx, hack: str, name: str):
@@ -46,7 +46,7 @@ async def unit(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
-@bot.slash_command(description = "Get boss unit data", guild_ids=public_test_ids)
+@bot.slash_command(description = "Get boss unit data")
 @option("hack", description = "Name of the hack to get data for")
 @option("name", description = "Name of the character to get data for")
 async def boss(ctx, hack: str, name: str):
@@ -55,7 +55,7 @@ async def boss(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
-@bot.slash_command(description = "Get item data", guild_ids=public_test_ids)
+@bot.slash_command(description = "Get item data")
 @option("hack", description = "Name of the hack to get data for")
 @option("name", description = "Name of the item to get data for")
 async def item(ctx, hack: str, name: str):
@@ -64,7 +64,7 @@ async def item(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
-@bot.slash_command(description = "Get skill data", guild_ids=public_test_ids)
+@bot.slash_command(description = "Get skill data")
 @option("hack", description = "Name of the hack to get data for")
 @option("name", description = "Name of the skill to get data for")
 async def skill(ctx, hack: str, name: str):
