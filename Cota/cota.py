@@ -21,7 +21,7 @@ def get_unit_pages(self, row):
         gains = cota_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     
-    with open('cota supports.csv', newline='') as csvfile:
+    with open('Cota/cota supports.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for supportrow in reader:
             if(row['Name'] == supportrow['Name']):
@@ -46,7 +46,7 @@ def get_unit_pages(self, row):
     promoembed=discord.Embed(title=row['Name'], color=0x47CAFF)
     promoembed.set_thumbnail(url=row['Portrait'])
     promofound = False
-    with open('cota extra promos.csv', newline='') as csvfile:
+    with open('Cota/cota extra promos.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for promorow in reader:
             if(row['Name'] == promorow['Name']):
@@ -93,7 +93,7 @@ def get_unit_pages(self, row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('cota unit.csv', newline='') as csvfile:
+    with open('Cota/cota unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
