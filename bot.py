@@ -2,7 +2,7 @@ import discord
 import csv
 import re
 import random
-import Cota.cota
+import Cota
 from discord.ext import commands
 from discord import option
 
