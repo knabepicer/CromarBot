@@ -3,12 +3,14 @@ import csv
 import re
 import random
 from discord.ext import commands
-
+from discord import option
+import Cota.cota
 
 
 bot = discord.Bot()
 
-cromar = bot.create_group("cromar", "Get info about Cromar Bot")
+cromar = bot.create_group("cromar", "Use Cromar Boy commands")
+cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
 test_ids = [1039354532167176303]
 public_test_ids = [1039354532167176303,1081749141480288256]
@@ -26,9 +28,13 @@ async def help(ctx):
     unitembed.add_field(name='/tlp boss [name]', value="Get The Last Promise boss data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
+@cota.command(description = "Get Call of the Armor unit data")
+@option("name", description = "Name of the character to get data for")
+async def unit(self, ctx, name: str):
+    Cota.cota.unit(self, ctx, name)
+
 
 bot.load_extension("bob.bob")
-cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 #bot.load_extension("cota.cota")
 bot.load_extension("7s.sevens")
 bot.load_extension("trtr.trtr")
