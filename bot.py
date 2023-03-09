@@ -44,6 +44,8 @@ async def unit(ctx, hack: str, name: str):
         await sevensibs.sevens.unit(ctx, name)
     elif (hack == 'bob'):
         await bob.bob.unit(ctx, name)
+    elif (hack == 'trtr'):
+        await trtr.trtr.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
