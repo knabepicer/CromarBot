@@ -10,7 +10,7 @@ import sys
 bot = discord.Bot()
 
 cromar = bot.create_group("cromar", "Use Cromar Bot commands")
-cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
+#cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
 test_ids = [1039354532167176303]
 public_test_ids = [1039354532167176303,1081749141480288256]
