@@ -57,7 +57,7 @@ async def boss(ctx, hack: str, name: str):
 
 @bot.slash_command(description = "Get item data", guild_ids=public_test_ids)
 @option("hack", description = "Name of the hack to get data for")
-@option("name", description = "Name of the character to get data for")
+@option("name", description = "Name of the item to get data for")
 async def item(ctx, hack: str, name: str):
     if (hack == 'bob'):
         await bob.bob.item(ctx, name)
@@ -66,7 +66,7 @@ async def item(ctx, hack: str, name: str):
 
 @bot.slash_command(description = "Get skill data", guild_ids=public_test_ids)
 @option("hack", description = "Name of the hack to get data for")
-@option("name", description = "Name of the character to get data for")
+@option("name", description = "Name of the skill to get data for")
 async def skill(ctx, hack: str, name: str):
     if (hack == 'bob'):
         await bob.bob.skill(ctx, name)
