@@ -23,6 +23,7 @@ async def help(ctx):
     unitembed.add_field(name='/7s unit [name]', value="Get Seven Siblings unit data", inline=False)
     unitembed.add_field(name='/trtr unit [name]', value="Get The Road to Ruin unit data", inline=False)
     unitembed.add_field(name='/tlp unit [name]', value="Get The Last Promise unit data", inline=False)
+    unitembed.add_field(name='/tlp boss [name]', value="Get The Last Promise boss data", inline=False)
     await ctx.response.send_message(embed=unitembed)
 
 bot.load_extension("bob.bob")

@@ -202,7 +202,7 @@ def tlp_get_inventory(row):
     if (row['Item 4'] != ""):
         inventory += ", " + row['Item 4']
     if (row['Drops Item?'] == "Yes"):
-         inventory += "(Drops item)"
+         inventory += " (Drops item)"
     return inventory
 
 def setup(bot):
