@@ -68,7 +68,7 @@ def get_unit_pages(row):
     ]
     return page_groups
 
-def get_boss_embed(self, row):
+def get_boss_embed(row):
     unitembed=discord.Embed(title=row['Name'], color=0x040f85)
     unitembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
