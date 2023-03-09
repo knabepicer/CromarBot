@@ -37,7 +37,6 @@ async def unit(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
-bot.add_command(unit)
 
 bot.load_extension("bob.bob")
 #bot.load_extension("cota.cota")
