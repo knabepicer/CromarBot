@@ -5,118 +5,107 @@ import random
 from discord.ext import commands
 from discord import option
 
-class Bob(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot
 
-    bob = discord.SlashCommandGroup("bob", "Get Bells of Byelen data")
+async def unit(ctx, name: str):
+    with open('bob/bob unit.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            if(row['Name'].lower() == name.lower()):
+                #await interaction.response.send_message("Name: " + row["Name"] + " HP Growth:" + row["HP Growth"])
+                unitembed=discord.Embed(title=name.capitalize(), color=0xac6c6c)
+                if (name.lower() == 'cromar' and random.randint(1, 10) == 1):
+                    unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080640506473762927/CromarFoggingOutknabepicer_1_1.png')
+                    unitembed.add_field(name="Lv " + row['Lv'] + " ", value='Slayer', inline=True)
+                elif (name.lower() == 'sera' and random.randint(1,10) == 1):
+                    unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080644681379106846/SeraZoomingRozeknabepicer_1.png')
+                    unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+                else:
+                    unitembed.set_thumbnail(url=row['Portrait'])
+                    unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+                
+                unitembed.add_field(name="PCC: ", value=row['PCC'], inline=True)
+                unitembed.add_field(name="Movement Stars: ", value=row['Vigor'], inline=True)
+                unitembed.add_field(name="Leadership: ", value=row['Leadership'], inline=True)
+                bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | " + "Mag " + row['Mag']+ " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Bld " + row['Bld'] + " | " + "Mov " + row['Mov']
+                unitembed.add_field(name="Bases", value=bases, inline=False)
+                growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth']+ "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "% | " + "Bld " + row['Bld Growth'] + "% | Mov " + row['Mov Growth'] + "%"
+                unitembed.add_field(name="Growths", value=growths, inline=False)
+                ranks = bob_get_ranks(row)
+                unitembed.add_field(name="Ranks", value=ranks, inline=False)
+                if (row['Skills'] != "None"):
+                    unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
+                if (row['Promotes'] == "Yes"):
+                    gains = bob_get_gains(row)
+                    unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
+                await ctx.response.send_message(embed=unitembed)
+                was_found = True
+                break
+        if (not was_found):
+            await ctx.response.send_message("That unit does not exist.")
 
-    @bob.command(description = "Get Bells of Byelen unit data")
-    @option("name", description = "Name of the character to get data for")
-    async def unit(self, ctx, name: str):
-        with open('bob/bob unit.csv', newline='') as csvfile:
+
+async def item(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    if (stripped_name.lower() == 'axle'):
+        await ctx.response.send_message("For Axel's Axle, search 'Axle1'. For Alex's Axle, search 'Axle2'.")  
+    else:             
+        with open('bob/bob item.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             was_found = False
             for row in reader:
-                if(row['Name'].lower() == name.lower()):
-                    #await interaction.response.send_message("Name: " + row["Name"] + " HP Growth:" + row["HP Growth"])
-                    unitembed=discord.Embed(title=name.capitalize(), color=0xac6c6c)
-                    if (name.lower() == 'cromar' and random.randint(1, 10) == 1):
-                        unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080640506473762927/CromarFoggingOutknabepicer_1_1.png')
-                        unitembed.add_field(name="Lv " + row['Lv'] + " ", value='Slayer', inline=True)
-                    elif (name.lower() == 'sera' and random.randint(1,10) == 1):
-                        unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1043928901610643456/1080644681379106846/SeraZoomingRozeknabepicer_1.png')
-                        unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-                    else:
-                        unitembed.set_thumbnail(url=row['Portrait'])
-                        unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-                    
-                    unitembed.add_field(name="PCC: ", value=row['PCC'], inline=True)
-                    unitembed.add_field(name="Movement Stars: ", value=row['Vigor'], inline=True)
-                    unitembed.add_field(name="Leadership: ", value=row['Leadership'], inline=True)
-                    bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | " + "Mag " + row['Mag']+ " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Bld " + row['Bld'] + " | " + "Mov " + row['Mov']
-                    unitembed.add_field(name="Bases", value=bases, inline=False)
-                    growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth']+ "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "% | " + "Bld " + row['Bld Growth'] + "% | Mov " + row['Mov Growth'] + "%"
-                    unitembed.add_field(name="Growths", value=growths, inline=False)
-                    ranks = bob_get_ranks(row)
-                    unitembed.add_field(name="Ranks", value=ranks, inline=False)
-                    if (row['Skills'] != "None"):
-                        unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
-                    if (row['Promotes'] == "Yes"):
-                        gains = bob_get_gains(row)
-                        unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
+                if(row['Name'].lower() == stripped_name.lower()):
+                    unitembed=discord.Embed(title=row['Display Name'], color=0xac6c6c)
+                    unitembed.set_thumbnail(url=row['Icon'])
+                    if(row['Type'] == 'Weapon'):
+                        stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
+                        if (row['Uses'] == '255'):
+                            stats += " | Unbreakable"
+                        else:
+                            stats += " | Uses: " + row['Uses']
+                        if (row['Description'] != "None"):
+                            stats += '\n'
+                            stats += row['Description']
+                        unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
+                    elif(row['Type'] == 'Staff'):
+                        stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Staff', value=stats, inline=False)
+                    elif(row['Type'] == 'Item'):
+                        stats = ""
+                        if (row['Uses'] == '255'):
+                            stats += "Unbreakable"
+                        else:
+                            stats += "Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Item', value=stats, inline=False)
+                    if(row['Display Price'] == 'Yes'):
+                        price = int(row['Uses']) * int(row['Price Per Use'])
+                        price_string = str(price) + "G"
+                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
                     await ctx.response.send_message(embed=unitembed)
                     was_found = True
                     break
             if (not was_found):
-                await ctx.response.send_message("That unit does not exist.")
+                await ctx.response.send_message("That item does not exist.")
 
-
-    @bob.command(description = "Get Bells of Byelen item data")
-    @option("name", description = "Name of the item to get data for")
-    async def item(self, ctx, name: str):
-        stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-        if (stripped_name.lower() == 'axle'):
-            await ctx.response.send_message("For Axel's Axle, search 'Axle1'. For Alex's Axle, search 'Axle2'.")  
-        else:             
-            with open('bob/bob item.csv', newline='') as csvfile:
-                reader = csv.DictReader(csvfile)
-                was_found = False
-                for row in reader:
-                    if(row['Name'].lower() == stripped_name.lower()):
-                        unitembed=discord.Embed(title=row['Display Name'], color=0xac6c6c)
-                        unitembed.set_thumbnail(url=row['Icon'])
-                        if(row['Type'] == 'Weapon'):
-                            stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
-                            if (row['Uses'] == '255'):
-                                stats += " | Unbreakable"
-                            else:
-                                stats += " | Uses: " + row['Uses']
-                            if (row['Description'] != "None"):
-                                stats += '\n'
-                                stats += row['Description']
-                            unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
-                        elif(row['Type'] == 'Staff'):
-                            stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
-                            stats += '\n'
-                            stats += row['Description']
-                            unitembed.add_field(name='Staff', value=stats, inline=False)
-                        elif(row['Type'] == 'Item'):
-                            stats = ""
-                            if (row['Uses'] == '255'):
-                                stats += "Unbreakable"
-                            else:
-                                stats += "Uses: " + row['Uses']
-                            stats += '\n'
-                            stats += row['Description']
-                            unitembed.add_field(name='Item', value=stats, inline=False)
-                        if(row['Display Price'] == 'Yes'):
-                            price = int(row['Uses']) * int(row['Price Per Use'])
-                            price_string = str(price) + "G"
-                            unitembed.add_field(name='Price: ', value=price_string, inline=False)
-                        await ctx.response.send_message(embed=unitembed)
-                        was_found = True
-                        break
-                if (not was_found):
-                    await ctx.response.send_message("That item does not exist.")
-
-    @bob.command(description = "Get Bells of Byelen skill data")
-    @option("name", description = "Name of the skill to get data for")
-    async def skill(self, ctx, name: str):
-        stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-        with open('bob/bob skill.csv', newline='') as csvfile:
-            reader = csv.DictReader(csvfile)
-            was_found = False
-            for row in reader:
-                stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
-                if(stripped_row.lower() == stripped_name.lower()):
-                    unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
-                    unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
-                    was_found = True
-                    await ctx.response.send_message(embed=unitembed)
-                    break
-            if (not was_found):
-                    await ctx.response.send_message("That skill does not exist.")
+async def skill(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    with open('bob/bob skill.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            if(stripped_row.lower() == stripped_name.lower()):
+                unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
+                unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
+                was_found = True
+                await ctx.response.send_message(embed=unitembed)
+                break
+        if (not was_found):
+                await ctx.response.send_message("That skill does not exist.")
 
 def bob_get_ranks(row):
     ranks = ""
@@ -205,6 +194,3 @@ def bob_get_gains(row):
             gains += "<:TypeDark:1082455049143320649>" + row['Dark Gains'] + " | "
     gains = gains[:-3]
     return gains
-
-def setup(bot):
-    bot.add_cog(Bob(bot))

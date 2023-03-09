@@ -5,6 +5,7 @@ import random
 import Cota.cota
 import tlp.tlp
 import sevensibs.sevens
+import bob.bob
 from discord.ext import commands
 from discord import option
 import sys
@@ -40,6 +41,8 @@ async def unit(ctx, hack: str, name: str):
         await tlp.tlp.unit(ctx, name)
     elif (hack == '7s'):
         await sevensibs.sevens.unit(ctx, name)
+    elif (hack == 'bob'):
+        await bob.bob.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
@@ -52,7 +55,25 @@ async def boss(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
-bot.load_extension("bob.bob")
+@bot.slash_command(description = "Get item data", guild_ids=public_test_ids)
+@option("hack", description = "Name of the hack to get data for")
+@option("name", description = "Name of the character to get data for")
+async def item(ctx, hack: str, name: str):
+    if (hack == 'bob'):
+        await bob.bob.item(ctx, name)
+    else:
+        await ctx.response.send_message("That hack does not exist or is not supported by this command.")
+
+@bot.slash_command(description = "Get skill data", guild_ids=public_test_ids)
+@option("hack", description = "Name of the hack to get data for")
+@option("name", description = "Name of the character to get data for")
+async def skill(ctx, hack: str, name: str):
+    if (hack == 'bob'):
+        await bob.bob.skill(ctx, name)
+    else:
+        await ctx.response.send_message("That hack does not exist or is not supported by this command.")
+
+#bot.load_extension("bob.bob")
 #bot.load_extension("cota.cota")
 #bot.load_extension("7s.sevens")
 bot.load_extension("trtr.trtr")
