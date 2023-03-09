@@ -2,9 +2,9 @@ import discord
 import csv
 import re
 import random
+import Cota
 from discord.ext import commands
 from discord import option
-import Cota.cota
 
 
 bot = discord.Bot()

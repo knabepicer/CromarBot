@@ -2,116 +2,111 @@ import discord
 import csv
 import re
 import random
-from discord.ext import commands, pages
-from discord import option
-
-class Cota(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot
-
-    def get_unit_pages(self, row):
-        unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
-        supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
-        unitembed.set_thumbnail(url=row['Portrait'])
-        supportembed.set_thumbnail(url=row['Portrait'])
-        unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-        unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
-        bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
-        unitembed.add_field(name="Bases", value=bases, inline=False)
-        growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
-        unitembed.add_field(name="Growths", value=growths, inline=False)
-        ranks = cota_get_ranks(row)
-        unitembed.add_field(name="Ranks", value=ranks, inline=False)
-        if (row['Promotes'] == "Yes"):
-            gains = cota_get_gains(row)
-            unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-        
-        with open('cota/cota supports.csv', newline='') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for supportrow in reader:
-                if(row['Name'] == supportrow['Name']):
-                    supportstring = ""
-                    if(supportrow['Partner 1'] != '0'):
-                        supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-                    if(supportrow['Partner 2'] != '0'):
-                        supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
-                    if(supportrow['Partner 3'] != '0'):
-                        supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
-                    if(supportrow['Partner 4'] != '0'):
-                        supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
-                    if(supportrow['Partner 5'] != '0'):
-                        supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
-                    if(supportrow['Partner 6'] != '0'):
-                        supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
-                    if(supportrow['Partner 7'] != '0'):
-                        supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n"
-                    supportembed.add_field(name="", value=supportstring, inline=False)
-        supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
-
-        promoembed=discord.Embed(title=row['Name'], color=0x47CAFF)
-        promoembed.set_thumbnail(url=row['Portrait'])
-        promofound = False
-        with open('cota/cota extra promos.csv', newline='') as csvfile:
-            reader = csv.DictReader(csvfile)
-            for promorow in reader:
-                if(row['Name'] == promorow['Name']):
-                    promoembed.add_field(name="From " + promorow['Base Class 1'], value="", inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 1'], value=cota_get_extra_gains(promorow, "1"), inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 2'], value=cota_get_extra_gains(promorow, "2"), inline=True)
-                    promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 3'], value=cota_get_extra_gains(promorow, "3"), inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 4'], value=cota_get_extra_gains(promorow, "4"), inline=True)
-                    promoembed.add_field(name="From " + promorow['Base Class 3'], value="", inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 5'], value=cota_get_extra_gains(promorow, "5"), inline=True)
-                    promoembed.add_field(name=promorow['Promo Class 6'], value=cota_get_extra_gains(promorow, "6"), inline=True)
-                    promofound = True
-                    break
-
-        page_groups = [
-            pages.PageGroup(
-            pages=[unitembed], 
-            label="Main Unit Data",
-            description="Standard unit data: base stats, growths, etc.",
-            use_default_buttons=False,
-            default=True,
-            ),
-            pages.PageGroup(
-            pages=[supportembed],
-            label="Supports",
-            description="Support data for the unit",
-            use_default_buttons=False,
-            )
-        ]
-        if (promofound):
-            page_groups.append(pages.PageGroup
-            (
-            pages=[promoembed],
-            label="Second Tier Promotions",
-            description="Data on second tier promotions for trainee unit",
-            use_default_buttons=False,
-            )
-            )
-        return page_groups
+from discord.ext import pages
 
 
-    #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
-    @commands.command(description = "Get Call of the Armor unit data")
-    @option("name", description = "Name of the character to get data for")
-    async def unit(self, ctx, name: str):
-        stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-        with open('cota/cota unit.csv', newline='') as csvfile:
-            reader = csv.DictReader(csvfile)
-            was_found = False
-            for row in reader:
-                stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
-                if(stripped_row.lower() == stripped_name.lower()):
-                    paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
-                    await paginator.respond(ctx.interaction)
-                    was_found = True
-                    break
-            if (not was_found):
-                await ctx.response.send_message("That unit does not exist.")
+def get_unit_pages(self, row):
+    unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+    supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+    unitembed.set_thumbnail(url=row['Portrait'])
+    supportembed.set_thumbnail(url=row['Portrait'])
+    unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+    unitembed.add_field(name="Bases", value=bases, inline=False)
+    growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
+    unitembed.add_field(name="Growths", value=growths, inline=False)
+    ranks = cota_get_ranks(row)
+    unitembed.add_field(name="Ranks", value=ranks, inline=False)
+    if (row['Promotes'] == "Yes"):
+        gains = cota_get_gains(row)
+        unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
+    
+    with open('cota/cota supports.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for supportrow in reader:
+            if(row['Name'] == supportrow['Name']):
+                supportstring = ""
+                if(supportrow['Partner 1'] != '0'):
+                    supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
+                if(supportrow['Partner 2'] != '0'):
+                    supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
+                if(supportrow['Partner 3'] != '0'):
+                    supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
+                if(supportrow['Partner 4'] != '0'):
+                    supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
+                if(supportrow['Partner 5'] != '0'):
+                    supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
+                if(supportrow['Partner 6'] != '0'):
+                    supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
+                if(supportrow['Partner 7'] != '0'):
+                    supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n"
+                supportembed.add_field(name="", value=supportstring, inline=False)
+    supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
+
+    promoembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+    promoembed.set_thumbnail(url=row['Portrait'])
+    promofound = False
+    with open('cota/cota extra promos.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for promorow in reader:
+            if(row['Name'] == promorow['Name']):
+                promoembed.add_field(name="From " + promorow['Base Class 1'], value="", inline=True)
+                promoembed.add_field(name=promorow['Promo Class 1'], value=cota_get_extra_gains(promorow, "1"), inline=True)
+                promoembed.add_field(name=promorow['Promo Class 2'], value=cota_get_extra_gains(promorow, "2"), inline=True)
+                promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=True)
+                promoembed.add_field(name=promorow['Promo Class 3'], value=cota_get_extra_gains(promorow, "3"), inline=True)
+                promoembed.add_field(name=promorow['Promo Class 4'], value=cota_get_extra_gains(promorow, "4"), inline=True)
+                promoembed.add_field(name="From " + promorow['Base Class 3'], value="", inline=True)
+                promoembed.add_field(name=promorow['Promo Class 5'], value=cota_get_extra_gains(promorow, "5"), inline=True)
+                promoembed.add_field(name=promorow['Promo Class 6'], value=cota_get_extra_gains(promorow, "6"), inline=True)
+                promofound = True
+                break
+
+    page_groups = [
+        pages.PageGroup(
+        pages=[unitembed], 
+        label="Main Unit Data",
+        description="Standard unit data: base stats, growths, etc.",
+        use_default_buttons=False,
+        default=True,
+        ),
+        pages.PageGroup(
+        pages=[supportembed],
+        label="Supports",
+        description="Support data for the unit",
+        use_default_buttons=False,
+        )
+    ]
+    if (promofound):
+        page_groups.append(pages.PageGroup
+        (
+        pages=[promoembed],
+        label="Second Tier Promotions",
+        description="Data on second tier promotions for trainee unit",
+        use_default_buttons=False,
+        )
+        )
+    return page_groups
+
+
+#cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
+
+async def unit(self, ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    with open('cota/cota unit.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            if(stripped_row.lower() == stripped_name.lower()):
+                paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
+                await paginator.respond(ctx.interaction)
+                was_found = True
+                break
+        if (not was_found):
+            await ctx.response.send_message("That unit does not exist.")
 
 
 def cota_get_ranks(row):
@@ -372,7 +367,3 @@ def cota_get_extra_gains(row, num):
     gains = gains[:-3]
 
     return gains
-
-def setup(bot):
-    cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
-    bot.add_cog(Cota(bot))
