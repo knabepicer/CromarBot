@@ -47,7 +47,7 @@ bot.load_extension("tlp.tlp")
 async def on_ready():
     modulenames = set(sys.modules) & set(globals())
     allmodules = [sys.modules[name] for name in modulenames]
-    print("Ready!" + allmodules)
+    print("Ready!" + "".join(allmodules))
 
 token = ''
 with open('token.txt') as f:
