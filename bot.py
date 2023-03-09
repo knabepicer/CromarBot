@@ -33,7 +33,7 @@ async def help(ctx):
 @option("name", description = "Name of the character to get data for")
 async def unit(ctx, hack: str, name: str):
     if (hack == 'cota'):
-        Cota.unit(ctx, name)
+        Cota.cota.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
