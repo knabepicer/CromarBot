@@ -38,7 +38,7 @@ async def unit(ctx, hack: str, name: str):
         await Cota.cota.unit(ctx, name)
     elif (hack == 'tlp'):
         await tlp.tlp.unit(ctx, name)
-    elif (hack == 'tlp'):
+    elif (hack == '7s'):
         await sevensibs.sevens.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
