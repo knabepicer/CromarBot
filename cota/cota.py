@@ -96,7 +96,7 @@ class Cota(commands.Cog):
 
     #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
-    @cota.command(description = "Get Call of the Armor unit data")
+    @commands.command(description = "Get Call of the Armor unit data")
     @option("name", description = "Name of the character to get data for")
     async def unit(self, ctx, name: str):
         stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
@@ -374,4 +374,5 @@ def cota_get_extra_gains(row, num):
     return gains
 
 def setup(bot):
+    cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
     bot.add_cog(Cota(bot))

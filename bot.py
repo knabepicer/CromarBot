@@ -28,7 +28,6 @@ async def help(ctx):
 
 
 bot.load_extension("bob.bob")
-cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 bot.load_extension("cota.cota")
 bot.load_extension("7s.sevens")
 bot.load_extension("trtr.trtr")
