@@ -9,7 +9,7 @@ from discord import option
 
 bot = discord.Bot()
 
-cromar = bot.create_group("cromar", "Use Cromar Boy commands")
+cromar = bot.create_group("cromar", "Use Cromar Bot commands")
 cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
 test_ids = [1039354532167176303]
@@ -30,8 +30,8 @@ async def help(ctx):
 
 @cota.command(description = "Get Call of the Armor unit data")
 @option("name", description = "Name of the character to get data for")
-async def unit(self, ctx, name: str):
-    Cota.cota.unit(self, ctx, name)
+async def unit(ctx, name: str):
+    Cota.cota.unit(ctx, name)
 
 
 bot.load_extension("bob.bob")

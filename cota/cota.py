@@ -93,7 +93,7 @@ def get_unit_pages(self, row):
 
 #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
-async def unit(self, ctx, name: str):
+async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('cota/cota unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
