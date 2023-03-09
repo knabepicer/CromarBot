@@ -49,6 +49,7 @@ async def on_ready():
     allmodules = [sys.modules[name] for name in modulenames]
     for i in allmodules: print (' {}\n'.format(i))
     print("Ready!")
+    print(dir(Cota))
 
 token = ''
 with open('token.txt') as f:
