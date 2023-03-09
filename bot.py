@@ -6,6 +6,7 @@ import Cota.cota
 import tlp.tlp
 import sevensibs.sevens
 import bob.bob
+import trtr.trtr
 from discord.ext import commands
 from discord import option
 import sys
@@ -76,7 +77,7 @@ async def skill(ctx, hack: str, name: str):
 #bot.load_extension("bob.bob")
 #bot.load_extension("cota.cota")
 #bot.load_extension("7s.sevens")
-bot.load_extension("trtr.trtr")
+#bot.load_extension("trtr.trtr")
 #bot.load_extension("tlp.tlp")
 @bot.event
 async def on_ready():
