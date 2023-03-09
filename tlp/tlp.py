@@ -70,6 +70,22 @@ class Tlp(commands.Cog):
             # )
         ]
         return page_groups
+    
+    def get_boss_embed(self, row):
+        unitembed=discord.Embed(title=row['Name'], color=0x040f85)
+        unitembed.set_thumbnail(url=row['Portrait'])
+        unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+        unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+        bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+        unitembed.add_field(name="Bases", value=bases, inline=False)
+        inventory = tlp_get_inventory(row)
+        unitembed.add_field(name="Inventory", value=inventory, inline=False)
+        ranks = tlp_get_ranks(row)
+        unitembed.add_field(name="Ranks", value=ranks, inline=False)
+        if (row['Bonus'] != ""):
+            unitembed.set_footer(text=row['Bonus'])
+
+        return unitembed
 
     tlp = discord.SlashCommandGroup("tlp", "Get The Last Promise data")
 
@@ -85,6 +101,22 @@ class Tlp(commands.Cog):
                 if(stripped_row.lower() == stripped_name.lower()):
                     paginator = pages.Paginator(pages=self.get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
                     await paginator.respond(ctx.interaction)
+                    was_found = True
+                    break
+            if (not was_found):
+                await ctx.response.send_message("That unit does not exist.")
+    
+    @tlp.command(description = "Get The Last Promise boss data")
+    @option("name", description = "Name of the character to get data for")
+    async def boss(self, ctx, name: str):
+        stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+        with open('tlp/tlp boss.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            was_found = False
+            for row in reader:
+                stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+                if(stripped_row.lower() == stripped_name.lower()):
+                    await ctx.response.send_message(embed=self.get_boss_embed(row))
                     was_found = True
                     break
             if (not was_found):
@@ -158,6 +190,20 @@ def tlp_get_gains(row):
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
     return gains + gains2
+
+def tlp_get_inventory(row):
+    inventory = ""
+    if (row['Item 1'] != ""):
+        inventory += row['Item 1']
+    if (row['Item 2'] != ""):
+        inventory += ", " + row['Item 2']
+    if (row['Item 3'] != ""):
+        inventory += ", " + row['Item 3']
+    if (row['Item 4'] != ""):
+        inventory += ", " + row['Item 4']
+    if (row['Drops Item?'] == "Yes"):
+         inventory += "(Drops item)"
+    return inventory
 
 def setup(bot):
     bot.add_cog(Tlp(bot))
