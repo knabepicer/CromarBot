@@ -110,21 +110,21 @@ async def skill(ctx, name: str):
 def bob_get_ranks(row):
     ranks = ""
     if (row['Sword'] != 'NoRank'):
-        ranks += "<:TypeSword:1082455058484052089>Sword: " + row['Sword'] + " | "
+        ranks += "<:RankSword:1083549037585768510>Sword: " + row['Sword'] + " | "
     if (row['Lance'] != 'NoRank'):
-        ranks += "<:TypeLance:1082455057242529843>Lance: " + row['Lance'] + " | "
+        ranks += "<:RankLance:1083549035622846474>Lance: " + row['Lance'] + " | "
     if (row['Axe'] != 'NoRank'):
-        ranks += "<:TypeAxe:1082455056143622144>Axe: " + row['Axe'] + " | "
+        ranks += "<:RankAxe:1083549032292548659>Axe: " + row['Axe'] + " | "
     if (row['Bow'] != 'NoRank'):
-        ranks += "<:TypeBow:1082455054000341013>Bow: " + row['Bow'] + " | "
+        ranks += "<:RankBow:1083549033429205073>Bow: " + row['Bow'] + " | "
     if (row['Staff'] != 'NoRank'):
-        ranks += "<:TypeStaff:1082455051819298868>Staff: " + row['Staff'] + " | "
+        ranks += "<:RankStaff:1083549038936326155>Staff: " + row['Staff'] + " | "
     if (row['Anima'] != 'NoRank'):
-        ranks += "<:TypeAnima:1082455053257932801>Anima: " + row['Anima'] + " | "
+        ranks += "<:RankAnima:1083549030598049884>Anima: " + row['Anima'] + " | "
     if (row['Light'] != 'NoRank'):
-        ranks += "<:TypeLight:1082455050330316810>Light: " + row['Light'] + " | "
+        ranks += "<:RankLight:1083549037019541614>Light: " + row['Light'] + " | "
     if (row['Dark'] != 'NoRank'):
-        ranks += "<:TypeDark:1082455049143320649>Dark: " + row['Dark'] + " | "
+        ranks += "<:RankDark:1083549034310012959>Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
     else:
@@ -154,43 +154,43 @@ def bob_get_gains(row):
     gains += "\n"
     if (row['Sword Gains'] != 'None'):
         if (row['Sword Gains'].isdigit()):
-            gains += "<:TypeSword:1082455058484052089>+" + row['Sword Gains'] + " | "
+            gains += "<:RankSword:1083549037585768510>+" + row['Sword Gains'] + " | "
         else:
-            gains += "<:TypeSword:1082455058484052089>" + row['Sword Gains'] + " | "
+            gains += "<:RankSword:1083549037585768510>" + row['Sword Gains'] + " | "
     if (row['Lance Gains'] != 'None'):
         if (row['Lance Gains'].isdigit()):
-            gains += "<:TypeLance:1082455057242529843>+" + row['Lance Gains'] + " | "
+            gains += "<:RankLance:1083549035622846474>+" + row['Lance Gains'] + " | "
         else:
-            gains += "<:TypeLance:1082455057242529843>" + row['Lance Gains'] + " | "
+            gains += "<:RankLance:1083549035622846474>" + row['Lance Gains'] + " | "
     if (row['Axe Gains'] != 'None'):
         if (row['Axe Gains'].isdigit()):
-            gains += "<:TypeAxe:1082455056143622144>+" + row['Axe Gains'] + " | "
+            gains += "<:RankAxe:1083549032292548659>+" + row['Axe Gains'] + " | "
         else:
-            gains += "<:TypeAxe:1082455056143622144>" + row['Axe Gains'] + " | "
+            gains += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
     if (row['Bow Gains'] != 'None'):
         if (row['Bow Gains'].isdigit()):
-            gains += "<:TypeBow:1082455054000341013>+" + row['Bow Gains'] + " | "
+            gains += "<:RankBow:1083549033429205073>+" + row['Bow Gains'] + " | "
         else:
-            gains += "<:TypeBow:1082455054000341013>" + row['Bow Gains'] + " | "
+            gains += "<:RankBow:1083549033429205073>" + row['Bow Gains'] + " | "
     if (row['Staff Gains'] != 'None'):
         if (row['Staff Gains'].isdigit()):
-            gains += "<:TypeStaff:1082455051819298868>+" + row['Staff Gains'] + " | "
+            gains += "<:RankStaff:1083549038936326155>+" + row['Staff Gains'] + " | "
         else:
-            gains += "<:TypeStaff:1082455051819298868>" + row['Staff Gains'] + " | "
+            gains += "<:RankStaff:1083549038936326155>" + row['Staff Gains'] + " | "
     if (row['Anima Gains'] != 'None'):
         if (row['Anima Gains'].isdigit()):
-            gains += "<:TypeAnima:1082455053257932801>+" + row['Anima Gains'] + " | "
+            gains += "<:RankAnima:1083549030598049884>+" + row['Anima Gains'] + " | "
         else:
-            gains += "<:TypeAnima:1082455053257932801>" + row['Anima Gains'] + " | "
+            gains += "<:RankAnima:1083549030598049884>" + row['Anima Gains'] + " | "
     if (row['Light Gains'] != 'None'):
         if (row['Light Gains'].isdigit()):
-            gains += "<:TypeLight:1082455050330316810>+" + row['Light Gains'] + " | "
+            gains += "<:RankLight:1083549037019541614>+" + row['Light Gains'] + " | "
         else:
-            gains += "<:TypeLight:1082455050330316810>" + row['Light Gains'] + " | "
+            gains += "<:RankLight:1083549037019541614>" + row['Light Gains'] + " | "
     if (row['Dark Gains'] != 'None'):
         if (row['Dark Gains'].isdigit()):
-            gains += "<:TypeDark:1082455049143320649>+" + row['Dark Gains'] + " | "
+            gains += "<:RankDark:1083549034310012959>+" + row['Dark Gains'] + " | "
         else:
-            gains += "<:TypeDark:1082455049143320649>" + row['Dark Gains'] + " | "
+            gains += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
     gains = gains[:-3]
     return gains
