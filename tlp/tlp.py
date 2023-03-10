@@ -197,3 +197,7 @@ def tlp_get_inventory(row):
     if (row['Drops Item?'] == "Yes"):
          inventory += " (Drops item)"
     return inventory
+
+def get_unit_names(ctx):
+    names = ["Siegfried","Shon","Corben","Tamiko","Shuuda","Inanna","Kevin","Arthur","Storm","Althares","Cia","Noah","Anakin","Ace","Eduardo","Haas","Karina","Kelik","Levion","Logan","Itsuke","Asch","Zach","Lirin","Tekun","Emma","Ben","Mark","Liuke","Lyam","Rex","Yue","Howard","Sai","Risk","Liquid","Leopold","Shadow","Alice","Rana","Gary","Frederick","Rachel"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]

@@ -145,3 +145,7 @@ def trtr_get_gains(row):
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
     return gains + gains2
+
+def get_unit_names(ctx):
+    names = ["Vance","Bethany","Braxton","Calista","O'Riley","Kristoph","Melusine","Lanora","Thraben","Samuel","Aaron","Gracia","Marveda","Torie","Hugo","Geraldt","Lucile","Corvan","Buck","Jorin","Sylvia","Ava","Marris","Russel","Raizen"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]

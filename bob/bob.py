@@ -194,3 +194,7 @@ def bob_get_gains(row):
             gains += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
     gains = gains[:-3]
     return gains
+
+def get_unit_names(ctx):
+    names = ["Cleo","Mira","Iskra","Emil","Svetomir","Alena","Varga","Delilah","Alex","Axel","Filone","Zwieback","Leina","Cromar","Loewe","Longxia","Fangai","Mish","Tobie","Awa","Cadenza","Faolan","Iberis","Buldak","Nora","Hans","Takai","Jenny","Meldan","Valse","Hornet","Milo","Ichwep","Mink","Tiberius","Ellerey","Mantou","Tippany","Pelecaye","Carl","Darby","Jacinth","Nahiza","Augur","Ilse","Rashid","Nikolas","Sera","Shaw","Apsis","Ojasvi","Joie","Groto","Tao","Zhara","Volran","Tara","Jerry","Lyre","Ngondala","Catrin","Matthias","Kwame","Kofi","Trajan","Locke","Elias","Boro","Orfeas","Barod","Taraji","Athan","Asha","Dragana","Athanasius","Gimm","Darcy","Kailani","Korovai","Radnitz","Coralia"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]

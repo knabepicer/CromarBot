@@ -138,3 +138,7 @@ def vq_get_gains(row):
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
     return gains + gains2
+
+def get_unit_names(ctx):
+    names = ["Storch","Vagelis","Arckady","Esfir","Lera","Natsuko","Marlen","Larisa","Onisim","Nazar","Sri","Dewi","Gunnar","Osane","Bosco","Ruslan","Lajos","Helga","Titus","Otilie","Zoya","Hollace","Honeydew","Sarka","Duck","Tien","Freyja","Naia","Dreyfus","Cashew","Vernon","Hokulani","Mango","Menahan","Jae","Selanne","Rakkaus","Cygnus","Maelle","Waluyo","Kusuma","Ketut","Surya","Bulan","Michael","Anisa","Kir","Cajon","Stina","Onderdonk","Radoslav","Seruni","Zakawat","Zuljalal","Batari","Erasmus","Timmonen","Sigrid","Cassius","Anwen","Zuzana","Lori"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]

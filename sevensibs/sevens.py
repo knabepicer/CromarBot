@@ -146,3 +146,7 @@ def sevens_get_gains(row):
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
     return gains + gains2
+
+def get_unit_names(ctx):
+    names = ["Arianna","Scott","Sammy","Weston","Kayla","Sarah","Jeremiah","Katie","Keegan","Joe","Shelton","Kristia","Michelle","Brandon","Nancy","Luke","Nikko","Wade","Andrew","Reilly","Reid","Ryan","Emily","Will","Serah","Cale","Kjetil","Nike","Ariel","Jordan","Johann","Meredith","Alex","Kenneth","Moses","Lydia","Alyssa","Christine"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]
