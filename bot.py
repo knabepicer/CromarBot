@@ -23,7 +23,7 @@ public_test_ids = [1039354532167176303,1081749141480288256]
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr, vq", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
@@ -43,6 +43,8 @@ async def unit(ctx, hack: str, name: str):
         await bob.bob.unit(ctx, name)
     elif (hack == 'trtr'):
         await trtr.trtr.unit(ctx, name)
+    elif (hack == 'vq'):
+        await vq.vq.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
