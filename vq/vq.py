@@ -18,7 +18,7 @@ def get_unit_pages(row):
     growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
     ranks = vq_get_ranks(row)
-    unitembed.add_field(name="Skills", value=row['Skills'], inline=False])
+    unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
     if (row['Promotion Class'] != ""):
         gains = vq_get_gains(row)
