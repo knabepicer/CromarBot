@@ -7,6 +7,7 @@ import tlp.tlp
 import sevensibs.sevens
 import bob.bob
 import trtr.trtr
+import vq.vq
 from discord.ext import commands
 from discord import option
 import sys
