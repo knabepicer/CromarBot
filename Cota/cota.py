@@ -367,5 +367,5 @@ def cota_get_extra_gains(row, num):
     return gains
 
 def get_unit_names(ctx):
-    names = ["Kuijia","Shale","Fernandez","Floor","Youngblood","Sjoerd","Noki","Daisy","Kilian","Philip","William","Ikechukwu","Sovnya","Mac","Hazel","Alair","Itoro","Drouin","D. Sunwing","Taika","Abdul","Lily","Vivek","Uyama","Ansha","Gu","Venus","Soma","Adine","Burdock","Josie","Frances","Poincare","Expirus","Maluj","Weber",""Brioche"","Bar'del","Seer","The Kamuth","Rienmire","Kalach","Millisent","Finwald","Alessia","Geirhart","Luan","Vectar","Giroux","Kim","Bloody Jeb","Arkell","Srikhandi","Flint","Queijo","Clothilde","Delano","Liam","Alderich","Strontium","Zain"]
+    names = ["Kuijia","Shale","Fernandez","Floor","Youngblood","Sjoerd","Noki","Daisy","Kilian","Philip","William","Ikechukwu","Sovnya","Mac","Hazel","Alair","Itoro","Drouin","D. Sunwing","Taika","Abdul","Lily","Vivek","Uyama","Ansha","Gu","Venus","Soma","Adine","Burdock","Josie","Frances","Poincare","Expirus","Maluj","Weber","Brioche","Bar'del","Seer","The Kamuth","Rienmire","Kalach","Millisent","Finwald","Alessia","Geirhart","Luan","Vectar","Giroux","Kim","Bloody Jeb","Arkell","Srikhandi","Flint","Queijo","Clothilde","Delano","Liam","Alderich","Strontium","Zain"]
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
