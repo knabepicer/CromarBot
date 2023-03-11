@@ -74,21 +74,21 @@ async def unit(ctx, name: str):
 
 def vba_get_ranks(row):
     ranks = ""
-    if (row['Sword'] != 'NoRank'):
+    if (row['Sword'] != 'None'):
         ranks += "<:RankSword:1083549037585768510>Sword: " + row['Sword'] + " | "
-    if (row['Lance'] != 'NoRank'):
+    if (row['Lance'] != 'None'):
         ranks += "<:RankLance:1083549035622846474>Lance: " + row['Lance'] + " | "
-    if (row['Axe'] != 'NoRank'):
+    if (row['Axe'] != 'None'):
         ranks += "<:RankAxe:1083549032292548659>Axe: " + row['Axe'] + " | "
-    if (row['Bow'] != 'NoRank'):
+    if (row['Bow'] != 'None'):
         ranks += "<:RankBow:1083549033429205073>Bow: " + row['Bow'] + " | "
-    if (row['Staff'] != 'NoRank'):
+    if (row['Staff'] != 'None'):
         ranks += "<:RankStaff:1083549038936326155>Staff: " + row['Staff'] + " | "
-    if (row['Anima'] != 'NoRank'):
+    if (row['Anima'] != 'None'):
         ranks += "<:RankAnima:1083549030598049884>Anima: " + row['Anima'] + " | "
-    if (row['Light'] != 'NoRank'):
+    if (row['Light'] != 'None'):
         ranks += "<:RankLight:1083549037019541614>Light: " + row['Light'] + " | "
-    if (row['Dark'] != 'NoRank'):
+    if (row['Dark'] != 'None'):
         ranks += "<:RankDark:1083549034310012959>Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
@@ -141,6 +141,7 @@ def vba_get_gains(row):
         gains2 = gains2[:-3]
     if (row['Promotion Skills'] != 'None'):
          gains2 += "\n" + row['Promotion Skills']
+    gains2 += '\n'
     gains3 = ""
     gains4 = ""
     if (row['Split Promotion?'] == 'Yes'): 
@@ -166,7 +167,7 @@ def vba_get_gains(row):
                 gains += "Mov: " + row['Mov Gains 2'] + " | "
         if (len(gains3) > 0):
             gains3 = gains3[:-3]
-        
+        gains3 += '\n'
         if (row['Sword Gains 2'] != 'None'):
             gains4 += "<:RankSword:1083549037585768510>" + row['Sword Gains 2'] + " | "
         if (row['Lance Gains 2'] != 'None'):
