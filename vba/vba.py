@@ -142,7 +142,7 @@ def vba_get_gains(row):
     if (row['Promotion Skills'] != 'None'):
          gains2 += "\n" + row['Promotion Skills']
     gains3 = ""
-    if (row['Split Promotion?'] != 'No'): 
+    if (row['Split Promotion?'] == 'Yes'): 
         gains3 += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
             gains3 += "HP: +" + row['HP Gains 2'] + " | "
