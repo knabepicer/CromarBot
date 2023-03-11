@@ -142,6 +142,7 @@ def vba_get_gains(row):
     if (row['Promotion Skills'] != 'None'):
          gains2 += "\n" + row['Promotion Skills']
     gains3 = ""
+    gains4 = ""
     if (row['Split Promotion?'] == 'Yes'): 
         gains3 += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
@@ -165,7 +166,7 @@ def vba_get_gains(row):
                 gains += "Mov: " + row['Mov Gains 2'] + " | "
         if (len(gains3) > 0):
             gains3 = gains3[:-3]
-        gains4 = ""
+        
         if (row['Sword Gains 2'] != 'None'):
             gains4 += "<:RankSword:1083549037585768510>" + row['Sword Gains 2'] + " | "
         if (row['Lance Gains 2'] != 'None'):
