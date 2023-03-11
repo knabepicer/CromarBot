@@ -192,5 +192,5 @@ def vba_get_gains(row):
     return gains + gains2 + gains3 + gains4
 
 def get_unit_names(ctx):
-    names = ["Storch","Vagelis","Arckady","Esfir","Lera","Natsuko","Marlen","Larisa","Onisim","Nazar","Sri","Dewi","Gunnar","Osane","Bosco","Ruslan","Lajos","Helga","Titus","Otilie","Zoya","Hollace","Honeydew","Sarka","Duck","Tien","Freyja","Naia","Dreyfus","Cashew","Vernon","Hokulani","Mango","Menahan","Jae","Selanne","Rakkaus","Cygnus","Maelle","Waluyo","Kusuma","Ketut","Surya","Bulan","Michael","Anisa","Kir","Cajon","Stina","Onderdonk","Radoslav","Seruni","Zakawat","Zuljalal","Batari","Erasmus","Timmonen","Sigrid","Cassius","Anwen","Zuzana","Lori"]
+    names = ["Void","Tim","Tam","Jerome","Leeroy","Anna","Bede","Jay","Not Arch","Kirsten","Bob","Roshea","Prine","Edge","Samson","Arve","Tye","Celicia","Eevster","Anna2","Nikita","Anna3","Edgeworth","Zigludo","Kaga","Doot","Celica","Doowile","Evil Florina","Bjorn","Jake","Marf","Tiki","Mark"]
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

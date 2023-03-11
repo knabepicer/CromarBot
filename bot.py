@@ -55,7 +55,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["cota", "tlp", "7s", "bob", 'trtr', 'vq']
+        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba']
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -71,6 +71,8 @@ async def unit(ctx, hack: str, name: str):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'vq'):
         await vq.vq.unit(ctx, name)
+    elif (hack == 'vba'):
+        await vba.vba.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
