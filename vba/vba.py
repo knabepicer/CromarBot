@@ -186,7 +186,7 @@ def vba_get_gains(row):
         if (len(gains4) > 0):
             gains4 = gains4[:-3]
         if (row['Promotion Skills 2'] != 'None'):
-            gains4 += "\n" + row['Promotion Skills 3']
+            gains4 += "\n" + row['Promotion Skills 2']
         
         
     return gains + gains2 + gains3 + gains4
