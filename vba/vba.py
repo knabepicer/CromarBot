@@ -59,7 +59,7 @@ def get_unit_pages(row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('vba/vba unit.csv', newline='') as csvfile:
+    with open('vba/vba_unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
