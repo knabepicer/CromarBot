@@ -8,6 +8,7 @@ import sevensibs.sevens
 import bob.bob
 import trtr.trtr
 import vq.vq
+import vba.vba
 from discord.ext import commands
 from discord import option
 import sys
@@ -24,7 +25,7 @@ public_test_ids = [1039354532167176303,1081749141480288256]
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr, vq", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 7s, bob, cota, tlp, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
@@ -44,6 +45,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return trtr.trtr.get_unit_names(ctx)
     elif (hack == 'vq'):
         return vq.vq.get_unit_names(ctx)
+    elif (hack == 'vba'):
+        return vba.vba.get_unit_names(ctx)
     else:
         return []
     
