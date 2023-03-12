@@ -162,9 +162,9 @@ def vba_get_gains(row):
             gains3 += "Con: +" + row['Con Gains 2'] + " | "
         if (row['Mov Gains 2'] != '0'):
             if (int(row['Mov Gains 2']) > 0):
-                gains += "Mov: +" + row['Mov Gains 2'] + " | "
+                gains3 += "Mov: +" + row['Mov Gains 2'] + " | "
             else:
-                gains += "Mov: " + row['Mov Gains 2'] + " | "
+                gains3 += "Mov: " + row['Mov Gains 2'] + " | "
         if (len(gains3) > 0):
             gains3 = gains3[:-3]
         gains3 += '\n'
