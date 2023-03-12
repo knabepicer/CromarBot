@@ -5,3 +5,4 @@ cota = Call of the Armor https://feuniverse.us/t/fe8-complete-call-of-the-armor-
 tlp = The Last Promise http://www.feshrine.net/thelastpromise/
 trtr = The Road to Ruin https://feuniverse.us/t/the-road-to-ruin/276
 vq = Vision Quest https://feuniverse.us/t/fe8-complete-fire-emblem-vision-quest-v3-by-pushwall-1-oct-22/3815
+vba = Void's Blitzarre Adventure https://feuniverse.us/t/feu-chapter-creation-blitz-voids-blitzarre-adventure/2629
