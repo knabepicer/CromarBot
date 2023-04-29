@@ -98,7 +98,7 @@ def get_unit_pages(row):
         label="Prf Weapon Data",
         description="Information about this unit's prfs",
         use_default_buttons=False,
-        default=True,
+        default=False,
         ))
     return page_groups
 
