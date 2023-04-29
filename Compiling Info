@@ -1,0 +1,29 @@
+This is to provide some documentation/standardization on the format to be used for compiling hack data as CSVs.
+You can always reference existing spreadsheets for an idea for the layout, but for particular details, defer to here, going forward.
+
+The standard fields to be included are: 
+Name (there is a regex used to search it is okay to keep punctuation and other symbols if applicable)
+Class (base class of the unit)
+Affinity (copy-paste the emoji codes for this, reference other spreadsheets)
+Portrait (should be a url for a discord embed, we'll be using them for image hosting for the time being)
+Lv (base level)
+Base Stats
+Base Weapon Ranks
+Growths
+Promoted Class Name
+Promotion Stat Gains/Weapon Rank Gains
+
+For the standard stats, use these abbrevations for column names for base values/growths/promo gains/etc:
+HP, Str, Mag, Atk (if there is no split), Skl, Spd, Lck, Def, Res, Con, and Mov. 
+If the stat is renamed in the hack, such as Dex for Skl, you may use that name instead.
+
+For base weapon ranks, they should be the letter value (ex: D), or an increment above the letter value (ex: C+10).
+If a unit does not have a rank in that weapon type, write None (NOT NoRank). The same goes if they do not gain in that rank on promotion.
+
+If a unit does not promote, simply leave the Promotion Class field blank. We will not be using the "Promotes" field or similar such fields
+going forward.
+
+For stat gains on promo, if all promo gains for the hack are non-negative, you may simply enter the value (so just "4"), for example.
+If not, please make a note of this while submitting, and use positive and negative signs ("+4", or "-3")
+
+For weapon rank gains on promotion, include the + sign for numerical gains (so it should be either a letter like "D", or something like "+40").
