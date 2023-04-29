@@ -25,6 +25,8 @@ def get_unit_pages(row):
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     caps ="Str " + row['Str Cap'] +  " | " + "Mag " + row['Mag Cap'] + " | Skl " + row['Skl Cap'] + " | " + "Spd " + row['Spd Cap'] + " | " + "Def " + row['Def Cap'] + " | " + "Res " + row['Res Cap']
     unitembed.add_field(name="Caps", value=caps, inline=False)
+    if (row["Name"] == "Sarah"):
+        unitembed.set_footer(text="Sarah possesses the skill Outrider, which grants her -1 damage taken, and +3% crit, per space moved.")
     # with open('sevensibs/7s supports.csv', newline='') as csvfile:
     #     reader = csv.DictReader(csvfile)
     #     for supportrow in reader:
