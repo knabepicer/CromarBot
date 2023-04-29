@@ -74,10 +74,10 @@ def get_unit_pages(row):
             if (row['PRF Desc'] != ""):
                 stats += '\n'
                 stats += row['PRF Desc']
-            else:
-                stats  = "Type: " + row['PRF Type'] + " | Range: " + row['PRF Rng'] + " | Uses: " + row['PRF Dur']
-                stats += '\n'
-                stats += row['PRF Desc']
+        else:
+            stats  = "Type: " + row['PRF Type'] + " | Range: " + row['PRF Rng'] + " | Uses: " + row['PRF Dur']
+            stats += '\n'
+            stats += row['PRF Desc']
         prfembed.add_field(name=row['PRF Name'], value=stats, inline=False)
         if (row['PRF Name 2'] != ""):
             if(row['PRF Type 2'] != 'Staff'):
@@ -86,10 +86,10 @@ def get_unit_pages(row):
                 if (row['PRF Desc 2'] != ""):
                     stats2 += '\n'
                     stats2 += row['PRF Desc 2']
-                else:
-                    stats2  = "Type: " + row['PRF Type 2'] + " | Range: " + row['PRF Rng 2'] + " | Uses: " + row['PRF Dur 2']
-                    stats2 += '\n'
-                    stats2 += row['PRF Desc 2']
+            else:
+                stats2  = "Type: " + row['PRF Type 2'] + " | Range: " + row['PRF Rng 2'] + " | Uses: " + row['PRF Dur 2']
+                stats2 += '\n'
+                stats2 += row['PRF Desc 2']
             prfembed.add_field(name=row['PRF Name 2'], value=stats2, inline=False)
 
 
