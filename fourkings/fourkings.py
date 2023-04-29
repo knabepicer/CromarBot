@@ -78,7 +78,7 @@ def get_unit_pages(row):
                 stats  = "Type: " + row['PRF Type'] + " | Range: " + row['PRF Rng'] + " | Uses: " + row['PRF Dur']
                 stats += '\n'
                 stats += row['PRF Desc']
-        prfembed.add_field(name='Prf', value=stats, inline=False)
+        prfembed.add_field(name=row['PRF Name'], value=stats, inline=False)
         if (row['PRF Name 2'] != ""):
             if(row['PRF Type 2'] != 'Staff'):
                 stats2 = "Type: " + row['PRF Type 2'] + " | Mt: " + row['PRF Mt 2'] + " | Hit: " + row['PRF Hit 2'] + " | Crit: " + row['PRF Crit 2'] + " | Wt: " + row['PRF Wt 2'] + " | Range: " + row['PRF Rng 2']
@@ -90,7 +90,7 @@ def get_unit_pages(row):
                     stats2  = "Type: " + row['PRF Type 2'] + " | Range: " + row['PRF Rng 2'] + " | Uses: " + row['PRF Dur 2']
                     stats2 += '\n'
                     stats2 += row['PRF Desc 2']
-            prfembed.add_field(name='Prf 2', value=stats2, inline=False)
+            prfembed.add_field(name=row['PRF Name 2'], value=stats2, inline=False)
 
 
         page_groups.append(pages.PageGroup(
