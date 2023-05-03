@@ -8,7 +8,12 @@ from discord import option
 def get_unit_pages(row):
     unitembed=discord.Embed(title=row['Name'], color=0x252926)
     #supportembed=discord.Embed(title=row['Name'], color=0x252926)
-    unitembed.set_thumbnail(url=row['Portrait'])
+    if (row['Name'] == 'Lilim' and random.randint(1, 10) == 1):
+        unitembed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1043928901610643456/1103132562534178877/lilim_hairflip.gif")
+    elif (row['Name'] == 'Haban' and random.randint(1, 10) == 1):
+         unitembed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1043928901610643456/1103132628242149486/haban_alt_1.png")
+    else:
+        unitembed.set_thumbnail(url=row['Portrait'])
     #supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
     unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
