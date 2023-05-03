@@ -123,8 +123,10 @@ def sp_get_gains(row):
     gains += row['Promotion Class'] + '\n'
     if (row['HP Gains'] != '0'):
         gains += "HP: +" + row['HP Gains'] + " | "
-    if (row['Atk Gains'] != '0'):
-        gains += "Atk: +" + row['Atk Gains'] + " | "
+    if (row['Str Gains'] != '0'):
+        gains += "Str: +" + row['Str Gains'] + " | "
+    if (row['Mag Gains'] != '0'):
+        gains += "Mag: +" + row['Mag Gains'] + " | "
     if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
     if (row['Spd Gains'] != '0'):
