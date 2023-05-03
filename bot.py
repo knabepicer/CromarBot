@@ -29,7 +29,7 @@ async def cromar(ctx, input: str):
     if (input == 'help'):
         await help(ctx)
     else: 
-        parsedInput = input.split(" ", 3)
+        parsedInput = input.split(" ", 2)
         command = parsedInput[0]
         hack = parsedInput[1]
         name = parsedInput[2]
