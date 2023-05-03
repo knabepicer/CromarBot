@@ -50,7 +50,7 @@ def get_unit_pages(row):
     ]
 
     if (row['Name'] == 'Evans' or row['Name'] == 'Madari'):
-        with open('dow/dow supports.csv', newline='') as csvfile:
+        with open('sp/sp.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for newrow in reader:
                 if((row['Name'] + " Late") == newrow['Name']):
@@ -80,7 +80,7 @@ def get_unit_pages(row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('dow/dow unit.csv', newline='') as csvfile:
+    with open('sp/sp unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:

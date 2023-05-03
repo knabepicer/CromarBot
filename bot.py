@@ -55,7 +55,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
     elif (hack == 'dow'):
         return dow.dow.get_unit_names(ctx)
     elif (hack == 'sp'):
-        return dow.dow.get_unit_names(ctx)
+        return sp.sp.get_unit_names(ctx)
     else:
         return []
     
