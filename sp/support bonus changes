@@ -1,0 +1,7 @@
+Fire: Atk+1, Crit+5, Hit+10
+Thunder: Hit+10, Avoid+3, Crit+5
+Wind: Hit+10, Avoid+3, CritAvoid+5
+Ice: Def+1, Hit+5, Avoid+3, CritAvoid+5
+Dark: Hit+5, Avoid+3, Crit+5, CritAvoid+5
+Light: Atk+1, Def+1, Hit+10
+Anima: Atk+1, Def+1, Hit+5, CritAvoid+5
