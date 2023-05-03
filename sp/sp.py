@@ -61,6 +61,7 @@ def get_unit_pages(row):
                 if(supportrow['Partner7'] != ''):
                     supportstring += supportrow['Partner7'] + "\n"
                 supportembed.add_field(name="", value=supportstring, inline=False)
+                supportembed.set_footer("Shackled Power uses different support bonuses from affinities from the GBA games. You can see them here: https://github.com/knabepicer/CromarBot/blob/main/sp/support%20bonus%20changes")
                 page_groups.append(pages.PageGroup(
         pages=[supportembed],
         label="Supports",
