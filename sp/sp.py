@@ -21,7 +21,7 @@ def get_unit_pages(row):
     if (row['Promotion Class'] != ""):
         gains = sp_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    if (row['Bonus 2'] != ""):
+    if (len(row['Bonus 2']) > 0):
         unitembed.set_footer(text=row['Bonus 2'])
     # with open('dow/dow supports.csv', newline='') as csvfile:
     #     reader = csv.DictReader(csvfile)
@@ -50,7 +50,7 @@ def get_unit_pages(row):
     ]
 
     if (row['Name'] == 'Evans' or row['Name'] == 'Madari'):
-        with open('sp/sp.csv', newline='') as csvfile:
+        with open('sp/sp unit.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for newrow in reader:
                 if((row['Name'] + " Late") == newrow['Name']):
