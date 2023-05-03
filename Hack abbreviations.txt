@@ -6,5 +6,6 @@ cota = Call of the Armor https://feuniverse.us/t/fe8-complete-call-of-the-armor-
 dow = Drums of War https://feuniverse.us/t/fe8-fire-emblem-drums-of-war-v-1-05-complete-22-chapter-campaign/16368
 tlp = The Last Promise http://www.feshrine.net/thelastpromise/
 trtr = The Road to Ruin https://feuniverse.us/t/the-road-to-ruin/276
+sp = Shackled Power https://feuniverse.us/t/complete-fe8u-fire-emblem-shackled-power-33-chapters-version-1-2-easy-mode-available/9254
 vq = Vision Quest https://feuniverse.us/t/fe8-complete-fire-emblem-vision-quest-v3-by-pushwall-1-oct-22/3815
 vba = Void's Blitzarre Adventure https://feuniverse.us/t/feu-chapter-creation-blitz-voids-blitzarre-adventure/2629

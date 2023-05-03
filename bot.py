@@ -11,6 +11,7 @@ import vq.vq
 import vba.vba
 import fourkings.fourkings
 import dow.dow
+import sp.sp
 from discord.ext import commands
 from discord import option
 import sys
@@ -27,7 +28,7 @@ public_test_ids = [1039354532167176303,1081749141480288256]
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, cota, dow, tlp, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, cota, dow, sp, tlp, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
@@ -53,6 +54,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return fourkings.fourkings.get_unit_names(ctx)
     elif (hack == 'dow'):
         return dow.dow.get_unit_names(ctx)
+    elif (hack == 'sp'):
+        return dow.dow.get_unit_names(ctx)
     else:
         return []
     
@@ -61,7 +64,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba', '4k', 'dow']
+        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba', '4k', 'dow', 'sp']
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -83,6 +86,8 @@ async def unit(ctx, hack: str, name: str):
         await fourkings.fourkings.unit(ctx, name)
     elif (hack == 'dow'):
         await dow.dow.unit(ctx, name)
+    elif (hack == 'sp'):
+        await sp.sp.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
