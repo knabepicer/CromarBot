@@ -6,7 +6,7 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0x252926)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x252926)
 
     if (row['Name'] == 'Lilim' and random.randint(1, 10) == 1):
         unitembed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1043928901610643456/1103132562534178877/lilim_hairflip.gif")
@@ -16,7 +16,6 @@ def get_unit_pages(row):
         unitembed.set_thumbnail(url=row['Portrait'])
     
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] +  " | " + "Mag " + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"

@@ -6,13 +6,13 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0x0d59d4)
-    supportembed=discord.Embed(title=row['Name'], color=0x0d59d4)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x0d59d4)
+    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x0d59d4)
     
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    
     unitembed.add_field(name='Army: ', value=row['Army'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] +  " | " + "Mag " + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
     unitembed.add_field(name="Bases", value=bases, inline=False)

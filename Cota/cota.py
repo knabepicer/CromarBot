@@ -5,12 +5,12 @@ import random
 from discord.ext import pages
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0x47CAFF)
-    supportembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x47CAFF)
+    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x47CAFF)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    #unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
@@ -43,7 +43,7 @@ def get_unit_pages(row):
                 supportembed.add_field(name="", value=supportstring, inline=False)
     supportembed.set_footer(text="In Call of the Armor, supports are increased once at the start of a chapter if units are simultaneously deployed. 80 points are needed to reach C support, 160 for B, and 240 for A.")
 
-    promoembed=discord.Embed(title=row['Name'], color=0x47CAFF)
+    promoembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x47CAFF)
     promoembed.set_thumbnail(url=row['Portrait'])
     promofound = False
     with open('Cota/cota extra promos.csv', newline='') as csvfile:

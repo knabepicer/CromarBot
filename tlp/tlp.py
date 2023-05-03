@@ -7,15 +7,15 @@ from discord import option
 
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0x040f85)
-    supportembed=discord.Embed(title=row['Name'], color=0x040f85)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x040f85)
+    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x040f85)
     if (row['Name'] == 'Liquid' and random.randint(1, 10) == 1):
         unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1082028931571523734/Liquid_Insane.png')
     else:
         unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    #unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"

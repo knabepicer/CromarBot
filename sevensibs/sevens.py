@@ -6,12 +6,12 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0xb56c22)
-    supportembed=discord.Embed(title=row['Name'], color=0xb56c22)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xb56c22)
+    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xb56c22)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    
     bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
