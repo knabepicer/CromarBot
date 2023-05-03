@@ -21,7 +21,7 @@ def get_unit_pages(row):
     if (row['Promotion Class'] != ""):
         gains = sp_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    if (len(row['Bonus 2']) > 0):
+    if (row['Bonus 2'] != "None"):
         unitembed.set_footer(text=row['Bonus 2'])
     # with open('dow/dow supports.csv', newline='') as csvfile:
     #     reader = csv.DictReader(csvfile)
