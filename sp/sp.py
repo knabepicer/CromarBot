@@ -6,15 +6,15 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0x690606)
-    #supportembed=discord.Embed(title=row['Name'], color=0x690606)
+    unitembed=discord.Embed(title=row['Name'], color=0x252926)
+    #supportembed=discord.Embed(title=row['Name'], color=0x252926)
     unitembed.set_thumbnail(url=row['Portrait'])
     #supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
     unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
-    bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+    bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] +  " | " + "Mag " + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
     unitembed.add_field(name="Bases", value=bases, inline=False)
-    growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
+    growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
     ranks = sp_get_ranks(row)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
@@ -54,15 +54,15 @@ def get_unit_pages(row):
             reader = csv.DictReader(csvfile)
             for newrow in reader:
                 if((row['Name'] + " Late") == newrow['Name']):
-                    newembed=discord.Embed(title=newrow['Name'], color=0x690606)
-                    #supportembed=discord.Embed(title=row['Name'], color=0x690606)
+                    newembed=discord.Embed(title=newrow['Name'], color=0x252926)
+
                     newembed.set_thumbnail(url=newrow['Portrait'])
-                    #supportembed.set_thumbnail(url=row['Portrait'])
+
                     newembed.add_field(name="Lv " + newrow['Lv'] + " ", value=newrow['Class'], inline=True)
                     newembed.add_field(name="Affinity: ", value=newrow['Affinity'], inline=True)
-                    bases = "HP " + newrow['HP'] + " | " + "Atk " + newrow['Atk'] + " | Skl " + newrow['Skl'] + " | " + "Spd " + newrow['Spd'] + " | " + "Lck " + newrow['Luck'] + " | " + "Def " + newrow['Def'] + " | " + "Res " + newrow['Res'] + " | " + "Con " + newrow['Con'] + " | " + "Mov " + newrow['Move']
+                    bases = "HP " + newrow['HP'] + " | " + "Str " + newrow['Str'] +  " | " + "Mag " + newrow['Mag'] + " | Skl " + newrow['Skl'] + " | " + "Spd " + newrow['Spd'] + " | " + "Lck " + newrow['Luck'] + " | " + "Def " + newrow['Def'] + " | " + "Res " + newrow['Res'] + " | " + "Con " + newrow['Con'] + " | " + "Mov " + newrow['Move']
                     newembed.add_field(name="Bases", value=bases, inline=False)
-                    growths = "HP " + newrow['HP Growth'] + "% | " + "Atk " + newrow['Atk Growth'] + "% | Skl " + newrow['Skl Growth'] + "% | " + "Spd " + newrow['Spd Growth'] + "% | " + "Lck " + newrow['Luck Growth'] + "% | " + "Def " + newrow['Def Growth'] + "% | " + "Res " + newrow['Res Growth'] + "%"
+                    growths = "HP " + newrow['HP Growth'] + "% | " + "Str " + newrow['Str Growth'] + "% | " + "Mag " + newrow['Mag Growth'] + "% | Skl " + newrow['Skl Growth'] + "% | " + "Spd " + newrow['Spd Growth'] + "% | " + "Lck " + newrow['Luck Growth'] + "% | " + "Def " + newrow['Def Growth'] + "% | " + "Res " + newrow['Res Growth'] + "%"
                     newembed.add_field(name="Growths", value=growths, inline=False)
                     ranks = sp_get_ranks(newrow)
                     newembed.add_field(name="Ranks", value=ranks, inline=False)
