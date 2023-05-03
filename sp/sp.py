@@ -43,7 +43,7 @@ def get_unit_pages(row):
         reader = csv.DictReader(csvfile)
         for supportrow in reader:
             if(row['Name'] == supportrow['Unit'].split(" <")[0]):
-                supportembed=discord.Embed(title=supportrow['Name'], color=0x252926)
+                supportembed=discord.Embed(title=supportrow['Unit'], color=0x252926)
                 supportembed.set_thumbnail(url=row['Portrait'])
                 supportstring = ""
                 if(supportrow['Partner1'] != ''):
