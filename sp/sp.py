@@ -7,14 +7,14 @@ from discord import option
 
 def get_unit_pages(row):
     unitembed=discord.Embed(title=row['Name'], color=0x252926)
-    #supportembed=discord.Embed(title=row['Name'], color=0x252926)
+
     if (row['Name'] == 'Lilim' and random.randint(1, 10) == 1):
         unitembed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1043928901610643456/1103132562534178877/lilim_hairflip.gif")
     elif (row['Name'] == 'Haban' and random.randint(1, 10) == 1):
          unitembed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1043928901610643456/1103132628242149486/haban_alt_1.png")
     else:
         unitembed.set_thumbnail(url=row['Portrait'])
-    #supportembed.set_thumbnail(url=row['Portrait'])
+    
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
     unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] +  " | " + "Mag " + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
@@ -28,15 +28,6 @@ def get_unit_pages(row):
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     if (row['Bonus 2'] != "None"):
         unitembed.set_footer(text=row['Bonus 2'])
-    # with open('dow/dow supports.csv', newline='') as csvfile:
-    #     reader = csv.DictReader(csvfile)
-    #     for supportrow in reader:
-    #         if(row['Name'] == supportrow['Name']):
-    #             supportstring = ""
-    #             if(supportrow['Partner 1'] != 'None'):
-    #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-    #             supportembed.add_field(name="", value=supportstring, inline=False)
-    
 
     page_groups = [
         pages.PageGroup(
@@ -46,13 +37,37 @@ def get_unit_pages(row):
         use_default_buttons=False,
         default=True,
         ),
-        # pages.PageGroup(
-        # pages=[supportembed],
-        # label="Supports",
-        # description="Support data for the unit",
-        # use_default_buttons=False,
-        # )
     ]
+    
+    with open('sp/sp support.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for supportrow in reader:
+            if(row['Name'] == supportrow['Name'].split("<")[0]):
+                supportembed=discord.Embed(title=supportrow['Name'], color=0x252926)
+                supportembed.set_thumbnail(url=row['Portrait'])
+                supportstring = ""
+                if(supportrow['Partner1'] != ''):
+                    supportstring += supportrow['Partner1'] + "\n"
+                if(supportrow['Partner2'] != ''):
+                    supportstring += supportrow['Partner2'] + "\n"
+                if(supportrow['Partner3'] != ''):
+                    supportstring += supportrow['Partner3'] + "\n"
+                if(supportrow['Partner4'] != ''):
+                    supportstring += supportrow['Partner4'] + "\n"
+                if(supportrow['Partner5'] != ''):
+                    supportstring += supportrow['Partner5'] + "\n"
+                if(supportrow['Partner6'] != ''):
+                    supportstring += supportrow['Partner6'] + "\n"
+                if(supportrow['Partner7'] != ''):
+                    supportstring += supportrow['Partner7'] + "\n"
+                supportembed.add_field(name="", value=supportstring, inline=False)
+                page_groups.append(pages.PageGroup(
+        pages=[supportembed],
+        label="Supports",
+        description="Support data for the unit",
+        use_default_buttons=False,
+        ))
+    
 
     if (row['Name'] == 'Evans' or row['Name'] == 'Madari'):
         with open('sp/sp unit.csv', newline='') as csvfile:
