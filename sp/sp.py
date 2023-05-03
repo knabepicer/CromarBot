@@ -42,7 +42,7 @@ def get_unit_pages(row):
     with open('sp/sp support.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for supportrow in reader:
-            if(row['Name'] == supportrow['Unit'].split("<")[0]):
+            if(row['Name'] == supportrow['Unit'].split(" <")[0]):
                 supportembed=discord.Embed(title=supportrow['Name'], color=0x252926)
                 supportembed.set_thumbnail(url=row['Portrait'])
                 supportstring = ""
