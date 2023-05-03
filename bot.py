@@ -18,16 +18,36 @@ import sys
 
 bot = discord.Bot()
 
-cromar = bot.create_group("cromar", "Use Cromar Bot commands")
 #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
 
 test_ids = [1039354532167176303]
 public_test_ids = [1039354532167176303,1081749141480288256]
 
-@cromar.command(description="Get information about Cromar Bot.") # this decorator makes a slash command
+@bot.command(description="Call Cromar Bot and get a response.")
+@option("input", description = "Format is [command] [hack] [name]")
+async def cromar(ctx, input: str):
+    if (input == 'help'):
+        await help(ctx)
+    else: 
+        parsedInput = input.split(" ", 3)
+        command = parsedInput[0]
+        hack = parsedInput[1]
+        name = parsedInput[2]
+        if (command == "unit"):
+            await unit(ctx, hack, name)
+        elif (command == "item"):
+            await item(ctx, hack, name)
+        elif (command == "skill"):
+            await skill(ctx, hack, name)
+        elif (command == "boss"):
+            await boss(ctx, hack, name)
+        else:
+            await ctx.response.send_message("That command does not exist.")
+
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
+    unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, cota, dow, sp, tlp, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
