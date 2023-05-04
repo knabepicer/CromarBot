@@ -136,7 +136,7 @@ async def boss(ctx, hack: str, name: str):
 async def get_item_names(ctx: discord.AutocompleteContext):
     hack = ctx.options['hack']
     if (hack == 'bob'):
-        return bob.bob.get_boss_names(ctx)
+        return bob.bob.get_item_names(ctx)
     else:
         return[]
 
