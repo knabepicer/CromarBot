@@ -9,4 +9,3 @@ Justice & Pride
 
 Embers Entwined
 
-Shackled Power
