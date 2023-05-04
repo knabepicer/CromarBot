@@ -201,3 +201,7 @@ def tlp_get_inventory(row):
 def get_unit_names(ctx):
     names = ["Siegfried","Shon","Corben","Tamiko","Shuuda","Inanna","Kevin","Arthur","Storm","Althares","Cia","Noah","Anakin","Ace","Eduardo","Haas","Karina","Kelik","Levion","Logan","Itsuke","Asch","Zach","Lirin","Tekun","Emma","Ben","Mark","Liuke","Lyam","Rex","Yue","Howard","Sai","Risk","Liquid","Leopold","Shadow","Alice","Rana","Gary","Frederick","Rachel"]
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
+
+def get_boss_names(ctx):
+    names = ["Byron","Bardolph","Jaled","Jarod","Ada","Majaraon","Shinshou","Seigram","Lorraine","Mina","Pellenore","Talon","Zekiel","Logan","Lena","Perry","Roarik","Zoro","Ethan","Earnest","Cid","Zane","Eligor","Cero","Ivan","Nebilim","Fenix","Lanmark","Dragon","Holton","Galagar","Galagar2","Louis","Nyros","Marion","Apollo","Viola","Leon","Siegfried"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]

@@ -111,36 +111,67 @@ async def unit(ctx, hack: str, name: str):
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
+
+async def get_boss_names(ctx: discord.AutocompleteContext):
+    hack = ctx.options['hack']
+    if (hack == 'tlp'):
+        return tlp.tlp.get_boss_names(ctx)
+    else:
+        return[]
+
+
+
 @bot.slash_command(description = "Get boss unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
         ["tlp"]
     ))
-@option("name", description = "Name of the character to get data for")
+@option("name", description = "Name of the character to get data for", autocomplete= get_boss_names)
 async def boss(ctx, hack: str, name: str):
     if (hack == 'tlp'):
         await tlp.tlp.boss(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
+async def get_item_names(ctx: discord.AutocompleteContext):
+    hack = ctx.options['hack']
+    if (hack == 'bob'):
+        return bob.bob.get_boss_names(ctx)
+    else:
+        return[]
+
+
+
+
+
 @bot.slash_command(description = "Get item data")
-@option("hack", description = "Name of the hack to get data for")
-@option("name", description = "Name of the item to get data for",
+@option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
         ["bob"]
     ))
+@option("name", description = "Name of the item to get data for", autocomplete = get_item_names)
 async def item(ctx, hack: str, name: str):
     if (hack == 'bob'):
         await bob.bob.item(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
+
+
+async def get_skill_names(ctx: discord.AutocompleteContext):
+    hack = ctx.options['hack']
+    if (hack == 'bob'):
+        return bob.bob.get_skill_names(ctx)
+    else:
+        return[]
+
+
 @bot.slash_command(description = "Get skill data")
-@option("hack", description = "Name of the hack to get data for")
-@option("name", description = "Name of the skill to get data for",
+@option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
         ["bob"]
     ))
+@option("name", description = "Name of the skill to get data for", autocomplete=get_skill_names)
 async def skill(ctx, hack: str, name: str):
     if (hack == 'bob'):
         await bob.bob.skill(ctx, name)

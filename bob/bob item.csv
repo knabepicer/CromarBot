@@ -196,7 +196,7 @@ RedScarf,Red Scarf,"While equipped, restores 25% of HP after defeating an enemy.
 Saunion,Saunion,A lance with extended reach.,Weapon,Lance,40,9,80,12,0,2-3,50,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932731404451970/row-73-column-1.png
 TrainedEdge,Trained Edge,None,Weapon,Sword,25,9,85,8,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942252071895132/row-219-column-1.png
 TrainedPike,Trained Pike,None,Weapon,Lance,25,10,75,9,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942252420018236/row-220-column-1.png
-TrainedAxe,TrainedAxe,None,Weapon,Axe,25,11,70,10,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701269266432/row-221-column-1.png
+TrainedAxe,Trained Axe,None,Weapon,Axe,25,11,70,10,0,1,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701269266432/row-221-column-1.png
 TrainedArc,Trained Arc,Effective against fliers.,Weapon,Bow,25,9,80,8,0,2,30,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043942701558661290/row-222-column-1.png
 AquaBrand,Aqua Brand,Varga only. +5 Speed. Magic weapon.,Weapon,Sword,30,7,90,5,0,1,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940933944758382/row-195-column-1.png
 Charge,Charge,Emil only. +1 damage per tile moved.,Weapon,Lance,30,8,60,6,0,1,40,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940935056248862/row-198-column-1.png
