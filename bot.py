@@ -46,12 +46,14 @@ async def cromar(ctx, input: str):
 
 async def help(ctx): 
     unitembed=discord.Embed(title="Available commands", color=0x676b68)
+    unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, cota, dow, sp, tlp, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
+    
     await ctx.response.send_message(embed=unitembed)
 
 async def get_unit_names(ctx: discord.AutocompleteContext):
