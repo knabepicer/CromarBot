@@ -153,7 +153,7 @@ BlackAnklet,Black Anklet,Str/Mag +4 and Def/Res +2 while equipped. -10 HP after 
 Boltbrand,Boltbrand,Tiberius only. Magic at range. Brave.,Weapon,Sword,30,12,80,12,0,1-2,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937549980287036/row-143-column-1.png
 DawnPendant,Dawn Pendant,Cromar only. Banishes the darkness.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043937550588465232/row-145-column-1.png
 Dragonstone,Dragonstone,Augur only. Magic weapon. +10 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,12,90,0,0,1,0,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043940934733266954/row-197-column-1.png
-Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,1,15,100,3,0,1-2,6000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941575048310794/row-201-column-1.png
+Unmoor,Unmoor,Severs time's threads.,Weapon,Dark,255,15,100,3,0,1-2,6000,Yes,A,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043941575048310794/row-201-column-1.png
 Impaler,Impaler,Boro only. Negates defenses. A Chouwoujian lance.,Weapon,Lance,40,15,100,16,0,1,10000,No,Prf,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939834412150945/row-178-column-1.png
 Nibiru,Nibiru,Self and allies strike first when attacked.,Weapon,Dark,255,20,90,24,0,1-2,100,No,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043939831195119646/row-172-column-1.png
 ZykhraScroll,Zykhra Scroll,"While equipped, +10% HP/Str/Def/Bld growths, -10% Spd growth.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942702435270667/row-225-column-1.png
