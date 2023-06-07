@@ -68,6 +68,22 @@ async def unit(ctx, name: str):
         if (not was_found):
             await ctx.response.send_message("That unit does not exist.")
 
+async def skill(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    with open('vq/vq skill.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            if(stripped_row.lower() == stripped_name.lower()):
+                unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
+                unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
+                was_found = True
+                await ctx.response.send_message(embed=unitembed)
+                break
+        if (not was_found):
+                await ctx.response.send_message("That skill does not exist.")
+
 
 def vq_get_ranks(row):
     ranks = ""
@@ -140,4 +156,8 @@ def vq_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Storch","Vagelis","Arckady","Esfir","Lera","Natsuko","Marlen","Larisa","Onisim","Nazar","Sri","Dewi","Gunnar","Osane","Bosco","Ruslan","Lajos","Helga","Titus","Otilie","Zoya","Hollace","Honeydew","Sarka","Duck","Tien","Freyja","Naia","Dreyfus","Cashew","Vernon","Hokulani","Mango","Menahan","Jae","Selanne","Rakkaus","Cygnus","Maelle","Waluyo","Kusuma","Ketut","Surya","Bulan","Michael","Anisa","Kir","Cajon","Stina","Onderdonk","Radoslav","Seruni","Zakawat","Zuljalal","Batari","Erasmus","Timmonen","Sigrid","Cassius","Anwen","Zuzana","Lori"]
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]
+
+def get_skill_names(ctx):
+    names = ["Charisma","Pass","Nihil","Gentilhomme","Miracle","Light Weight","Swap","Strong Riposte","Wrath","Spur Resistance","Bond","Quick Burn","Intimidate","Savior","Reposition","Spur Strength","Pivot","Knight Aspirant","Slow Burn","Acrobat","Vantage","Spur Magic","Darting Blow","Thunderstorm","Puissance","Demoiselle","Charm","Spur Speed","Spur Defense","Summon","Paragon","Hex","Pursuit","Heavy Strikes","Inspiration","Lily's Poise","Chivalry","Pragmatic","Anathema","Death Blow","Boon","Armored Blow","Perfectionist","Fiery Blood","Even Rhythm","Frenzy","Triangle Adept","Tantivy","Nullify","Duelist's Blow","Odd Rhythm","Vanity","Infiltrator","Opportunist","Relief","Desperation","Staff Savant","Shove","Quick Draw","Natural Cover","Cunning","Steal","Crit Boost","Certain Blow","Forager","Discipline+","Live to Serve","Locktouch","Steal+","Breath of Life","Wind Disciple","Voice of Peace","Camaraderie"]
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
