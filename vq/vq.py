@@ -76,7 +76,7 @@ async def skill(ctx, name: str):
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Name'], color=0xac6c6c)
+                unitembed=discord.Embed(title=row['Name'], color=0x34c290)
                 unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
                 was_found = True
                 await ctx.response.send_message(embed=unitembed)
