@@ -32,7 +32,7 @@ def get_unit_pages(row):
     unitembed.add_field(name="Growths", value=growths, inline=False)
     ranks = dlatmol_get_ranks(row)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
-    if (row['Promotion Class'] != "None"):
+    if (row['Promotion Class'] != ""):
         gains = dlatmol_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     
