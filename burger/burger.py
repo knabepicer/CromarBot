@@ -6,8 +6,8 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Unit Name'] + " " + row['Affinity'], color=0xd9d021)
-    supportembed=discord.Embed(title=row['Unit Name'] + " " + row['Affinity'], color=0xd9d021)
+    unitembed=discord.Embed(title=row['\ufeffName'] + " " + row['Affinity'], color=0xd9d021)
+    supportembed=discord.Embed(title=row['\ufeffName'] + " " + row['Affinity'], color=0xd9d021)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
@@ -26,7 +26,7 @@ def get_unit_pages(row):
     # with open('trtr/trtr supports.csv', newline='') as csvfile:
     #     reader = csv.DictReader(csvfile)
     #     for supportrow in reader:
-    #         if(row['Name'] == supportrow['Name']):
+    #         if(row['Name'] == supportrow['\ufeffName']):
     #             supportstring = ""
     #             if(supportrow['Partner 1'] != 'None'):
     #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
@@ -60,7 +60,7 @@ async def unit(ctx, name: str):
         was_found = False
         for row in reader:
             print(row) 
-            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Unit Name'])
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['\ufeffName'])
             if(stripped_row.lower() == stripped_name.lower()):
                 paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
                 await paginator.respond(ctx.interaction)
@@ -75,9 +75,9 @@ async def skill(ctx, name: str):
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
-            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Unit Name'])
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['\ufeffName'])
             if(stripped_row.lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Unit Name'], color=0xd9d021)
+                unitembed=discord.Embed(title=row['\ufeffName'], color=0xd9d021)
                 unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
                 was_found = True
                 await ctx.response.send_message(embed=unitembed)
