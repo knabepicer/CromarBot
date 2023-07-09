@@ -6,8 +6,8 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xd9d021)
-    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xd9d021)
+    unitembed=discord.Embed(title=row['Unit Name'] + " " + row['Affinity'], color=0xd9d021)
+    supportembed=discord.Embed(title=row['Unit Name'] + " " + row['Affinity'], color=0xd9d021)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
@@ -59,8 +59,8 @@ async def unit(ctx, name: str):
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
-            print(row)
-            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            print(row) 
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Unit Name'])
             if(stripped_row.lower() == stripped_name.lower()):
                 paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
                 await paginator.respond(ctx.interaction)
@@ -75,9 +75,9 @@ async def skill(ctx, name: str):
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
-            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Unit Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Name'], color=0xd9d021)
+                unitembed=discord.Embed(title=row['Unit Name'], color=0xd9d021)
                 unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
                 was_found = True
                 await ctx.response.send_message(embed=unitembed)
