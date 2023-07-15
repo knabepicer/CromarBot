@@ -124,7 +124,7 @@ async def skill(ctx, name: str):
 
 async def boss(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('burger/burger_boss.csv', newline='') as csvfile:
+    with open('burger/burger_boss.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
