@@ -230,7 +230,7 @@ def burger_get_sides_info(row, suffix):
     if (len(ranks) > 0):
         ranks = ranks[:-3]
     else:
-        ranks = "No Change"
+        ranks = "Ricardo"
     total += gains + ranks
     return total
 
