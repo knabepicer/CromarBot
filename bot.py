@@ -128,6 +128,8 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
     hack = ctx.options['hack']
     if (hack == 'tlp'):
         return tlp.tlp.get_boss_names(ctx)
+    elif (hack == 'burger'):
+        return burger.burger.get_boss_names(ctx)
     else:
         return[]
 
@@ -136,12 +138,14 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get boss unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["tlp"]
+        ["tlp", "burger"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete= get_boss_names)
 async def boss(ctx, hack: str, name: str):
     if (hack == 'tlp'):
         await tlp.tlp.boss(ctx, name)
+    elif (hack == 'burger'):
+        await burger.burger.boss(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 

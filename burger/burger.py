@@ -74,6 +74,21 @@ def get_unit_pages(row):
     return page_groups
     
 
+def get_boss_embed(row):
+    unitembed=discord.Embed(title=row['Name'], color=0xd9d021)
+    unitembed.set_thumbnail(url=row['Portrait'])
+    unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
+    unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
+    bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | Mag" + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Move']
+    unitembed.add_field(name="Bases", value=bases, inline=False)
+    inventory = burger_get_inventory(row)
+    unitembed.add_field(name="Inventory", value=inventory, inline=False)
+    ranks = burger_get_ranks(row)
+    unitembed.add_field(name="Ranks", value=ranks, inline=False)
+    if (row['Bonus'] != ""):
+        unitembed.set_footer(text=row['Bonus'])
+
+    return unitembed
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
@@ -106,6 +121,20 @@ async def skill(ctx, name: str):
                 break
         if (not was_found):
                 await ctx.response.send_message("That skill does not exist.")
+
+async def boss(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    with open('burger/burger_boss.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        was_found = False
+        for row in reader:
+            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            if(stripped_row.lower() == stripped_name.lower()):
+                await ctx.response.send_message(embed=get_boss_embed(row))
+                was_found = True
+                break
+        if (not was_found):
+            await ctx.response.send_message("That unit does not exist.")
 
 
 def burger_get_ranks(row):
@@ -179,6 +208,20 @@ def burger_get_gains(row):
         gains2 = gains2[:-3]
     return gains + gains2
 
+def burger_get_inventory(row):
+    inventory = ""
+    if (row['Item 1'] != ""):
+        inventory += row['Item 1']
+    if (row['Item 2'] != ""):
+        inventory += ", " + row['Item 2']
+    if (row['Item 3'] != ""):
+        inventory += ", " + row['Item 3']
+    if (row['Item 4'] != ""):
+        inventory += ", " + row['Item 4']
+    if (row['Drops Item?'] == "Yes"):
+         inventory += " (Drops item)"
+    return inventory
+
 def burger_get_sides_info(row, suffix):
     total = ""
     gains = ""
@@ -241,4 +284,8 @@ def get_unit_names(ctx):
 
 def get_skill_names(ctx):
     names = []
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]
+
+def get_boss_names(ctx):
+    names = ["O'Neill1","Baguette","Not Gheb","A'achital","Olsenov","Whoms't","Brandon","Lau","Arrrvis","James","Kempf","Wrys","Maeda","Lincoln","Wright","Zeke","Ronald McD1","Grimace","Saias","Inner Zelgius","Ike","Soren","Titania","Mist","Mia","Ilyana","Gabagool","Birdie","Dudefloy","Zane","Papilio","Magorn","Harold","Coulter","Musar","Riddell","Hamburglar","O'Neill2","Birger","Sephiroth","Raven","Galzus","Rutger","Ares","Samto","The Player","Sucker","Erik","Mosquito","Ronald McD2","Number 12","Number 15","Number 16","Number 17","Number 8"]
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
