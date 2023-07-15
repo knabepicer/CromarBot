@@ -206,8 +206,9 @@ def burger_get_sides_info(row, suffix):
             gains += "Mov: +" + row['Mov Gains'+ suffix] + " | "
         else:
             gains += "Mov: " + row['Mov Gains'+ suffix] + " | "
-    gains = gains[:-3]
-    gains += "\n"
+    if (len(gains) > 0):
+        gains = gains[:-3]
+        gains += "\n"
     ranks = ""
     if (row['New Sword'+ suffix] != 'None'):
         ranks += "<:RankSword:1083549037585768510>Sword: " + row['New Sword'+ suffix] + " | "
