@@ -39,16 +39,16 @@ def get_unit_pages(row):
             if(row['Name'] == sidesrow['Name']):
                 if (sidesrow['Special'] == 'Yes'):
                     sidesembed.add_field(name="", value="Special Class", inline=True)
-                onea += burger_get_sides_info(sidesrow, " 1A")
+                onea = burger_get_sides_info(sidesrow, " 1A")
                 sidesembed.add_field(name="First B-Side", value=onea, inline=True)
                 if (sidesrow['Recursive'] != 'Yes'):
-                    oneb += burger_get_sides_info(sidesrow, " 1B")
+                    oneb = burger_get_sides_info(sidesrow, " 1B")
                     sidesembed.add_field(name="Second B-Side", value=oneb, inline=True)
                     if (sidesrow['Promotion Class'] != ''):
                         sidesembed.add_field(name='Promoted Class', value=sidesrow['Promotion Class'], inline=True)
-                        twoa += burger_get_sides_info(sidesrow, " 2A")
+                        twoa = burger_get_sides_info(sidesrow, " 2A")
                         sidesembed.add_field(name="First Promoted B-Side", value=twoa, inline=True)
-                        twob += burger_get_sides_info(sidesrow, " 2B")
+                        twob = burger_get_sides_info(sidesrow, " 2B")
                         sidesembed.add_field(name="Second Promoted B-Side", value=twob, inline=True)
                 if (sidesrow['Note'] != ""):
                     sidesembed.set_footer(text=sidesrow['Note'])
