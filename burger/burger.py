@@ -79,7 +79,7 @@ def get_boss_embed(row):
     unitembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
     unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
-    bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | Mag" + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
+    bases = "HP " + row['HP'] + " | " + "Str " + row['Str'] + " | Mag " + row['Mag'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     inventory = burger_get_inventory(row)
     unitembed.add_field(name="Inventory", value=inventory, inline=False)
