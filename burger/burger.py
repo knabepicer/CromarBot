@@ -183,19 +183,19 @@ def burger_get_sides_info(row, suffix):
     gains = ""
     gains += row['B-Sides Class' + suffix] + "\n"
     if (row['HP Gains' + suffix] != '0'):
-        gains += "HP: +" + row['HP Gains'] + " | "
+        gains += "HP: +" + row['HP Gains'+ suffix] + " | "
     if (row['Str Gains'+ suffix] != '0'):
-        gains += "Str: +" + row['Str Gains'] + " | "
+        gains += "Str: +" + row['Str Gains'+ suffix] + " | "
     if (row['Mag Gains'+ suffix] != '0'):
-        gains += "Mag: +" + row['Mag Gains'] + " | "
+        gains += "Mag: +" + row['Mag Gains'+ suffix] + " | "
     if (row['Skl Gains'+ suffix] != '0'):
-        gains += "Skl: +" + row['Skl Gains'] + " | "
+        gains += "Skl: +" + row['Skl Gains'+ suffix] + " | "
     if (row['Spd Gains'+ suffix] != '0'):
-        gains += "Spd: +" + row['Spd Gains'] + " | "
+        gains += "Spd: +" + row['Spd Gains'+ suffix] + " | "
     if (row['Def Gains'+ suffix] != '0'):
-        gains += "Def: +" + row['Def Gains'] + " | "
+        gains += "Def: +" + row['Def Gains'+ suffix] + " | "
     if (row['Res Gains'+ suffix] != '0'):
-        gains += "Res: +" + row['Res Gains'] + " | "
+        gains += "Res: +" + row['Res Gains'+ suffix] + " | "
     if (row['Con Gains'+ suffix] != '0'):
         if (int(row['Con Gains'+ suffix]) > 0):
             gains += "Con: +" + row['Con Gains'+ suffix] + " | "
