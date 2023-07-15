@@ -180,8 +180,9 @@ def burger_get_gains(row):
     return gains + gains2
 
 def burger_get_sides_info(row, suffix):
+    total = ""
     gains = ""
-    gains += row['B-Sides Class' + suffix] + "\n"
+    total += row['B-Sides Class' + suffix] + "\n"
     if (row['HP Gains' + suffix] != '0'):
         gains += "HP: +" + row['HP Gains'+ suffix] + " | "
     if (row['Str Gains'+ suffix] != '0'):
@@ -230,8 +231,8 @@ def burger_get_sides_info(row, suffix):
         ranks = ranks[:-3]
     else:
         ranks = "No Change"
-    gains += ranks
-    return gains
+    total += gains + ranks
+    return total
 
 
 def get_unit_names(ctx):
