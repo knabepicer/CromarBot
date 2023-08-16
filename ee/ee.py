@@ -5,7 +5,7 @@ import random
 from discord.ext import pages
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x47CAFF)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xD4BB77)
     unitembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
     #unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
@@ -19,7 +19,7 @@ def get_unit_pages(row):
         gains = ee_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
 
-    promoembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x47CAFF)
+    promoembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xD4BB77)
     promoembed.set_thumbnail(url=row['Portrait'])
     promofound = False
     with open('ee/ee extra promos.csv', newline='') as csvfile:
