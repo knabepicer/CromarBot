@@ -14,6 +14,7 @@ import dow.dow
 import sp.sp
 import dlatmol.dlatmol
 import burger.burger
+import ee.ee
 from discord.ext import commands
 from discord import option
 import sys
@@ -51,7 +52,7 @@ async def help(ctx):
     unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, burger, cota, dlatmol, dow, sp, tlp, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, burger, cota, dlatmol, dow, ee, sp, tlp, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
@@ -84,6 +85,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return dlatmol.dlatmol.get_unit_names(ctx)
     elif (hack == 'burger'):
         return burger.burger.get_unit_names(ctx)
+    elif (hack == 'ee'):
+        return ee.ee.get_unit_names(ctx)
     else:
         return []
     
@@ -92,7 +95,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba', '4k', 'dow', 'sp', 'dlatmol', 'burger']
+        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba', '4k', 'dow', 'sp', 'dlatmol', 'burger', 'ee']
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -120,6 +123,8 @@ async def unit(ctx, hack: str, name: str):
         await dlatmol.dlatmol.unit(ctx, name)
     elif (hack == 'burger'):
         await burger.burger.unit(ctx, name)
+    elif (hack == 'ee'):
+        await ee.ee.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
