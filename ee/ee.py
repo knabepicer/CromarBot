@@ -132,7 +132,7 @@ def ee_get_gains(row):
         if (row['Axe Gains'].isdigit()):
             gains2 += "<:RankAxe:1083549032292548659>+" + row['Axe Gains'] + " | "
         else:
-            gains += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
+            gains2 += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
     if (row['Bow Gains'] != 'None'):
         if (row['Bow Gains'].isdigit()):
             gains2 += "<:RankBow:1083549033429205073>+" + row['Bow Gains'] + " | "
