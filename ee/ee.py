@@ -161,6 +161,7 @@ def ee_get_gains(row):
     if len(gains2) > 0:
         gains2 = gains2[:-3]
     gains3 = ''
+    gains4 = ''
     if (row['Promotes 2'] != 'No'): 
         gains3 += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
@@ -182,9 +183,9 @@ def ee_get_gains(row):
                 gains3 += "Mov: +" + row['Mov Gains 2'] + " | "
             else:
                 gains3 += "Mov: " + row['Mov Gains 2'] + " | "
-        if len(gains2) > 0:
+        if len(gains3) > 0:
             gains3 = gains3[:-3]
-        gains4 = "\n"
+        gains4 += "\n"
         if (row['Sword Gains 2'] != 'None'):
             if (row['Sword Gains 2'].isdigit()):
                 gains4 += "<:RankSword:1083549037585768510>+" + row['Sword Gains 2'] + " | "
@@ -225,7 +226,8 @@ def ee_get_gains(row):
                 gains4 += "<:RankDark:1083549034310012959>+" + row['Dark Gains 2'] + " | "
             else:
                 gains4 += "<:RankDark:1083549034310012959>" + row['Dark Gains 2'] + " | "
-        gains4 = gains4[:-3]
+        if len(gains4) > 0:
+            gains4 = gains4[:-3]
     return gains + gains2 + gains3 + gains4
 
 def ee_get_extra_gains(row, num):
