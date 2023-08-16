@@ -26,10 +26,8 @@ def get_unit_pages(row):
         reader = csv.DictReader(csvfile)
         for promorow in reader:
             if(row['Name'] == promorow['Name']):
-                promoembed.add_field(name="From " + promorow['Base Class 1'], value="", inline=True)
-                promoembed.add_field(name=promorow['Promo Class 1'], value=ee_get_extra_gains(promorow, "1"), inline=True)
-                promoembed.add_field(name="From " + promorow['Base Class 2'], value="", inline=True)
-                promoembed.add_field(name=promorow['Promo Class 2'], value=ee_get_extra_gains(promorow, "2"), inline=True)
+                promoembed.add_field(name="From " + promorow['Base Class 1'] + " to " + promorow['Promo Class 1'], value=ee_get_extra_gains(promorow, "1"), inline=True)
+                promoembed.add_field(name="From " + promorow['Base Class 2'] + " to " + promorow['Promo Class 2'], value=ee_get_extra_gains(promorow, "2"), inline=True)
                 promofound = True
                 break
 
