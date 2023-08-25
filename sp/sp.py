@@ -189,4 +189,5 @@ def sp_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Prosel","Haban","Lou","Annie","Hute","Marilyn","Eileen","Darrel","Cyrus","Majen","Grant","Silph","Eddie","Colton","Vesper","Alta","Dour","Clint","Demi","Wyler","Nello","Bast","Melanie","Lilim","Eliza","Peirhok","Cadence","Vicks","Barbara","Orville","Onick","Ruben","Madari","Evans","Boddason","Lyra","Nidas","Krunk","Rita","Ray","Kassandra","Carrie","Aster"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

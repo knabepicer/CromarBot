@@ -138,5 +138,6 @@ def dow_get_gains(row):
     return gains + gains2
 
 def get_unit_names(ctx):
-    names = ["Roxelana","Pavel","Radu","Petras","Renate","Gerhard","Vivica","Hesterine","Felice","Jaro","Kadri","Alessander","Sander","Helje","Goran","Kirsten","Alarik","Lucetta","Laszlo","Kestut","Saszkia","Ochulo","Andrea","Donagh","Calista","Baros","Etienne","Chasimir","Ramond","Elisenda","Kalevi","Tiimo","Karolas","Connacht","Rioghain","Clio","Evander","Thalassa","Deadeye","Dzeneta","Catsidhe","Luthor","Estrelle","Valentrix","Sanne","Berenice","Domovoi"]
+    names = ["Roxelana","Pavel","Radu","Petras","Renate","Gerhard","Vivica","Hesterine","Felice","Jaro","Kadri","Alessander","Sander","Helje","Goran","Kirsten","Alarik","Lucetta","Laszlo","Kestut","Saszkia","Ochulo","Andrea","Donagh","Calista","Baros","Etienne","Chasimir","Ramond","Elisenda","Kalevi","Tiimo","Karolas","Connacht","Rioghain","Clio","Evander","Thalassa","Deadeye","Dzeneta","Catsidhe","Luthor","Estrelle","Valentrix","Sanne","Berenice","Domovoi", "Rover"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

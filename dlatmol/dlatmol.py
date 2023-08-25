@@ -204,4 +204,5 @@ def dlatmol_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Orion","Tactician","Francine","Shermie","Emma","Eli","Arthur","Blair","Hyle","Ronaldo","Aislin","Fiana","Horton","Yet","Dale","Chandra","Freesia","Sherie","Ashley","Wren","Raimon","Luca","James","Niya","Ty","Agrippa","Shanks","Mide","Alva","Darius","Suzhen","Dakini","Fang","Whitney","Vito","Egil","Kiri","Jenna","Kathe","Dorothy","Arjun","Khan","Adda","Ardoome","Durga","Maya"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

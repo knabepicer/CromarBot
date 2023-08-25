@@ -272,4 +272,5 @@ def ee_get_extra_gains(row, num):
 
 def get_unit_names(ctx):
     names = ["Petra", "Rasmus", "Liam", "Leif", "Deesa", "Diego", "Terry", "Erina", "Rumina", "Grunhilde", "DeAndre", "Amaran", "Swyftpawe", "Zaid", "Chayse", "Kane", "Turner", "Datura", "Wisteria", "Pavani", "Randolf", "Mary", "Torie", "Tillie", "Jeff", "Alvaro", "Ben", "Enoch", "Iris", "Masato", "Hanson", "Chell", "Gruyere", "Hemming", "Miuu", "Baal", "Phileas", "Ryland", "Serah", "Jason", "Jenna", "Eustace", "Christel", "Garland", "Coltrane", "Georgio", "S", "Flavius"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

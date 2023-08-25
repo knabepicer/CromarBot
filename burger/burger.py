@@ -280,6 +280,7 @@ def burger_get_sides_info(row, suffix):
 
 def get_unit_names(ctx):
     names = ["BK","Sephiran","Fiona","Hugh","Chungis","Dalvin","Sharlow","Matthis","Soldier","Rebecca","Priscilla","Sail","Perne","Trude","Lynhardt","Salem","Brown","Kaga","Rad Quetz","Tomas","Generic Ilian","ST4F-BOT","Bigle","Deke","Bors","Marty","Azel","Bernie","The King","Papaya","Not Kelik","Honse","Samto","Demijagen","Wario","Ricardo","Dorshua","Subject 35","Joshua","Butter Dog","Riddel","Tailtiu","Kempf","Adachy"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
 def get_skill_names(ctx):
@@ -288,4 +289,5 @@ def get_skill_names(ctx):
 
 def get_boss_names(ctx):
     names = ["O'Neill1","Baguette","Not Gheb","A'achital","Olsenov","Whoms't","Brandon","Lau","Arrrvis","James","Kempf","Wrys","Maeda","Lincoln","Wright","Zeke","Ronald McD1","Grimace","Saias","Inner Zelgius","Ike","Soren","Titania","Mist","Mia","Ilyana","Gabagool","Birdie","Dudefloy","Zane","Papilio","Magorn","Harold","Coulter","Musar","Riddell","Hamburglar","O'Neill2","Birger","Sephiroth","Raven","Galzus","Rutger","Ares","Samto","The Player","Sucker","Erik","Mosquito","Ronald McD2","Number 12","Number 15","Number 16","Number 17","Number 8"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

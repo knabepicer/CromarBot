@@ -241,4 +241,5 @@ def fourkings_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Walter","Lionel","Zachary","Bradley","Shaun","Chase","Lydia","Shelby","Yufin","Ava","Max","Sally","Marcie","Dorian","Zoe","Vin","Cielo","Victor","Ron","Locritus","Colt","Hoff","Cindy","Regis","Wilson","Terry","Harriet","Patty","Candace","Jack","Jeremy","Sarah","Alicia","Elias","Nicole","Gideon","Luceil","Emily","Terril","Marvin"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

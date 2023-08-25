@@ -156,8 +156,10 @@ def vq_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Storch","Vagelis","Arckady","Esfir","Lera","Natsuko","Marlen","Larisa","Onisim","Nazar","Sri","Dewi","Gunnar","Osane","Bosco","Ruslan","Lajos","Helga","Titus","Otilie","Zoya","Hollace","Honeydew","Sarka","Duck","Tien","Freyja","Naia","Dreyfus","Cashew","Vernon","Hokulani","Mango","Menahan","Jae","Selanne","Rakkaus","Cygnus","Maelle","Waluyo","Kusuma","Ketut","Surya","Bulan","Michael","Anisa","Kir","Cajon","Stina","Onderdonk","Radoslav","Seruni","Zakawat","Zuljalal","Batari","Erasmus","Timmonen","Sigrid","Cassius","Anwen","Zuzana","Lori"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
 def get_skill_names(ctx):
     names = ["Charisma","Pass","Nihil","Gentilhomme","Miracle","Light Weight","Swap","Strong Riposte","Wrath","Spur Resistance","Bond","Quick Burn","Intimidate","Savior","Reposition","Spur Strength","Pivot","Knight Aspirant","Slow Burn","Acrobat","Vantage","Spur Magic","Darting Blow","Thunderstorm","Puissance","Demoiselle","Charm","Spur Speed","Spur Defense","Summon","Paragon","Hex","Pursuit","Heavy Strikes","Inspiration","Lily's Poise","Chivalry","Pragmatic","Anathema","Death Blow","Boon","Armored Blow","Perfectionist","Fiery Blood","Even Rhythm","Frenzy","Triangle Adept","Tantivy","Nullify","Duelist's Blow","Odd Rhythm","Vanity","Infiltrator","Opportunist","Relief","Desperation","Staff Savant","Shove","Quick Draw","Natural Cover","Cunning","Steal","Crit Boost","Certain Blow","Forager","Discipline+","Live to Serve","Locktouch","Steal+","Breath of Life","Wind Disciple","Voice of Peace","Camaraderie"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]

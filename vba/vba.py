@@ -193,4 +193,5 @@ def vba_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Void","Tim","Tam","Jerome","Leeroy","Anna","Bede","Jay","Not Arch","Kirsten","Bob","Roshea","Prine","Edge","Samson","Arve","Tye","Celicia","Eevster","Anna2","Nikita","Anna3","Edgeworth","Zigludo","Kaga","Doot","Celica","Doowile","Evil Florina","Bjorn","Jake","Marf","Tiki","Mark"]
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
