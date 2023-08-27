@@ -11,7 +11,6 @@ def get_unit_pages(row):
     if (row['Name'] == 'Eli' and random.randint(1, 10) > 7):
         unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1115805496075632761/6Eli.png')
         supportembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1115805496075632761/6Eli.png')
-    
     elif (row['Name'] == 'Tactician' and random.randint(1, 10) > 5):
         unitembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1115805495039635506/2Tactician2Female.png')
         supportembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/1081990677140869281/1115805495039635506/2Tactician2Female.png')
