@@ -11,3 +11,4 @@ sp = Shackled Power https://feuniverse.us/t/complete-fe8u-fire-emblem-shackled-p
 vq = Vision Quest https://feuniverse.us/t/fe8-complete-fire-emblem-vision-quest-v3-by-pushwall-1-oct-22/3815
 vba = Void's Blitzarre Adventure https://feuniverse.us/t/feu-chapter-creation-blitz-voids-blitzarre-adventure/2629
 ee = Embers Entwined https://feuniverse.us/t/fe8-fire-emblem-embers-entwined-21-chapters-complete/18008
+fehr = Fire Emblem Heores Remake https://github.com/laqieer/FEHR
