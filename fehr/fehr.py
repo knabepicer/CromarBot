@@ -25,6 +25,14 @@ face_names = {
 def calc(expr):
     return str(int(eval(expr)))
 
+def get_unit_data():
+    unit_data = ['nameTextId,descriptionTextId,id,job,portrait,miniPortrait,affinity,sortID,Lv,baseHp,baseStr,baseSkl,baseSpd,baseDef,baseRes,baseLuk,baseConBonus,levelSword,levelLance,levelAxe,levelBow,levelStaff,levelAnima,levelLight,levelDark,growthHp,growthStr,growthSkl,growthSpd,growthDef,growthRes,growthLuk,paletteIdUnpromoted,paletteIdPromoted,battleAnimationIdUnpromoted,battleAnimationIdPromoted,pad_27,ability_mountedAid,ability_moveAgain,ability_steal,ability_theifKey,ability_dance,ability_play,ability_criticalBonus,ability_ballista,ability_promoted,ability_supplyDepot,ability_mountedIcon,ability_dragonKnightIcon,ability_pegasusKnightIcon,ability_lord,ability_female,ability_boss,ability_RoyWeaponLock,ability_WoDaoWeaponLock,ability_dragonStoneWeaponLock,ability_morph,ability_preventControl,ability_pegasusTriangleAttack,ability_armorTriangleAttack,ability_forbidden,ability_noExp,ability_lethality,ability_magicSeal,ability_dropLastItem,ability_EliwoodWeaponLock,ability_HectorWeaponLock,ability_LynWeaponLock,ability_AthosWeaponLock,support,dialogueId,comment']
+    lines = [l.decode('utf-8') for l in urllib.request.urlopen(url_base + 'src/character.c').readlines()]
+    for line in lines:
+        if ' -> ' in line and '//{' not in line and 'Generic' not in line and 'Enemy' not in line:
+            unit_data.append(line)
+    return unit_data
+
 def get_unit_pages(row):
     unitname=row['comment'].split(' -> ')[1]
     unitembed=discord.Embed(title=unitname + " " + affinity_icons[row['affinity'].strip()], color=0xD4BB77)
@@ -49,19 +57,16 @@ def get_unit_pages(row):
     return page_groups
 
 async def unit(ctx, name: str):
-    csvfile = url_base + 'doc/bot/fehr%20unit.csv'
-    with urllib.request.urlopen(csvfile) as f:
-        lines = [l.decode('utf-8') for l in f.readlines()]
-        reader = csv.DictReader(lines)
-        was_found = False
-        for row in reader:
-            if(row['comment'].strip().lower().endswith(' -> ' + name.strip().lower())):
-                paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
-                await paginator.respond(ctx.interaction)
-                was_found = True
-                break
-        if (not was_found):
-            await ctx.response.send_message("That unit does not exist.")
+    reader = csv.DictReader(get_unit_data())
+    was_found = False
+    for row in reader:
+        if(row['comment'].strip().lower().endswith(' -> ' + name.strip().lower())):
+            paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
+            await paginator.respond(ctx.interaction)
+            was_found = True
+            break
+    if (not was_found):
+        await ctx.response.send_message("That unit does not exist.")
 
 
 def fehr_get_ranks(row):
