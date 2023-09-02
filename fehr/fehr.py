@@ -89,6 +89,6 @@ def fehr_get_ranks(row):
     return ranks
 
 def get_unit_names(ctx):
-    names = ['Alfons', 'Anna', 'Sharon', 'Laevatain', 'Hood', 'Laegjarn', 'Lif', 'Helbindi', 'Hell', 'Gustaf', 'Veronica', 'Bruno', 'Freya', 'Fjorm', 'Elm', 'Cerise', 'Srasir', 'Yurg', 'Otr', 'Freeze', 'Reghin', 'Ash', 'Loki', 'Fafnir', 'Eir', 'Scabiosa', 'Plumeria', 'Dagr', 'Nott', 'Froda', 'Takumi', 'Fafnir2', 'Peony', 'Avatar', 'Surtr', 'Eitri', 'Mirabilis', 'Otr', 'Hell']
+    names = ['Alfons', 'Anna', 'Sharon', 'Laevatain', 'Hood', 'Laegjarn', 'Lif', 'Helbindi', 'Hell', 'Gustaf', 'Veronica', 'Bruno', 'Freya', 'Fjorm', 'Elm', 'Cerise', 'Srasir', 'Yurg', 'Otr', 'Freeze', 'Reghin', 'Ash', 'Loki', 'Fafnir', 'Eir', 'Scabiosa', 'Plumeria', 'Dagr', 'Nott', 'Froda', 'Takumi', 'Fafnir2', 'Peony', 'Avatar', 'Surtr', 'Eitri', 'Mirabilis', 'Otr', 'Hell', 'Marks']
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
