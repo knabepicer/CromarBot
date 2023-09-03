@@ -55,7 +55,7 @@ async def help(ctx):
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, bob, burger, cota, dlatmol, dow, ee, sp, tlp, trtr, vq, vba, fehr", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports bob", inline=False)
-    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq", inline=False)
+    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
     
     await ctx.response.send_message(embed=unitembed)
@@ -190,6 +190,8 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
         return bob.bob.get_skill_names(ctx)
     elif (hack == 'vq'):
         return vq.vq.get_skill_names(ctx)
+    elif (hack == 'fehr'):
+        return fehr.fehr.get_skill_names(ctx)
     else:
         return[]
 
@@ -197,7 +199,7 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get skill data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["bob", 'vq']
+        ["bob", 'vq', 'fehr']
     ))
 @option("name", description = "Name of the skill to get data for", autocomplete=get_skill_names)
 async def skill(ctx, hack: str, name: str):
@@ -205,6 +207,8 @@ async def skill(ctx, hack: str, name: str):
         await bob.bob.skill(ctx, name)
     elif (hack == 'vq'):
         await vq.vq.skill(ctx, name)
+    elif (hack == 'fehr'):
+        await fehr.fehr.skill(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
