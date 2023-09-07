@@ -37,7 +37,7 @@ def get_unit_pages(row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('john/john unit.csv', newline='') as csvfile:
+    with open('john/john unit.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
