@@ -79,22 +79,22 @@ def john_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
     if (row['HP Gains'] != '0'):
-        gains += "HP: +" + row['HP Gains'] + " | "
+        gains += "HP: " + row['HP Gains'] + " | "
     if (row['Atk Gains'] != '0'):
-        gains += "Atk: +" + row['Atk Gains'] + " | "
+        gains += "Atk: " + row['Atk Gains'] + " | "
     if (row['Skl Gains'] != '0'):
-        gains += "Skl: +" + row['Skl Gains'] + " | "
+        gains += "Skl: " + row['Skl Gains'] + " | "
     if (row['Spd Gains'] != '0'):
-        gains += "Spd: +" + row['Spd Gains'] + " | "
+        gains += "Spd: " + row['Spd Gains'] + " | "
     if (row['Def Gains'] != '0'):
-        gains += "Def: +" + row['Def Gains'] + " | "
+        gains += "Def: " + row['Def Gains'] + " | "
     if (row['Res Gains'] != '0'):
-        gains += "Res: +" + row['Res Gains'] + " | "
+        gains += "Res: " + row['Res Gains'] + " | "
     if (row['Con Gains'] != '0'):
-        gains += "Con: +" + row['Con Gains'] + " | "
+        gains += "Con: " + row['Con Gains'] + " | "
     if (row['Mov Gains'] != '0'):
         if (int(row['Mov Gains']) > 0):
-            gains += "Mov: +" + row['Mov Gains'] + " | "
+            gains += "Mov: " + row['Mov Gains'] + " | "
         else:
             gains += "Mov: " + row['Mov Gains'] + " | "
     gains = gains[:-3]
@@ -146,25 +146,25 @@ def john_get_gains(row):
     if (row['Promotes 2'] != 'No'): 
         gains3 += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
-            gains3 += "HP: +" + row['HP Gains 2'] + " | "
+            gains3 += "HP: " + row['HP Gains 2'] + " | "
         if (row['Atk Gains 2'] != '0'):
-            gains3 += "Atk: +" + row['Atk Gains 2'] + " | "
+            gains3 += "Atk: " + row['Atk Gains 2'] + " | "
         if (row['Skl Gains 2'] != '0'):
-            gains3 += "Skl: +" + row['Skl Gains 2'] + " | "
+            gains3 += "Skl: " + row['Skl Gains 2'] + " | "
         if (row['Spd Gains 2'] != '0'):
-            gains3 += "Spd: +" + row['Spd Gains 2'] + " | "
+            gains3 += "Spd: " + row['Spd Gains 2'] + " | "
         if (row['Def Gains 2'] != '0'):
-            gains3 += "Def: +" + row['Def Gains 2'] + " | "
+            gains3 += "Def: " + row['Def Gains 2'] + " | "
         if (row['Res Gains 2'] != '0'):
-            gains3 += "Res: +" + row['Res Gains 2'] + " | "
+            gains3 += "Res: " + row['Res Gains 2'] + " | "
         if (row['Con Gains 2'] != '0'):
             if (int(row['Con Gains 2']) > 0):
-                gains3 += "Con: +" + row['Con Gains 2'] + " | "
+                gains3 += "Con: " + row['Con Gains 2'] + " | "
             else:
                 gains3 += "Con: " + row['Con Gains 2'] + " | "
         if (row['Mov Gains 2'] != '0'):
             if (int(row['Mov Gains 2']) > 0):
-                gains3 += "Mov: +" + row['Mov Gains 2'] + " | "
+                gains3 += "Mov: " + row['Mov Gains 2'] + " | "
             else:
                 gains3 += "Mov: " + row['Mov Gains 2'] + " | "
         if len(gains3) > 0:
