@@ -16,6 +16,7 @@ import dlatmol.dlatmol
 import burger.burger
 import ee.ee
 import fehr.fehr
+import john.john
 from discord.ext import commands
 from discord import option
 import sys
@@ -90,6 +91,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return ee.ee.get_unit_names(ctx)
     elif (hack == 'fehr'):
         return fehr.fehr.get_unit_names(ctx)
+    elif (hack == 'john'):
+        return john.john.get_unit_names(ctx)
     else:
         return []
     
@@ -130,6 +133,8 @@ async def unit(ctx, hack: str, name: str):
         await ee.ee.unit(ctx, name)
     elif (hack == 'fehr'):
         await fehr.fehr.unit(ctx, name)
+    elif (hack == 'john'):
+        await john.john.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
