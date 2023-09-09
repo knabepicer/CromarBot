@@ -73,6 +73,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return bob.bob.get_unit_names(ctx)
     elif (hack == 'trtr'):
         return trtr.trtr.get_unit_names(ctx)
+    elif (hack == 'rtr'):
+        return trtr.trtr.get_unit_names(ctx)
     elif (hack == 'vq'):
         return vq.vq.get_unit_names(ctx)
     elif (hack == 'vba'):
@@ -114,6 +116,8 @@ async def unit(ctx, hack: str, name: str):
     elif (hack == 'bob'):
         await bob.bob.unit(ctx, name)
     elif (hack == 'trtr'):
+        await trtr.trtr.unit(ctx, name)
+    elif (hack == 'rtr'):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'vq'):
         await vq.vq.unit(ctx, name)
