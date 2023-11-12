@@ -126,8 +126,8 @@ def don_get_gains(row):
     gains += row['Promotion Class'] + '\n'
     if (row['HP Gains'] != '0'):
         gains += "HP: +" + row['HP Gains'] + " | "
-    if (row['Atk Gains'] != '0'):
-        gains += "Atk: +" + row['Atk Gains'] + " | "
+    if (row['Pow Gains'] != '0'):
+        gains += "Pow: +" + row['Pow Gains'] + " | "
     if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
     if (row['Def Gains'] != '0'):

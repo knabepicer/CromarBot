@@ -106,7 +106,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["cota", "tlp", "7s", "bob", 'trtr', 'vq', 'vba', '4k', 'dow', 'sp', 'dlatmol', 'burger', 'ee', 'fehr', 'john']
+        ["4k","7s","bob","burger","cota","dlatmol","don","dow","ee","fehr","sp","tlp","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
