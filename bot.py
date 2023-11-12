@@ -142,6 +142,8 @@ async def unit(ctx, hack: str, name: str):
         await fehr.fehr.unit(ctx, name)
     elif (hack == 'john'):
         await john.john.unit(ctx, name)
+    elif (hack == 'don'):
+        await don.don.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
