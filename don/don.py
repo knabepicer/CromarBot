@@ -15,7 +15,7 @@ def get_unit_pages(row):
     #unitembed.add_field(name="Affinity: ", value=row['Affinity'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Pow " + row['Pow'] + " | Skl " + row['Skl'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov'] + " | " + "Spd " + row['Spd']
     unitembed.add_field(name="Bases", value=bases, inline=False)
-    growths = "HP " + row['HP Growth'] + "% | " + "Pow " + row['Pow Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "% | " + "Spd " + row['Spd Growth']
+    growths = "HP " + row['HP Growth'] + "% | " + "Pow " + row['Pow Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "% | " + "Spd " + row['Spd Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
     ranks = don_get_ranks(row)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
