@@ -1,0 +1,137 @@
+Name,Display Name,Description,Type,Weapon Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Display Price,Weapon Level,WEXP
+IronSword,Iron Sword,None,Weapon,Sword,45,5,90,5,0,1,0,No,E,1
+SlimSword,Slim Sword,A training weapon that can't crit.,Weapon,Sword,40,3,100,2,0,1,0,No,E,1
+SteelSword,Steel Sword,None,Weapon,Sword,30,8,85,10,0,1,0,No,D,1
+SilverSword,Silver Sword,None,Weapon,Sword,25,13,85,8,0,1,0,No,B,1
+IronBlade,Iron Blade,None,Weapon,Sword,35,9,70,11,0,1,0,No,D,2
+SteelBlade,Steel Blade,HUGE blade found,Weapon,Sword,25,14,65,13,0,1,0,No,C,2
+QuickSword,Quick Sword,Lass/C6 Thief only. Can strike consecutively.,Weapon,Sword,40,3,95,3,0,1,0,No,Prf,1
+Knaveknife,Knaveknife,Thieves only. +12 Spd.,Weapon,Sword,32,2,110,1,0,1-2,0,No,E,2
+LunarKnife,Lunar Knife,Thieves only. Pierces defense.,Weapon,Sword,25,0,85,4,0,1-2,0,No,B,1
+TitansKnife,Titan's Knife,Thieves only. Abnormally strong and heavy.,Weapon,Sword,25,12,85,15,0,1-2,0,No,C,1
+DevilsDagger,Devil's Dagger,"Thieves only. Pierces defense, can backfire.",Weapon,Sword,25,1,120,5,20,1-2,0,No,C,1
+BraveSword,Brave Sword,"Can strike consecutively, -4 Def/Res.",Weapon,Sword,30,8,75,11,0,1,0,No,B,1
+Mercurius,Mercurius,Isn't that a fun reference?,Weapon,Sword,20,18,100,8,0,1,0,No,S,1
+KillingEdge,Killing Edge,Critical hits land more easily.,Weapon,Sword,20,9,75,7,30,1,0,No,C,1
+Shamshir,Shamshir,"I'm not gonna lie, there's no way I used this.",Weapon,Sword,20,8,75,5,45,1,0,No,D,1
+Armorslayer,Armorslayer,Effective against armors.,Weapon,Sword,25,7,80,9,0,1,0,No,D,1
+Zanbato,Zanbato,Effective against cavaliers.,Weapon,Sword,25,7,85,10,0,1,0,No,D,1
+Wyrmslayer,Wyrmslayer,Effective against wyverns and manaketes.,Weapon,Sword,30,7,75,5,0,1,0,No,C,1
+LightBrand,Light Brand,"Magic. At range, uses Pow/2 and can't crit.",Weapon,Sword,25,10,85,10,0,1-2,0,No,C,1
+Runesword,Runesword,"Magic, uses Pow/2, can't crit. Drains HP.",Weapon,Sword,15,12,65,11,0,1-2,0,No,A,1
+Lancereaver,Lancereaver,Reverses and doubles Weapon Triangle.,Weapon,Sword,20,7,75,7,0,1,0,No,D,2
+SunriseBlade,Sunrise Bld.,Ignores the Weapon Triangle. +3 Spd.,Weapon,Sword,20,7,110,4,0,1,0,No,D,1
+SunriseBld,Sunrise Bld.,Ignores the Weapon Triangle. +3 Spd.,Weapon,Sword,20,7,110,4,0,1,0,No,D,1
+BraveBlade,Brave Blade,"Lass only. -4 Def/Res, can strike consecutively.",Weapon,Sword,20,12,65,16,0,1,0,No,Prf,1
+SealedBlade,Sealed Blade,"Completely unusable. +100 Spd, never misses.",Weapon,Sword,35,130,255,4,70,1,0,No,No,1
+IronLance,Iron Lance,None,Weapon,Lance,45,7,85,8,0,1,0,No,E,1
+SlimLance,Slim Lance,A training weapon that can't crit.,Weapon,Lance,40,4,95,4,0,1,0,No,E,2
+SteelLance,Steel Lance,None,Weapon,Lance,30,10,80,12,0,1,0,No,D,2
+SilverLance,Silver Lance,None,Weapon,Lance,25,14,80,10,0,1,0,No,B,1
+QuickLance,Quick Lance,Can strike consecutively.,Weapon,Lance,40,4,90,4,0,1,0,No,D,1
+TroopLance,Troop Lance,For generic units only. (Unused),Weapon,Lance,40,8,80,8,0,1,0,No,D,1
+BraveLance,Brave Lance,"Can strike consecutively, -4 Def/Res.",Weapon,Lance,30,9,70,12,0,1,0,No,B,1
+KillerLance,Killer Lance,Critical hits land more easily.,Weapon,Lance,20,10,70,9,30,1,0,No,C,1
+Horseslayer,Ridersbane,Effective against cavalry.,Weapon,Lance,20,8,80,10,0,1,0,No,D,1
+Ridersbane,Ridersbane,Effective against cavalry.,Weapon,Lance,20,8,80,10,0,1,0,No,D,1
+Hexlocker,Hexlocker,"Ranged weapon, +7 Res.",Weapon,Lance,30,8,85,8,0,1-2,0,No,C,1
+Javelin,Javelin,Ranged weapon. Ignores Spd boosters.,Weapon,Lance,20,6,65,20,0,1-2,0,No,D,1
+ShortSpear,Short Spear,Ranged weapon.,Weapon,Lance,25,9,70,12,0,1-2,0,No,C,1
+Spear,Spear,Ranged weapon.,Weapon,Lance,15,12,70,14,0,1-2,0,No,B,1
+Axereaver,Axereaver,Reverses and doubles Weapon Triangle.,Weapon,Lance,20,8,70,10,0,1,0,No,C,2
+Axeslayer,Axeslayer,"Reaver, effective against axe classes.",Weapon,Lance,20,10,85,12,0,1,0,No,B,2
+IronAxe,Iron Axe,None,Weapon,Axe,45,8,80,10,0,1,0,No,E,1
+SlimAxe,Slim Axe,A training weapon that can't crit.,Weapon,Axe,40,4,85,5,0,1,0,No,E,2
+SteelAxe,Steel Axe,None,Weapon,Axe,30,11,75,14,0,1,0,No,D,2
+SilverAxe,Silver Axe,None,Weapon,Axe,25,15,75,12,0,1,0,No,B,1
+QuickAxe,Quick Axe,Can strike consecutively.,Weapon,Axe,40,5,85,4,0,1,0,No,D,1
+BraveAxe,Brave Axe,"Can strike consecutively, -4 Def/Res.",Weapon,Axe,30,10,65,14,0,1,0,No,B,1
+FiendsCleaver,Fiend's Cleaver,Phantom only. May the divine have mercy on you.,Weapon,Axe,40,14,90,11,0,1,0,No,A,1
+MysticAxe,Mystic Axe,Basically unused. +4 Res.,Weapon,Axe,20,10,60,11,0,1,0,No,D,2
+KillerAxe,Killer Axe,Critical hits land more easily.,Weapon,Axe,20,11,65,11,30,1,0,No,C,1
+Halberd,Halberd,Effective against cavalry.,Weapon,Axe,20,9,75,13,0,1,0,No,D,1
+Hammer,Hammer,Effective against armors.,Weapon,Axe,20,10,65,14,0,1,0,No,D,2
+DragonAxe,Dragon Axe,Effective against wyverns and manaketes.,Weapon,Axe,25,10,65,11,0,1,0,No,C,1
+DevilAxe,Devil Axe,Power at a price. -10 Luck/Def/Res.,Weapon,Axe,20,20,90,14,0,1,0,No,D,6
+HandAxe,Hand Axe,Ranged weapon. Ignores Spd boosters.,Weapon,Axe,20,7,60,20,0,1-2,0,No,D,1
+ShortAxe,Short Axe,Ranged weapon.,Weapon,Axe,25,9,65,13,0,1-2,0,No,C,1
+Tomahawk,Tomahawk,Ranged weapon.,Weapon,Axe,15,13,65,14,0,1-2,0,No,A,1
+Bolthammer,Bolthammer,"Raeford only. Magic, uses Pow/2, effective against armors.",Weapon,Axe,30,16,90,12,0,1-2,0,No,Prf,1
+Swordreaver,Swordreaver,Reverses and doubles Weapon Triangle.,Weapon,Axe,20,9,65,12,0,1,0,No,C,2
+Swordslayer,Swordslayer,"Reaver, effective against sword classes.",Weapon,Axe,20,11,80,13,0,1,0,No,B,1
+IronBow,Iron Bow,Effective against fliers.,Weapon,Bow,45,6,85,5,0,2,0,No,E,1
+SlimBow,Slim Bow,"Can't crit. Not effective against fliers, not that it matters.",Weapon,Bow,40,3,95,4,0,2,0,No,E,1
+SteelBow,Steel Bow,Effective against fliers.,Weapon,Bow,30,9,80,9,0,2,0,No,D,2
+SilverBow,Silver Bow,Effective against fliers. I forgot to make it B rank.,Weapon,Bow,25,13,80,6,0,2,0,No,A,1
+QuickBow,Quick Bow,Can strike consecutively. Effective against fliers.,Weapon,Bow,30,4,90,3,0,2,0,No,D,1
+ReverieBow,Reverie Bow,Infantry only. Renowned for its high range.,Weapon,Bow,20,13,85,10,0,3-5,0,No,C,1
+Parthia,Reverie Bow,Infantry only. Renowned for its high range.,Weapon,Bow,20,13,85,10,0,3-5,0,No,C,1
+KillerBow,Killer Bow,Improves critical hit rate. Effective against fliers.,Weapon,Bow,20,9,75,7,30,2,0,No,C,1
+BraveBow,Brave Bow,Doubles strikes dealt. Effective against fliers.,Weapon,Bow,30,9,70,11,0,2,0,No,B,1
+CloseDraw,Close Draw,Melee range only. Effective against fliers.,Weapon,Bow,25,9,80,6,0,1,0,No,C,1
+SpellsBane,Spell's Bane,"Effective against offensive magic. -3 Def, +6 Res.",Weapon,Bow,30,7,85,6,0,2,0,No,D,1
+Longbow,Longbow,Extended attack range. Effective against fliers.,Weapon,Bow,30,6,85,9,0,2-3,0,No,C,1
+Shortshot,Shortshot,Somewhat long-range weapon. Effective against fliers.,Weapon,Bow,20,7,85,20,0,3-7,0,No,E,4
+Ballista,Ballista,Long-range weapon. Effective against fliers.,Weapon,Bow,20,5,80,20,0,3-10,0,No,E,4
+BlueSwallow,Blue Swallow,"Extreme range, can't miss. Effective against fliers.",Weapon,Bow,20,3,255,20,0,13-5,0,No,E,4
+Fire,Fire,None,Weapon,Anima,40,4,105,2,0,1-2,0,No,E,1
+Thunder,Thunder,None,Weapon,Anima,35,7,90,5,0,1-2,0,No,D,1
+Blizzard,Blizzard,None,Weapon,Anima,25,10,85,8,0,1-2,0,No,C,1
+Bolting,Bolting,Somewhat long-range lightning strike.,Weapon,Anima,15,7,60,12,0,3-7,0,No,B,1
+Bolganone,Bolganone,None,Weapon,Anima,20,18,80,13,20,1-2,0,No,B,2
+DyingBlaze,Dying Blaze,Effective against monsters.,Weapon,Anima,8,17,85,3,0,1-2,0,No,D,5
+Levianeer,Levianeer,"Can strike consecutively, -3 Skl/Luck.",Weapon,Anima,20,2,55,6,75,1-2,0,No,C,1
+Light,Light,None,Weapon,Light,40,5,90,3,0,1-2,0,No,E,1
+Lightning,Light,None,Weapon,Light,40,5,90,3,0,1-2,0,No,E,1
+Shine,Shine,None,Weapon,Light,30,8,85,4,0,1-2,0,No,D,2
+Divine,Divine,None,Weapon,Light,25,10,75,7,0,1-2,0,No,C,1
+Resire,Resire,Restores HP equal to damage dealt.,Weapon,Light,20,9,90,10,0,1-2,0,No,C,1
+Purge,Purge,Long-range magic attack.,Weapon,Light,18,4,95,8,0,3-10,0,No,C,3
+Guardian,Guardian,"Blocks crits if in inventory, +8 Def when equipped.",Weapon,Light,20,6,80,4,0,1-2,0,No,D,3
+BragisBlight,Bragi's Blight,"Pierces Defense, +5 Def.",Weapon,Light,30,17,115,4,35,1-2,0,No,S,1
+Flux,Flux,None,Weapon,Dark,40,7,80,5,0,1-2,0,No,D,1
+Luna,Luna,Pierces Resistance.,Weapon,Dark,30,0,95,8,0,1-2,0,No,C,1
+Omen,Omen,"Can strike consecutively, -3 Def/Res.",Weapon,Dark,30,5,85,7,0,1-2,0,No,D,0
+Jormungand,Jormungand,Poisons on hit (Poison is 5 Damage.),Weapon,Dark,30,10,70,11,0,1-2,0,No,C,1
+Eclipse,Eclipse,Cuts enemy's HP in half.,Weapon,Dark,10,255,60,30,0,3-7,0,No,C,8
+Fenrir,Fenrir,A true all-or-nothing. -5 Def/Res.,Weapon,Dark,20,15,90,8,0,1-2,0,No,B,1
+Upheaval,Upheaval,Effective against grounded units.,Weapon,Dark,30,20,120,4,0,1-2,0,No,S,0
+Gnipahellir,Gnipahellir,"Extreme range, reaver.",Weapon,Dark,30,20,100,4,0,13-5,0,No,S,0
+ShadowBolt,Shadow Bolt,"Kiirus' own spell. +5 Skl, -2 Def/Res.",Weapon,Dark,30,21,115,14,0,1-2,0,No,S,1
+EvilEye,Evil Eye,Unbreakable.,Weapon,Dark,0,8,85,2,0,1-2,0,No,D,0
+GlowerEye,Glower Eye,"Reaver, pierces Res, unbreakable. (Unused)",Weapon,Dark,0,3,110,5,0,1-2,0,No,C,0
+Farsight,Farsight,"Extended attack range, unbreakable.",Weapon,Dark,0,10,65,7,0,1-2,0,No,C,0
+Heal,Heal,Restores 15+Mag HP to an adjacent ally.,Staff,Staff,30,15,100,2,0,1,0,No,E,1
+Mend,Mend,Restores 22+Mag HP to an adjacent ally.,Staff,Staff,20,22,100,4,0,1,0,No,D,2
+Physic,Physic,Restores 8+HP to an ally at a distance.,Staff,Staff,15,8,100,8,0,1-8,0,No,C,3
+Silence,Silence,"Prevents target from using magic for a while, can't miss.",Staff,Staff,2,0,255,10,0,1-8,0,No,C,4
+Sleep,Sleep,"Puts target to sleep for a while, can't miss. (WR Only)",Staff,Staff,4,0,255,8,0,1-8,0,No,C,3
+Rescue,Rescue,Teleports distant ally to be adjacent to caster. (WR Only),Staff,Staff,2,0,100,10,0,1-6,0,No,C,4
+Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,2,0,100,12,0,1,0,No,C,5
+Barrier,Barrier,"Grants +7 Res to adjacent ally, decays by 1 each turn.",Staff,Staff,15,0,100,8,0,1,0,No,C,3
+AngelicRobe,Angelic Robe,Increases HP by 5 points when used.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+EnergyRing,Energy Ring,Increases Power by 2 points when used.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+SecretBook,Secret Book,Increases Skill by 3 points when used.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+Speedwing,Speedwing,cope lol,Item,,1,0,10,0,0,1,0,No,NoRank,0
+Dragonshield,Dragonshield,Increases Defense by 2 points when used.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+BrittleRing,Brittle Ring,Grants -2 Def/+1 Spd while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+FlimsyBand,Flimsy Band,Grants -2 Pow/+1 Spd while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+EerieCharm,Eerie Charm,Grants -5 Res/+2 Spd while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+WingStatue,Wing Statue,Grants +4 Spd while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+IronRune,Iron Rune,Prevents critical hits while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+NullGuard,Null Guard,Negates effective damage while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+RottenClaw,Rotten Claw,A foul talon meant to rend flesh. Unbreakable.,Weapon,Talon,255,7,80,8,20,1,0,No,NoRank,0
+Firestone,Firestone,"Manakete only. Grants +5 Pow, +3 Skl, -2 Luck, +9 Def, -5 Res.",Weapon,D.Stone,21,10,85,5,0,1,0,No,Prf,0
+Icestone,Icestone,"Manakete only. Grants +3 Pow, +6 Skl, +2 Luck, -6 Def, -5 Res.",Weapon,D.Stone,14,10,85,5,0,2-3,0,No,Prf,0
+Magestone,Magestone,"Manakete only. Grants -2 Pow, -1 Skl, +8 Luck, +1 Def, +25 Res.",Weapon,D.Stone,10,10,85,5,0,1-2,0,No,Prf,0
+ChestKey,Chest Key,Opens chests.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+DoorKey,Door Key,Opens doors.,Item,,1,0,10,0,0,1,0,No,NoRank,0
+Vulnerary,Vulnerary,Heals user for 15 HP when used.,Item,,3,0,10,0,0,1,0,No,NoRank,0
+Elixir,Elixir,Heals user for all HP when used.,Item,,3,0,10,0,0,1,0,No,NoRank,0
+PureWater,Pure Water,"Grants +7 Res when used, which decays each turn.",Item,,3,0,10,0,0,1,0,No,NoRank,0
+LightRune,Light Rune,Blocks a tile for a few turns.,Item,,3,0,10,0,0,1,0,No,NoRank,0
+MasterSeal,Master Seal,Promotes most units if they're at least level 10. Promotes Lass to Hero.,Item,,1,0,100,12,0,1,0,No,NoRank,0
+LeadersRite,Leader's Rite,Promotes Lass to Bow Knight at any level.,Item,,1,0,0,0,0,1,0,No,NoRank,0
+JewelofFire,Jewel of Fire,Grants +20 Def/Res while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+GemofFlames,Jewel of Fire,Grants +20 Def/Res while held.,Item,,255,0,10,0,0,1,0,No,NoRank,0
+StoneScroll,Stone Scroll,Does nothing lol,Item,,255,0,10,0,0,1,0,No,NoRank,0
