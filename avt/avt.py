@@ -6,7 +6,7 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0xa639a6)
+    unitembed=discord.Embed(title=row['Name'], color=0xd85d5d)
     #supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x34c290)
     unitembed.set_thumbnail(url=row['Portrait'])
     #supportembed.set_thumbnail(url=row['Portrait'])
