@@ -6,7 +6,7 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'], color=0xd859d8)
+    unitembed=discord.Embed(title=row['Name'], color=0xa639a6)
     #supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x34c290)
     unitembed.set_thumbnail(url=row['Portrait'])
     #supportembed.set_thumbnail(url=row['Portrait'])
@@ -86,21 +86,21 @@ async def unit(ctx, name: str):
 
 def avt_get_ranks(row):
     ranks = ""
-    if (row['Sword'] != 'NoRank'):
+    if (row['Sword'] != 'None'):
         ranks += "<:RankSword:1083549037585768510>Sword: " + row['Sword'] + " | "
-    if (row['Lance'] != 'NoRank'):
+    if (row['Lance'] != 'None'):
         ranks += "<:RankLance:1083549035622846474>Lance: " + row['Lance'] + " | "
-    if (row['Axe'] != 'NoRank'):
+    if (row['Axe'] != 'None'):
         ranks += "<:RankAxe:1083549032292548659>Axe: " + row['Axe'] + " | "
-    if (row['Bow'] != 'NoRank'):
+    if (row['Bow'] != 'None'):
         ranks += "<:RankBow:1083549033429205073>Bow: " + row['Bow'] + " | "
-    if (row['Staff'] != 'NoRank'):
+    if (row['Staff'] != 'None'):
         ranks += "<:RankStaff:1083549038936326155>Staff: " + row['Staff'] + " | "
-    if (row['Anima'] != 'NoRank'):
+    if (row['Anima'] != 'None'):
         ranks += "<:RankAnima:1083549030598049884>Anima: " + row['Anima'] + " | "
-    if (row['Light'] != 'NoRank'):
+    if (row['Light'] != 'None'):
         ranks += "<:RankLight:1083549037019541614>Light: " + row['Light'] + " | "
-    if (row['Dark'] != 'NoRank'):
+    if (row['Dark'] != 'None'):
         ranks += "<:RankDark:1083549034310012959>Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
