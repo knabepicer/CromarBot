@@ -116,7 +116,7 @@ def avt_get_gains(row):
     if (row['Str Gains'] != '0'):
         gains += "Str: +" + row['Str Gains'] + " | "
     if (row['Mag Gains'] != '0'):
-        gains += "Mag: +" + row['Str Gains'] + " | "
+        gains += "Mag: +" + row['Mag Gains'] + " | "
     if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
     if (row['Spd Gains'] != '0'):
