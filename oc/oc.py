@@ -21,8 +21,9 @@ def get_unit_pages(row):
     if (row['Promotion Class'] != ""):
         gains = oc_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    if (row['Extra'] != 'None'):
-        unitembed.set_footer(text=row['Extra'])
+    if (row['Bonus'] != ''):
+        unitembed.set_footer(text="Unit also has access to: " + row['Bonus'])
+    
     
     # with open('trtr/trtr supports.csv', newline='') as csvfile:
     #     reader = csv.DictReader(csvfile)

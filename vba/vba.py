@@ -21,8 +21,8 @@ def get_unit_pages(row):
     if (row['Promotes'] != "None"):
         gains = vba_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    if (row['Bonus'] != ''):
-        unitembed.set_footer(text="Unit also has access to: " + row['Extra'])
+    if (row['Extra'] != 'None'):
+        unitembed.set_footer(text=row['Extra'])
         
     
     # with open('trtr/trtr supports.csv', newline='') as csvfile:
