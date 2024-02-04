@@ -156,8 +156,8 @@ def oc_get_gains(row):
             gains2 += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
-    '''if (row['Promotion Skills'] != 'None'):
-         gains2 += "\n" + row['Promotion Skills']'''
+    if (row['Promotion Skills'] != 'None'):
+         gains2 += "\n" + row['Promotion Skills']
     gains2 += '\n'
     gains3 = ""
     gains4 = ""
@@ -205,8 +205,8 @@ def oc_get_gains(row):
             gains4 += "<:RankDark:1083549034310012959>" + row['Dark Gains 2'] + " | "
         if (len(gains4) > 0):
             gains4 = gains4[:-3]
-        '''if (row['Promotion Skills 2'] != 'None'):
-            gains4 += "\n" + row['Promotion Skills 2']'''
+        if (row['Promotion Skills 2'] != 'None'):
+            gains4 += "\n" + row['Promotion Skills 2']
         
         
     return gains + gains2 + gains3 + gains4
