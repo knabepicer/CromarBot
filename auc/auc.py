@@ -189,8 +189,8 @@ def auc_get_gains(row):
         gains += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
             gains += "HP: +" + row['HP Gains 2'] + " | "
-        if (row['Atk Gains 2'] != '0'):
-            gains += "Atk: +" + row['Atk Gains 2'] + " | "
+        if (row['Pow Gains 2'] != '0'):
+            gains += "Pow: +" + row['Pow Gains 2'] + " | "
         if (row['Skl Gains 2'] != '0'):
             gains += "Skl: +" + row['Skl Gains 2'] + " | "
         if (row['Spd Gains 2'] != '0'):
