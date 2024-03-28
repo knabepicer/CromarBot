@@ -59,7 +59,7 @@ async def unit(ctx, name: str):
 
 async def item(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)            
-    with open('don/doubled_item.csv', newline='') as csvfile:
+    with open('don/doubled_item.csv', newline='', encoding="utf-8-sig") as csvfile:
             reader = csv.DictReader(csvfile)
             was_found = False
             for row in reader:
