@@ -54,7 +54,7 @@ def get_unit_pages(row):
 
 
 async def unit(ctx, name: str):
-    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    stripped_name = re.sub(r'[^a-zA-Z0-9+]','', name)
     with open('vq/vq unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
@@ -69,12 +69,12 @@ async def unit(ctx, name: str):
             await ctx.response.send_message("That unit does not exist.")
 
 async def skill(ctx, name: str):
-    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
+    stripped_name = re.sub(r'[^a-zA-Z0-9+]','', name)
     with open('vq/vq skill.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
-            stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            stripped_row = re.sub(r'[^a-zA-Z0-9+]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
                 unitembed=discord.Embed(title=row['Name'], color=0x34c290)
                 unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
