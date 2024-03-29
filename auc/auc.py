@@ -23,6 +23,32 @@ def get_unit_pages(row):
         gains = auc_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     
+    summonembed=discord.Embed(title=summonrow['Summon Name'] + " " + summonrow['Affinity'], color=0x4e3ca3)
+    #summonembed.set_thumbnail(url=row['Portrait'])
+    summonfound = False
+    with open('auc/auc_summon.csv.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for summonrow in reader:
+            if(row['Name'] == summonrow['Name']):
+                summonembed.add_field(name="Lv " + summonrow['Lv'] + " ", value=summonrow['Class'], inline=True)
+                summonbases = "HP " + summonrow['HP'] + " | " + "Pow " + summonrow['Pow'] + " | Skl " + summonrow['Skl'] + " | " + "Spd " + summonrow['Spd'] + " | " + "Lck " + summonrow['Luck'] + " | " + "Def " + summonrow['Def'] + " | " + "Res " + summonrow['Res'] + " | " + "Con " + summonrow['Con'] + " | " + "Mov " + summonrow['Mov']
+                summonembed.add_field(name="Bases", value=summonbases, inline=False)
+                summongrowths = "HP " + summonrow['HP Growth'] + "% | " + "Pow " + summonrow['Pow Growth'] + "% | Skl " + summonrow['Skl Growth'] + "% | " + "Spd " + summonrow['Spd Growth'] + "% | " + "Lck " + summonrow['Luck Growth'] + "% | " + "Def " + summonrow['Def Growth'] + "% | " + "Res " + summonrow['Res Growth'] + "%"
+                summonembed.add_field(name="Growths", value=summongrowths, inline=False)
+                summonranks = auc_get_ranks(summonrow)
+                summonembed.add_field(name="Ranks", value=summonranks, inline=False)
+                stats = row['Weapon Type'] + "\n" + "Mt: " + row['Weapon Mt'] + " | Hit: " + row['Weapon Hit'] + " | Crit: " + row['Weapon Crit'] + " | Wt: " + row['Weapon Wt'] + " | Range: " + row['Weapon Rng']
+                if (row['Uses'] == '255'):
+                    stats += " | Unbreakable"
+                else:
+                    stats += " | Uses: " + row['Uses']
+                if (row['Description'] != "None"):
+                    stats += '\n'
+                    stats += row['Description']
+                summonembed.add_field(name=row['Weapon Name'], value=stats, inline=False)
+
+                summonfound = True
+                break
    
     page_groups = [
         pages.PageGroup(
@@ -35,6 +61,15 @@ def get_unit_pages(row):
        
         
     ]
+    if (summonfound):
+        page_groups.append(pages.PageGroup
+        (
+        pages=[summonembed],
+        label="Summon",
+        description="Data on this character's summoned unit",
+        use_default_buttons=False,
+        )
+        )
   
     return page_groups
 
