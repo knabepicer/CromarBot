@@ -25,7 +25,7 @@ def get_unit_pages(row):
     
     
     summonfound = False
-    with open('auc/auc_summon.csv', newline='') as csvfile:
+    with open('auc/auc_summon.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for summonrow in reader:
             if(row['Name'] == summonrow['Summoner Name']):
