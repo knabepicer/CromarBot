@@ -28,7 +28,7 @@ def get_unit_pages(row):
     with open('auc/auc_summon.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for summonrow in reader:
-            if(row['Name'] == summonrow['Name']):
+            if(row['Name'] == summonrow['Summoner Name']):
                 summonembed=discord.Embed(title=summonrow['Summon Name'] + " " + summonrow['Affinity'], color=0x4e3ca3)
                 summonembed.add_field(name="Lv " + summonrow['Lv'] + " ", value=summonrow['Class'], inline=True)
                 summonbases = "HP " + summonrow['HP'] + " | " + "Pow " + summonrow['Pow'] + " | Skl " + summonrow['Skl'] + " | " + "Spd " + summonrow['Spd'] + " | " + "Lck " + summonrow['Luck'] + " | " + "Def " + summonrow['Def'] + " | " + "Res " + summonrow['Res'] + " | " + "Con " + summonrow['Con'] + " | " + "Mov " + summonrow['Mov']
