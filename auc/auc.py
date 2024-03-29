@@ -37,7 +37,7 @@ def get_unit_pages(row):
                 summonembed.add_field(name="Growths", value=summongrowths, inline=False)
                 summonranks = auc_get_ranks(summonrow)
                 summonembed.add_field(name="Ranks", value=summonranks, inline=False)
-                stats = row['Weapon Type'] + "\n" + "Mt: " + row['Weapon Mt'] + " | Hit: " + row['Weapon Hit'] + " | Crit: " + row['Weapon Crit'] + " | Wt: " + row['Weapon Wt'] + " | Range: " + row['Weapon Rng']
+                stats = summonrow['Weapon Type'] + "\n" + "Mt: " + summonrow['Weapon Mt'] + " | Hit: " + summonrow['Weapon Hit'] + " | Crit: " + summonrow['Weapon Crit'] + " | Wt: " + summonrow['Weapon Wt'] + " | Range: " + summonrow['Weapon Rng']
                 if (row['Uses'] == '255'):
                     stats += " | Unbreakable"
                 else:
