@@ -89,6 +89,10 @@ async def item(ctx, name: str):
                         stats += '\n'
                         stats += row['Description']
                         unitembed.add_field(name='Item', value=stats, inline=False)
+                    if(row['Display Price'] == 'Yes'):
+                        price = int(row['Uses']) * int(row['Price Per Use'])
+                        price_string = str(price) + "G"
+                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
                     await ctx.response.send_message(embed=unitembed)
                     was_found = True
                     break
