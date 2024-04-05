@@ -220,6 +220,8 @@ def auc_get_gains(row):
             gains += "<:RankDark:1083549034310012959>+" + row['Dark Gains'] + " | "
         else:
             gains += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
+    if (row['Promotion Class'] == 'Rogue'):
+        gains += " | "
     gains = gains[:-3]
     if (row['Promotes 2'] != 'No'): 
         gains += '\n' + row['Promotion Class 2'] + '\n'
