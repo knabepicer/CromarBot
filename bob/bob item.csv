@@ -164,7 +164,7 @@ CherneScroll,Cherne Scroll,"Scrawlings of a raving mind. While equipped, +13% St
 DreedurScroll,Dreedur Scroll,"While equipped, +20% Mag/Res, +5% Str/Skl, -5% HP, -10% Def growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945827095298148/sprite_4.png
 WornScroll,Worn Scroll,"Some power still lingers within this faded scroll. While equipped, +5% HP/Str/Mag/Skl growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043945826759757904/sprite_3.png
 AmserScroll,Amser Scroll,"While equipped, +10% Mov growth, -15% Def/Res growths.",Item,,255,0,0,0,0,1,10000,No,NoRank,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043942702728888430/row-226-column-1.png
-Firestone,Firestone,Augur only. Ranged weapon.,Weapon,Stone,255,6,90,0,0,1-2,10000,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975397720135/row-163-column-1.png
+Firestone,Firestone,Augur only. +5 Str/Mag/Skl/Spd/Def/Res.,Weapon,Stone,255,6,90,0,0,1-2,10000,No,Prf,0,https://cdn.discordapp.com/attachments/1043928901610643456/1043938975397720135/row-163-column-1.png
 MarksmanBow,Marksman Bow,Longer range weapon. Effective against fliers.,Weapon,Bow,30,7,70,11,0,2-3,33,Yes,C,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940932527063080/row-191-column-1.png
 Claymore,Claymore,A high quality blade. Effective against cavalry.,Weapon,Sword,30,13,80,13,0,1,46,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043940932887793784/row-192-column-1.png
 SlimAxe,Slim Axe,A lightweight axe.,Weapon,Axe,20,6,90,5,0,1,10,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043938243864961144/row-152-column-1.png
