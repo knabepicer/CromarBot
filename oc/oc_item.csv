@@ -1,4 +1,4 @@
-﻿Name,Display Name,Description,Types,Weapon Type,Uses,Might,Hit,Weight,Crit,Range,Price Per Use,Display Price,Weapon Level,WEXP,Icon
+﻿Name,Display Name,Description,Type,Weapon Type,Uses,Might,Hit,Weight,Crit,Range,Price Per Use,Display Price,Weapon Level,WEXP,Icon
 IronSword,Iron Sword,None,Weapon,Sword,40,5,90,5,0,1,10,Yes,E,1,https://i.ibb.co/wJHXYVS/row-1-column-1.png
 SteelSword,Steel Sword,None,Weapon,Sword,35,8,80,8,0,1,20,Yes,D,1,https://i.ibb.co/FgWRVQw/row-1-column-2.png
 MythrilSword,Mythril Sword,None,Weapon,Sword,30,12,85,6,0,1,50,Yes,B,1,https://i.ibb.co/v3Z5KpL/row-1-column-3.png
