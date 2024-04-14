@@ -85,6 +85,49 @@ async def unit(ctx, name: str):
                 break
         if (not was_found):
                 await ctx.response.send_message("That skill does not exist.") """
+async def item(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)            
+    with open('oc/oc_item.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            was_found = False
+            for row in reader:
+                stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+                if(stripped_row.lower() == stripped_name.lower()):
+                    unitembed=discord.Embed(title=row['Display Name'], color=0x7c00c9)
+                    unitembed.set_thumbnail(url=row['Icon'])
+                    if(row['Type'] == 'Weapon'):
+                        stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
+                        if (row['Uses'] == '255'):
+                            stats += " | Unbreakable"
+                        else:
+                            stats += " | Uses: " + row['Uses']
+                        if (row['Description'] != "None"):
+                            stats += '\n'
+                            stats += row['Description']
+                        unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
+                    elif(row['Type'] == 'Staff'):
+                        stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Staff', value=stats, inline=False)
+                    elif(row['Type'] == 'Item'):
+                        stats = ""
+                        if (row['Uses'] == '255'):
+                            stats += "Unbreakable"
+                        else:
+                            stats += "Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Item', value=stats, inline=False)
+                    if(row['Display Price'] == 'Yes'):
+                        price = int(row['Uses']) * int(row['Price Per Use'])
+                        price_string = str(price) + "G"
+                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
+                    await ctx.response.send_message(embed=unitembed)
+                    was_found = True
+                    break
+            if (not was_found):
+                await ctx.response.send_message("That item does not exist.")
 
 
 def oc_get_ranks(row):
@@ -220,3 +263,9 @@ def get_unit_names(ctx):
     names = ["Charisma","Pass","Nihil","Gentilhomme","Miracle","Light Weight","Swap","Strong Riposte","Wrath","Spur Resistance","Bond","Quick Burn","Intimidate","Savior","Reposition","Spur Strength","Pivot","Knight Aspirant","Slow Burn","Acrobat","Vantage","Spur Magic","Darting Blow","Thunderstorm","Puissance","Demoiselle","Charm","Spur Speed","Spur Defense","Summon","Paragon","Hex","Pursuit","Heavy Strikes","Inspiration","Lily's Poise","Chivalry","Pragmatic","Anathema","Death Blow","Boon","Armored Blow","Perfectionist","Fiery Blood","Even Rhythm","Frenzy","Triangle Adept","Tantivy","Nullify","Duelist's Blow","Odd Rhythm","Vanity","Infiltrator","Opportunist","Relief","Desperation","Staff Savant","Shove","Quick Draw","Natural Cover","Cunning","Steal","Crit Boost","Certain Blow","Forager","Discipline+","Live to Serve","Locktouch","Steal+","Breath of Life","Wind Disciple","Voice of Peace","Camaraderie"]
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())] """
+
+def get_item_names(ctx):
+    names = ["Iron Sword","Steel Sword","Mythril Sword","Diamond Sword","Ancient Sword","Boomerang","Q-Merang","Killing Edge","Cold Sword","Lancereaver","Wyrmslayer","Kampilan","Iron Lance","Steel Lance","Mythril Lance","Diamond Shovel","Ancient Lance","Javelin","Yamato Spear","Killer Lance","Fire Lance","Axereaver","Ridersbane","Iron Axe","Steel Axe","Mythril Axe","Diamond Axe","Ancient Axe","Hand Axe","Tomahawk","Killer Axe","Bolt Axe","Swordreaver","Hammer","Daedric Axe","Iron Bow","Steel Bow","Mythril Bow","Ancient Bow","Gale Bow","Crossbow","Longbow","Longerbow","Longestbow","Musket","Machine Gun","Mega Buster","Laser Gun","Arrowspate","Hoistflamme","Thunderbolt","Cob Cannon","Elephant","Flames","Frostbite","Sparks","Fireball","Tri Attack","Bombos","Ether","Quake","Thunderstorm","Blizzard","Photon","Belmont","Stendarr","Banish","Meridia","Talos","Flux","D'Void","Nosferatu","Vaermina","Maleficent","Nothebis","Mehrunes","Heal","Mend","Recover","Physic","Pizza Time","Esuna","Byrna Cane","Fire Rod","Ice Rod","Lightning Rod","Somaria Cane","Pacci Cane","Unlock","Icestone","Firestone","Magestone","Earthstone","Fus Ro Dah","Iiz Slen Nus","Joor Zah Frul","Basic Tie","Cone Helm","Bucket Helm","Knight Helm","Rock Core","Ice Core","Steel Core","Ancient Beam","Charm Ray","Freeze Ray","Enervation Ray","Telekinesis","Disintegration","Death Ray","Stone","Ray of Frost","FierySaber","Hookshot","Freeze-Dry","Gauldur Blade","Chainsaw","Amihan","Habagat","Ramuh","Dunblade","Levin Sword","Flameblade","Mispell Blade","Monado","Master Sword","Neapolisword","Lightsaber","Arectaris","Reginleif","Mjölnir","Rocket Bow","Yuè Longbow","Adamant","Lustrous","TIDYS Blaster","Axe Launcher","Scorching Ray","Neapolibeam","Bagpipes","Amagidyne","Neuroshock","Solar Flare","Brainshock","Meteor","Wabbajack","Divinestone","Ascalon","Keening","Bitter Mercy","Pugi","Sunder","Griseous","Cryolator","Excalipoor","Shí Huán","Vishanti","Darkhold","Hammerne","Centrifuge","Warp","Rescue","Wraithguard","Bread","Nuggets","Ice Cream","Milk","Sweet Roll","Chocolate Milk","Burger Meal","Wall Poultry","Milkshake","Cake","Door Key","Chest Key","Lockpick","Potato Mine","Plantern","Diploma","Heart Crystal","Power Beans","Charm of Bezel","Fanfics","Cheese","Icosahedron","Wall-Nut","Chocolate Bar","Minecart","Sandvich","Super Serum","Gold Ingot","Ruby","Emerald","Diamond","Platinum","Delta Shield","Smogon Seal","Oro Card","Metro Card","Ninis's Grace","Hela's Wrath","Thor's Ire","Loki's Mischief","Dwemer Gyro","Zeal Machine","Sheikah Core","Agarthan UI","Sub-Energy","El Vibrato Key","DNA Extractor","Atlantean Gem","40m/s Gauge","Arc Reactor","Reality Stone","Soul Stone","Mind Stone","Time Stone","Space Stone","Power Stone"]
+    names.sort()
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]
+

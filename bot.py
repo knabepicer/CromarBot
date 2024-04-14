@@ -59,7 +59,7 @@ async def help(ctx):
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cota, dlatmol, dow, don, ee, fehr, john, oc, sp, tlp, trtr, vq, vba", inline=False)
-    unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, don", inline=False)
+    unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, don, oc", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
     
@@ -196,6 +196,8 @@ async def get_item_names(ctx: discord.AutocompleteContext):
         return don.don.get_item_names(ctx)
     elif (hack == 'auc'):
         return auc.auc.get_item_names(ctx)
+    elif (hack == 'oc'):
+        return oc.oc.get_item_names(ctx)
     else:
         return[]
 
@@ -206,7 +208,7 @@ async def get_item_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get item data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["auc","bob", "don"]
+        ["auc","bob", "don", "oc"]
     ))
 @option("name", description = "Name of the item to get data for", autocomplete = get_item_names)
 async def item(ctx, hack: str, name: str):
@@ -216,6 +218,8 @@ async def item(ctx, hack: str, name: str):
         await don.don.item(ctx, name)
     elif (hack == 'auc'):
         await auc.auc.item(ctx, name)
+    elif (hack == 'oc'):
+        await oc.oc.item(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
