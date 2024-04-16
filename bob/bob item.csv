@@ -84,7 +84,7 @@ Sleep,Sleep,Puts target to sleep for a turn.,Staff,Staff,3,0,75,8,0,1-Mag/2 + 5,
 Berserk,Berserk,Maddens target for a turn.,Staff,Staff,3,0,70,12,0,1-Mag/2 + 5,1000,Yes,A,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933472231796807/row-82-column-1.png
 Warp,Warp,Teleports adjacent ally to a distance.,Staff,Staff,5,0,100,12,0,1,1000,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933472667996330/row-83-column-1.png
 Rescue,Rescue,Teleports distant ally to be adjacent to caster.,Staff,Staff,3,0,100,10,0,1-Mag/2 + 5,600,Yes,B,4,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473011937351/row-84-column-1.png
-TorchStaff,Torch,Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2 + 5,100,Yes,D,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473301331998/row-85-column-1.png
+TorchStaff,Torch (Staff),Lights an area. The light grows weaker each turn.,Staff,Staff,10,0,100,6,0,1-Mag/2 + 5,100,Yes,D,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473301331998/row-85-column-1.png
 Hammerne,Hammerne,Repairs an adjacent ally's weapon to new condition.,Staff,Staff,3,0,100,12,0,1,600,Yes,A,5,https://cdn.discordapp.com/attachments/1043928901610643456/1043933473683017909/row-86-column-1.png
 Unlock,Unlock,Opens doors and chests at range.,Staff,Staff,3,0,100,6,0,1-Mag/2 + 5,150,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474043723776/row-87-column-1.png
 Barrier,Barrier,"Increases resistance of adjacent ally, decays each turn.",Staff,Staff,5,0,100,8,0,1,150,Yes,C,3,https://cdn.discordapp.com/attachments/1043928901610643456/1043933474517684224/row-88-column-1.png
