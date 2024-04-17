@@ -2,14 +2,17 @@ Hack abbreviations
 4k = Four Kings https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-8-19-22-update-rr-quickfix/7030
 7s = 7 Siblings https://feuniverse.us/t/fe8-fire-emblem-7-siblings-complete-let-the-feast-begin/5015
 bob = Bells of Byelen https://feuniverse.us/t/fe8-complete-bells-of-byelen-24-chapters/17648
+auc = An Unexpected Caller https://feuniverse.us/t/fe8-an-unexpected-caller-22-chapters-complete/24196
 cota = Call of the Armor https://feuniverse.us/t/fe8-complete-call-of-the-armor-v1-20-chapters-3-character-selection-interludes-reverse-recruitment-patch-13-apr-22/12698
 don = Doubled or Nothing https://feuniverse.us/t/fire-emblem-doubled-or-nothing-complete-fe8u/13832
 dlatmol = Dark Lord and the Maiden of Light https://feuniverse.us/t/fire-emblem-dark-lord-and-the-maiden-of-light/6463
+ee = Embers Entwined https://feuniverse.us/t/fe8-fire-emblem-embers-entwined-21-chapters-complete/18008
+fehr = Fire Emblem Heores Remake https://github.com/laqieer/FEHR
 dow = Drums of War https://feuniverse.us/t/fe8-fire-emblem-drums-of-war-v-1-05-complete-22-chapter-campaign/16368
+oc = OC Emblem https://feuniverse.us/t/oc-emblem-complete-25-25-chapters/14515
 tlp = The Last Promise http://www.feshrine.net/thelastpromise/
 trtr = The Road to Ruin https://feuniverse.us/t/the-road-to-ruin/276
 sp = Shackled Power https://feuniverse.us/t/complete-fe8u-fire-emblem-shackled-power-33-chapters-version-1-2-easy-mode-available/9254
 vq = Vision Quest https://feuniverse.us/t/fe8-complete-fire-emblem-vision-quest-v3-by-pushwall-1-oct-22/3815
 vba = Void's Blitzarre Adventure https://feuniverse.us/t/feu-chapter-creation-blitz-voids-blitzarre-adventure/2629
-ee = Embers Entwined https://feuniverse.us/t/fe8-fire-emblem-embers-entwined-21-chapters-complete/18008
-fehr = Fire Emblem Heores Remake https://github.com/laqieer/FEHR
+
