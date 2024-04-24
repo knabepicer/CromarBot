@@ -3,7 +3,7 @@ IronSword,Iron Sword,None,Weapon,Sword,40,5,90,5,0,1,10,Yes,E,1,https://i.ibb.co
 SteelSword,Steel Sword,None,Weapon,Sword,35,8,80,8,0,1,20,Yes,D,1,https://i.ibb.co/FgWRVQw/row-1-column-2.png
 MythrilSword,Mythril Sword,None,Weapon,Sword,30,12,85,6,0,1,50,Yes,B,1,https://i.ibb.co/v3Z5KpL/row-1-column-3.png
 DiamondSword,Diamond Sword,None,Weapon,Sword,50,16,90,8,0,1,40,Yes,A,1,https://i.ibb.co/34cL9K3/row-1-column-4.png
-AncientSword,Ancient Sword,Brave,Weapon,Sword,30,10,75,9,0,1,100,Yes,A,1,https://i.ibb.co/xfKKJkd/row-1-column-5.png
+AncientSword,Ancient Sword,Brave,Weapon,Sword,30,9,75,9,0,1,100,Yes,A,1,https://i.ibb.co/xfKKJkd/row-1-column-5.png
 Boomerang,Boomerang,None,Weapon,Sword,25,3,75,4,0, 1-2,20,Yes,E,1,https://i.ibb.co/qy2n7km/row-1-column-6.png
 QMerang,Q-Merang,Brave,Weapon,Sword,16,6,70,9,0, 1-2,180,Yes,B,1,https://i.ibb.co/jJX0hj1/row-1-column-7.png
 KillingEdge,Killing Edge,None,Weapon,Sword,25,9,80,7,25,1,50,Yes,C,1,https://i.ibb.co/mcsF6Xv/row-1-column-8.png
@@ -70,24 +70,24 @@ Meridia,Meridia,Siege,Weapon,Light,5,10,70,14,0, 4-8,500,Yes,B,2,https://i.ibb.c
 Talos,Talos,Inflicts -3 Def,Weapon,Light,25,12,95,9,5, 1-2,120,Yes,A,1,https://i.ibb.co/ZS9vy70/row-7-column-5.png
 Flux,Flux,Inflicts -1 Res,Weapon,Dark,40,8,75,7,0, 1-2,20,Yes,E,1,https://i.ibb.co/QFVGBKj/row-8-column-1.png
 DVoid,D'Void,Inflicts -2 Res,Weapon,Dark,35,11,65,10,0, 1-2,30,Yes,D,1,https://i.ibb.co/rM3cKcZ/row-8-column-2.png
-Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Dark,20,9,65,12,0, 1-2,90,Yes,C,1,https://i.ibb.co/Bjj4Jwm/row-8-column-3.png
+Nosferatu,Nosferatu,"Can't Crit, Drains enemy HP into caster.",Weapon,Dark,20,9,65,12,0, 1-2,90,Yes,C,1,https://i.ibb.co/Bjj4Jwm/row-8-column-3.png
 Vaermina,Vaermina,"Can't Double, Ignore 100% Res",Weapon,Dark,30,0,80,12,10, 1-2,60,Yes,C,2,https://i.ibb.co/xHNKh4k/row-8-column-6.png
 Maleficent,Maleficent,"Inflicts -2 Res/1 Def, Effective vs knights.",Weapon,Dark,30,14,70,11,0, 1-2,70,Yes,B,1,https://i.ibb.co/q7nnC3T/row-8-column-7.png
 Nothebis,Nothebis,Siege,Weapon,Dark,5,14,50,16,0, 4-8,600,Yes,B,2,https://i.ibb.co/gMMKx5B/row-8-column-4.png
 Mehrunes,Mehrunes,Inflicts -3 Res,Weapon,Dark,25,16,75,12,5, 1-2,140,Yes,A,1,https://i.ibb.co/2Wz9JKj/row-8-column-5.png
-Heal,Heal,Heal 8+Mag,Staff,Staff,30,8,NA,NA,NA,1,20,Yes,E,2,https://i.ibb.co/0Fdmk1M/row-5-column-1.png
-Mend,Mend,Heal 16+Mag,Staff,Staff,20,16,NA,NA,NA,1,50,Yes,D,3,https://i.ibb.co/K77cs4P/row-5-column-2.png
-Recover,Recover,Heal 64+Mag,Staff,Staff,15,64,NA,NA,NA,1,140,Yes,B,3,https://i.ibb.co/VTjDGSn/row-5-column-3.png
-Physic,Physic,Heal 8+Mag at range.,Staff,Staff,15,8,NA,NA,NA,Mag/2,160,Yes,C,3,https://i.ibb.co/0BQQmpr/row-5-column-4.png
-PizzaTime,Pizza Time,Heal 8+Mag to all in range.,Staff,Staff,12,8,NA,NA,NA,Mag/2,500,Yes,A,3,https://i.ibb.co/QbxmtFj/row-5-column-5.png
-Esuna,Esuna,Restore status.,Staff,Staff,10,NA,NA,NA,NA,1,200,Yes,D,3,https://i.ibb.co/tzBnBCX/row-4-column-4.png
-ByrnaCane,Byrna Cane,Barrier,Staff,Staff,18,NA,NA,NA,NA,1,100,Yes,D,4,https://i.ibb.co/JHGfDGB/row-5-column-10.png
-FireRod,Fire Rod,Torch,Staff,Staff,8,NA,NA,NA,NA,Mag/2,200,Yes,C,4,https://i.ibb.co/pf4RJ6C/row-5-column-7.png
-IceRod,Ice Rod,Inflicts Freeze (Sleep),Staff,Staff,4,NA,30,NA,NA,Mag/2,400,Yes,C,4,https://i.ibb.co/FHDm2kj/row-5-column-6.png
-LightningRod,Lightning Rod,Inflicts Paralyze (Silence),Staff,Staff,3,NA,30,NA,NA,Mag/2,500,Yes,B,4,https://i.ibb.co/TKKNp6Z/row-5-column-8.png
-SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,NA,NA,NA,NA,1,400,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
-PacciCane,Pacci Cane,Inflicts Confuse (Berserk),Staff,Staff,3,NA,30,NA,NA,Mag/2,600,Yes,A,4,https://i.ibb.co/Ss7j1gB/row-5-column-11.png
-Unlock,Unlock,Opens doors at range.,Staff,Staff,10,NA,NA,NA,NA, 1-2,100,Yes,D,4,https://i.ibb.co/P1tBz8d/row-4-column-8.png
+Heal,Heal,Heal 8+Mag,Staff,Staff,30,8,100,0,0,1,20,Yes,E,2,https://i.ibb.co/0Fdmk1M/row-5-column-1.png
+Mend,Mend,Heal 16+Mag,Staff,Staff,20,16,100,0,0,1,50,Yes,D,3,https://i.ibb.co/K77cs4P/row-5-column-2.png
+Recover,Recover,Heal 64+Mag,Staff,Staff,15,64,100,0,0,1,140,Yes,B,3,https://i.ibb.co/VTjDGSn/row-5-column-3.png
+Physic,Physic,Heal 8+Mag at range.,Staff,Staff,15,8,100,0,0,Mag/2,160,Yes,C,3,https://i.ibb.co/0BQQmpr/row-5-column-4.png
+PizzaTime,Pizza Time,Heal 8+Mag to all in range.,Staff,Staff,12,8,100,0,0,Mag/2,500,Yes,A,3,https://i.ibb.co/QbxmtFj/row-5-column-5.png
+Esuna,Esuna,Restore status.,Staff,Staff,10,0,100,0,0,1,200,Yes,D,3,https://i.ibb.co/tzBnBCX/row-4-column-4.png
+ByrnaCane,Byrna Cane,Barrier,Staff,Staff,18,0,100,0,0,1,100,Yes,D,4,https://i.ibb.co/JHGfDGB/row-5-column-10.png
+FireRod,Fire Rod,Torch,Staff,Staff,8,0,100,0,0,Mag/2,200,Yes,C,4,https://i.ibb.co/pf4RJ6C/row-5-column-7.png
+IceRod,Ice Rod,Inflicts Freeze (Sleep),Staff,Staff,4,0,30,0,0,Mag/2,400,Yes,C,4,https://i.ibb.co/FHDm2kj/row-5-column-6.png
+LightningRod,Lightning Rod,Inflicts Paralyze (Silence),Staff,Staff,3,0,30,0,0,Mag/2,500,Yes,B,4,https://i.ibb.co/TKKNp6Z/row-5-column-8.png
+SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,0,100,0,0,1,400,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
+PacciCane,Pacci Cane,Inflicts Confuse (Berserk),Staff,Staff,3,0,30,0,0,Mag/2,600,Yes,A,4,https://i.ibb.co/Ss7j1gB/row-5-column-11.png
+Unlock,Unlock,Opens doors at range.,Staff,Staff,10,0,100,0,0, 1-2,100,Yes,D,4,https://i.ibb.co/P1tBz8d/row-4-column-8.png
 Icestone,Icestone,"Gives +4 Str, 4 Mag, 8 Skl, 4 Spd, 12 Def, 8 Res, Magical at range, Inflicts -3 Spd, Effective vs fliers. [Freezing]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/mJ0PmHW/row-11-column-8.png
 Firestone,Firestone,"Gives +8 Str, 2 Mag, 6 Skl, 4 Spd, 10 Def, 8 Res, Magical at range, Inflicts -3 Str, Effective vs cavalry. [Burning]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/wQM8n71/row-11-column-9.png
 Magestone,Magestone,"Gives +8 Mag, 3 Skl, 11 Def, 20 Res, Magical, Inflicts -3 Skl, Effective vs mages. [Shocking]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/0FzjDm2/row-11-column-10.png
@@ -99,16 +99,16 @@ BasicTie,Basic Tie,+1 Def/Res,Weapon,Monster,255,5,75,0,0,1,200,Yes,NoRank,0,htt
 ConeHelm,Cone Helm,+2 Def/Res,Weapon,Monster,255,8,70,0,0,1,640,Yes,NoRank,0,https://i.ibb.co/J7jgqwh/row-7-column-8.png
 BucketHelm,Bucket Helm,+3 Def/Res,Weapon,Monster,255,13,65,0,0,1,1370,Yes,NoRank,0,https://i.ibb.co/pvMHBPt/row-7-column-9.png
 KnightHelm,Knight Helm,+5 Def/4 Res,Weapon,Monster,255,16,60,0,0,1,1800,Yes,NoRank,0,https://i.ibb.co/j4CgSKm/row-7-column-10.png
-RockCore,Rock Core,"Gives +10 Str, 15 Def, 5 Res, Inflicts -2 Str [Reflect]",Weapon,Core,255,14,70,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/C2kbGcy/row-11-column-1.png
-IceCore,Ice Core,"Gives +10 Mag, 5 Def, 15 Res, Magical, Inflicts -2 Mag [Counter]",Weapon,Core,255,10,90,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/JCt14nk/row-11-column-2.png
-SteelCore,Steel Core,"Gives +5 Str, 5 Mag, 10 Def, 10 Res, Magical at range, Inflicts -1 Str/Mag [Renewal]",Weapon,Core,255,12,80,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/S7kxvDR/row-11-column-3.png
+RockCore,Rock Core,"Can't Double, Gives +10 Str, 15 Def, 5 Res, Inflicts -2 Str [Reflect]",Weapon,Core,255,14,70,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/C2kbGcy/row-11-column-1.png
+IceCore,Ice Core,"Can't Double, Gives +10 Mag, 5 Def, 15 Res, Magical, Inflicts -2 Mag [Counter]",Weapon,Core,255,10,90,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/JCt14nk/row-11-column-2.png
+SteelCore,Steel Core,"Can't Double, Gives +5 Str, 5 Mag, 10 Def, 10 Res, Magical at range, Inflicts -1 Str/Mag [Renewal]",Weapon,Core,255,12,80,16,5, 1-2,5800,Yes,NoRank,0,https://i.ibb.co/S7kxvDR/row-11-column-3.png
 AncientBeam,Ancient Beam,"Magical, Inflicts -1 Str/Mag",Weapon,Beam,255,15,75,15,0, 1-6,5200,Yes,NoRank,0,https://i.ibb.co/YpT3g4k/row-11-column-4.png
-CharmRay,Charm Ray,Inflicts -2 Luck,Weapon,Dark,255,7,75,7,0, 1-3,800,Yes,E,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
-FreezeRay,Freeze Ray,Inflicts -2 Spd,Weapon,Dark,255,9,70,9,0, 1-3,1200,Yes,D,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
-EnervationRay,Enervation Ray,None,Weapon,Dark,255,5,75,11,25, 1-3,1900,Yes,C,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
-Telekinesis,Telekinesis,Inflicts -3 Skl/2 Spd [Shocking],Weapon,Dark,255,13,65,12,5, 1-3,2400,Yes,B,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
-Disintegration,Disintegration,Inflicts -3 Def [Corrosion],Weapon,Dark,255,15,60,13,10, 1-3,3000,Yes,A,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
-DeathRay,Death Ray,Inflicts -3 Res,Weapon,Dark,255,20,50,15,10, 1-3,4000,Yes,A,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
+CharmRay,Charm Ray,Beholderkin/Nikana only. Inflicts -2 Luck,Weapon,Dark,255,7,75,7,0, 1-3,800,Yes,E,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
+FreezeRay,Freeze Ray,Beholderkin/Nikana only. Inflicts -2 Spd,Weapon,Dark,255,9,70,9,0, 1-3,1200,Yes,D,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
+EnervationRay,Enervation Ray,Beholderkin/Nikana only.,Weapon,Dark,255,5,75,11,25, 1-3,1900,Yes,C,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
+Telekinesis,Telekinesis,Beholderkin/Nikana only. Inflicts -3 Skl/2 Spd [Shocking],Weapon,Dark,255,13,65,12,5, 1-3,2400,Yes,B,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
+Disintegration,Disintegration,Beholderkin/Nikana only. Inflicts -3 Def [Corrosion],Weapon,Dark,255,15,60,13,10, 1-3,3000,Yes,A,1,https://i.ibb.co/Sdm1thz/row-8-column-9.png
+DeathRay,Death Ray,Beholderkin/Nikana only. Inflicts -3 Res,Weapon,Dark,255,20,50,15,10, 1-3,4000,Yes,A,1,https://i.ibb.co/ZxDBjnp/row-8-column-8.png
 Stone,Stone,Deals no damage but turns targets to stone for a while.,Weapon,Dark,255,0,65,8,0, 1-3,0,No,NoRank,5,https://i.ibb.co/PYyXLpc/row-8-column-10.png
 RayOfFrost,Ray of Frost,"Matthew only. Inflicts -2 Spd, 4x Effective vs dragons, gargoyles, eyes, jelly. [Reposition]",Weapon,Anima,255,4,80,8,8, 1-2,0,No,Prf,1,https://i.ibb.co/P4Q9HLH/row-10-column-1.png
 FierySaber,FierySaber,"Melina only. Inflicts -2 Str, 4x Effective vs monsters. [Shove]",Weapon,Sword,255,4,80,8,8, 1-2,0,No,Prf,1,https://i.ibb.co/W2Hv0Wg/row-10-column-4.png
@@ -129,7 +129,7 @@ Neapolisword,Neapolisword,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Strength],
 Lightsaber,Lightsaber,"Nikana only. Gives +9 Luck, Ignore 60% Def [Corrosion]",Weapon,Sword,60,12,77,9,15,1,0,No,Prf,1,https://i.ibb.co/3MR9X8Z/row-13-column-7.png
 Arectaris,Arectaris,Diana/Violet/Nadia only. Effective vs swordsmen. [Swordbreaker],Weapon,Sword,30,18,85,17,0, 1-2,0,No,S,1,https://i.ibb.co/XSDf3Rs/row-13-column-3.png
 Reginleif,Reginleif,Tarif/Eirika only. Effective vs knights.,Weapon,Lance,45,10,80,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
-Mjolnir,Mjölnir,"For the worthy. Gives +3 Str, Mag, Spd, Def, Magical at range, Inflicts -3 Skl [Thunderstorm]",Weapon,Axe,55,17,62,12,0, 1-3,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
+Mjolnir,Mjölnir,"For the worthy. Gives +3 Str, Mag, Spd, Def, Magical at range, Inflicts -3 Skl [Thunderstorm]",Weapon,Axe,55,17,62,12,0,4-Jan,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
 RocketBow,Rocket Bow,"Rosalyn only. Inflicts -2 Luck, Effective vs mages.",Weapon,Bow,45,7,85,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/G2Qyq0B/row-10-column-10.png
 YueLongbow,Yuè Longbow,Rye only.,Weapon,Bow,35,10,60,13,20,4,0,No,Prf,1,https://i.ibb.co/HnB4JY5/row-13-column-8.png
 Adamant,Adamant,"Selene's bloodline only. Gives +10 Skl, 5 Def, Effective vs dragons and fliers. [Drive Defense]",Weapon,Bow,50,18,96,8,16,2,0,No,Prf,1,https://i.ibb.co/rt7n1j4/row-10-column-12.png
@@ -157,10 +157,10 @@ Excalipoor,Excalipoor,Always deals 1 damage. [Hawkeye],Weapon,Anima,33,1,100,3,3
 TenRings,Shí Huán,"Gives +5 Skl, 3 Spd, 3 Luck, 2 Def, 2 Res. Inflicts -2 Str/Skl/Spd, -1 Mag/Luck/Def/Res. Effective vs knights. [Astra]",Weapon,Anima,50,15,70,10,10, 1-2,0,No,S,1,https://i.ibb.co/qyvY38F/row-6-column-12.png
 Vishanti,Vishanti,"Gives +10 Skl, 5 Spd, Inflicts -4 Def, Effective vs monsters +Guardian. [Sol]",Weapon,Light,50,13,80,9,15, 1-2,0,No,S,1,https://i.ibb.co/r0WmJTr/row-7-column-12.png
 Darkhold,Darkhold,"Gives +10 Skl, 5 Def, Inflicts -4 Res, Effective vs axe infantry. [Luna]",Weapon,Dark,50,17,60,11,5, 1-2,0,No,S,1,https://i.ibb.co/3y2M4Lm/row-8-column-12.png
-Hammerne,Hammerne,Repairs an item back to full condition.,Staff,Staff,12,NA,NA,NA,NA,1,750,No,B,1,https://i.ibb.co/pRqS8PV/row-12-column-7.png
-Centrifuge,Centrifuge,Heals everyone to full HP and restores all status.,Staff,Staff,6,128,NA,NA,NA,255,0,No,S,1,https://i.ibb.co/9YwSbPz/row-5-column-12.png
-Warp,Warp,Teleports a nearby ally far away.,Staff,Staff,7,NA,NA,NA,NA,1,0,No,S,7,https://i.ibb.co/phQL7Vt/row-4-column-9.png
-Rescue,Rescue,Teleports a far away ally nearby.,Staff,Staff,7,NA,NA,NA,NA,Mag/2,0,No,S,7,https://i.ibb.co/5Fm0bSr/row-4-column-10.png
+Hammerne,Hammerne,Repairs an item back to full condition.,Staff,Staff,12,0,100,0,0,1,750,No,B,1,https://i.ibb.co/pRqS8PV/row-12-column-7.png
+Centrifuge,Centrifuge,Heals everyone to full HP and restores all status.,Staff,Staff,6,128,100,0,0,255,0,No,S,1,https://i.ibb.co/9YwSbPz/row-5-column-12.png
+Warp,Warp,Teleports a nearby ally far away.,Staff,Staff,7,0,100,0,0,1,0,No,S,7,https://i.ibb.co/phQL7Vt/row-4-column-9.png
+Rescue,Rescue,Teleports a far away ally nearby.,Staff,Staff,7,0,100,0,0,Mag/2,0,No,S,7,https://i.ibb.co/5Fm0bSr/row-4-column-10.png
 Wraithguard,Wraithguard,"Gives +3 Def, 3 Res when held, doubled when equipped, Effective vs machines. [Renewal]",Weapon,Power,40,18,80,0,10,1,0,No,NoRank,0,https://i.ibb.co/NyGfKDW/row-7-column-11.png
 Bread,Bread,Heals 10 HP.,Item,,5,0,0,0,0,1,60,Yes,NoRank,0,https://i.ibb.co/8d5Bv9w/row-16-column-1.png
 Nuggets,Nuggets,Heals 12 HP.,Item,,6,0,0,0,0,1,75,Yes,NoRank,0,https://i.ibb.co/fn6QtGk/row-16-column-2.png
@@ -212,9 +212,9 @@ DNAExtractor,DNA Extractor, +30% HP growth when held.,Item,,255,0,0,0,0,1,0,No,N
 AtlanteanGem,Atlantean Gem, +30% Res growth when held.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://i.ibb.co/r5VwDHt/row-14-column-12.png
 40msGauge,40m/s Gauge, +30% Spd growth when held.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://i.ibb.co/r5VwDHt/row-14-column-12.png
 ArcReactor,Arc Reactor, +30% Def growth when held.,Item,,255,0,0,0,0,1,0,No,NoRank,0,https://i.ibb.co/r5VwDHt/row-14-column-12.png
-RealityStone,Reality Stone," +5 Mag/1 Res when held, can be used to deal magic damage. [Chaos Magic]",Item,,1,30,90,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/crvMWtk/row-15-column-1.png
+RealityStone,Reality Stone," +5 Mag/1 Res when held, can be used to deal 30 mt magic damage. [Chaos Magic]",Item,,1,30,90,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/crvMWtk/row-15-column-1.png
 SoulStone,Soul Stone," +5 Res/1 Def when held, can be used as Rescue.",Item,,1,0,0,0,0,Mag/2,0,No,NoRank,0,https://i.ibb.co/jfzmTd5/row-15-column-2.png
 MindStone,Mind Stone," +5 Def/1 Str when held, can be used as Berserk.",Item,,1,0,0,0,0,Mag/2,0,No,NoRank,0,https://i.ibb.co/Rv6jDfD/row-15-column-3.png
 TimeStone,Time Stone," +5 Spd/1 Mag when held, can be used as Hammerne.",Item,,1,0,0,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/mhDDGTv/row-15-column-4.png
 SpaceStone,Space Stone," +5 Skl/1 Spd when held, can be used as Warp.",Item,,1,0,0,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/8YLyjvh/row-15-column-5.png
-PowerStone,Power Stone," +5 Str/1 Skl when held, can be used to deal physical damage. [Daedric Whim]",Item,,1,30,90,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/gd9RCNh/row-15-column-6.png
+PowerStone,Power Stone," +5 Str/1 Skl when held, can be used to deal 30 mt physical damage. [Daedric Whim]",Item,,1,30,90,0,0, 1-2,0,No,NoRank,0,https://i.ibb.co/gd9RCNh/row-15-column-6.png
