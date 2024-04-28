@@ -129,7 +129,7 @@ Neapolisword,Neapolisword,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Strength],
 Lightsaber,Lightsaber,"Nikana only. Gives +9 Luck, Ignore 60% Def [Corrosion]",Weapon,Sword,60,12,77,9,15,1,0,No,Prf,1,https://i.ibb.co/3MR9X8Z/row-13-column-7.png
 Arectaris,Arectaris,Diana/Violet/Nadia only. Effective vs swordsmen. [Swordbreaker],Weapon,Sword,30,18,85,17,0, 1-2,0,No,S,1,https://i.ibb.co/XSDf3Rs/row-13-column-3.png
 Reginleif,Reginleif,Tarif/Eirika only. Effective vs knights.,Weapon,Lance,45,10,80,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
-Mjolnir,Mjölnir,"For the worthy. Gives +3 Str, Mag, Spd, Def, Magical at range, Inflicts -3 Skl [Thunderstorm]",Weapon,Axe,55,17,62,12,0,1-4,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
+Mjolnir,Mjölnir,"For the worthy. Gives +3 Str, Mag, Spd, Def, Magical at range, Inflicts -3 Skl [Thunderstorm]",Weapon,Axe,55,17,62,12,0, 1-4,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
 RocketBow,Rocket Bow,"Rosalyn only. Inflicts -2 Luck, Effective vs mages.",Weapon,Bow,45,7,85,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/G2Qyq0B/row-10-column-10.png
 YueLongbow,Yuè Longbow,Rye only.,Weapon,Bow,35,10,60,13,20,4,0,No,Prf,1,https://i.ibb.co/HnB4JY5/row-13-column-8.png
 Adamant,Adamant,"Selene's bloodline only. Gives +10 Skl, 5 Def, Effective vs dragons and fliers. [Drive Defense]",Weapon,Bow,50,18,96,8,16,2,0,No,Prf,1,https://i.ibb.co/rt7n1j4/row-10-column-12.png
@@ -140,9 +140,9 @@ ScorchingRay,Scorching Ray,"Ashley only. Inflicts -1 Str/Mag, Effective vs monst
 Neapolibeam,Neapolibeam,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Magic],Weapon,Anima,255,3,75,6,0, 1-2,0,No,Prf,2,https://i.ibb.co/PCdy9Gh/row-12-column-10.png
 Bagpipes,Bagpipes,"Krielle only. Gives +3 Spd, Inflicts -3 Spd. [Spur Speed]",Weapon,Anima,255,5,80,8,8, 1-3,0,No,Prf,2,https://i.ibb.co/zXtnCqf/row-13-column-5.png
 Amagidyne,Amagidyne,"Yukiko only. Gives +10 Luck, Inflicts -3 Str, Reaver, Effective vs monsters. [Demoiselle]",Weapon,Anima,35,16,95,8,16, 1-2,0,No,Prf,0,https://i.ibb.co/r3PkZPw/row-17-column-12.png
-Neuroshock,Neuroshock,"Safira only. Inflicts -2 Mag, Effective vs mages.",Weapon,Light,50,4,90,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/R0bwdJ2/row-12-column-5.png
+Neuroshock,Neuroshock,"Safira only. Inflicts -2 Mag, Effective vs mages.",Weapon,Light,50,5,90,7,20, 1-2,0,No,Prf,2,https://i.ibb.co/R0bwdJ2/row-12-column-5.png
 SolarFlare,Solar Flare,Hikari only. Inflicts -1 Str/Skl [Tomebreaker],Weapon,Light,50,6,75,5,20, 1-2,0,No,Prf,2,https://i.ibb.co/vCWjmry/row-12-column-12.png
-Brainshock,Brainshock,"Salazar only. Inflicts -2 Mag, Effective vs mages.",Weapon,Dark,50,6,80,9,10, 1-2,0,No,Prf,2,https://i.ibb.co/BZnYBnP/row-12-column-4.png
+Brainshock,Brainshock,"Salazar only. Inflicts -2 Mag, Effective vs mages.",Weapon,Dark,50,7,80,9,10, 1-2,0,No,Prf,2,https://i.ibb.co/BZnYBnP/row-12-column-4.png
 Meteor,Meteor,Reduces target's HP to 1.,Weapon,Dark,3,255,45,18,0, 3-10,0,No,S,1,https://i.ibb.co/H4H2hNY/row-8-column-11.png
 Wabbajack,Wabbajack,"Sirianne/Martin/Matthew only. Gives +10 Luck, Inflicts -2 Str/Skl/Spd [Chaos Magic]",Weapon,Staff,60,13,65,7,0, 1-5,0,No,Prf,0,https://i.ibb.co/7xhj1hV/row-13-column-10.png
 Divinestone,Divinestone,"Selene only. Gives +9 Str, 5 Mag, 7 Skl, 5 Spd, 7 Luck, 16 Def, 11 Res, Magical at range, Inflicts -3 Def, Effective vs monsters +Guardian/Manakete. [Rightful God]",Weapon,Stone,255,16,90,10,15, 1-2,0,No,NoRank,0,https://i.ibb.co/brBsxrc/row-11-column-12.png
