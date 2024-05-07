@@ -10,7 +10,7 @@ KillingEdge,Killing Edge,None,Weapon,Sword,25,9,80,7,25,1,50,Yes,C,1,https://i.i
 ColdSword,Cold Sword,"Magical, Inflicts -2 Spd",Weapon,Sword,25,10,80,8,0, 1-2,44,Yes,C,1,https://i.ibb.co/XCS7nc6/row-1-column-11.png
 Lancereaver,Lancereaver,Reaver,Weapon,Sword,25,7,75,8,5,1,40,Yes,D,1,https://i.ibb.co/5WxWjgv/row-1-column-9.png
 Wyrmslayer,Wyrmslayer,Effective vs dragons.,Weapon,Sword,25,9,80,9,5,1,40,Yes,C,1,https://i.ibb.co/4KygthY/row-1-column-10.png
-Kampilan,Kampilan,Myrm Lock only.,Weapon,Sword,20,8,75,5,35,1,100,Yes,D,3,https://i.ibb.co/JzNQ9BQ/row-9-column-6.png
+Kampilan,Kampilan,Myrm Lock only.,Weapon,Sword,20,10,75,5,35,1,100,Yes,D,3,https://i.ibb.co/JzNQ9BQ/row-9-column-6.png
 IronLance,Iron Lance,None,Weapon,Lance,40,7,80,7,0,1,8,Yes,E,1,https://i.ibb.co/M2w7ys7/row-2-column-1.png
 SteelLance,Steel Lance,None,Weapon,Lance,35,10,70,10,0,1,16,Yes,D,1,https://i.ibb.co/b5DrMrL/row-2-column-2.png
 MythrilLance,Mythril Lance,None,Weapon,Lance,30,14,75,8,0,1,40,Yes,B,1,https://i.ibb.co/4tnKtwc/row-2-column-3.png
@@ -33,7 +33,7 @@ KillerAxe,Killer Axe,None,Weapon,Axe,25,13,60,11,25,1,40,Yes,C,1,https://i.ibb.c
 BoltAxe,Bolt Axe,"Magical, Inflicts -2 Skl",Weapon,Axe,25,14,60,12,0, 1-2,36,Yes,C,1,https://i.ibb.co/SNbT8B7/row-3-column-11.png
 Swordreaver,Swordreaver,Reaver,Weapon,Axe,25,11,55,12,5,1,32,Yes,D,1,https://i.ibb.co/NycPs0Q/row-3-column-9.png
 Hammer,Hammer,Effective vs armor.,Weapon,Axe,25,13,60,13,5,1,32,Yes,D,1,https://i.ibb.co/Z1T8RtY/row-3-column-10.png
-DaedricAxe,Daedric Axe,30-Luck% chance to backfire.,Weapon,Axe,20,20,60,9,0,1,450,Yes,E,8,https://i.ibb.co/jWHWv3x/row-9-column-7.png
+DaedricAxe,Daedric Axe,30-Luck% chance to backfire.,Weapon,Axe,20,18,60,9,0,1,450,Yes,E,8,https://i.ibb.co/jWHWv3x/row-9-column-7.png
 IronBow,Iron Bow,Effective vs fliers.,Weapon,Bow,40,6,95,5,0,2,12,Yes,E,1,https://i.ibb.co/4fs5x05/row-4-column-1.png
 SteelBow,Steel Bow,Effective vs fliers.,Weapon,Bow,35,9,85,8,0,2,22,Yes,D,1,https://i.ibb.co/gFmZhhg/row-4-column-2.png
 MythrilBow,Mythril Bow,Effective vs fliers.,Weapon,Bow,30,13,90,6,0,2,55,Yes,B,1,https://i.ibb.co/2Y4qRBf/row-4-column-3.png
@@ -136,7 +136,7 @@ Adamant,Adamant,"Selene's bloodline only. Gives +10 Skl, 5 Def, Effective vs dra
 Lustrous,Lustrous,"Rosalyn only. Gives +10 Skl, 5 Spd, Effective vs dragons and fliers. [Drive Resistance]",Weapon,Bow,50,18,98,6,12,2,0,No,Prf,1,https://i.ibb.co/VWLZQP4/row-10-column-11.png
 TIDYSBlaster,TIDYS Blaster,Krystal only. Ignore 100% Def,Weapon,Gun,60,15,75,7,10, 1-3,0,No,Prf,0,https://i.ibb.co/n0cgkww/row-12-column-11.png
 AxeLauncher,Axe Launcher,"Brave, Effective vs armor.",Weapon,Ballista,25,14,60,12,0, 1-3,120,No,NoRank,0,https://i.ibb.co/qsc5xHJ/row-13-column-4.png
-ScorchingRay,Scorching Ray,"Ashley only. Inflicts -1 Str/Mag, Effective vs monsters. [Nihil]",Weapon,Anima,50,8,85,6,15, 1-2,0,No,Prf,2,https://i.ibb.co/9ypmFTZ/row-12-column-6.png
+ScorchingRay,Scorching Ray,"Ashley only. Inflicts -1 Str/Mag, Effective vs monsters. [Nihil]",Weapon,Anima,50,9,85,6,15, 1-2,0,No,Prf,2,https://i.ibb.co/9ypmFTZ/row-12-column-6.png
 Neapolibeam,Neapolibeam,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Magic],Weapon,Anima,255,3,75,6,0, 1-2,0,No,Prf,2,https://i.ibb.co/PCdy9Gh/row-12-column-10.png
 Bagpipes,Bagpipes,"Krielle only. Gives +3 Spd, Inflicts -3 Spd. [Spur Speed]",Weapon,Anima,255,5,80,8,8, 1-3,0,No,Prf,2,https://i.ibb.co/zXtnCqf/row-13-column-5.png
 Amagidyne,Amagidyne,"Yukiko only. Gives +10 Luck, Inflicts -3 Str, Reaver, Effective vs monsters. [Demoiselle]",Weapon,Anima,35,16,95,8,16, 1-2,0,No,Prf,0,https://i.ibb.co/r3PkZPw/row-17-column-12.png
@@ -144,7 +144,7 @@ Neuroshock,Neuroshock,"Safira only. Inflicts -2 Mag, Effective vs mages.",Weapon
 SolarFlare,Solar Flare,Hikari only. Inflicts -1 Str/Skl [Tomebreaker],Weapon,Light,50,6,75,5,20, 1-2,0,No,Prf,2,https://i.ibb.co/vCWjmry/row-12-column-12.png
 Brainshock,Brainshock,"Salazar only. Inflicts -2 Mag, Effective vs mages.",Weapon,Dark,50,7,80,9,10, 1-2,0,No,Prf,2,https://i.ibb.co/BZnYBnP/row-12-column-4.png
 Meteor,Meteor,Reduces target's HP to 1.,Weapon,Dark,3,255,45,18,0, 3-10,0,No,S,1,https://i.ibb.co/H4H2hNY/row-8-column-11.png
-Wabbajack,Wabbajack,"Sirianne/Martin/Matthew only. Gives +10 Luck, Inflicts -2 Str/Skl/Spd [Chaos Magic]",Weapon,Staff,60,13,65,7,0, 1-5,0,No,Prf,0,https://i.ibb.co/7xhj1hV/row-13-column-10.png
+Wabbajack,Wabbajack,"Sirianne/Martin/Matthew only. Gives +10 Luck, Inflicts -2 Str/Skl/Spd [Chaos Magic]",Weapon,Staff,60,13,85,7,0, 1-5,0,No,Prf,0,https://i.ibb.co/7xhj1hV/row-13-column-10.png
 Divinestone,Divinestone,"Selene only. Gives +9 Str, 5 Mag, 7 Skl, 5 Spd, 7 Luck, 16 Def, 11 Res, Magical at range, Inflicts -3 Def, Effective vs monsters +Guardian/Manakete. [Rightful God]",Weapon,Stone,255,16,90,10,15, 1-2,0,No,NoRank,0,https://i.ibb.co/brBsxrc/row-11-column-12.png
 Ascalon,Ascalon,"Gives +2 Str, 2 Mag, 2 Skl, 2 Spd, 2 Luck, 5 Def, 5 Res, Magical at range, Inflicts -2 Str/Mag/Spd/Def/Res, Effective vs monsters +Guardian/Manakete. [Aether]",Weapon,Sword,50,15,90,10,10, 1-2,0,No,S,1,https://i.ibb.co/6vc9F5g/row-13-column-11.png
 Keening,Keening,"Gives +10 Mag, 4 Skl, 4 Spd, Inflicts -1 Str/Skl/Spd, Effective vs machines. [Lifetaker]",Weapon,Sword,60,16,90,6,15,1,0,No,S,1,https://i.ibb.co/92kcndY/row-1-column-12.png
