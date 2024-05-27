@@ -21,6 +21,7 @@ import don.don
 import avt.avt
 import oc.oc
 import auc.auc
+import dh.dh
 from discord.ext import commands
 from discord import option
 import sys
@@ -58,10 +59,10 @@ async def help(ctx):
     unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cota, dlatmol, dow, don, ee, fehr, john, oc, sp, tlp, trtr, vq, vba", inline=False)
-    unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, don, oc", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cota, dh, dlatmol, dow, don, ee, fehr, john, oc, sp, tlp, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, dh, don, oc", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
-    unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
+    unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports dh, tlp", inline=False)
     
     await ctx.response.send_message(embed=unitembed)
 
@@ -107,6 +108,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return oc.oc.get_unit_names(ctx)
     elif (hack == 'auc'):
         return auc.auc.get_unit_names(ctx)
+    elif (hack == 'dh'):
+        return dh.dh.get_unit_names(ctx)
     else:
         return []
     
@@ -115,7 +118,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["4k","7s","avt","auc","bob","burger","cota","dlatmol","don","dow","ee","fehr","john","oc", "sp","tlp","trtr","vba","vq"]
+        ["4k","7s","avt","auc","bob","burger","cota","dh","dlatmol","don","dow","ee","fehr","john","oc", "sp","tlp","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -159,6 +162,8 @@ async def unit(ctx, hack: str, name: str):
         await oc.oc.unit(ctx, name)
     elif (hack == 'auc'):
         await auc.auc.unit(ctx, name)
+    elif (hack == 'dh'):
+        await dh.dh.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
@@ -169,6 +174,8 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
         return tlp.tlp.get_boss_names(ctx)
     elif (hack == 'burger'):
         return burger.burger.get_boss_names(ctx)
+    elif (hack == 'dh'):
+        return dh.dh.get_boss_names(ctx)
     else:
         return[]
 
@@ -177,7 +184,7 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get boss unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["tlp", "burger"]
+        ["tlp", "burger", "dh"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete= get_boss_names)
 async def boss(ctx, hack: str, name: str):
@@ -185,6 +192,8 @@ async def boss(ctx, hack: str, name: str):
         await tlp.tlp.boss(ctx, name)
     elif (hack == 'burger'):
         await burger.burger.boss(ctx, name)
+    elif (hack == 'dh'):
+        await dh.dh.boss(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
@@ -198,6 +207,8 @@ async def get_item_names(ctx: discord.AutocompleteContext):
         return auc.auc.get_item_names(ctx)
     elif (hack == 'oc'):
         return oc.oc.get_item_names(ctx)
+    elif (hack == 'dh'):
+        return dh.dh.get_item_names(ctx)
     else:
         return[]
 
@@ -208,7 +219,7 @@ async def get_item_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get item data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["auc","bob", "don", "oc"]
+        ["auc", "bob", "dh", "don", "oc"]
     ))
 @option("name", description = "Name of the item to get data for", autocomplete = get_item_names)
 async def item(ctx, hack: str, name: str):
@@ -220,6 +231,8 @@ async def item(ctx, hack: str, name: str):
         await auc.auc.item(ctx, name)
     elif (hack == 'oc'):
         await oc.oc.item(ctx, name)
+    elif (hack == 'dh'):
+        await dh.dh.item(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
