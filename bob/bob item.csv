@@ -61,7 +61,7 @@ Bolting,Bolting,Long-range lightning strike.,Weapon,Anima,5,7,70,20,0,3-10,600,Y
 Thoron,Thoron,None,Weapon,Anima,20,18,80,13,20,1-2,200,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920666480700/row-59-column-1.png
 Wind,Wind,Effective against fliers.,Weapon,Anima,30,6,90,6,0,1-2,40,Yes,D,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043931920960077844/row-60-column-1.png
 Tornado,Tornado,Effective against fliers.,Weapon,Anima,25,13,90,10,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313144266882/row-61-column-1.png
-Lightning,Lightning,None,Weapon,Anima,20,9,85,7,20,1-2,50,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313517555794/row-62-column-1.png
+Lightning,Lightning,None,Weapon,Light,20,9,85,7,20,1-2,50,Yes,E,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313517555794/row-62-column-1.png
 Blizzard,Blizzard,Long-range storm. Puts enemy to sleep.,Weapon,Anima,5,4,80,20,0,3-10,600,Yes,A,2,https://cdn.discordapp.com/attachments/1043928901610643456/1043932313861509201/row-63-column-1.png
 Nosferatu,Nosferatu,Drains enemy HP into caster.,Weapon,Light,20,12,75,12,0,1-2,100,Yes,B,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314184450089/row-64-column-1.png
 Purge,Purge,Long-range magic attack.,Weapon,Light,5,10,85,20,0,3-10,600,Yes,A,1,https://cdn.discordapp.com/attachments/1043928901610643456/1043932314645843998/row-65-column-1.png
