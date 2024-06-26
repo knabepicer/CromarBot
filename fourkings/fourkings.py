@@ -27,7 +27,7 @@ def get_unit_pages(row):
     unitembed.add_field(name="Caps", value=caps, inline=False)
     if (row["Name"] == "Sarah"):
         unitembed.set_footer(text="Sarah possesses the skill Outrider, which grants her -1 damage taken, and +3% crit, per space moved.")
-    with open('fourkings/four kings support.csv', newline='') as csvfile:
+    """with open('fourkings/four kings support.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for supportrow in reader:
             supportstring = ""
@@ -53,14 +53,14 @@ def get_unit_pages(row):
                     supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
                 if(supportrow['Partner 4'] != ''):
                     supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
-                """ if(supportrow['Partner 5'] != ''):
+                """""" if(supportrow['Partner 5'] != ''):
                     supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Base 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
                 if(supportrow['Partner 6'] != ''):
                     supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Base 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
                 if(supportrow['Partner 7'] != ''):
                     supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Base 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n" """
-            supportembed.add_field(name="", value=supportstring, inline=False)
-            supportembed.set_footer(text="See affinity bonuses here: https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-4-11-24-update-now-with-weapon-reversal/7030")
+            """supportembed.add_field(name="", value=supportstring, inline=False)
+            supportembed.set_footer(text="See affinity bonuses here: https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-4-11-24-update-now-with-weapon-reversal/7030")"""
     
 
 
