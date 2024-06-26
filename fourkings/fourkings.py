@@ -29,8 +29,8 @@ def get_unit_pages(row):
         unitembed.set_footer(text="Sarah possesses the skill Outrider, which grants her -1 damage taken, and +3% crit, per space moved.")
     with open('fourkings/four kings support.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
+        supportstring = ""
         for supportrow in reader:
-            supportstring = ""
             if (row['Name'] == 'Walter'):
                 supportstring = "End of Chapter 3: Walter/Ava C\nEnd of Intermission: Walter/Ava B\nEnd of Chapter 19: Walter/Ava A\nEnd of Reunion: Walter/Lionel B\nEnd of Chapter 22: Walter/Terril B"
             elif (row['Name'] == 'Ava'):
@@ -58,7 +58,8 @@ def get_unit_pages(row):
                 #    supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Base 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
                 #if(supportrow['Partner 7'] != ''):
                 #    supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Base 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n" 
-            #supportembed.add_field(name="", value=supportstring, inline=False)
+        supportembed.add_field(name="", value=supportstring, inline=False)
+        #supportembed.add_field(name="test", value="test2", inline=False)
         supportembed.set_footer(text="See affinity bonuses here: https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-4-11-24-update-now-with-weapon-reversal/7030")
     
 
