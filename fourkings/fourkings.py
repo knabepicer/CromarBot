@@ -52,8 +52,8 @@ def get_unit_pages(row):
                     supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
                 if(supportrow['Partner 4'] != ''):
                     supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
-                #if(supportrow['Partner 5'] != ''):
-                #    supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Base 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
+                if(supportrow['Partner 5'] != ''):
+                    supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Base 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
                 #if(supportrow['Partner 6'] != ''):
                 #    supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Base 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
                 #if(supportrow['Partner 7'] != ''):
