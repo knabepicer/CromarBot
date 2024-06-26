@@ -44,7 +44,6 @@ def get_unit_pages(row):
             elif (row['Name'] == "Marvin"):
                 supportstring = "End of Chapter 24: Ava/Marvin B"
             elif(row['Name'] == supportrow['Name']):
-                supportstring = ""
                 if(supportrow['Partner 1'] != ''):
                     supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Base 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
                 if(supportrow['Partner 2'] != ''):
@@ -59,7 +58,7 @@ def get_unit_pages(row):
                 #    supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Base 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
                 #if(supportrow['Partner 7'] != ''):
                 #    supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Base 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n" 
-            supportembed.add_field(name="", value=supportstring, inline=False)
+            #supportembed.add_field(name="", value=supportstring, inline=False)
         supportembed.set_footer(text="See affinity bonuses here: https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-4-11-24-update-now-with-weapon-reversal/7030")
     
 
