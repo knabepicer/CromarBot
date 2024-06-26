@@ -72,12 +72,12 @@ def get_unit_pages(row):
         use_default_buttons=False,
         default=True,
         ),
-        pages.PageGroup(
+        """ pages.PageGroup(
         pages=[supportembed],
         label="Supports",
         description="Support data for the unit",
         use_default_buttons=False,
-        ),
+        ), """
         
     ]
 
