@@ -27,26 +27,40 @@ def get_unit_pages(row):
     unitembed.add_field(name="Caps", value=caps, inline=False)
     if (row["Name"] == "Sarah"):
         unitembed.set_footer(text="Sarah possesses the skill Outrider, which grants her -1 damage taken, and +3% crit, per space moved.")
-    # with open('sevensibs/7s supports.csv', newline='') as csvfile:
-    #     reader = csv.DictReader(csvfile)
-    #     for supportrow in reader:
-    #         if(row['Name'] == supportrow['Name']):
-    #             supportstring = ""
-    #             if(supportrow['Partner 1'] != '0'):
-    #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-    #             if(supportrow['Partner 2'] != '0'):
-    #                 supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
-    #             if(supportrow['Partner 3'] != '0'):
-    #                 supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
-    #             if(supportrow['Partner 4'] != '0'):
-    #                 supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
-    #             if(supportrow['Partner 5'] != '0'):
-    #                 supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Starting Value 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
-    #             if(supportrow['Partner 6'] != '0'):
-    #                 supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Starting Value 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
-    #             if(supportrow['Partner 7'] != '0'):
-    #                 supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Starting Value 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n"
-    #             supportembed.add_field(name="", value=supportstring, inline=False)
+    with open('fourkings/four kings support.csv', newline='', encoding="utf-8-sig") as csvfile:
+        reader = csv.DictReader(csvfile)
+        supportstring = ""
+        for supportrow in reader:
+            if (row['Name'] == 'Walter'):
+                supportstring = "End of Chapter 3: Walter/Ava C\nEnd of Intermission: Walter/Ava B\nEnd of Chapter 19: Walter/Ava A\nEnd of Reunion: Walter/Lionel B\nEnd of Chapter 22: Walter/Terril B"
+            elif (row['Name'] == 'Ava'):
+                supportstring = "End of Chapter 3: Walter/Ava C\nEnd of Intermission: Walter/Ava B\nEnd of Chapter 19: Walter/Ava A\nEnd of Chapter 24: Ava/Marvin B"  
+            elif (row['Name'] == 'Lionel'):
+                supportstring = "End of Chapter 3: Lionel/Zach C\nEnd of Reunion: Walter/Lionel B, Lionel/Zach B\nEnd of Chapter 22: Lionel/Terril B"
+            elif (row['Name'] == 'Zach'):
+                supportstring = "End of Chapter 3: Lionel/Zach C\nEnd of Reunion: Lionel/Zach B"
+            elif (row['Name'] == "Terril"):
+                supportstring = "End of Chapter 22: Walter/Terril B, Lionel/Terril B"
+            elif (row['Name'] == "Marvin"):
+                supportstring = "End of Chapter 24: Ava/Marvin B"
+            elif(row['Name'] == supportrow['Name']):
+                if(supportrow['Partner 1'] != ''):
+                    supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Base 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
+                if(supportrow['Partner 2'] != ''):
+                    supportstring += supportrow['Partner 2'] + " : Base: " + supportrow['Base 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
+                if(supportrow['Partner 3'] != ''):
+                    supportstring += supportrow['Partner 3'] + " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
+                if(supportrow['Partner 4'] != ''):
+                    supportstring += supportrow['Partner 4'] + " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
+                if(supportrow['Partner 5'] != ''):
+                    supportstring += supportrow['Partner 5'] + " : Base: " + supportrow['Base 5'] + " | Growth: +" + supportrow['Growth 5'] + "\n"
+                #if(supportrow['Partner 6'] != ''):
+                #    supportstring += supportrow['Partner 6'] + " : Base: " + supportrow['Base 6'] + " | Growth: +" + supportrow['Growth 6'] + "\n"
+                #if(supportrow['Partner 7'] != ''):
+                #    supportstring += supportrow['Partner 7'] + " : Base: " + supportrow['Base 7'] + " | Growth: +" + supportrow['Growth 7'] + "\n" 
+        supportembed.add_field(name="", value=supportstring, inline=False)
+        #supportembed.add_field(name="test", value="test2", inline=False)
+        supportembed.set_footer(text="See affinity bonuses here: https://feuniverse.us/t/fe8-complete-fire-emblem-the-four-kings-4-11-24-update-now-with-weapon-reversal/7030")
     
 
 
@@ -58,12 +72,12 @@ def get_unit_pages(row):
         use_default_buttons=False,
         default=True,
         ),
-        # pages.PageGroup(
-        # pages=[supportembed],
-        # label="Supports",
-        # description="Support data for the unit",
-        # use_default_buttons=False,
-        # ),
+        pages.PageGroup(
+        pages=[supportembed],
+        label="Supports",
+        description="Support data for the unit",
+        use_default_buttons=False,
+        ), 
         
     ]
 
