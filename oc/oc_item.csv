@@ -61,20 +61,20 @@ Bombos,Bombos,"Inflicts -2 Str/1 Mag, Effective vs cavalry.",Weapon,Anima,32,12,
 Ether,Ether,"Inflicts -2 Spd/1 Skl, Effective vs fliers.",Weapon,Anima,32,11,85,8,5, 1-2,50,Yes,B,1,https://i.ibb.co/ryD73FP/row-6-column-9.png
 Quake,Quake,"Inflicts -2 Def/1 Res, Effective vs armor.",Weapon,Anima,32,13,65,8,5, 1-2,50,Yes,B,1,https://i.ibb.co/VgG7vr3/row-6-column-10.png
 Thunderstorm,Thunderstorm,"Siege, Effective vs machines.",Weapon,Anima,5,12,60,15,0, 4-8,400,Yes,B,2,https://i.ibb.co/NV5R82j/row-6-column-4.png
-Blizzard,Blizzard,Inflicts -3 Spd,Weapon,Anima,25,14,85,10,5, 1-2,100,Yes,A,1,https://i.ibb.co/vjbW7KS/row-6-column-5.png
+Blizzard,Blizzard,Inflicts -3 Spd,Weapon,Anima,25,14,85,10,10, 1-2,100,Yes,A,1,https://i.ibb.co/vjbW7KS/row-6-column-5.png
 Photon,Photon,Inflicts -1 Def,Weapon,Light,40,4,95,3,0, 1-2,16,Yes,E,1,https://i.ibb.co/kmhNMCW/row-7-column-1.png
 Belmont,Belmont,4x Effective vs monsters.,Weapon,Light,35,6,85,6,5, 1-2,26,Yes,D,1,https://i.ibb.co/ng729sy/row-7-column-2.png
 Stendarr,Stendarr,Inflicts -2 Def,Weapon,Light,25,8,80,7,25, 1-2,54,Yes,C,1,https://i.ibb.co/zsyGRz3/row-7-column-3.png
 Banish,Banish,"Inflicts -2 Def/1 Res, 4x Effective vs monsters.",Weapon,Light,30,10,90,8,10, 1-2,60,Yes,B,1,https://i.ibb.co/JzXf79J/row-7-column-6.png
 Meridia,Meridia,Siege,Weapon,Light,5,10,70,14,0, 4-8,500,Yes,B,2,https://i.ibb.co/W6GsHJ4/row-7-column-4.png
-Talos,Talos,Inflicts -3 Def,Weapon,Light,25,12,95,9,5, 1-2,120,Yes,A,1,https://i.ibb.co/ZS9vy70/row-7-column-5.png
+Talos,Talos,Inflicts -3 Def,Weapon,Light,25,12,95,9,10, 1-2,120,Yes,A,1,https://i.ibb.co/ZS9vy70/row-7-column-5.png
 Flux,Flux,Inflicts -1 Res,Weapon,Dark,40,8,75,7,0, 1-2,20,Yes,E,1,https://i.ibb.co/QFVGBKj/row-8-column-1.png
 DVoid,D'Void,Inflicts -2 Res,Weapon,Dark,35,11,65,10,0, 1-2,30,Yes,D,1,https://i.ibb.co/rM3cKcZ/row-8-column-2.png
-Nosferatu,Nosferatu,"Can't Crit, Drains enemy HP into caster.",Weapon,Dark,20,9,65,12,0, 1-2,90,Yes,C,1,https://i.ibb.co/Bjj4Jwm/row-8-column-3.png
+Nosferatu,Nosferatu,"Can't Crit, Drains enemy HP into caster.",Weapon,Dark,20,9,65,12,0, 1-2,90,Yes,C,2,https://i.ibb.co/Bjj4Jwm/row-8-column-3.png
 Vaermina,Vaermina,"Can't Double, Ignore 100% Res",Weapon,Dark,30,0,80,12,10, 1-2,60,Yes,C,2,https://i.ibb.co/xHNKh4k/row-8-column-6.png
-Maleficent,Maleficent,"Inflicts -2 Res/1 Def, Effective vs knights.",Weapon,Dark,30,14,70,11,0, 1-2,70,Yes,B,1,https://i.ibb.co/q7nnC3T/row-8-column-7.png
+Maleficent,Maleficent,"Inflicts -2 Res/1 Def, Effective vs knights.",Weapon,Dark,30,14,70,10,0, 1-2,70,Yes,B,1,https://i.ibb.co/q7nnC3T/row-8-column-7.png
 Nothebis,Nothebis,Siege,Weapon,Dark,5,14,50,16,0, 4-8,600,Yes,B,2,https://i.ibb.co/gMMKx5B/row-8-column-4.png
-Mehrunes,Mehrunes,Inflicts -3 Res,Weapon,Dark,25,16,75,12,5, 1-2,140,Yes,A,1,https://i.ibb.co/2Wz9JKj/row-8-column-5.png
+Mehrunes,Mehrunes,Inflicts -3 Res,Weapon,Dark,25,16,75,11,10, 1-2,140,Yes,A,1,https://i.ibb.co/2Wz9JKj/row-8-column-5.png
 Heal,Heal,Heal 8+Mag,Staff,Staff,30,8,100,0,0,1,20,Yes,E,2,https://i.ibb.co/0Fdmk1M/row-5-column-1.png
 Mend,Mend,Heal 16+Mag,Staff,Staff,20,16,100,0,0,1,50,Yes,D,3,https://i.ibb.co/K77cs4P/row-5-column-2.png
 Recover,Recover,Heal 64+Mag,Staff,Staff,15,64,100,0,0,1,140,Yes,B,3,https://i.ibb.co/VTjDGSn/row-5-column-3.png
@@ -92,6 +92,7 @@ Icestone,Icestone,"Gives +4 Str, 4 Mag, 8 Skl, 4 Spd, 12 Def, 8 Res, Magical at 
 Firestone,Firestone,"Gives +8 Str, 2 Mag, 6 Skl, 4 Spd, 10 Def, 8 Res, Magical at range, Inflicts -3 Str, Effective vs cavalry. [Burning]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/wQM8n71/row-11-column-9.png
 Magestone,Magestone,"Gives +8 Mag, 3 Skl, 11 Def, 20 Res, Magical, Inflicts -3 Skl, Effective vs mages. [Shocking]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/0FzjDm2/row-11-column-10.png
 Earthstone,Earthstone,"Gives +5 Str, 4 Skl, 23 Def, 10 Res, Inflicts -3 Res, Effective vs armor. [Petrify]",Weapon,Stone,255,15,60,5,10, 1-2,0,No,NoRank,0,https://i.ibb.co/MV8MzSz/row-11-column-11.png
+StrunToorDiin,Strun Toor Diin,"Inflicts -3 Str/Skl/Spd, Effective vs fliers, cavalry, and machines. [Chaos Magic]",Weapon,Shout,255,9,75,9,15, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
 FusRoDah,Fus Ro Dah,"Inflicts -2 Str/Skl/Spd, Effective vs armor. [Smite]",Weapon,Shout,255,10,90,4,10, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
 IizSlenNus,Iiz Slen Nus,"Inflicts -4 Spd/2 Mag, Effective vs fliers. [Freezing]",Weapon,Shout,255,12,75,9,5, 1-3,0,No,NoRank,0,https://i.ibb.co/GJN3gRS/row-11-column-6.png
 JoorZahFrul,Joor Zah Frul,"Inflicts -3 Def/Res, Effective vs dragons. [Nihil]",Weapon,Shout,255,15,75,12,15, 1-3,0,No,NoRank,0,https://i.ibb.co/Cm56v5c/row-11-column-7.png
