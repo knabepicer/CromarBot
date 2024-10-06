@@ -123,8 +123,6 @@ def tmgc_get_gains(row):
             gains2 += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
-    if (row['Bonus'] != "None"):
-        gains2 += "\n" + row['Bonus']
     return gains + gains2
 
 def get_unit_names(ctx):
