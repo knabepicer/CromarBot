@@ -122,7 +122,7 @@ async def item(ctx, name: str):
             for row in reader:
                 if(re.sub(r'[^a-zA-Z0-9]','', row['Name']).lower() == stripped_name.lower()):
                     unitembed=discord.Embed(title=row['Name'], color=0x59cad9)
-                    unitembed.set_thumbnail(url=row['Icon'])
+                    #unitembed.set_thumbnail(url=row['Icon'])
                     if(row['Type'] == 'Weapon'):
                         stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
                         if (row['Uses'] == '255'):
