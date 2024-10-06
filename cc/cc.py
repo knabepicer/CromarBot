@@ -211,9 +211,9 @@ def cc_get_gains(row):
         gains3 = gains3[:-3]
         gains3 += "\n"
         gains4 = ""
-        if (row['Sword Gains 2'] != 'None'):
+        if (row['Sword Gains 2'] != 'None' and row['Sword Gains 2'] != ''):
                 gains4 += "<:RankSword:1083549037585768510>" + row['Sword Gains 2'] + " | "
-        if (row['Lance Gains 2'] != 'None'):
+        if (row['Lance Gains 2'] != 'None' and row['Lance Gains 2'] != ''):
                 gains4 += "<:RankLance:1083549035622846474>" + row['Lance Gains 2'] + " | "
         """    if (row['Axe Gains 2'] != 'None'):
                 gains4 += "<:RankAxe:1083549032292548659>" + row['Axe Gains 2'] + " | "
