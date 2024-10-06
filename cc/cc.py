@@ -121,6 +121,7 @@ async def item(ctx, name: str):
         was_found = False
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
+            print(stripped_row)
             if(stripped_row.lower() == stripped_name.lower()):
                 unitembed=discord.Embed(title=row['Name'], color=0x59cad9)
                 #unitembed.set_thumbnail(url=row['Icon'])
