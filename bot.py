@@ -21,6 +21,7 @@ import don.don
 import avt.avt
 import oc.oc
 import auc.auc
+import cc.cc
 from discord.ext import commands
 from discord import option
 import sys
@@ -107,6 +108,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return oc.oc.get_unit_names(ctx)
     elif (hack == 'auc'):
         return auc.auc.get_unit_names(ctx)
+    elif (hack == 'cc'):
+        return cc.cc.get_unit_names(ctx)
     else:
         return []
     
@@ -115,7 +118,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["4k","7s","avt","auc","bob","burger","cota","dlatmol","don","dow","ee","fehr","john","oc", "sp","tlp","trtr","vba","vq"]
+        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","don","dow","ee","fehr","john","oc", "sp","tlp","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -159,6 +162,8 @@ async def unit(ctx, hack: str, name: str):
         await oc.oc.unit(ctx, name)
     elif (hack == 'auc'):
         await auc.auc.unit(ctx, name)
+    elif (hack == 'cc'):
+        await cc.cc.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
