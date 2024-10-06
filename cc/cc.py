@@ -215,7 +215,7 @@ def cc_get_gains(row):
                 gains4 += "<:RankSword:1083549037585768510>" + row['Sword Gains 2'] + " | "
         if (row['Lance Gains 2'] != 'None'):
                 gains4 += "<:RankLance:1083549035622846474>" + row['Lance Gains 2'] + " | "
-        if (row['Axe Gains 2'] != 'None'):
+        """    if (row['Axe Gains 2'] != 'None'):
                 gains4 += "<:RankAxe:1083549032292548659>" + row['Axe Gains 2'] + " | "
         if (row['Bow Gains 2'] != 'None'):
                 gains4 += "<:RankBow:1083549033429205073>" + row['Bow Gains 2'] + " | "
@@ -226,8 +226,8 @@ def cc_get_gains(row):
         if (row['Light Gains 2'] != 'None'):
                 gains4 += "<:RankLight:1083549037019541614>" + row['Light Gains 2'] + " | "
         if (row['Dark Gains 2'] != 'None'):
-                gains4 += "<:RankDark:1083549034310012959>" + row['Dark Gains 2'] + " | "
-        if (len(gains2) > 0):
+                gains4 += "<:RankDark:1083549034310012959>" + row['Dark Gains 2'] + " | " """
+        if (len(gains4) > 0):
             gains4 = gains4[:-3]
         gains = gains + "\n" + gains3 + gains4
          
