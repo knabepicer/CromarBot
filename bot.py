@@ -203,6 +203,8 @@ async def get_item_names(ctx: discord.AutocompleteContext):
         return auc.auc.get_item_names(ctx)
     elif (hack == 'oc'):
         return oc.oc.get_item_names(ctx)
+    elif (hack == 'cc'):
+        return cc.cc.get_item_names(ctx)
     else:
         return[]
 
@@ -213,7 +215,7 @@ async def get_item_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get item data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["auc","bob", "don", "oc"]
+        ["auc","bob", "cc","don", "oc"]
     ))
 @option("name", description = "Name of the item to get data for", autocomplete = get_item_names)
 async def item(ctx, hack: str, name: str):
@@ -225,6 +227,8 @@ async def item(ctx, hack: str, name: str):
         await auc.auc.item(ctx, name)
     elif (hack == 'oc'):
         await oc.oc.item(ctx, name)
+    elif (hack == 'cc'):
+        await cc.cc.item(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 

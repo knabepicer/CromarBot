@@ -114,6 +114,49 @@ async def unit(ctx, name: str):
         if (not was_found):
             await ctx.response.send_message("That unit does not exist.")
 
+async def item(ctx, name: str):
+    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)            
+    with open('cc/cc items.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            was_found = False
+            for row in reader:
+                if(re.sub(r'[^a-zA-Z0-9]','', row['Name'].lower() == stripped_name.lower())):
+                    unitembed=discord.Embed(title=row['Name'], color=0x59cad9)
+                    unitembed.set_thumbnail(url=row['Icon'])
+                    if(row['Type'] == 'Weapon'):
+                        stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
+                        if (row['Uses'] == '255'):
+                            stats += " | Unbreakable"
+                        else:
+                            stats += " | Uses: " + row['Uses']
+                        if (row['Description'] != "None"):
+                            stats += '\n'
+                            stats += row['Description']
+                        unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
+                    elif(row['Type'] == 'Staff'):
+                        stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Staff', value=stats, inline=False)
+                    elif(row['Type'] == 'Item'):
+                        stats = ""
+                        if (row['Uses'] == '255'):
+                            stats += "Unbreakable"
+                        else:
+                            stats += "Uses: " + row['Uses']
+                        stats += '\n'
+                        stats += row['Description']
+                        unitembed.add_field(name='Item', value=stats, inline=False)
+                    if(row['Display Price'] == 'Yes'):
+                        price = int(row['Uses']) * int(row['Price Per Use'])
+                        price_string = str(price) + "G"
+                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
+                    await ctx.response.send_message(embed=unitembed)
+                    was_found = True
+                    break
+            if (not was_found):
+                await ctx.response.send_message("That item does not exist.")
+
 def cc_get_ranks(row):
     ranks = ""
     if (row['Sword'] != 'None'):
@@ -235,5 +278,10 @@ def cc_get_gains(row):
 
 def get_unit_names(ctx):
     names = ["Ellerie","Oriana","Tower","Pomelo","Lindros","Raylin","Reiker","Gecko","Mince","Yvette","Telon","Vermillion","Chalice","Oren","Nerysa","Dune","Murky","Krynia","Rohesia","Marlow","Whipjack","Francisca","Acielle","Qiulan","Guard","Tasel","Iosaf","Chixin","Thyme","Basil","Wisp","Foxberry","John XVI","Lilac","Ivadne","Xeo","Hagendire","Unari","Caloogo","Zububai","Sorbet","Aigo","Maurice","Joyful Jo","Empress","Helisent","Gil Goldfist","Avatar1","Avatar2","Avatar3","Avatar4","Avatar5","Betrayer","Justice","Lilac II","Afterimage"]
+    names.sort()
+    return [name for name in names if name.lower().startswith(ctx.value.lower())]
+
+def get_item_names(ctx):
+    names = ["Iron Sword","Steel Sword","Curved Sword","Crystal Sword","Silver Sword","Gold Sword","Umbral Edge","Brave Sword","Iron Blade","Steel Blade","Silver Blade","Wingcutter","Zanbato","Da Slasha","Lancereaver","Killing Edge","Rondel dagger","Cutlass","Rapier","Duan Dao","Chang Dao","Pocket Spell","Wind Sword","Bolt Sword","Flame Sword","Light Brand","Iron Lance","Steel Lance","Curved Lance","Crystal Lance","Silver Lance","Gold Lance","Umbral Lance","Brave Lance","Javelin","Short Spear","Spear","Wingpiercer","Heavy Spear","Da Stabba","Pitchfork","Harpoon","Axereaver","Killer Lance","Barrier Lance","Trident","Billhook","Iron Axe","Steel Axe","Curved Axe","Crystal Axe","Silver Axe","Gold Axe","Umbral Axe","Brave Axe","Hand Axe","Short Axe","Tomahawk","Halberd","Hammer","Da Smasha","Spellcleaver","Throwing Pick","Swordreaver","Killer Axe","Logsplitter","Shield Axe","Mansplitter","Iron Bow","Steel Bow","Crystal Bow","Silver Bow","Gold Bow","Umbral Bow","Brave Bow","Longbow","Greatbow","Titanbow","Spellbane","Da Shoota","Killer Bow","Shortbow","Incendiary Bow","Arcane Bow","Chu-ko-nu","Super Snipe","Breaking Point","Fireball","Sal's Surprise","Meteor","Bolgonone","Brud's Big Boom","Wind","Dicer of Dan","Blizzard","Tornado","Sick Sid's Slicer","Thunder","Woe of Joe","Bolting","Thoron","Ferion's Folly","Flux","Flux II","Moonglow","Flux VIII","Flux Alpha","Luna","Shell","Leech","Rupture","Ruin","Fortress","Nosferatu","Waste","Lightning","Shine","Purge","Divine","Aura","Torment","Lacerate","Obliterate","Cherish","Mindcrush","Scourge","Annihilate","Resire","Heal","Remedy","Heal More","Physic","Wave","Fortify","Silence","Skullsmash","Weaken","Sleep","Skinscourge","Guichen","Warp","Rescue","Envision","Hasten","Invigorate","Reinforce","Puolang","Badou","Bujie","Gaozhao","Chuanyang","Tianqian","Lingchi","Edict","Fancy Stabber","Seahawk Flag","Xonssuaencsy","Telescope","M. Widewater","Brutal Talon","Sharp Claw","Fleshpeeler","Piercing Bite","Crushing Bite","Vampire Fang","Ballista","Heavy Ballista","Elephant"]
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
