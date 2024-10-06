@@ -136,7 +136,7 @@ async def item(ctx, name: str):
                         stats += row['Description']
                     unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
                 elif(row['Type'] == 'Staff'):
-                    stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
+                    stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | Uses: " + row['Uses']
                     stats += '\n'
                     stats += row['Description']
                     unitembed.add_field(name='Staff', value=stats, inline=False)
