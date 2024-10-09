@@ -1,4 +1,4 @@
-Name,Description,Type,Type,Uses,Mt,Hit,Wt,Crit,Range,Price per Use,Display Price,Rank
+Name,Description,Type,Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Display Price,Rank
 Iron Sword,,Weapon,Sword,50,6,110,6,0,1,10,Yes,E
 Steel Sword,,Weapon,Sword,40,9,100,8,0,1,25,Yes,D
 Curved Sword,x4 wta,Weapon,Sword,20,4,100,6,0,1,75,Yes,C
@@ -15,7 +15,7 @@ Zanbato,3x Mt vs cavalry,Weapon,Sword,20,10,105,6,0,1,80,Yes,D
 Da Slasha,3x Mt vs fliers/cavalry/armours,Weapon,Sword,20,14,90,10,0,1,200,Yes,B
 Lancereaver,"Reaver, x2 wta",Weapon,Sword,20,8,100,6,0,1,60,Yes,C
 Killing Edge,,Weapon,Sword,20,6,90,8,44,1,100,Yes,C
-Rondel dagger,"Ignore def, uncounterable",Weapon,Sword,20,1,100,1,0,1,100,Yes,E
+Rondel Dagger,"Ignore def, uncounterable",Weapon,Sword,20,1,100,1,0,1,100,Yes,E
 Cutlass,Brave,Weapon,Sword,30,5,80,8,0,1,100,Yes,D
 Rapier,3x Mt vs cavalry/armours,Weapon,Sword,30,7,100,5,0,1,90,Yes,C
 Duan Dao,Double before counter,Weapon,Sword,30,8,100,6,0,1,50,Yes,D
