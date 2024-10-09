@@ -1,4 +1,4 @@
-Name,Description,Type,Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Display Price,Rank
+Name,Description,Type,Weapon Type,Uses,Mt,Hit,Wt,Crit,Range,Price Per Use,Display Price,Rank
 Iron Sword,,Weapon,Sword,50,6,110,6,0,1,10,Yes,E
 Steel Sword,,Weapon,Sword,40,9,100,8,0,1,25,Yes,D
 Curved Sword,x4 wta,Weapon,Sword,20,4,100,6,0,1,75,Yes,C
