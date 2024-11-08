@@ -20,11 +20,11 @@ Cutlass,Brave,Weapon,Sword,30,5,80,8,0,1,100,Yes,D
 Rapier,3x Mt vs cavalry/armours,Weapon,Sword,30,7,100,5,0,1,90,Yes,C
 Duan Dao,Double before counter,Weapon,Sword,30,8,100,6,0,1,50,Yes,D
 Chang Dao,Double before counter,Weapon,Sword,30,14,100,8,0,1,150,Yes,B
-Pocket Spell,Mag,Weapon,Sword,20,1,100,2,-,1-2,75,Yes,D
-Wind Sword,Mag,Weapon,Sword,20,5,110,6,-,1-2,125,Yes,C
-Bolt Sword,Mag,Weapon,Sword,20,9,100,8,-,1-2,150,Yes,C
-Flame Sword,Mag,Weapon,Sword,20,12,90,10,-,1-2,175,Yes,B
-Light Brand,"Mag, +5 luck",Weapon,Sword,20,16,110,8,-,1-2,200,Yes,A
+Pocket Spell,Mag,Weapon,Sword,20,1,100,2,-,1-Feb,75,Yes,D
+Wind Sword,Mag,Weapon,Sword,20,5,110,6,-,1-Feb,125,Yes,C
+Bolt Sword,Mag,Weapon,Sword,20,9,100,8,-,1-Feb,150,Yes,C
+Flame Sword,Mag,Weapon,Sword,20,12,90,10,-,1-Feb,175,Yes,B
+Light Brand,"Mag, +5 luck",Weapon,Sword,20,16,110,8,-,1-Feb,200,Yes,A
 Iron Lance,,Weapon,Lance,50,7,100,7,0,1,10,Yes,E
 Steel Lance,,Weapon,Lance,40,10,90,9,0,1,25,Yes,D
 Curved Lance,x4 wta,Weapon,Lance,20,5,90,7,0,1,75,Yes,C
@@ -33,18 +33,18 @@ Silver Lance,,Weapon,Lance,30,13,100,9,0,1,70,Yes,B
 Gold Lance,,Weapon,Lance,30,17,90,11,0,1,100,Yes,B
 Umbral Lance,66 hit/avoid vs lances,Weapon,Lance,20,10,90,7,66,1,200,Yes,A
 Brave Lance,Brave,Weapon,Lance,30,11,80,13,0,1,200,Yes,A
-Javelin,,Weapon,Lance,20,4,100,7,0,1-2,40,Yes,D
-Short Spear,,Weapon,Lance,20,7,100,9,0,1-2,80,Yes,C
-Spear,,Weapon,Lance,20,10,100,9,0,1-2,125,Yes,A
+Javelin,,Weapon,Lance,20,4,100,7,0,1-Feb,40,Yes,D
+Short Spear,,Weapon,Lance,20,7,100,9,0,1-Feb,80,Yes,C
+Spear,,Weapon,Lance,20,10,100,9,0,1-Feb,125,Yes,A
 Wingpiercer,3x Mt vs fliers,Weapon,Lance,20,9,100,7,0,1,60,Yes,D
 Heavy Spear,3x Mt vs armours,Weapon,Lance,20,11,90,9,0,1,80,Yes,D
 Da Stabba,3x Mt vs fliers/cavalry/armours,Weapon,Lance,20,15,80,11,0,1,200,Yes,B
 Pitchfork,Cannot be countered,Weapon,Lance,30,8,80,9,0,1,50,Yes,D
-Harpoon,,Weapon,Lance,20,10,90,11,0,2-3,80,Yes,D
+Harpoon,,Weapon,Lance,20,10,90,11,0,2-Mar,80,Yes,D
 Axereaver,"Reaver, x2 wta",Weapon,Lance,20,9,90,7,0,1,60,Yes,C
 Killer Lance,,Weapon,Lance,20,7,80,9,40,1,90,Yes,C
-Barrier Lance,Adds 15 res,Weapon,Lance,30,5,90,9,0,1-2,100,Yes,C
-Trident,,Weapon,Lance,20,16,80,13,0,2-3,160,Yes,A
+Barrier Lance,Adds 15 res,Weapon,Lance,30,5,90,9,0,1-Feb,100,Yes,C
+Trident,,Weapon,Lance,20,16,80,13,0,2-Mar,160,Yes,A
 Billhook,Cannot be countered,Weapon,Lance,20,14,80,11,0,1,150,Yes,B
 Iron Axe,,Weapon,Axe,50,8,90,8,0,1,10,Yes,E
 Steel Axe,,Weapon,Axe,40,11,80,10,0,1,25,Yes,D
@@ -54,14 +54,14 @@ Silver Axe,,Weapon,Axe,30,14,90,10,0,1,70,Yes,B
 Gold Axe,,Weapon,Axe,30,18,80,12,0,1,100,Yes,B
 Umbral Axe,66 hit/avoid vs axes,Weapon,Axe,20,12,80,8,66,1,200,Yes,A
 Brave Axe,Brave,Weapon,Axe,30,12,70,14,0,1,200,Yes,A
-Hand Axe,,Weapon,Axe,20,7,70,10,0,1-2,40,Yes,D
-Short Axe,,Weapon,Axe,20,10,70,12,0,1-2,80,Yes,C
-Tomahawk,,Weapon,Axe,20,13,70,12,0,1-2,125,Yes,A
+Hand Axe,,Weapon,Axe,20,7,70,10,0,1-Feb,40,Yes,D
+Short Axe,,Weapon,Axe,20,10,70,12,0,1-Feb,80,Yes,C
+Tomahawk,,Weapon,Axe,20,13,70,12,0,1-Feb,125,Yes,A
 Halberd,Cav eff,Weapon,Axe,20,10,85,8,0,1,60,Yes,D
 Hammer,3x Mt vs armours,Weapon,Axe,20,12,80,10,0,1,80,Yes,D
 Da Smasha,3x Mt vs fliers/cavalry/armours,Weapon,Axe,20,16,70,12,0,1,200,Yes,B
 Spellcleaver,3x Mt vs magic,Weapon,Axe,20,9,90,8,0,1,90,Yes,D
-Throwing Pick,Uncounterable,Weapon,Axe,20,3,90,8,35,1-2,100,Yes,D
+Throwing Pick,Uncounterable,Weapon,Axe,20,3,90,8,35,1-Feb,100,Yes,D
 Swordreaver,"Reaver, x2 wta",Weapon,Axe,20,10,90,8,0,1,60,Yes,C
 Killer Axe,,Weapon,Axe,20,8,70,10,44,1,100,Yes,C
 Logsplitter,Def -5,Weapon,Axe,30,16,90,12,0,1,80,Yes,C
@@ -74,62 +74,62 @@ Silver Bow,3x Mt vs fliers,Weapon,Bow,30,14,100,8,0,2,70,Yes,B
 Gold Bow,3x Mt vs fliers,Weapon,Bow,30,18,90,10,0,2,100,Yes,B
 Umbral Bow,66 hit/avoid vs lances,Weapon,Bow,20,12,90,6,66,2,200,Yes,A
 Brave Bow,"3x Mt vs fliers, brave",Weapon,Bow,20,12,80,12,0,2,300,Yes,A
-Longbow,3x Mt vs fliers,Weapon,Bow,20,10,80,10,0,2-3,100,Yes,D
-Greatbow,3x Mt vs fliers,Weapon,Bow,20,15,80,12,0,2-3,150,Yes,C
-Titanbow,3x Mt vs fliers,Weapon,Bow,20,17,80,20,0,3-5,200,Yes,A
+Longbow,3x Mt vs fliers,Weapon,Bow,20,10,80,10,0,2-Mar,100,Yes,D
+Greatbow,3x Mt vs fliers,Weapon,Bow,20,15,80,12,0,2-Mar,150,Yes,C
+Titanbow,3x Mt vs fliers,Weapon,Bow,20,17,80,20,0,3-May,200,Yes,A
 Spellbane,3x Mt vs magic,Weapon,Bow,20,9,100,6,0,2,70,Yes,D
 Da Shoota,3x Mt vs fliers/cavalry/armours,Weapon,Bow,20,16,80,10,0,2,180,Yes,B
 Killer Bow,3x Mt vs fliers,Weapon,Bow,20,8,80,8,44,2,100,Yes,C
-Shortbow,"Doubles before counter, 3x Mt vs fliers",Weapon,Bow,20,5,120,2,0,1-2,120,Yes,D
-Incendiary Bow,3x Mt vs fliers Mag,Weapon,Bow,20,10,90,8,0,1-2,110,Yes,C
-Arcane Bow,3x Mt vs fliers Mag,Weapon,Bow,20,14,90,10,0,1-3,160,Yes,B
+Shortbow,"Doubles before counter, 3x Mt vs fliers",Weapon,Bow,20,5,120,2,0,1-Feb,120,Yes,D
+Incendiary Bow,3x Mt vs fliers Mag,Weapon,Bow,20,10,90,8,0,1-Feb,110,Yes,C
+Arcane Bow,3x Mt vs fliers Mag,Weapon,Bow,20,14,90,10,0,1-Mar,160,Yes,B
 Chu-ko-nu,"x4 attacks, no counter, 3x Mt vs fliers Mag",Weapon,Bow,20,3,60,14,0,2,150,Yes,D
-Super Snipe,3x Mt vs fliers,Weapon,Bow,20,5,70,5,0,2-5,150,Yes,C
-Breaking Point,3x Mt vs fliers,Weapon,Bow,20,33,120,20,0,2-3,200,Yes,A
+Super Snipe,3x Mt vs fliers,Weapon,Bow,20,5,70,5,0,2-May,150,Yes,C
+Breaking Point,3x Mt vs fliers,Weapon,Bow,20,33,120,20,0,2-Mar,200,Yes,A
 Fireball,33% AoE,Weapon,Anima,30,10,80,6,0,1,80,Yes,E
 Sal's Surprise,3x Mt vs infantry,Weapon,Anima,20,7,85,8,0,1,105,Yes,D
-Meteor,"33% AoE, no x2",Weapon,Anima,5,7,75,10,0,3-7,700,Yes,C
+Meteor,"33% AoE, no x2",Weapon,Anima,5,7,75,10,0,3-Jul,700,Yes,C
 Bolgonone,33% AoE,Weapon,Anima,20,16,80,8,0,1,170,Yes,B
 Brud's Big Boom,3x Mt vs infantry,Weapon,Anima,20,13,85,10,0,1,200,Yes,A
 Wind,Spd +4,Weapon,Anima,30,3,100,3,0,2,50,Yes,E
 Dicer of Dan,"Brave, Def/Res +4",Weapon,Anima,30,2,60,6,0,2,60,Yes,D
-Blizzard,"Sleep, no x2",Weapon,Anima,5,4,100,6,0,3-5,600,Yes,C
+Blizzard,"Sleep, no x2",Weapon,Anima,5,4,100,6,0,3-May,600,Yes,C
 Tornado,Spd +6,Weapon,Anima,20,6,100,5,0,2,140,Yes,B
 Sick Sid's Slicer,"Brave, Def/Res +6",Weapon,Anima,20,5,60,8,0,2,160,Yes,A
-Thunder,,Weapon,Anima,50,5,90,4,0,1-2,10,Yes,E
-Woe of Joe,Def/Res -4,Weapon,Anima,30,13,80,8,0,1-2,50,Yes,D
-Bolting,No x2,Weapon,Anima,5,12,1000,12,0,3-7,600,Yes,C
-Thoron,,Weapon,Anima,30,9,90,6,0,1-2,40,Yes,B
-Ferion's Folly,Def/Res -6,Weapon,Anima,20,20,80,10,0,1-2,130,Yes,A
-Flux,,Weapon,Dark,50,8,80,5,0,1-2,10,Yes,E
-Flux II,,Weapon,Dark,40,11,70,7,0,1-2,25,Yes,D
-Moonglow,Ignores Res,Weapon,Dark,10,6,100,6,0,1-5,500,Yes,C
-Flux VIII,,Weapon,Dark,30,13,80,7,0,1-2,70,Yes,B
-Flux Alpha,,Weapon,Dark,30,17,70,9,0,1-2,100,Yes,A
-Luna,"Ignore res, Res +6",Weapon,Dark,30,6,100,5,0,1-2,50,Yes,D
+Thunder,,Weapon,Anima,50,5,90,4,0,1-Feb,10,Yes,E
+Woe of Joe,Def/Res -4,Weapon,Anima,30,13,80,8,0,1-Feb,50,Yes,D
+Bolting,No x2,Weapon,Anima,5,12,1000,12,0,3-Jul,600,Yes,C
+Thoron,,Weapon,Anima,30,9,90,6,0,1-Feb,40,Yes,B
+Ferion's Folly,Def/Res -6,Weapon,Anima,20,20,80,10,0,1-Feb,130,Yes,A
+Flux,,Weapon,Dark,50,8,80,5,0,1-Feb,10,Yes,E
+Flux II,,Weapon,Dark,40,11,70,7,0,1-Feb,25,Yes,D
+Moonglow,Ignores Res,Weapon,Dark,10,6,100,6,0,1-May,500,Yes,C
+Flux VIII,,Weapon,Dark,30,13,80,7,0,1-Feb,70,Yes,B
+Flux Alpha,,Weapon,Dark,30,17,70,9,0,1-Feb,100,Yes,A
+Luna,"Ignore res, Res +6",Weapon,Dark,30,6,100,5,0,1-Feb,50,Yes,D
 Shell,Def +5,Weapon,Dark,20,10,75,5,0,1,100,Yes,D
 Leech,Drain HP,Weapon,Dark,20,9,70,7,0,1,125,Yes,C
 Rupture,3x Mt vs cavalry/armours,Weapon,Dark,20,16,80,9,0,1,150,Yes,C
 Ruin,,Weapon,Dark,20,7,70,7,70,1,150,Yes,B
 Fortress,Def +8,Weapon,Dark,20,15,75,7,0,1,175,Yes,B
 Nosferatu,Drain HP,Weapon,Dark,20,14,70,11,0,1,200,Yes,A
-Waste,Brave,Weapon,Dark,20,10,65,9,0,1-2,200,Yes,A
-Lightning,,Weapon,Light,50,6,100,3,0,1-2,10,Yes,E
-Shine,,Weapon,Light,40,9,90,5,0,1-2,25,Yes,D
-Purge,,Weapon,Light,5,5,120,5,0,3-7,600,Yes,C
-Divine,,Weapon,Light,30,11,100,5,0,1-2,70,Yes,B
-Aura,,Weapon,Light,30,15,90,7,0,1-2,100,Yes,A
-Torment,"3x Mt vs magic, Targets def",Weapon,Light,20,12,100,5,0,1-2,75,Yes,D
-Lacerate,Can't miss,Weapon,Light,20,8,-,5,,1-3,100,Yes,D
-Obliterate,Targets Def,Weapon,Light,10,6,90,5,120,1-2,200,Yes,C
-Cherish,Eclipse,Weapon,Light,20,-,100,12,0,1-2,200,Yes,C
-Mindcrush,"3x Mt vs magic, Targets Def",Weapon,Light,20,17,80,7,0,1-2,125,Yes,B
-Scourge,Can't miss,Weapon,Light,20,13,-,7,0,1-3,175,Yes,B
-Annihilate,Targets Def,Weapon,Light,10,30,70,13,5,1-2,350,Yes,A
-Resire,Drain HP,Weapon,Light,20,2,80,9,0,1-3,200,Yes,A
+Waste,Brave,Weapon,Dark,20,10,65,9,0,1-Feb,200,Yes,A
+Lightning,,Weapon,Light,50,6,100,3,0,1-Feb,10,Yes,E
+Shine,,Weapon,Light,40,9,90,5,0,1-Feb,25,Yes,D
+Purge,,Weapon,Light,5,5,120,5,0,3-Jul,600,Yes,C
+Divine,,Weapon,Light,30,11,100,5,0,1-Feb,70,Yes,B
+Aura,,Weapon,Light,30,15,90,7,0,1-Feb,100,Yes,A
+Torment,"3x Mt vs magic, Targets def",Weapon,Light,20,12,100,5,0,1-Feb,75,Yes,D
+Lacerate,Can't miss,Weapon,Light,20,8,-,5,,1-Mar,100,Yes,D
+Obliterate,Targets Def,Weapon,Light,10,6,90,5,120,1-Feb,200,Yes,C
+Cherish,Eclipse,Weapon,Light,20,-,100,12,0,1-Feb,200,Yes,C
+Mindcrush,"3x Mt vs magic, Targets Def",Weapon,Light,20,17,80,7,0,1-Feb,125,Yes,B
+Scourge,Can't miss,Weapon,Light,20,13,-,7,0,1-Mar,175,Yes,B
+Annihilate,Targets Def,Weapon,Light,10,30,70,13,5,1-Feb,350,Yes,A
+Resire,Drain HP,Weapon,Light,20,2,80,9,0,1-Mar,200,Yes,A
 Heal,Heals 10,Staff,Staff,50,10,-,-,-,1,20,Yes,E
-Remedy,Heals 5,Staff,Staff,30,10,-,-,-,1-4,40,Yes,D
-Heal More,Heals 15,Staff,Staff,30,20,-,-,-,1-2,70,Yes,C
+Remedy,Heals 5,Staff,Staff,30,10,-,-,-,1-Apr,40,Yes,D
+Heal More,Heals 15,Staff,Staff,30,20,-,-,-,1-Feb,70,Yes,C
 Physic,Heals 10,Staff,Staff,20,15,-,-,-,Mag/2,125,Yes,B
 Wave,All heal 5,Staff,Staff,10,5,-,-,-,All,250,Yes,B
 Fortify,Area heal 15,Staff,Staff,10,10,-,-,-,Mag/2,300,Yes,A
@@ -145,59 +145,59 @@ Envision,Hit/crit +50 for 1 turn,Staff,Staff,10,-,-,-,-,Mag/2,250,Yes,D
 Hasten,Spd +5 for 1 turn,Staff,Staff,10,-,-,-,-,Mag/2,300,Yes,C
 Invigorate,Dmg +10 for 1 turn,Staff,Staff,10,-,-,-,-,Mag/2,350,Yes,B
 Reinforce,Def/Res +5 for 1 turn,Staff,Staff,10,-,-,-,-,Mag/2,400,Yes,A
-Puolang,Uses Mag. Spd +15,Weapon,Sword,20,20,120,6,-,1-2,300,Yes,S
-Badou,Spd/Def/Res +8. Uncounterable,Weapon,Sword,20,8,100,8,-,1-2,300,Yes,S
-Bujie,Def +5 Res +10,Weapon,Lance,20,15,120,1,0,1-3,300,Yes,S
+Puolang,Uses Mag. Spd +15,Weapon,Sword,20,20,120,6,-,1-Feb,300,Yes,S
+Badou,Spd/Def/Res +8. Uncounterable,Weapon,Sword,20,8,100,8,-,1-Feb,300,Yes,S
+Bujie,Def +5 Res +10,Weapon,Lance,20,15,120,1,0,1-Mar,300,Yes,S
 Gaozhao,Def/Res/Luck +4,Weapon,Axe,20,24,94,14,94,1,300,Yes,S
-Chuanyang,Spd +10 Brave 3x Mt vs fliers,Weapon,Bow,20,18,80,7,0,2-3,300,Yes,S
-Tianqian,"33% AoE, brave, Def/Res +7",Weapon,Anima,20,15,100,3,0,1-2,300,Yes,S
-Lingchi,"Cannot miss, 2x Mt vs Monster",Weapon,Light,20,25,-,2,50,1-3,300,Yes,S
-Edict,Def +10,Weapon,Dark,20,40,80,20,0,1-2,300,Yes,S
-Fancy Stabber,Canto+,Weapon,Sword,255,5,100,5,-,1-2,1000,Yes,B
+Chuanyang,Spd +10 Brave 3x Mt vs fliers,Weapon,Bow,20,18,80,7,0,2-Mar,300,Yes,S
+Tianqian,"33% AoE, brave, Def/Res +7",Weapon,Anima,20,15,100,3,0,1-Feb,300,Yes,S
+Lingchi,"Cannot miss, 2x Mt vs Monster",Weapon,Light,20,25,-,2,50,1-Mar,300,Yes,S
+Edict,Def +10,Weapon,Dark,20,40,80,20,0,1-Feb,300,Yes,S
+Fancy Stabber,Canto+,Weapon,Sword,255,5,100,5,-,1-Feb,1000,Yes,B
 Seahawk Flag,Move again on kill,Weapon,Lance,255,0,100,10,0,1,1.960784314,Yes,D
 Xonssuaencsy,Mag +14,Weapon,Axe,255,0,70,2,0,1,3.921568627,Yes,B
 Telescope,Str +3 Skl +66,Weapon,Bow,255,3,66,6,0,3,1.960784314,Yes,B
-M. Widewater,Mag +8,Weapon,Anima,255,0,80,6,0,1-2,7.843137255,Yes,B
+M. Widewater,Mag +8,Weapon,Anima,255,0,80,6,0,1-Feb,7.843137255,Yes,B
 Brutal Talon,,Weapon,Monster,255,10,100,6,0,1,None,No,NoRank
 Sharp Claw,3x Mt vs cavalry/armours,Weapon,Monster,255,8,120,6,0,1,None,No,NoRank
 Fleshpeeler,,Weapon,Monster,255,4,100,6,55,1,None,No,NoRank
 Piercing Bite,Ignore Def,Weapon,Monster,255,2,110,1,-,1,None,No,NoRank
 Crushing Bite,Ignore Def,Weapon,Monster,255,12,100,12,-,1,None,No,NoRank
 Vampire Fang,"Ignore Def, drain HP",Weapon,Monster,255,7,90,12,-,1,None,No,NoRank
-Ballista,3x Mt vs fliers,Weapon,Bow,5,8,90,0,0,1-10,None,No,NoRank
-Heavy Ballista,3x Mt vs fliers,Weapon,Bow,5,13,90,0,0,1-10,None,No,NoRank
-Elephant,3x Mt vs fliers,Weapon,Bow,5,25,100,0,0,1-10,None,No,NoRank
+Ballista,3x Mt vs fliers,Weapon,Bow,5,8,90,0,0,1-Oct,None,No,NoRank
+Heavy Ballista,3x Mt vs fliers,Weapon,Bow,5,13,90,0,0,1-Oct,None,No,NoRank
+Elephant,3x Mt vs fliers,Weapon,Bow,5,25,100,0,0,1-Oct,None,No,NoRank
 Fengyan,Adds luck to dmg/def/res initiating. x2 WT. Auto-repair.,Weapon,Lance,3,7,85,8,0,1,None,No,Prf
-Powder Blast,AoE -33% HP in 3 tiles of target. No x2. Auto-repair.,Weapon,Bow,4,7,90,8,0,3-5,None,No,Prf
-Guidance,No dmg. Second action after use. Auto-repair.,Weapon,Anima,3,0,100,0,0,3-10,None,No,Prf
-Jolting John,Hits Res. 3x Mt vs boats. No x2. Auto-repair.,Weapon,Bow,4,10,110,10,45,3-5,None,No,Prf
+Powder Blast,AoE -33% HP in 3 tiles of target. No x2. Auto-repair.,Weapon,Bow,4,7,90,8,0,3-May,None,No,Prf
+Guidance,No dmg. Second action after use. Auto-repair.,Weapon,Anima,3,0,100,0,0,3-Oct,None,No,Prf
+Jolting John,Hits Res. 3x Mt vs boats. No x2. Auto-repair.,Weapon,Bow,4,10,110,10,45,3-May,None,No,Prf
 Frying Pan,Reduce chance of being targeted. +4 Spd/Def. Auto-repair.,Weapon,Sword,6,8,100,6,50,1,None,No,Prf
-Crocodile,"On kill, act again, full heal, -3 move for 1 turn. Auto-repair. Brave.",Weapon,Bow,6,4,95,8,0,1-2,None,No,Prf
-Fair Fight,Target Dmg -10 for 1 turn. No x2/crit. Second action after use. Auto-repair.,Weapon,Lance,4,6,110,4,0,2-3,None,No,Prf
+Crocodile,"On kill, act again, full heal, -3 move for 1 turn. Auto-repair. Brave.",Weapon,Bow,6,4,95,8,0,1-Feb,None,No,Prf
+Fair Fight,Target Dmg -10 for 1 turn. No x2/crit. Second action after use. Auto-repair.,Weapon,Lance,4,6,110,4,0,2-Mar,None,No,Prf
 Feather Fury,Can't counter/be countered. Ranged attacks do 0 damage.,Weapon,Monster,255,8,110,0,0,1,None,No,Prf
 Astral Strike,Strikes five times. ,Weapon,Monster,255,8,110,0,25,1,None,No,Prf
 Harm,Magic +10. Auto-repair.,Weapon,Staff (Weapon),5,0,120,7,0,13,None,No,Prf
 Oren Special,Def/Res +8. +8 Hit per tiled moved. Auto-repair.,Weapon,Lance,5,16,48,16,1,1,None,No,Prf
-Siphon Spear,Spd +5. Drains HP. Uses Mag. Auto-repair. ,Weapon,Lance,6,11,120,5,0,1-2,None,No,Prf
-Dissect,Targets Def. Auto-repair. No x2. Boost Exp. Gain 2 turns +10 Mag (but not Dmg).,Weapon,Staff (Weapon),3,20,100,2,0,1,None,No,Prf
-Shadowflame,Def/Res +10. Ignores Def. No x2.,Weapon,Monster,4,15,100,0,0,1-3,None,No,Prf
+Siphon Spear,Spd +5. Drains HP. Uses Mag. Auto-repair. ,Weapon,Lance,6,11,120,5,0,1-Feb,None,No,Prf
+Dissect,Targets Def. Auto-repair. No x2. Boost Exp. Gain 2 turns +10 Mag (but not Dmg).,Weapon,Staff (Weapon),4,20,100,2,0,1,None,No,Prf
+Shadowflame,Def/Res +10. Ignores Def. No x2.,Weapon,Monster,4,15,100,0,0,1-Mar,None,No,Prf
 Corpsedrinker,Def/Res -7. Drains HP. Auto-repair.,Weapon,Sword,5,14,110,9,65,1,None,No,Prf
-Francisca,Ignore Defence. Auto-repair.,Weapon,Axe,4,14,95,14,0,1-2,None,No,Prf
-Impending Doom,War Ballad Bonus: Adjacent allies +10 Dmg for 1 turn. No x2.,Weapon,Light,255,0,120,0,0,1-5,None,No,Prf
-On Swift Wings,War Ballad Bonus: Adjacent allies +5 Speed for 1 turn. No x2.  ,Weapon,Light,255,0,120,0,0,1-5,None,No,Prf
-Unyielding Spirit,War Ballad Bonus: Adjacent allies +5 Def/Res for 1 turn. No x2.,Weapon,Light,255,0,120,0,0,1-5,None,No,Prf
-Barrier Bottle,"Gives ally +7 Res, reducing by 1 each turn. ",Staff,Item,5,--,--,--,--,1-3,None,No,Prf
-Temper Tonic,Berserks for 1 turn. No damage.,Weapon,Item,3,0,100,0,0,1-3,None,No,Prf
-Freeze Flask,Freeze for 1 turn. No damage. ,Weapon,Item,3,0,100,0,0,1-3,None,No,Prf
-Rock Stock,Auto-repair. Second action after use.,Weapon,Monster,3,13,80,30,0,3-7,None,No,Prf
-Iron Wave,Def/Res +4.,Weapon,Monster,255,4,80,0,0,1-2,None,No,Prf
+Francisca,Ignore Defence. Auto-repair.,Weapon,Axe,4,14,95,14,0,1-Feb,None,No,Prf
+Impending Doom,War Ballad Bonus: Adjacent allies +10 Dmg for 1 turn. No x2.,Weapon,Light,255,0,120,0,0,1-May,None,No,Prf
+On Swift Wings,War Ballad Bonus: Adjacent allies +5 Speed for 1 turn. No x2.  ,Weapon,Light,255,0,120,0,0,1-May,None,No,Prf
+Unyielding Spirit,War Ballad Bonus: Adjacent allies +5 Def/Res for 1 turn. No x2.,Weapon,Light,255,0,120,0,0,1-May,None,No,Prf
+Barrier Bottle,"Gives ally +7 Res, reducing by 1 each turn. ",Staff,Item,5,--,--,--,--,1-Mar,None,No,Prf
+Temper Tonic,Berserks for 1 turn. No damage.,Weapon,Item,3,0,100,0,0,1-Mar,None,No,Prf
+Freeze Flask,Freeze for 1 turn. No damage. ,Weapon,Item,3,0,100,0,0,1-Mar,None,No,Prf
+Rock Stock,Auto-repair. Second action after use.,Weapon,Monster,3,13,80,30,0,3-Jul,None,No,Prf
+Iron Wave,Def/Res +4.,Weapon,Monster,255,4,80,0,0,1-Feb,None,No,Prf
 Thunderclap,Hits Res. Def/Res -4.,Weapon,Monster,255,17,100,0,0,1,None,No,Prf
 Whirlwind,Canto+.,Weapon,Monster,255,10,90,0,0,1,None,No,Prf
-Pacify,Luck +50. Auto-repair.,Weapon,Anima,7,2,50,5,50,1-2,None,No,Prf
-Spiritslayer,Survive a lethal attack if HP > 1. Can't miss. Auto-repair.,Weapon,Sword,6,10,255,0,0,1-2,None,No,Prf
-Chain Hook,Pull an ally next to the user. Auto-repair. Second action after use.,Staff,Staff,4,--,--,--,--,1-3,None,No,Prf
-Hailstrike,Hits Def. Can't double/be doubled. Auto-repair.,Weapon,Anima,5,6,111,50,0,1-4,None,No,Prf
-Futile Struggle,Foe -33% current HP after. No x2. Crescendo bonus: +5 Spd this turn.,Weapon,Dark,255,0,100,0,0,1-5,None,No,Prf
-Inevitable Fate,Gain +2 Dmg every turn. No x2. Crescendo bonus: +10 dmg this turn.,Weapon,Dark,255,0,110,0,0,1-5,None,No,Prf
-Prolonged Pain,Drain HP. Add lost HP to Dmg. Crescendo bonus: +5 Def/Res this turn.,Weapon,Dark,255,0,95,0,0,1-5,None,No,Prf
+Pacify,Luck +50. Auto-repair.,Weapon,Anima,7,2,50,5,50,1-Feb,None,No,Prf
+Spiritslayer,Survive a lethal attack if HP > 1. Can't miss. Auto-repair.,Weapon,Sword,6,10,255,0,0,1-Feb,None,No,Prf
+Chain Hook,Pull an ally next to the user. Auto-repair. Second action after use.,Staff,Staff,4,--,--,--,--,1-Mar,None,No,Prf
+Hailstrike,Hits Def. Can't double/be doubled. Auto-repair.,Weapon,Anima,5,6,111,50,0,1-Apr,None,No,Prf
+Futile Struggle,Foe -33% current HP after. No x2. Crescendo bonus: +5 Spd this turn.,Weapon,Dark,255,0,100,0,0,1-May,None,No,Prf
+Inevitable Fate,Gain +2 Dmg every turn. No x2. Crescendo bonus: +10 dmg this turn.,Weapon,Dark,255,0,110,0,0,1-May,None,No,Prf
+Prolonged Pain,Drain HP. Add lost HP to Dmg. Crescendo bonus: +5 Def/Res this turn.,Weapon,Dark,255,0,95,0,0,1-May,None,No,Prf
 Rapid Injector,Heals target for 20. Auto-repair. Second action after use.,Staff,Staff,5,--,--,--,--,1,None,No,Prf
