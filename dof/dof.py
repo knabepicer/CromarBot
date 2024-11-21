@@ -28,14 +28,26 @@ def get_unit_pages(row):
         for supportrow in reader:
             if(row['Name'] == supportrow['Name']):
                 supportstring = "Affinity: "+ supportrow['Affinity'] + "\n"
-                if(supportrow['Partner 1'] != 'None'):
-                    supportstring += supportrow['Partner 1'] + " - " + supportrow['Affinity 1']+ " : Base: " + supportrow['Base 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-                if(supportrow['Partner 2'] != 'None'):
-                    supportstring += supportrow['Partner 2'] + " - " + supportrow['Affinity 2']+ " : Base: " + supportrow['Base 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
-                if(supportrow['Partner 3'] != 'None'):
-                    supportstring += supportrow['Partner 3'] + " - " + supportrow['Affinity 3']+ " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
-                if(supportrow['Partner 4'] != 'None'):
-                    supportstring += supportrow['Partner 4'] + " - " + supportrow['Affinity 4']+ " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
+                if(supportrow['Partner 1'] != ''):
+                    supportstring += supportrow['Partner 1'] + " - " + supportrow['Affinity 1']+ " : Base: " + supportrow['Base 1'] + " | Growth: +" + supportrow['Growth 1']
+                    if (['Paired 1'] == 'True'):
+                        supportstring += " - Paired Ending"
+                    supportstring += "\n"
+                if(supportrow['Partner 2'] != ''):
+                    supportstring += supportrow['Partner 2'] + " - " + supportrow['Affinity 2']+ " : Base: " + supportrow['Base 2'] + " | Growth: +" + supportrow['Growth 2']
+                    if (['Paired 2'] == 'True'):
+                        supportstring += " - Paired Ending"
+                    supportstring += "\n"
+                if(supportrow['Partner 3'] != ''):
+                    supportstring += supportrow['Partner 3'] + " - " + supportrow['Affinity 3']+ " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3']
+                    if (['Paired 3'] == 'True'):
+                        supportstring += " - Paired Ending"
+                    supportstring += "\n"
+                if(supportrow['Partner 4'] != ''):
+                    supportstring += supportrow['Partner 4'] + " - " + supportrow['Affinity 4']+ " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4']
+                    if (['Paired 4'] == 'True'):
+                        supportstring += " - Paired Ending"
+                    supportstring += "\n"
                 supportembed.add_field(name="", value=supportstring, inline=False)
 
 
