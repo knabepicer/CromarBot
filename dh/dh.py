@@ -6,8 +6,8 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x34c290)
-    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x34c290)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xe64432)
+    supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xe64432)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
