@@ -22,7 +22,7 @@ def get_unit_pages(row):
         gains = do5_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
     
-    with open('do5/do5 supports.csv', newline='') as csvfile:
+    with open('dof/do5 supports.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for supportrow in reader:
             if(row['Name'] == supportrow['Name']):
@@ -60,7 +60,7 @@ def get_unit_pages(row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('do5/do5 unit.csv', newline='') as csvfile:
+    with open('dof/do5 unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
