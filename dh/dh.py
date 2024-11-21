@@ -11,27 +11,15 @@ def get_unit_pages(row):
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    unitembed.add_field(name="Leadership: ", value=row['Leadership'], inline=True)
     bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
-    ranks = vq_get_ranks(row)
-    unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
+    ranks = dh_get_ranks(row)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
     if (row['Promotion Class'] != ""):
-        gains = vq_get_gains(row)
+        gains = dh_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    
-    # with open('trtr/trtr supports.csv', newline='') as csvfile:
-    #     reader = csv.DictReader(csvfile)
-    #     for supportrow in reader:
-    #         if(row['Name'] == supportrow['Name']):
-    #             supportstring = ""
-    #             if(supportrow['Partner 1'] != 'None'):
-    #                 supportstring += supportrow['Partner 1'] + " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
-    #             supportembed.add_field(name="", value=supportstring, inline=False)
-
 
     page_groups = [
         pages.PageGroup(
@@ -69,23 +57,23 @@ async def unit(ctx, name: str):
             await ctx.response.send_message("That unit does not exist.")
 
 
-def vq_get_ranks(row):
+def dh_get_ranks(row):
     ranks = ""
-    if (row['Sword'] != 'NoRank'):
+    if (row['Sword'] != ''):
         ranks += "<:RankSword:1083549037585768510>Sword: " + row['Sword'] + " | "
-    if (row['Lance'] != 'NoRank'):
+    if (row['Lance'] != ''):
         ranks += "<:RankLance:1083549035622846474>Lance: " + row['Lance'] + " | "
-    if (row['Axe'] != 'NoRank'):
+    if (row['Axe'] != ''):
         ranks += "<:RankAxe:1083549032292548659>Axe: " + row['Axe'] + " | "
-    if (row['Bow'] != 'NoRank'):
+    if (row['Bow'] != ''):
         ranks += "<:RankBow:1083549033429205073>Bow: " + row['Bow'] + " | "
-    if (row['Staff'] != 'NoRank'):
+    if (row['Staff'] != ''):
         ranks += "<:RankStaff:1083549038936326155>Staff: " + row['Staff'] + " | "
-    if (row['Anima'] != 'NoRank'):
+    if (row['Anima'] != ''):
         ranks += "<:RankAnima:1083549030598049884>Anima: " + row['Anima'] + " | "
-    if (row['Light'] != 'NoRank'):
+    if (row['Light'] != ''):
         ranks += "<:RankLight:1083549037019541614>Light: " + row['Light'] + " | "
-    if (row['Dark'] != 'NoRank'):
+    if (row['Dark'] != ''):
         ranks += "<:RankDark:1083549034310012959>Dark: " + row['Dark'] + " | "
     if (len(ranks) > 0):
         ranks = ranks[:-3]
@@ -93,13 +81,15 @@ def vq_get_ranks(row):
         ranks = "None"
     return ranks
 
-def vq_get_gains(row):
+def dh_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
     if (row['HP Gains'] != '0'):
         gains += "HP: +" + row['HP Gains'] + " | "
-    if (row['Atk Gains'] != '0'):
-        gains += "Atk: +" + row['Atk Gains'] + " | "
+    if (row['Str Gains'] != '0'):
+        gains += "Str: +" + row['Str Gains'] + " | "
+    if (row['Mag Gains'] != '0'):
+        gains += "Mag: +" + row['Mag Gains'] + " | "
     if (row['Skl Gains'] != '0'):
         gains += "Skl: +" + row['Skl Gains'] + " | "
     if (row['Spd Gains'] != '0'):
@@ -118,25 +108,75 @@ def vq_get_gains(row):
     gains = gains[:-3]
     gains += "\n"
     gains2 = ""
-    if (row['Sword Gains'] != 'None'):
+    if (row['Sword Gains'] != ''):
             gains2 += "<:RankSword:1083549037585768510>" + row['Sword Gains'] + " | "
-    if (row['Lance Gains'] != 'None'):
+    if (row['Lance Gains'] != ''):
             gains2 += "<:RankLance:1083549035622846474>" + row['Lance Gains'] + " | "
-    if (row['Axe Gains'] != 'None'):
+    if (row['Axe Gains'] != ''):
             gains2 += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
-    if (row['Bow Gains'] != 'None'):
+    if (row['Bow Gains'] != ''):
             gains2 += "<:RankBow:1083549033429205073>" + row['Bow Gains'] + " | "
-    if (row['Staff Gains'] != 'None'):
+    if (row['Staff Gains'] != ''):
             gains2 += "<:RankStaff:1083549038936326155>" + row['Staff Gains'] + " | "
-    if (row['Anima Gains'] != 'None'):
+    if (row['Anima Gains'] != ''):
             gains2 += "<:RankAnima:1083549030598049884>" + row['Anima Gains'] + " | "
-    if (row['Light Gains'] != 'None'):
+    if (row['Light Gains'] != ''):
             gains2 += "<:RankLight:1083549037019541614>" + row['Light Gains'] + " | "
-    if (row['Dark Gains'] != 'None'):
+    if (row['Dark Gains'] != ''):
             gains2 += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
     if (len(gains2) > 0):
         gains2 = gains2[:-3]
-    return gains + gains2
+    if (row['Promotion Skills'] != ''):
+         gains2 += "\n" + row['Promotion Skills']
+    gains2 += '\n'
+    gains3 = ""
+    gains4 = ""
+    if (row['Promotion Class 2'] != ''): 
+        gains3 += '\n' + row['Promotion Class 2'] + '\n'
+        if (row['HP Gains 2'] != '0'):
+            gains3 += "HP: +" + row['HP Gains 2'] + " | "
+        if (row['Str Gains 2'] != '0'):
+            gains3 += "Str: +" + row['Str Gains 2'] + " | "
+        if (row['Mag Gains 2'] != '0'):
+            gains3 += "Mag: +" + row['Mag Gains 2'] + " | "
+        if (row['Skl Gains 2'] != '0'):
+            gains3 += "Skl: +" + row['Skl Gains 2'] + " | "
+        if (row['Spd Gains 2'] != '0'):
+            gains3 += "Spd: +" + row['Spd Gains 2'] + " | "
+        if (row['Def Gains 2'] != '0'):
+            gains3 += "Def: +" + row['Def Gains 2'] + " | "
+        if (row['Res Gains 2'] != '0'):
+            gains3 += "Res: +" + row['Res Gains 2'] + " | "
+        if (row['Con Gains 2'] != '0'):
+            gains3 += "Con: +" + row['Con Gains 2'] + " | "
+        if (row['Mov Gains 2'] != '0'):
+            if (int(row['Mov Gains 2']) > 0):
+                gains3 += "Mov: +" + row['Mov Gains 2'] + " | "
+            else:
+                gains3 += "Mov: " + row['Mov Gains 2'] + " | "
+        if (len(gains3) > 0):
+            gains3 = gains3[:-3]
+        gains3 += '\n'
+        if (row['Sword Gains 2'] != ''):
+            gains4 += "<:RankSword:1083549037585768510>" + row['Sword Gains 2'] + " | "
+        if (row['Lance Gains 2'] != ''):
+            gains4 += "<:RankLance:1083549035622846474>" + row['Lance Gains 2'] + " | "
+        if (row['Axe Gains 2'] != ''):
+            gains4 += "<:RankAxe:1083549032292548659>" + row['Axe Gains 2'] + " | "
+        if (row['Bow Gains 2'] != ''):
+            gains4 += "<:RankBow:1083549033429205073>" + row['Bow Gains 2'] + " | "
+        if (row['Staff Gains 2'] != ''):
+            gains4 += "<:RankStaff:1083549038936326155>" + row['Staff Gains 2'] + " | "
+        if (row['Anima Gains 2'] != ''):
+            gains4 += "<:RankAnima:1083549030598049884>" + row['Anima Gains 2'] + " | "
+        if (row['Light Gains 2'] != ''):
+            gains4 += "<:RankLight:1083549037019541614>" + row['Light Gains 2'] + " | "
+        if (row['Dark Gains 2'] != ''):
+            gains4 += "<:RankDark:1083549034310012959>" + row['Dark Gains 2'] + " | "
+        if (len(gains4) > 0):
+            gains4 = gains4[:-3]
+        
+    return gains + gains2 + gains3 + gains4
 
 def get_unit_names(ctx):
     names = ["You","Taiga","Lawrence","Byrd","Forz","Rona","Alto","Kris","Ludo","Hartmann","Samantha","Filch","Murt","Goro","Horace","Lorelei","Myron","Elise","Laguna","Nathan","Cassie","Dietrich","Aira","Shouko","Hato","Mute","Shouzou","Victor","Carmichael","Borgin","Bruenor"]
