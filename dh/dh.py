@@ -11,9 +11,9 @@ def get_unit_pages(row):
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
     unitembed.add_field(name="Lv " + row['Lv'] + " ", value=row['Class'], inline=True)
-    bases = "HP " + row['HP'] + " | " + "Atk " + row['Atk'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
+    bases = "HP " + row['HP'] + " | " + "Pow " + row['Pow'] + " | Skl " + row['Skl'] + " | " + "Spd " + row['Spd'] + " | " + "Lck " + row['Luck'] + " | " + "Def " + row['Def'] + " | " + "Res " + row['Res'] + " | " + "Con " + row['Con'] + " | " + "Mov " + row['Mov']
     unitembed.add_field(name="Bases", value=bases, inline=False)
-    growths = "HP " + row['HP Growth'] + "% | " + "Atk " + row['Atk Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
+    growths = "HP " + row['HP Growth'] + "% | " + "Pow " + row['Pow Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
     ranks = dh_get_ranks(row)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
@@ -83,62 +83,58 @@ def dh_get_ranks(row):
 
 def dh_get_gains(row):
     gains = ""
-    gains += row['Promotion Class'] + '\n'
-    if (row['HP Gains'] != '0'):
-        gains += "HP: +" + row['HP Gains'] + " | "
-    if (row['Str Gains'] != '0'):
-        gains += "Str: +" + row['Str Gains'] + " | "
-    if (row['Mag Gains'] != '0'):
-        gains += "Mag: +" + row['Mag Gains'] + " | "
-    if (row['Skl Gains'] != '0'):
-        gains += "Skl: +" + row['Skl Gains'] + " | "
-    if (row['Spd Gains'] != '0'):
-        gains += "Spd: +" + row['Spd Gains'] + " | "
-    if (row['Def Gains'] != '0'):
-        gains += "Def: +" + row['Def Gains'] + " | "
-    if (row['Res Gains'] != '0'):
-        gains += "Res: +" + row['Res Gains'] + " | "
-    if (row['Con Gains'] != '0'):
-        gains += "Con: +" + row['Con Gains'] + " | "
-    if (row['Mov Gains'] != '0'):
-        if (int(row['Mov Gains']) > 0):
-            gains += "Mov: +" + row['Mov Gains'] + " | "
-        else:
-            gains += "Mov: " + row['Mov Gains'] + " | "
-    gains = gains[:-3]
-    gains += "\n"
     gains2 = ""
-    if (row['Sword Gains'] != ''):
-            gains2 += "<:RankSword:1083549037585768510>" + row['Sword Gains'] + " | "
-    if (row['Lance Gains'] != ''):
-            gains2 += "<:RankLance:1083549035622846474>" + row['Lance Gains'] + " | "
-    if (row['Axe Gains'] != ''):
-            gains2 += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
-    if (row['Bow Gains'] != ''):
-            gains2 += "<:RankBow:1083549033429205073>" + row['Bow Gains'] + " | "
-    if (row['Staff Gains'] != ''):
-            gains2 += "<:RankStaff:1083549038936326155>" + row['Staff Gains'] + " | "
-    if (row['Anima Gains'] != ''):
-            gains2 += "<:RankAnima:1083549030598049884>" + row['Anima Gains'] + " | "
-    if (row['Light Gains'] != ''):
-            gains2 += "<:RankLight:1083549037019541614>" + row['Light Gains'] + " | "
-    if (row['Dark Gains'] != ''):
-            gains2 += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
-    if (len(gains2) > 0):
-        gains2 = gains2[:-3]
-    if (row['Promotion Skills'] != ''):
-         gains2 += "\n" + row['Promotion Skills']
-    gains2 += '\n'
+    if (row['Promotes'] != 'No'):
+        gains += row['Promotion Class'] + '\n'
+        if (row['HP Gains'] != '0'):
+            gains += "HP: +" + row['HP Gains'] + " | "
+        if (row['Pow Gains'] != '0'):
+            gains += "Pow: +" + row['Pow Gains'] + " | "
+        if (row['Skl Gains'] != '0'):
+            gains += "Skl: +" + row['Skl Gains'] + " | "
+        if (row['Spd Gains'] != '0'):
+            gains += "Spd: +" + row['Spd Gains'] + " | "
+        if (row['Def Gains'] != '0'):
+            gains += "Def: +" + row['Def Gains'] + " | "
+        if (row['Res Gains'] != '0'):
+            gains += "Res: +" + row['Res Gains'] + " | "
+        if (row['Con Gains'] != '0'):
+            gains += "Con: +" + row['Con Gains'] + " | "
+        if (row['Mov Gains'] != '0'):
+            if (int(row['Mov Gains']) > 0):
+                gains += "Mov: +" + row['Mov Gains'] + " | "
+            else:
+                gains += "Mov: " + row['Mov Gains'] + " | "
+        if (len(gains) > 0):
+            gains = gains[:-3]
+        gains += "\n"
+        if (row['Sword Gains'] != ''):
+                gains2 += "<:RankSword:1083549037585768510>" + row['Sword Gains'] + " | "
+        if (row['Lance Gains'] != ''):
+                gains2 += "<:RankLance:1083549035622846474>" + row['Lance Gains'] + " | "
+        if (row['Axe Gains'] != ''):
+                gains2 += "<:RankAxe:1083549032292548659>" + row['Axe Gains'] + " | "
+        if (row['Bow Gains'] != ''):
+                gains2 += "<:RankBow:1083549033429205073>" + row['Bow Gains'] + " | "
+        if (row['Staff Gains'] != ''):
+                gains2 += "<:RankStaff:1083549038936326155>" + row['Staff Gains'] + " | "
+        if (row['Anima Gains'] != ''):
+                gains2 += "<:RankAnima:1083549030598049884>" + row['Anima Gains'] + " | "
+        if (row['Light Gains'] != ''):
+                gains2 += "<:RankLight:1083549037019541614>" + row['Light Gains'] + " | "
+        if (row['Dark Gains'] != ''):
+                gains2 += "<:RankDark:1083549034310012959>" + row['Dark Gains'] + " | "
+        if (len(gains2) > 0):
+            gains2 = gains2[:-3]
+        gains2 += '\n'
     gains3 = ""
     gains4 = ""
-    if (row['Promotion Class 2'] != ''): 
+    if (row['Promotes 2'] != 'No'): 
         gains3 += '\n' + row['Promotion Class 2'] + '\n'
         if (row['HP Gains 2'] != '0'):
             gains3 += "HP: +" + row['HP Gains 2'] + " | "
-        if (row['Str Gains 2'] != '0'):
-            gains3 += "Str: +" + row['Str Gains 2'] + " | "
-        if (row['Mag Gains 2'] != '0'):
-            gains3 += "Mag: +" + row['Mag Gains 2'] + " | "
+        if (row['Pow Gains 2'] != '0'):
+            gains3 += "Pow: +" + row['Pow Gains 2'] + " | "
         if (row['Skl Gains 2'] != '0'):
             gains3 += "Skl: +" + row['Skl Gains 2'] + " | "
         if (row['Spd Gains 2'] != '0'):
