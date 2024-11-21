@@ -23,6 +23,7 @@ import oc.oc
 import auc.auc
 import cc.cc
 import tmgc.tmgc
+import dof.dof
 from discord.ext import commands
 from discord import option
 import sys
@@ -60,7 +61,7 @@ async def help(ctx):
     unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, dow, don, ee, fehr, john, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, ee, fehr, john, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, cc, don, oc", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
@@ -113,6 +114,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return cc.cc.get_unit_names(ctx)
     elif (hack == 'tmgc'):
         return tmgc.tmgc.get_unit_names(ctx)
+    elif (hack == 'do5'):
+        return dof.dof.get_unit_names(ctx)
     else:
         return []
     
@@ -121,7 +124,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","don","dow","ee","fehr","john","oc", "sp","tlp","tmgc","trtr","vba","vq"]
+        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","ee","fehr","john","oc", "sp","tlp","tmgc","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -169,6 +172,8 @@ async def unit(ctx, hack: str, name: str):
         await cc.cc.unit(ctx, name)
     elif (hack == 'tmgc'):
         await tmgc.tmgc.unit(ctx, name)
+    elif (hack == 'do5'):
+        await dof.dof.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
