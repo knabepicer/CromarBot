@@ -6,7 +6,8 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xaa58ed)
+    #unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xaa58ed)
+    unitembed=discord.Embed(title=row['Name'], color=0xaa58ed)
     supportembed=discord.Embed(title=row['Name'], color=0xaa58ed)
     unitembed.set_thumbnail(url=row['Portrait'])
     supportembed.set_thumbnail(url=row['Portrait'])
@@ -144,6 +145,6 @@ def do5_get_gains(row):
     return gains + gains2
 
 def get_unit_names(ctx):
-    names = []
+    names = ["Rena","Garath","Kolbane","Asher","Cyrille","Eilene","Amelia","Tricia","Chester","Cathale","Crowe","Lizaveta","Driscoll","Cothiva","Gabriel","Ioan","Marie","Arcus","Jolyon","Florent","Marin","Alexis","Seren","Franseza","se'Mori","Sileth","Conleth","Lyndra","Blixa","Kahn","Wren","Bellona","Corbeau","Leda","Nari","Baldur","Nikita","Annelise","Rozelle","byor'Dal","Meliza","vi'Shen","Brill","Eudira","Severin","Stolypin","Jauger","Saskia","Hereward","Odette","Thyra","Morwen","Artemisia","Sheila","Dismas","Volund","Adalheid","Amaryl","Kai","Claudiya","Rotariu"]
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
