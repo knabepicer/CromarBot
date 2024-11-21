@@ -92,10 +92,10 @@ Icestone,Icestone,"Gives +4 Str, 4 Mag, 8 Skl, 4 Spd, 12 Def, 8 Res, Magical at 
 Firestone,Firestone,"Gives +8 Str, 2 Mag, 6 Skl, 4 Spd, 10 Def, 8 Res, Magical at range, Inflicts -3 Str, Effective vs cavalry. [Burning]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/wQM8n71/row-11-column-9.png
 Magestone,Magestone,"Gives +8 Mag, 3 Skl, 11 Def, 20 Res, Magical, Inflicts -3 Skl, Effective vs mages. [Shocking]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/0FzjDm2/row-11-column-10.png
 Earthstone,Earthstone,"Gives +5 Str, 4 Skl, 23 Def, 10 Res, Inflicts -3 Res, Effective vs armor. [Petrify]",Weapon,Stone,255,15,60,5,10, 1-2,0,No,NoRank,0,https://i.ibb.co/MV8MzSz/row-11-column-11.png
-Strun Toor Diin,Strun Toor Diin,"Inflicts -3 Str/Skl/Spd, Effective vs fliers, cavalry, and machines. [Chaos Magic]",Weapon,Shout,255,9,75,9,15, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
-Fus Ro Dah,Fus Ro Dah,"Inflicts -2 Str/Skl/Spd, Effective vs armor. [Smite]",Weapon,Shout,255,10,90,4,10, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
-Iiz Slen Nus,Iiz Slen Nus,"Inflicts -4 Spd/2 Mag, Effective vs fliers. [Freezing]",Weapon,Shout,255,12,75,9,5, 1-3,0,No,NoRank,0,https://i.ibb.co/GJN3gRS/row-11-column-6.png
-Joor Zah Frul,Joor Zah Frul,"Inflicts -3 Def/Res, Effective vs dragons. [Nihil]",Weapon,Shout,255,18,75,11,15, 1-3,0,No,NoRank,0,https://i.ibb.co/Cm56v5c/row-11-column-7.png
+ChaosBreath,Chaos Breath,"Inflicts -3 Str/Skl/Spd, Effective vs fliers, cavalry, and machines. [Chaos Magic]",Weapon,Shout,255,9,75,9,15, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
+UnrelentingForce,Unrelenting Force,"Inflicts -2 Str/Skl/Spd, Effective vs armor. [Smite]",Weapon,Shout,255,10,90,4,10, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
+IceForm,Ice Form,"Inflicts -4 Spd/2 Mag, Effective vs fliers. [Freezing]",Weapon,Shout,255,12,75,9,5, 1-3,0,No,NoRank,0,https://i.ibb.co/GJN3gRS/row-11-column-6.png
+Dragonrend,Dragonrend,"Inflicts -3 Def/Res, Effective vs dragons. [Nihil]",Weapon,Shout,255,18,75,11,15, 1-3,0,No,NoRank,0,https://i.ibb.co/Cm56v5c/row-11-column-7.png
 BasicTie,Basic Tie,+1 Def/Res,Weapon,Monster,255,5,80,0,0,1,200,Yes,NoRank,0,https://i.ibb.co/f9McZyq/row-7-column-7.png
 ConeHelm,Cone Helm,+2 Def/Res,Weapon,Monster,255,9,80,0,0,1,640,Yes,NoRank,0,https://i.ibb.co/J7jgqwh/row-7-column-8.png
 BucketHelm,Bucket Helm,+3 Def/Res,Weapon,Monster,255,13,80,0,0,1,1370,Yes,NoRank,0,https://i.ibb.co/pvMHBPt/row-7-column-9.png
@@ -132,7 +132,7 @@ Arectaris,Arectaris,Diana/Violet/Nadia only. Effective vs swordsmen. [Swordbreak
 ReginleifPlus,Reginleif Plus,Tarif/Eirika only. Effective vs knights.,Weapon,Lance,45,12,90,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
 Mjolnir,Mjölnir,"For the worthy. Gives +4 Str/Spd, +3 Mag/Res, +1 Con, Magical at range, Inflicts -3 Skl, Effective vs mages. [Thunderstorm]",Weapon,Axe,55,17,62,13,0, 1-4,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
 RocketBow,Rocket Bow,"Rosalyn only. Inflicts -2 Luck, Effective vs mages.",Weapon,Bow,45,7,85,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/G2Qyq0B/row-10-column-10.png
-YueLongbow,Yuè Longbow,Rye only.,Weapon,Bow,35,10,60,13,20,4,0,No,Prf,1,https://i.ibb.co/HnB4JY5/row-13-column-8.png
+SevenScimitar,Seven Scimitar,Nalim only. [Aegis],Weapon,Sword,60,14,70,7,35,1,0,No,Prf,1,https://i.ibb.co/Gc5zN8d/row-13-column-8.png
 Adamant,Adamant,"Selene's bloodline only. Gives +10 Skl, 5 Def, Effective vs dragons and fliers. [Drive Defense]",Weapon,Bow,50,18,96,8,16,2,0,No,Prf,1,https://i.ibb.co/rt7n1j4/row-10-column-12.png
 Lustrous,Lustrous,"Rosalyn only. Gives +10 Skl, 5 Spd, Effective vs dragons and fliers. [Drive Resistance]",Weapon,Bow,50,18,98,6,12,2,0,No,Prf,1,https://i.ibb.co/VWLZQP4/row-10-column-11.png
 TIDYSBlaster,TIDYS Blaster,Krystal only. Ignore 100% Def,Weapon,Gun,60,15,75,7,10, 1-3,0,No,Prf,0,https://i.ibb.co/n0cgkww/row-12-column-11.png
