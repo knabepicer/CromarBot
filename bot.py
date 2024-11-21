@@ -65,7 +65,7 @@ async def help(ctx):
     unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, dh, ee, fehr, john, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, cc, don, oc", inline=False)
     unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
-    unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports tlp", inline=False)
+    unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports burger, tlp", inline=False)
     
     await ctx.response.send_message(embed=unitembed)
 
@@ -197,7 +197,7 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get boss unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["tlp", "burger", "dh"]
+        ["tlp", "burger"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete= get_boss_names)
 async def boss(ctx, hack: str, name: str):
