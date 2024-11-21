@@ -189,8 +189,6 @@ async def get_boss_names(ctx: discord.AutocompleteContext):
         return tlp.tlp.get_boss_names(ctx)
     elif (hack == 'burger'):
         return burger.burger.get_boss_names(ctx)
-    elif (hack == 'dh'):
-        return dh.dh.get_boss_names(ctx)
     else:
         return[]
 
@@ -207,8 +205,6 @@ async def boss(ctx, hack: str, name: str):
         await tlp.tlp.boss(ctx, name)
     elif (hack == 'burger'):
         await burger.burger.boss(ctx, name)
-    elif (hack == 'dh'):
-        await dh.dh.boss(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
