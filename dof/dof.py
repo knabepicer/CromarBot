@@ -28,13 +28,13 @@ def get_unit_pages(row):
             if(row['Name'] == supportrow['Name']):
                 supportstring = "Affinity: "+ supportrow['Affinity'] + "\n"
                 if(supportrow['Partner 1'] != 'None'):
-                    supportstring += supportrow['Partner 1'] + " - " + supportrow['Affinity 1']+ " : Base: " + supportrow['Starting Value 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
+                    supportstring += supportrow['Partner 1'] + " - " + supportrow['Affinity 1']+ " : Base: " + supportrow['Base 1'] + " | Growth: +" + supportrow['Growth 1'] + "\n"
                 if(supportrow['Partner 2'] != 'None'):
-                    supportstring += supportrow['Partner 2'] + " - " + supportrow['Affinity 2']+ " : Base: " + supportrow['Starting Value 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
+                    supportstring += supportrow['Partner 2'] + " - " + supportrow['Affinity 2']+ " : Base: " + supportrow['Base 2'] + " | Growth: +" + supportrow['Growth 2'] + "\n"
                 if(supportrow['Partner 3'] != 'None'):
-                    supportstring += supportrow['Partner 3'] + " - " + supportrow['Affinity 3']+ " : Base: " + supportrow['Starting Value 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
+                    supportstring += supportrow['Partner 3'] + " - " + supportrow['Affinity 3']+ " : Base: " + supportrow['Base 3'] + " | Growth: +" + supportrow['Growth 3'] + "\n"
                 if(supportrow['Partner 4'] != 'None'):
-                    supportstring += supportrow['Partner 4'] + " - " + supportrow['Affinity 4']+ " : Base: " + supportrow['Starting Value 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
+                    supportstring += supportrow['Partner 4'] + " - " + supportrow['Affinity 4']+ " : Base: " + supportrow['Base 4'] + " | Growth: +" + supportrow['Growth 4'] + "\n"
                 supportembed.add_field(name="", value=supportstring, inline=False)
 
 
