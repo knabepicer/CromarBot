@@ -164,9 +164,9 @@ Fleshpeeler,,Weapon,Monster,255,4,100,6,55,1,None,No,NoRank
 Piercing Bite,Ignore Def,Weapon,Monster,255,2,110,1,-,1,None,No,NoRank
 Crushing Bite,Ignore Def,Weapon,Monster,255,12,100,12,-,1,None,No,NoRank
 Vampire Fang,"Ignore Def, drain HP",Weapon,Monster,255,7,90,12,-,1,None,No,NoRank
-Ballista,3x Mt vs fliers,Weapon,Bow,5,8,90,0,0,1-10,None,No,NoRank
-Heavy Ballista,3x Mt vs fliers,Weapon,Bow,5,13,90,0,0,1-10,None,No,NoRank
-Elephant,3x Mt vs fliers,Weapon,Bow,5,25,100,0,0,1-10,None,No,NoRank
+Ballista,3x Mt vs fliers,Weapon,Bow,5,8,90,0,0,3-10,None,No,NoRank
+Heavy Ballista,3x Mt vs fliers,Weapon,Bow,5,13,90,0,0,3-10,None,No,NoRank
+Elephant,3x Mt vs fliers,Weapon,Bow,5,25,100,0,0,3-10,None,No,NoRank
 Fengyan,Adds luck to dmg/def/res initiating. x2 WT. Auto-repair.,Weapon,Lance,3,7,85,8,0,1,None,No,Prf
 Powder Blast,AoE -33% HP in 3 tiles of target. No x2. Auto-repair.,Weapon,Bow,4,7,90,8,0,3-5,None,No,Prf
 Guidance,No dmg. Second action after use. Auto-repair.,Weapon,Anima,3,0,100,0,0,3-10,None,No,Prf
@@ -179,7 +179,7 @@ Astral Strike,Strikes five times. ,Weapon,Monster,255,8,110,0,25,1,None,No,Prf
 Harm,Magic +10. Auto-repair.,Weapon,Staff (Weapon),5,0,120,7,0,13,None,No,Prf
 Oren Special,Def/Res +8. +8 Hit per tiled moved. Auto-repair.,Weapon,Lance,5,16,48,16,1,1,None,No,Prf
 Siphon Spear,Spd +5. Drains HP. Uses Mag. Auto-repair. ,Weapon,Lance,6,11,120,5,0,1-2,None,No,Prf
-Dissect,Targets Def. Auto-repair. No x2. Boost Exp. Gain 2 turns +10 Mag (but not Dmg).,Weapon,Staff (Weapon),3,20,100,2,0,1,None,No,Prf
+Dissect,Targets Def. Auto-repair. No x2. Boost Exp. Gain 2 turns +10 Mag (but not Dmg).,Weapon,Staff (Weapon),4,20,100,2,0,1,None,No,Prf
 Shadowflame,Def/Res +10. Ignores Def. No x2.,Weapon,Monster,4,15,100,0,0,1-3,None,No,Prf
 Corpsedrinker,Def/Res -7. Drains HP. Auto-repair.,Weapon,Sword,5,14,110,9,65,1,None,No,Prf
 Francisca,Ignore Defence. Auto-repair.,Weapon,Axe,4,14,95,14,0,1-2,None,No,Prf
