@@ -95,7 +95,7 @@ Earthstone,Earthstone,"Gives +5 Str, 4 Skl, 23 Def, 10 Res, Inflicts -3 Res, Eff
 ChaosBreath,Chaos Breath,"Inflicts -3 Str/Skl/Spd, Effective vs fliers, cavalry, and machines. [Chaos Magic]",Weapon,Shout,255,9,75,9,15, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
 UnrelentingForce,Unrelenting Force,"Inflicts -2 Str/Skl/Spd, Effective vs armor. [Smite]",Weapon,Shout,255,10,90,4,10, 1-3,0,No,NoRank,0,https://i.ibb.co/pyWJ5rc/row-11-column-5.png
 IceForm,Ice Form,"Inflicts -4 Spd/2 Mag, Effective vs fliers. [Freezing]",Weapon,Shout,255,12,75,9,5, 1-3,0,No,NoRank,0,https://i.ibb.co/GJN3gRS/row-11-column-6.png
-Dragonrend,Dragonrend,"Inflicts -3 Def/Res, Effective vs dragons. [Nihil]",Weapon,Shout,255,18,75,11,15, 1-3,0,No,NoRank,0,https://i.ibb.co/Cm56v5c/row-11-column-7.png
+Dragonrend,Dragonrend,"Inflicts -3 Def/Res, Effective vs dragons. [Horrifying]",Weapon,Shout,255,18,75,11,15, 1-3,0,No,NoRank,0,https://i.ibb.co/Cm56v5c/row-11-column-7.png
 BasicTie,Basic Tie,+1 Def/Res,Weapon,Monster,255,5,80,0,0,1,200,Yes,NoRank,0,https://i.ibb.co/f9McZyq/row-7-column-7.png
 ConeHelm,Cone Helm,+2 Def/Res,Weapon,Monster,255,9,80,0,0,1,640,Yes,NoRank,0,https://i.ibb.co/J7jgqwh/row-7-column-8.png
 BucketHelm,Bucket Helm,+3 Def/Res,Weapon,Monster,255,13,80,0,0,1,1370,Yes,NoRank,0,https://i.ibb.co/pvMHBPt/row-7-column-9.png
@@ -117,25 +117,25 @@ Hookshot,Hookshot,"Emily only. Inflicts -2 Skl, 4x Effective vs armor. [Lunge]",
 FreezeDry,Freeze-Dry,"Matthew only. Inflicts -3 Spd, Reaver, Effective vs dragons, gargoyles, eyes, jelly. [Luna]",Weapon,Anima,255,10,80,8,8, 1-2,0,No,Prf,1,https://i.ibb.co/8mMy1nZ/row-10-column-2.png
 GauldurBlade,Gauldur Blade,"Melina only. Inflicts -3 Str, Reaver, Effective vs monsters. [Sol]",Weapon,Sword,255,10,80,8,8, 1-2,0,No,Prf,1,https://i.ibb.co/Hp8xQwB/row-10-column-5.png
 Chainsaw,Chainsaw,"Emily only. Inflicts -3 Skl, Reaver, Effective vs armor. [Astra]",Weapon,Lance,255,12,75,10,10, 1-2,0,No,Prf,1,https://i.ibb.co/pXTmHS2/row-10-column-8.png
-Amihan,Amihan,"Matthew only. Gives +4 Mag, 4 Skl, Inflicts -4 Spd, Effective vs dragons, gargoyles, eyes, jelly. [Drive Magic]",Weapon,Anima,255,12,80,10,16, 1-2,0,No,Prf,1,https://i.ibb.co/n3K8mTG/row-10-column-3.png
-Habagat,Habagat,"Melina only. Gives +4 Str, 4 Spd, Inflicts -4 Str, Effective vs monsters. [Drive Strength]",Weapon,Sword,255,12,80,10,16, 1-2,0,No,Prf,1,https://i.ibb.co/Jr50hwW/row-10-column-6.png
+Amihan,Amihan,"Matthew only. Gives +4 Mag/Skl, Inflicts -4 Spd, Effective vs dragons, gargoyles, eyes, jelly. [Drive Magic]",Weapon,Anima,255,12,80,10,16, 1-2,0,No,Prf,1,https://i.ibb.co/n3K8mTG/row-10-column-3.png
+Habagat,Habagat,"Melina only. Gives +4 Str/Spd, Inflicts -4 Str, Effective vs monsters. [Drive Strength]",Weapon,Sword,255,12,80,10,16, 1-2,0,No,Prf,1,https://i.ibb.co/Jr50hwW/row-10-column-6.png
 Ramuh,Ramuh,"Emily only. Gives +5 Spd, 7 Luck, Magical at range, Inflicts -4 Skl, Effective vs armor. [Drive Speed]",Weapon,Lance,255,14,77,12,14, 1-2,0,No,Prf,1,https://i.ibb.co/7QPCDhF/row-10-column-9.png
 Dunblade,Dunblade,Diana/Violet/Nadia only. Effective vs armor.,Weapon,Sword,45,7,70,6,30,1,0,No,Prf,2,https://i.ibb.co/cDNg7DV/row-12-column-3.png
 LevinSword,Levin Sword,"Rickson only. Inflicts -2 Skl, Magical at range",Weapon,Sword,50,9,75,9,0, 1-3,0,No,Prf,2,https://i.ibb.co/dDYckbq/row-12-column-1.png
 Flameblade,Flameblade,"Elowyn only. Inflicts -2 Str, Magical at range",Weapon,Sword,50,7,85,8,0, 1-3,0,No,Prf,2,https://i.ibb.co/D13F7Jm/row-12-column-2.png
 MispellBlade,Mispell Blade,"Emiko only. Inflicts -3 Skl/Luck, Magical [Seal Skill]",Weapon,Sword,40,12,58,6,29, 1-2,0,No,Prf,2,https://i.ibb.co/p3mvcPc/row-13-column-6.png
-Monado,Monado,"Rickson only. Gives +5 Spd, 5 Luck, Effective vs machines. [Foresight]",Weapon,Sword,60,15,75,10,15,1,0,No,Prf,1,https://i.ibb.co/hRY1ZM4/row-13-column-1.png
-MasterSword,Master Sword,"Elowyn only. Gives +3 Str, 3 Mag, 3 Spd, Magical at range, Effective vs monsters +Guardian. [Sol]",Weapon,Sword,60,12,90,9,15, 1-2,0,No,Prf,1,https://i.ibb.co/RgZfgt9/row-13-column-2.png
+Monado,Monado,"Rickson only. Gives +5 Spd/Luck, Effective vs machines. [Foresight]",Weapon,Sword,60,15,75,10,15,1,0,No,Prf,1,https://i.ibb.co/hRY1ZM4/row-13-column-1.png
+MasterSword,Master Sword,"Elowyn only. Gives +3 Str/Mag/Spd, Magical at range, Effective vs monsters +Guardian. [Sol]",Weapon,Sword,60,12,90,9,15, 1-2,0,No,Prf,1,https://i.ibb.co/RgZfgt9/row-13-column-2.png
 Neapolisword,Neapolisword,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Strength],Weapon,Sword,255,6,75,6,0, 1-2,0,No,Prf,2,https://i.ibb.co/CwQw8qy/row-12-column-9.png
 Lightsaber,Lightsaber,"Nikana only. Gives +9 Luck, Ignore 60% Def [Corrosion]",Weapon,Sword,60,12,77,9,15,1,0,No,Prf,1,https://i.ibb.co/3MR9X8Z/row-13-column-7.png
-Arectaris,Arectaris,Diana/Violet/Nadia only. Effective vs swordsmen. [Swordbreaker],Weapon,Sword,30,18,85,15,0, 1-2,0,No,S,1,https://i.ibb.co/XSDf3Rs/row-13-column-3.png
-ReginleifPlus,Reginleif Plus,Tarif/Eirika only. Effective vs knights.,Weapon,Lance,45,12,90,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
+Arectaris,Arectaris,"Diana/Violet/Nadia only. Gives +10 Spd, 3 Str/Skl, Effective vs swordsmen. [Swordbreaker]",Weapon,Sword,30,18,85,15,0, 1-2,0,No,S,1,https://i.ibb.co/XSDf3Rs/row-13-column-3.png
+ReginleifPlus,"Reginleif+","Tarif/Eirika only. Effective vs knights.",Weapon,Lance,45,12,90,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
 Mjolnir,Mjölnir,"For the worthy. Gives +4 Str/Spd, +3 Mag/Res, +1 Con, Magical at range, Inflicts -3 Skl, Effective vs mages. [Thunderstorm]",Weapon,Axe,55,17,62,13,0, 1-4,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
 RocketBow,Rocket Bow,"Rosalyn only. Inflicts -2 Luck, Effective vs mages.",Weapon,Bow,45,7,85,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/G2Qyq0B/row-10-column-10.png
 SevenScimitar,Seven Scimitar,Nalim only. [Aegis],Weapon,Sword,60,14,70,7,35,1,0,No,Prf,1,https://i.ibb.co/Gc5zN8d/row-13-column-8.png
 Adamant,Adamant,"Selene's bloodline only. Gives +10 Skl, 5 Def, Effective vs dragons and fliers. [Drive Defense]",Weapon,Bow,50,18,96,8,16,2,0,No,Prf,1,https://i.ibb.co/rt7n1j4/row-10-column-12.png
 Lustrous,Lustrous,"Rosalyn only. Gives +10 Skl, 5 Spd, Effective vs dragons and fliers. [Drive Resistance]",Weapon,Bow,50,18,98,6,12,2,0,No,Prf,1,https://i.ibb.co/VWLZQP4/row-10-column-11.png
-TIDYSBlaster,TIDYS Blaster,Krystal only. Ignore 100% Def,Weapon,Gun,60,15,75,7,10, 1-3,0,No,Prf,0,https://i.ibb.co/n0cgkww/row-12-column-11.png
+GeminiLaser,Gemini Laser,Koryn only. Ignore 100% Def,Weapon,Gun,60,15,75,7,10, 1-3,0,No,Prf,0,https://i.ibb.co/n0cgkww/row-12-column-11.png
 AxeLauncher,Axe Launcher,"Brave, Effective vs armor.",Weapon,Ballista,25,14,60,12,0, 1-3,120,No,NoRank,0,https://i.ibb.co/qsc5xHJ/row-13-column-4.png
 ScorchingRay,Scorching Ray,"Ashley only. Inflicts -1 Str/Mag, Effective vs monsters. [Nihil]",Weapon,Anima,50,9,85,6,15, 1-2,0,No,Prf,2,https://i.ibb.co/9ypmFTZ/row-12-column-6.png
 Neapolibeam,Neapolibeam,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Magic],Weapon,Anima,255,6,75,6,0, 1-2,0,No,Prf,2,https://i.ibb.co/PCdy9Gh/row-12-column-10.png
@@ -147,22 +147,22 @@ Brainshock,Brainshock,"Salazar only. Inflicts -2 Mag, Effective vs mages.",Weapo
 Meteor,Meteor,Reduces target's HP to 1.,Weapon,Dark,3,255,45,18,0, 3-10,0,No,S,1,https://i.ibb.co/H4H2hNY/row-8-column-11.png
 Wabbajack,Wabbajack,"Sirianne/Martin/Matthew only. Gives +10 Luck, Inflicts -2 Str/Skl/Spd [Chaos Magic]",Weapon,Staff,60,13,85,7,0, 1-5,0,No,Prf,0,https://i.ibb.co/7xhj1hV/row-13-column-10.png
 Divinestone,Divinestone,"Selene only. Gives +9 Str, 5 Mag, 7 Skl, 5 Spd, 7 Luck, 16 Def, 11 Res, Magical at range, Inflicts -3 Def, Effective vs monsters +Guardian/Manakete. [Rightful God]",Weapon,Stone,255,16,90,10,15, 1-2,0,No,NoRank,0,https://i.ibb.co/brBsxrc/row-11-column-12.png
-Ascalon,Ascalon,"Gives +2 Str, 2 Mag, 2 Skl, 2 Spd, 2 Luck, 5 Def, 5 Res, Magical at range, Inflicts -2 Str/Mag/Spd/Def/Res, Effective vs monsters +Guardian/Manakete. [Aether]",Weapon,Sword,50,15,90,10,10, 1-2,0,No,S,1,https://i.ibb.co/6vc9F5g/row-13-column-11.png
-Keening,Keening,"Gives +10 Mag, 4 Skl, 4 Spd, Inflicts -1 Str/Skl/Spd, Effective vs armor. [Lifetaker]",Weapon,Sword,60,16,90,6,15,1,0,No,S,1,https://i.ibb.co/92kcndY/row-1-column-12.png
+Ascalon,Ascalon,"Gives +5 Def/Res, +2 Str/Mag/Skl/Spd/Luck, Magical at range, Inflicts -2 Str/Mag/Spd/Def/Res, Effective vs monsters +Guardian/Manakete. [Aether]",Weapon,Sword,50,15,90,10,10, 1-2,0,No,S,1,https://i.ibb.co/6vc9F5g/row-13-column-11.png
+Keening,Keening,"Gives +10 Mag, 4 Skl/Spd, Inflicts -1 Str/Skl/Spd, Effective vs armor. [Lifetaker]",Weapon,Sword,60,16,90,6,15,1,0,No,S,1,https://i.ibb.co/92kcndY/row-1-column-12.png
 BitterMercy,Bitter Mercy,"Gives +10 Skl, 8 Res, Effective vs mages. [Aegis] ",Weapon,Lance,60,18,75,9,15,1,0,No,S,1,https://i.ibb.co/SPfCbRY/row-2-column-12.png
 Pugi,Pugi,None,Weapon,Axe,60,10,80,9,30, 1-2,0,No,S,1,https://i.ibb.co/nQpPz0p/row-13-column-9.png
-Sunder,Sunder,"Gives +10 Str, 4 Luck, 4 Def, Inflicts -1 Str/Skl/Spd, Effective vs armor. [Lifetaker]",Weapon,Axe,60,20,60,12,15,1,0,No,S,1,https://i.ibb.co/X5dffXH/row-3-column-12.png
-Griseous,Griseous,"Gives +4 Luck, 4 Def, 4 Res, Effective vs monsters, dragons, and fliers. [Horrifying]",Weapon,Bow,50,20,77,10,23,2,0,No,S,1,https://i.ibb.co/2qvQFXw/row-4-column-12.png
+Sunder,Sunder,"Gives +10 Str, 4 Luck/Def, Inflicts -1 Str/Skl/Spd, Effective vs armor. [Lifetaker]",Weapon,Axe,60,20,60,12,15,1,0,No,S,1,https://i.ibb.co/X5dffXH/row-3-column-12.png
+Griseous,Griseous,"Gives +4 Luck/Def/Res, Effective vs monsters, dragons, and fliers. [Horrifying]",Weapon,Bow,50,20,77,10,23,2,0,No,S,1,https://i.ibb.co/2qvQFXw/row-4-column-12.png
 Cryolator,Cryolator,Ignore 80% Res,Weapon,Gun,50,30,70,13,10, 1-3,76,No,NoRank,0,https://i.ibb.co/N23pDbw/row-9-column-12.png
 Excalipoor,Excalipoor,Always deals 1 damage. [Hawkeye],Weapon,Anima,33,1,100,3,30, 1-3,303,Yes,B,1,https://i.ibb.co/dWmM52k/row-6-column-11.png
-TenRings,Shí Huán,"Gives +5 Skl, 3 Spd, 3 Luck, 2 Def, 2 Res. Inflicts -2 Str/Skl/Spd, -1 Mag/Luck/Def/Res. Effective vs knights. [Astra]",Weapon,Anima,50,15,70,10,10, 1-2,0,No,S,1,https://i.ibb.co/qyvY38F/row-6-column-12.png
+TenRings,Shí Huán,"Gives +5 Skl, 3 Spd/Luck, 2 Def/Res. Inflicts -2 Str/Skl/Spd, -1 Mag/Luck/Def/Res. Effective vs knights. [Astra]",Weapon,Anima,50,15,70,10,10, 1-2,0,No,S,1,https://i.ibb.co/qyvY38F/row-6-column-12.png
 Vishanti,Vishanti,"Gives +10 Skl, 5 Spd, Inflicts -4 Def, Effective vs monsters +Guardian. [Sol]",Weapon,Light,50,13,80,9,15, 1-2,0,No,S,1,https://i.ibb.co/r0WmJTr/row-7-column-12.png
 Darkhold,Darkhold,"Gives +10 Skl, 5 Def, Inflicts -4 Res, Effective vs axe infantry. [Luna]",Weapon,Dark,50,17,60,11,5, 1-2,0,No,S,1,https://i.ibb.co/3y2M4Lm/row-8-column-12.png
 Hammerne,Hammerne,Repairs an item back to full condition.,Staff,Staff,12,0,100,0,0,1,750,No,B,1,https://i.ibb.co/pRqS8PV/row-12-column-7.png
 Centrifuge,Centrifuge,Heals everyone to full HP and restores all status.,Staff,Staff,6,128,100,0,0,255,0,No,S,1,https://i.ibb.co/9YwSbPz/row-5-column-12.png
 Warp,Warp,Teleports a nearby ally far away.,Staff,Staff,7,0,100,0,0,1,0,No,S,7,https://i.ibb.co/phQL7Vt/row-4-column-9.png
 Rescue,Rescue,Teleports a far away ally nearby.,Staff,Staff,7,0,100,0,0,Mag/2,0,No,S,7,https://i.ibb.co/5Fm0bSr/row-4-column-10.png
-Wraithguard,Wraithguard,"Gives +3 Def, 3 Res when held, doubled when equipped, Effective vs armor. [Renewal]",Weapon,Power,40,18,80,0,10,1,0,No,NoRank,0,https://i.ibb.co/NyGfKDW/row-7-column-11.png
+Wraithguard,Wraithguard,"Gives +3 Def/Res when held, doubled when equipped, Effective vs armor. [Renewal]",Weapon,Power,40,18,80,0,10,1,0,No,NoRank,0,https://i.ibb.co/NyGfKDW/row-7-column-11.png
 Bread,Bread,Heals 10 HP.,Item,,5,0,0,0,0,1,60,Yes,NoRank,0,https://i.ibb.co/8d5Bv9w/row-16-column-1.png
 Nuggets,Nuggets,Heals 12 HP.,Item,,6,0,0,0,0,1,75,Yes,NoRank,0,https://i.ibb.co/fn6QtGk/row-16-column-2.png
 IceCream,Ice Cream,Heals 15 HP.,Item,,3,0,0,0,0,1,180,Yes,NoRank,0,https://i.ibb.co/HHNHF5C/row-16-column-3.png
