@@ -216,7 +216,8 @@ def get_unit_names(ctx):
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
 def get_skill_names(ctx):
-    names = ["Story Boon","Canto","Canto+","Outdoorswoman","Certain Blow","Renewal","Powerstaff","Crit Boost","Aptitude","Trauma","Reposition","Savior","Triangle Adept","Thunderstorm","Opportunist","Locktouch","Assassinate","Poison Strike","Reckless","Bow Range +1","Bow Breaker","Tomebreaker","Nullify","Daunt","Inspiration","Rally Spectrum","Rally Movement","Despoil","Stink","Perfume","Paragon","Discipline","Miracle","Method Acting","Bargain","Voice of Peace","Forager","Shade","Provoke","Clumsy","Gamble","Frenzy","White Pool","Resolve","Intimidate","Savage Blow","Staff Savant","Void Curse","Blood Bounty","Supply"] names.sort()
+    names = ["Story Boon","Canto","Canto+","Outdoorswoman","Certain Blow","Renewal","Powerstaff","Crit Boost","Aptitude","Trauma","Reposition","Savior","Triangle Adept","Thunderstorm","Opportunist","Locktouch","Assassinate","Poison Strike","Reckless","Bow Range +1","Bow Breaker","Tomebreaker","Nullify","Daunt","Inspiration","Rally Spectrum","Rally Movement","Despoil","Stink","Perfume","Paragon","Discipline","Miracle","Method Acting","Bargain","Voice of Peace","Forager","Shade","Provoke","Clumsy","Gamble","Frenzy","White Pool","Resolve","Intimidate","Savage Blow","Staff Savant","Void Curse","Blood Bounty","Supply"] 
+    names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
 
