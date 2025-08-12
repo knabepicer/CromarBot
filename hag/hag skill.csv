@@ -1,0 +1,51 @@
+Name,Description
+Story Boon,+4 to Attack/Def/Res/AS. Given to all units during Story Mode.
+Canto,Unit can use leftover movement after certain actions.
+Canto+,"Unit can use leftover movement after attacking, using a movement skill, or certain other actions."
+Outdoorswoman,All traversable terrain costs 1 movement.
+Certain Blow,+40 Hit when initiating combat.
+Renewal,Restores 30% of max HP at the start of turn.
+Powerstaff,Get another action after using a staff. (Doesn't stack with Galeforce.)
+Crit Boost,+15 Crit.
+Aptitude,+15 to all growth rates.
+Trauma,-15 to all growth rates.
+Reposition,Allows unit to pull an adjacent ally to their opposite side.
+Savior,Unit does not suffer penalties while rescuing.
+Triangle Adept,Weapon triangle is doubled for both combatants (both bonuses and penalties.)
+Thunderstorm,"If this unit is wielding a heavier weapon than their foe, +3 Dmg, +20 Hit, +10 Crit."
+Opportunist,"When attacking a foe that cannot counter, +4 Damage."
+Locktouch,Unit can open doors and chests without needing keys.
+Assassinate,"When initiating at 1 range: +2 Damage, doubling occurs before counterattacks."
+Poison Strike,"After initiated combat, deal 20% of foe's Max HP as nonlethal damage. (Both units must survive combat.)"
+Reckless,"When attacking a foe that can counter, +4 Damage."
+Bow Range +1,Maximum range of equipped bows is increased by 1.
+Bow Breaker,+50 Hit/Avo when facing a bow.
+Tomebreaker,+50 Hit/Avo when facing a tome.
+Nullify,Unit does not take extra damage from effective weapons.
+Daunt,-5 Hit/Crit to all foes within 3 tiles.
+Inspiration,Allies within 2 tiles deal +2 Damage and take -2 Damage.
+Rally Spectrum,Rally grants +2 Str/Mag/Skl/Spd/Luck/Def/Res to allies within 2 tiles.
+Rally Movement,Rally grants +1 Mov to allies within 2 tiles.
+Despoil,Obtain a coin worth 150 Gold after attacking and defeating an enemy.
+Stink,"This unit stinks. No effect, but others may find this fact disagreeable."
+Perfume,"This unit uses excessive amounts of perfume. No effect, but others may find this fact disagreeable."
+Paragon,Doubles Exp gain.
+Discipline,Doubles WExp gain.
+Miracle,Unit will survive a fatal attack at 1 HP if HP > 50%.
+Method Acting,"This unit can turn into a copy of another allied unit for 5 turns. Stats and weapon ranks are copied, personal skills are not. Some class skills are copied, but not others."
+Bargain,Halves prices in shops for this unit.
+Voice of Peace,"All units within 2 tiles deal -2 Damage, regardless of faction."
+Forager,Unit will occasionally produce a vulnerary at base camp.
+Shade,Enemies will attack this unit less frequently.
+Provoke,Enemies will almost always target this unit if possible.
+Clumsy,Unit takes 5 nonlethal damage after combat.
+Gamble,Halves hit rate and doubles crit rate when selected.
+Frenzy,"For every 4 HP lost, +1 Damage. "
+White Pool,+5 Atk/AS to adjacent allies.
+Resolve,Multiplies Str/Skl/Spd by 1.5 when under 50% HP.
+Intimidate,-10 Avo to foes within 2 tiles.
+Savage Blow,"After attacking, enemies within 2 tiles take 20% damage."
+Staff Savant,The maximum range of all staves is increased by 1.
+Void Curse,Grants no Exp upon defeat.
+Blood Bounty,"Halves Exp gain, but doubles growth rates."
+Supply,Unit has access to the convoy.

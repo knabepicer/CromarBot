@@ -26,6 +26,7 @@ import tmgc.tmgc
 import dof.dof
 import dh.dh
 import lots.lots
+import hag.hag
 from discord.ext import commands
 from discord import option
 import sys
@@ -63,9 +64,9 @@ async def help(ctx):
     unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, dh, ee, fehr, john, lots, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, dh, ee, fehr, hag, john, lots, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, cc, don, oc", inline=False)
-    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
+    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, fehr, hag, vq", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports burger, tlp", inline=False)
     
     await ctx.response.send_message(embed=unitembed)
@@ -122,6 +123,8 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return dh.dh.get_unit_names(ctx)
     elif (hack == 'lots'):
         return lots.lots.get_unit_names(ctx)
+    elif (hack == 'hag'):
+        return hag.hag.get_unit_names(ctx)
     else:
         return []
     
@@ -130,7 +133,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","dh","ee","fehr","john","lots","oc", "sp","tlp","tmgc","trtr","vba","vq"]
+        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","dh","ee","fehr","hag","john","lots","oc", "sp","tlp","tmgc","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
 async def unit(ctx, hack: str, name: str):
@@ -184,6 +187,8 @@ async def unit(ctx, hack: str, name: str):
         await dh.dh.unit(ctx, name)
     elif (hack == 'lots'):
         await lots.lots.unit(ctx, name)
+    elif (hack == 'hag'):
+        await hag.hag.unit(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
@@ -262,6 +267,8 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
         return vq.vq.get_skill_names(ctx)
     elif (hack == 'fehr'):
         return fehr.fehr.get_skill_names(ctx)
+    elif (hack == 'hag'):
+        return hag.hag.get_skill_names(ctx)
     else:
         return[]
 
@@ -269,7 +276,7 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get skill data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["bob", 'vq', 'fehr']
+        ["bob", 'vq', 'fehr', 'hag']
     ))
 @option("name", description = "Name of the skill to get data for", autocomplete=get_skill_names)
 async def skill(ctx, hack: str, name: str):
@@ -279,6 +286,8 @@ async def skill(ctx, hack: str, name: str):
         await vq.vq.skill(ctx, name)
     elif (hack == 'fehr'):
         await fehr.fehr.skill(ctx, name)
+    elif (hack == 'hag'):
+        await hag.hag.skill(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
