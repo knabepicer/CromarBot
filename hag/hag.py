@@ -70,7 +70,7 @@ async def unit(ctx, name: str):
 
 async def skill(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('hag/hag skill.csv', newline='', encoding="utf-8-sig") as csvfile:
+    with open('hag/hag_skill.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
@@ -157,7 +157,7 @@ def hag_get_gains(row):
         gains2 = gains2[:-3]
     if (row['Promotion Skills'] != 'None'):
          gains2 += "\n" + row['Promotion Skills']
-    gains2 += '\n'
+    #gains2 += '\n'
     gains3 = ""
     gains4 = ""
     if (row['Promotion Class 2'] != ''): 
