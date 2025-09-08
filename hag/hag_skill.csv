@@ -19,6 +19,7 @@ Assassinate,"When initiating at 1 range: +2 Damage, doubling occurs before count
 Poison Strike,"After initiated combat, deal 20% of foe's Max HP as nonlethal damage. (Both units must survive combat.)"
 Reckless,"When attacking a foe that can counter, +4 Damage."
 Bow Range +1,Maximum range of equipped bows is increased by 1.
+Tome Range +1,Maximum range of equipped tomes is increased by 1.
 Bow Breaker,+50 Hit/Avo when facing a bow.
 Tomebreaker,+50 Hit/Avo when facing a tome.
 Nullify,Unit does not take extra damage from effective weapons.
@@ -32,12 +33,12 @@ Perfume,"This unit uses excessive amounts of perfume. No effect, but others may 
 Paragon,Doubles Exp gain.
 Discipline,Doubles WExp gain.
 Miracle,Unit will survive a fatal attack at 1 HP if HP > 50%.
-Method Acting,"This unit can turn into a copy of another allied unit for 5 turns. Stats and weapon ranks are copied, personal skills are not. Some class skills are copied, but not others."
+Method Acting,"This unit can turn into a copy of another allied unit for 5 turns. Stats, weapon ranks, personal skills and main class skills are copied. Secondary unit and class skills are not copied."
 Bargain,Halves prices in shops for this unit.
-Voice of Peace,"All units within 2 tiles deal -2 Damage, regardless of faction."
+Peacebringer,"All units within 2 tiles deal -2 Damage, regardless of faction."
 Forager,Unit will occasionally produce a vulnerary at base camp.
 Shade,Enemies will attack this unit less frequently.
-Provoke,Enemies will almost always target this unit if possible.
+Provoke,Enemies will always target this unit if possible.
 Clumsy,Unit takes 5 nonlethal damage after combat.
 Gamble,Halves hit rate and doubles crit rate when selected.
 Frenzy,"For every 4 HP lost, +1 Damage. "

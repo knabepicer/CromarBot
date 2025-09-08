@@ -211,12 +211,12 @@ def hag_get_gains(row):
     return gains + gains2 + gains3 + gains4
 
 def get_unit_names(ctx):
-    names = ["Kyra","Apate","Phobos","Soter","Hecate","Kairos","Raleigh","Begoña","Fango","López","Edward","Agari","Pericles","Nikolaos","Jane","Hestia","Eupraxia","Tiresias","Wulfric","Pluto","Ofelia","Polonius","Alonso","Teresa","Delilah","Zaccheus","Simeon","Beatrix","Barlowe","Fiadh","Conan","Dahl","Nicaea","Telemus","Plato","Fazang","Jingyi","Xinyi","Ziying","Demeter","Jason","Laertes","Pheme","Vasiliki","Scymerius","Fructoso","Mopsus","Coronis","Glaucus","Lorenzo","Thyone","Órlaith","Sandraugida","Aura","Cybele","Dolus V"]
+    names = ["Kyra","Apate","Phobos","Soter","Hecate","Kairos","Raleigh","Begoña","Fango","López","Edward","Agari","Pericles","Nikolaos","Jane","Hestia","Eupraxia","Tiresias","Wulfric","Pluto","Ofelia","Polonius","Alonso","Teresa","Delilah","Zaccheus","Simeon","Beatrix","Barlowe","Fiadh","Conan","Dahl","Nicaea","Telemus","Plato","Fazang","Jingyi","Xinyi","Ziying","Demeter","Jason","Laertes","Pheme","Vasiliki","Scymerius","Fructuoso","Mopsus","Coronis","Glaucus","Lorenzo","Thyone","Órlaith","Sandraudiga","Aura","Cybele","Dolus V", "Nestor", "Marina", "Alastor", "Dolus", "Elias", "Antiope", "Eudoxus", "Hippalus"]
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
 def get_skill_names(ctx):
-    names = ["Story Boon","Canto","Canto+","Outdoorswoman","Certain Blow","Renewal","Powerstaff","Crit Boost","Aptitude","Trauma","Reposition","Savior","Triangle Adept","Thunderstorm","Opportunist","Locktouch","Assassinate","Poison Strike","Reckless","Bow Range +1","Bow Breaker","Tomebreaker","Nullify","Daunt","Inspiration","Rally Spectrum","Rally Movement","Despoil","Stink","Perfume","Paragon","Discipline","Miracle","Method Acting","Bargain","Voice of Peace","Forager","Shade","Provoke","Clumsy","Gamble","Frenzy","White Pool","Resolve","Intimidate","Savage Blow","Staff Savant","Void Curse","Blood Bounty","Supply"] 
+    names = ["Story Boon","Canto","Canto+","Outdoorswoman","Certain Blow","Renewal","Powerstaff","Crit Boost","Aptitude","Trauma","Reposition","Savior","Triangle Adept","Thunderstorm","Opportunist","Locktouch","Assassinate","Poison Strike","Reckless","Bow Range +1","Tome Range +1","Bow Breaker","Tomebreaker","Nullify","Daunt","Inspiration","Rally Spectrum","Rally Movement","Despoil","Stink","Perfume","Paragon","Discipline","Miracle","Method Acting","Bargain","Peacebringer","Forager","Shade","Provoke","Clumsy","Gamble","Frenzy","White Pool","Resolve","Intimidate","Savage Blow","Staff Savant","Void Curse","Blood Bounty","Supply"] 
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
