@@ -26,7 +26,7 @@ import tmgc.tmgc
 import dof.dof
 import dh.dh
 import lots.lots
-import hag.hag
+import hag.hag_enhanced
 from discord.ext import commands
 from discord import option
 import sys
