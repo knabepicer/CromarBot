@@ -136,6 +136,7 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","dh","ee","fehr","hag","john","lots","oc", "sp","tlp","tmgc","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
+@option("levels", description = "For calculating average stats")
 async def unit(ctx, hack: str, name: str, levels: str = None):
     if (hack == 'cota'):
         await Cota.cota.unit(ctx, name)
@@ -188,7 +189,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'lots'):
         await lots.lots.unit(ctx, name)
     elif (hack == 'hag'):
-        await hag.hag.unit(ctx, name)
+        await hag.hag.unit(ctx, name, levels)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
