@@ -216,20 +216,6 @@ def get_averaged_stats_embed(row, level_string, promotion_class=None):
     
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
     
-    # Show growths for reference
-    growths = (f"HP {row['HP Growth']}% | "
-               f"Pow {row['Pow Growth']}% | "
-               f"Skl {row['Skl Growth']}% | "
-               f"Spd {row['Spd Growth']}% | "
-               f"Lck {row['Luck Growth']}% | "
-               f"Def {row['Def Growth']}% | "
-               f"Res {row['Res Growth']}%")
-    embed.add_field(name="Growths", value=growths, inline=False)
-    
-    if 'unpromoted_levels' in result:
-        details = f"Unpromoted levels: {result['unpromoted_levels']} | Promoted levels: {result['promoted_levels']}"
-        embed.add_field(name="Level Breakdown", value=details, inline=False)
-    
     return embed
     
 
