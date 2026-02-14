@@ -139,13 +139,13 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @option("levels", description = "For calculating average stats, optionally add promotion class after the numbers")
 async def unit(ctx, hack: str, name: str, levels: str = None):
     if (hack == 'cota'):
-        await Cota.cota.unit(ctx, name)
+        await Cota.cota.unit(ctx, name, levels)
     elif (hack == 'tlp'):
         await tlp.tlp.unit(ctx, name)
     elif (hack == '7s'):
         await sevensibs.sevens.unit(ctx, name)
     elif (hack == 'bob'):
-        await bob.bob.unit(ctx, name)
+        await bob.bob.unit(ctx, name, levels)
     elif (hack == 'trtr'):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'rtr'):
@@ -185,7 +185,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'do5'):
         await dof.dof.unit(ctx, name)
     elif (hack == 'dh'):
-        await dh.dh.unit(ctx, name)
+        await dh.dh.unit(ctx, name, levels)
     elif (hack == 'lots'):
         await lots.lots.unit(ctx, name)
     elif (hack == 'hag'):
