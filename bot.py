@@ -151,7 +151,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'rtr'):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'vq'):
-        await vq.vq.unit(ctx, name)
+        await vq.vq.unit(ctx, name, levels)
     elif (hack == 'vba'):
         await vba.vba.unit(ctx, name)
     elif (hack == '4k'):
