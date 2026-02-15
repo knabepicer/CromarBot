@@ -177,7 +177,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'oc'):
         await oc.oc.unit(ctx, name)
     elif (hack == 'auc'):
-        await auc.auc.unit(ctx, name)
+        await auc.auc.unit(ctx, name, levels)
     elif (hack == 'cc'):
         await cc.cc.unit(ctx, name, levels)
     elif (hack == 'tmgc'):
