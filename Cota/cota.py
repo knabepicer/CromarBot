@@ -149,6 +149,8 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in avg_stats:
                 if stat == 'Luck':
                     avg_stats[stat] = min(avg_stats[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     avg_stats[stat] = min(avg_stats[stat], 20)
             
@@ -222,6 +224,8 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in avg_stats:
                 if stat == 'Luck':
                     avg_stats[stat] = min(avg_stats[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     avg_stats[stat] = min(avg_stats[stat], 20)
             
@@ -262,6 +266,8 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in stats_after_tier0:
                 if stat == 'Luck':
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 20)
             
@@ -306,6 +312,8 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in stats_after_tier1:
                 if stat == 'Luck':
                     stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     stats_after_tier1[stat] = min(stats_after_tier1[stat], 20)
             
@@ -365,6 +373,8 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             
             # Apply promoted stat cap (30 for all stats)
             for stat in avg_stats:
+                if stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 avg_stats[stat] = min(avg_stats[stat], 30)
             
             return {
