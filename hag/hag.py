@@ -54,6 +54,7 @@ def get_unit_pages(row):
 def calculate_average_stats(row, level_string, promotion_class=None):
     """
     Calculate average stats for a unit at given level(s).
+    Applies stat caps: 20 unpromoted (30 for Luck), 30 promoted.
     
     Args:
         row: CSV row containing unit data
@@ -109,9 +110,15 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             for stat in base_stats:
                 avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
             
+            # Apply unpromoted stat caps (20 for most stats, 30 for Luck)
+            for stat in avg_stats:
+                if stat == 'Luck':
+                    avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
+            
             return {
                 'stats': avg_stats,
-                'levels_gained': levels_gained,
                 'description': f"Level {target_level}",
                 'class_name': row['Class']
             }
@@ -131,12 +138,17 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             if promoted_levels < 0:
                 return None
             
-            total_levels = unpromoted_levels + promoted_levels
-            
             # Calculate stats after unpromoted levels
             stats_at_promotion = {}
             for stat in base_stats:
                 stats_at_promotion[stat] = base_stats[stat] + (growths[stat] / 100.0) * unpromoted_levels
+            
+            # Apply unpromoted stat caps before promotion
+            for stat in stats_at_promotion:
+                if stat == 'Luck':
+                    stats_at_promotion[stat] = min(stats_at_promotion[stat], 30)
+                else:
+                    stats_at_promotion[stat] = min(stats_at_promotion[stat], 20)
             
             # Determine which promotion path to use
             use_promotion_2 = False
@@ -187,15 +199,16 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             for stat in stats_at_promotion:
                 avg_stats[stat] = stats_at_promotion[stat] + (growths[stat] / 100.0) * promoted_levels
             
+            # Apply promoted stat cap (30 for all stats)
+            for stat in avg_stats:
+                avg_stats[stat] = min(avg_stats[stat], 30)
+            
             final_class = selected_class if selected_class else "Promoted"
             
             return {
                 'stats': avg_stats,
-                'levels_gained': total_levels,
                 'description': f"Level {unpromoted_level}/{promoted_level}",
-                'class_name': final_class,
-                'unpromoted_levels': unpromoted_levels,
-                'promoted_levels': promoted_levels
+                'class_name': final_class
             }
     
     except (ValueError, KeyError):
@@ -219,7 +232,7 @@ def get_averaged_stats_embed(row, level_string, promotion_class=None):
     )
     embed.set_thumbnail(url=row['Portrait'])
     embed.add_field(name="Class", value=result['class_name'], inline=True)
-    #embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
+    embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
     
     # Format averaged stats (rounded to 1 decimal)
     avg_bases = (f"HP {stats['HP']:.1f} | "
@@ -234,7 +247,6 @@ def get_averaged_stats_embed(row, level_string, promotion_class=None):
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
     
     # Show growths for reference
-    """
     growths = (f"HP {row['HP Growth']}% | "
                f"Str {row['Str Growth']}% | "
                f"Mag {row['Mag Growth']}% | "
@@ -245,11 +257,9 @@ def get_averaged_stats_embed(row, level_string, promotion_class=None):
                f"Res {row['Res Growth']}%")
     embed.add_field(name="Growths", value=growths, inline=False)
     
-    
     if 'unpromoted_levels' in result:
         details = f"Unpromoted levels: {result['unpromoted_levels']} | Promoted levels: {result['promoted_levels']}"
         embed.add_field(name="Level Breakdown", value=details, inline=False)
-    """
     
     return embed
 
