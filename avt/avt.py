@@ -49,10 +49,185 @@ def get_unit_pages(row):
     ]
 
     return page_groups
+
+def calculate_average_stats(row, level_string):
+    """
+    Calculate average stats for a unit at given level(s).
+    All stats cap at 20 regardless of tier (except Luck at 30).
+    
+    Args:
+        row: CSV row containing unit data
+        level_string: String in format "10" or "10/5"
+    
+    Returns:
+        Dictionary with calculated stats, or None if invalid input
+    """
+    # Parse the level string
+    level_parts = level_string.split('/')
+    
+    if len(level_parts) > 2:
+        return None  # Invalid format
+    
+    try:
+        # Get base level and stats
+        base_level = int(row['Lv'])
+        base_stats = {
+            'HP': int(row['HP']),
+            'Str': int(row['Str']),
+            'Mag': int(row['Mag']),
+            'Skl': int(row['Skl']),
+            'Spd': int(row['Spd']),
+            'Luck': int(row['Luck']),
+            'Def': int(row['Def']),
+            'Res': int(row['Res'])
+        }
+        
+        # Get growth rates (as percentages)
+        growths = {
+            'HP': int(row['HP Growth']),
+            'Str': int(row['Str Growth']),
+            'Mag': int(row['Mag Growth']),
+            'Skl': int(row['Skl Growth']),
+            'Spd': int(row['Spd Growth']),
+            'Luck': int(row['Luck Growth']),
+            'Def': int(row['Def Growth']),
+            'Res': int(row['Res Growth'])
+        }
+        
+        # Calculate based on number of level segments
+        if len(level_parts) == 1:
+            # Simple case: just one level value
+            target_level = int(level_parts[0])
+            levels_gained = target_level - base_level
+            
+            if levels_gained < 0:
+                return None  # Can't go below base level
+            
+            # Calculate average stats
+            avg_stats = {}
+            for stat in base_stats:
+                avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
+            
+            # Apply stat caps (20 for all stats, 30 for Luck)
+            for stat in avg_stats:
+                avg_stats[stat] = min(avg_stats[stat], 20)
+            
+            return {
+                'stats': avg_stats,
+                'description': f"Level {target_level}",
+                'class_name': row['Class']
+            }
+        
+        else:
+            # Promoted case: level1/level2
+            unpromoted_level = int(level_parts[0])
+            promoted_level = int(level_parts[1])
+            
+            # Calculate levels gained in base class
+            unpromoted_levels = unpromoted_level - base_level
+            if unpromoted_levels < 0:
+                return None
+            
+            # Calculate levels gained in promoted class (promoted class starts at level 1)
+            promoted_levels = promoted_level - 1
+            if promoted_levels < 0:
+                return None
+            
+            # Calculate stats after unpromoted levels
+            stats_at_promotion = {}
+            for stat in base_stats:
+                stats_at_promotion[stat] = base_stats[stat] + (growths[stat] / 100.0) * unpromoted_levels
+            
+            # Apply stat caps before promotion
+            for stat in stats_at_promotion:
+                if stat == 'Luck':
+                    stats_at_promotion[stat] = min(stats_at_promotion[stat], 30)
+                else:
+                    stats_at_promotion[stat] = min(stats_at_promotion[stat], 20)
+            
+            # Add promotion gains
+            promotion_gains = {
+                'HP': int(row['HP Gains']) if row['HP Gains'] else 0,
+                'Str': int(row['Str Gains']) if row['Str Gains'] else 0,
+                'Mag': int(row['Mag Gains']) if row['Mag Gains'] else 0,
+                'Skl': int(row['Skl Gains']) if row['Skl Gains'] else 0,
+                'Spd': int(row['Spd Gains']) if row['Spd Gains'] else 0,
+                'Def': int(row['Def Gains']) if row['Def Gains'] else 0,
+                'Res': int(row['Res Gains']) if row['Res Gains'] else 0,
+                'Luck': 0  # Luck typically doesn't get promotion gains
+            }
+            
+            # Apply promotion gains
+            for stat in stats_at_promotion:
+                stats_at_promotion[stat] += promotion_gains[stat]
+            
+            # Calculate final stats after promoted levels
+            avg_stats = {}
+            for stat in stats_at_promotion:
+                avg_stats[stat] = stats_at_promotion[stat] + (growths[stat] / 100.0) * promoted_levels
+            
+            # Apply stat caps (20 for all stats, 30 for Luck - same as unpromoted)
+            for stat in avg_stats:
+                if stat == 'Luck':
+                    avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
+            
+            promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
+            
+            return {
+                'stats': avg_stats,
+                'description': f"Level {unpromoted_level}/{promoted_level}",
+                'class_name': promotion_class
+            }
+    
+    except (ValueError, KeyError):
+        return None
+
+def get_averaged_stats_embed(row, level_string):
+    """
+    Create an embed showing averaged stats for a unit at a given level.
+    """
+    result = calculate_average_stats(row, level_string)
+    
+    if result is None:
+        return None
+    
+    stats = result['stats']
+    
+    # Create embed
+    embed = discord.Embed(
+        title=f"{row['Name']} - {result['description']}", 
+        color=0xd85d5d
+    )
+    embed.set_thumbnail(url=row['Portrait'])
+    embed.add_field(name="Class", value=result['class_name'], inline=True)
+    
+    # Format averaged stats (rounded to 1 decimal)
+    avg_bases = (f"HP {stats['HP']:.1f} | "
+                 f"Str {stats['Str']:.1f} | "
+                 f"Mag {stats['Mag']:.1f} | "
+                 f"Skl {stats['Skl']:.1f} | "
+                 f"Spd {stats['Spd']:.1f} | "
+                 f"Lck {stats['Luck']:.1f} | "
+                 f"Def {stats['Def']:.1f} | "
+                 f"Res {stats['Res']:.1f}")
+    
+    embed.add_field(name="Average Stats", value=avg_bases, inline=False)
+    
+    return embed
     
 
 
-async def unit(ctx, name: str):
+async def unit(ctx, name: str, levels: str = None):
+    """
+    Display unit data. Optionally calculate average stats at a given level.
+    
+    Usage:
+        /unit [name] - Show base unit data
+        /unit [name] [level] - Show average stats at level (e.g., /unit Ezekiel 10)
+        /unit [name] [level]/[level] - Show average stats after promotion (e.g., /unit Ezekiel 10/5)
+    """
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('avt/avt unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -60,11 +235,32 @@ async def unit(ctx, name: str):
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
-                await paginator.respond(ctx.interaction)
                 was_found = True
+                
+                # If levels parameter is provided, show averaged stats
+                if levels is not None:
+                    embed = get_averaged_stats_embed(row, levels)
+                    if embed is None:
+                        await ctx.response.send_message(
+                            "Invalid level format. Use format like `10` or `10/5`."
+                        )
+                    else:
+                        await ctx.response.send_message(embed=embed)
+                else:
+                    # Show standard unit data
+                    paginator = pages.Paginator(
+                        pages=get_unit_pages(row), 
+                        show_menu=True, 
+                        show_disabled=False, 
+                        show_indicator=False, 
+                        menu_placeholder="Select page to view", 
+                        timeout=120, 
+                        disable_on_timeout=True
+                    )
+                    await paginator.respond(ctx.interaction)
                 break
-        if (not was_found):
+        
+        if not was_found:
             await ctx.response.send_message("That unit does not exist.")
 
 """ async def skill(ctx, name: str):

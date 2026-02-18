@@ -187,9 +187,12 @@ def calculate_average_stats(row, level_string):
             for stat in stats_after_tier0:
                 avg_stats[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
             
-            # Apply promoted stat cap (30 for all stats)
+            # Apply tier 1 stat cap (20 for most stats, 30 for Luck - same as unpromoted)
             for stat in avg_stats:
-                avg_stats[stat] = min(avg_stats[stat], 30)
+                if stat == 'Luck':
+                    avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
             
             promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
             
@@ -250,9 +253,12 @@ def calculate_average_stats(row, level_string):
             for stat in stats_after_tier0:
                 stats_after_tier1[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
             
-            # Apply promoted stat cap before second promotion
+            # Apply tier 1 stat cap before second promotion (20 for most stats, 30 for Luck)
             for stat in stats_after_tier1:
-                stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
+                if stat == 'Luck':
+                    stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
+                else:
+                    stats_after_tier1[stat] = min(stats_after_tier1[stat], 20)
             
             # Get tier 2 promotion gains
             tier2_gains = {

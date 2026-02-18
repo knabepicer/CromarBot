@@ -145,9 +145,15 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in base_stats:
                 avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
             
+            # Apply unpromoted stat caps (20 for most stats, 30 for Luck)
+            for stat in avg_stats:
+                if stat == 'Luck':
+                    avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
+            
             return {
                 'stats': avg_stats,
-                'levels_gained': levels_gained,
                 'description': f"Level {target_level}",
                 'class_name': row['Class'],
                 'tier': 0
@@ -212,14 +218,18 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in stats_after_tier0:
                 avg_stats[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
             
+            # Apply tier 1 stat cap (20 for most stats, 30 for Luck - same as unpromoted)
+            for stat in avg_stats:
+                if stat == 'Luck':
+                    avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
+            
             return {
                 'stats': avg_stats,
-                'levels_gained': total_levels,
                 'description': f"Level {tier0_level}/{tier1_level}",
                 'class_name': selected_tier1_class,
-                'tier': 1,
-                'tier0_levels': tier0_levels,
-                'tier1_levels': tier1_levels
+                'tier': 1
             }
         
         else:  # len(level_parts) == 3
@@ -247,6 +257,13 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             stats_after_tier0 = {}
             for stat in base_stats:
                 stats_after_tier0[stat] = base_stats[stat] + (growths[stat] / 100.0) * tier0_levels
+            
+            # Apply unpromoted stat caps before first promotion
+            for stat in stats_after_tier0:
+                if stat == 'Luck':
+                    stats_after_tier0[stat] = min(stats_after_tier0[stat], 30)
+                else:
+                    stats_after_tier0[stat] = min(stats_after_tier0[stat], 20)
             
             # Determine which tier 1 promotion to use
             tier1_promo_num = 1  # Default to Promotion Class
@@ -284,6 +301,13 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             stats_after_tier1 = {}
             for stat in stats_after_tier0:
                 stats_after_tier1[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
+            
+            # Apply tier 1 stat cap before second promotion (20 for most stats, 30 for Luck)
+            for stat in stats_after_tier1:
+                if stat == 'Luck':
+                    stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
+                else:
+                    stats_after_tier1[stat] = min(stats_after_tier1[stat], 20)
             
             # Now find tier 2 promotion gains from extra promos CSV
             tier2_gains = {'HP': 0, 'Atk': 0, 'Skl': 0, 'Spd': 0, 'Def': 0, 'Res': 0, 'Luck': 0}
@@ -339,16 +363,16 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
             for stat in stats_after_tier1:
                 avg_stats[stat] = stats_after_tier1[stat] + (growths[stat] / 100.0) * tier2_levels
             
+            # Apply promoted stat cap (30 for all stats)
+            for stat in avg_stats:
+                avg_stats[stat] = min(avg_stats[stat], 30)
+            
             return {
                 'stats': avg_stats,
-                'levels_gained': total_levels,
                 'description': f"Level {tier0_level}/{tier1_level}/{tier2_level}",
                 'class_name': selected_tier2_class,
                 'tier1_class': selected_tier1_class,
-                'tier': 2,
-                'tier0_levels': tier0_levels,
-                'tier1_levels': tier1_levels,
-                'tier2_levels': tier2_levels
+                'tier': 2
             }
     
     except (ValueError, KeyError):
@@ -378,7 +402,7 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
     else:
         embed.add_field(name="Class", value=result['class_name'], inline=True)
     
-    #embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
+    embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
     
     # Format averaged stats (rounded to 1 decimal)
     avg_bases = (f"HP {stats['HP']:.1f} | "
@@ -390,7 +414,7 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
                  f"Res {stats['Res']:.1f}")
     
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
-    """
+    
     # Show growths for reference
     growths = (f"HP {row['HP Growth']}% | "
                f"Atk {row['Atk Growth']}% | "
@@ -407,7 +431,7 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
         else:
             details = f"Base levels: {result['tier0_levels']} | Tier 1 levels: {result['tier1_levels']}"
         embed.add_field(name="Level Breakdown", value=details, inline=False)
-    """
+    
     return embed
 
 #cota = cromar.create_subgroup("cota", "Get Call of the Armor data")
