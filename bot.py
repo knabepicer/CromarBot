@@ -155,13 +155,13 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'vba'):
         await vba.vba.unit(ctx, name)
     elif (hack == '4k'):
-        await fourkings.fourkings.unit(ctx, name)
+        await fourkings.fourkings.unit(ctx, name, levels)
     elif (hack == 'dow'):
         await dow.dow.unit(ctx, name)
     elif (hack == 'sp'):
         await sp.sp.unit(ctx, name)
     elif (hack == 'dlatmol'):
-        await dlatmol.dlatmol.unit(ctx, name)
+        await dlatmol.dlatmol.unit(ctx, name, levels)
     elif (hack == 'burger'):
         await burger.burger.unit(ctx, name)
     elif (hack == 'ee'):
@@ -173,7 +173,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'don'):
         await don.don.unit(ctx, name)
     elif (hack == 'avt'):
-        await avt.avt.unit(ctx, name)
+        await avt.avt.unit(ctx, name, levels)
     elif (hack == 'oc'):
         await oc.oc.unit(ctx, name)
     elif (hack == 'auc'):
