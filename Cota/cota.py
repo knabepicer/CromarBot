@@ -267,7 +267,7 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
                 if stat == 'Luck':
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 30)
                 elif stat == 'HP':
-                    avg_stats[stat] = min(avg_stats[stat], 60)
+                    stats_after_tier0[stat] = min(stats_after_tier0[stat], 60)
                 else:
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 20)
             
@@ -313,7 +313,7 @@ def calculate_average_stats(row, level_string, tier1_class=None, tier2_class=Non
                 if stat == 'Luck':
                     stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
                 elif stat == 'HP':
-                    avg_stats[stat] = min(avg_stats[stat], 60)
+                    stats_after_tier1[stat] = min(stats_after_tier1[stat], 60)
                 else:
                     stats_after_tier1[stat] = min(stats_after_tier1[stat], 20)
             
