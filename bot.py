@@ -165,7 +165,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'burger'):
         await burger.burger.unit(ctx, name)
     elif (hack == 'ee'):
-        await ee.ee.unit(ctx, name)
+        await ee.ee.unit(ctx, name, levels)
     elif (hack == 'fehr'):
         await fehr.fehr.unit(ctx, name)
     elif (hack == 'john'):
@@ -183,7 +183,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'tmgc'):
         await tmgc.tmgc.unit(ctx, name)
     elif (hack == 'do5'):
-        await dof.dof.unit(ctx, name)
+        await dof.dof.unit(ctx, name, levels)
     elif (hack == 'dh'):
         await dh.dh.unit(ctx, name, levels)
     elif (hack == 'lots'):
