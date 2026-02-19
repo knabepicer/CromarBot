@@ -434,7 +434,7 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
 
 #ee = cromar.create_subgroup("ee", "Get Embers Entwined data")
 
-async def unit(ctx, name: str, levels: str = None, tier1_class: str = None, tier2_class: str = None):
+async def unit(ctx, name: str, levels: str = None):
     """
     Display unit data. Optionally calculate average stats at a given level.
     
@@ -445,6 +445,22 @@ async def unit(ctx, name: str, levels: str = None, tier1_class: str = None, tier
         /unit [name] [level]/[level] [class] - Show stats with specific tier 1 class
         /unit [name] [level]/[level]/[level] [tier1] [tier2] - For trainees (e.g., /unit Gruyere 10/10/5 AxeMercenary Hero)
     """
+    # Parse the input to separate levels from promotion classes
+    tier1_class = None
+    tier2_class = None
+    level_string = levels
+    
+    if levels is not None:
+        # Split by spaces
+        parts = levels.split()
+        if len(parts) > 0:
+            level_string = parts[0]
+            if len(parts) > 1:
+                tier1_class = parts[1]
+            if len(parts) > 2:
+                tier2_class = parts[2]
+
+
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('ee/ee unit.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -456,7 +472,7 @@ async def unit(ctx, name: str, levels: str = None, tier1_class: str = None, tier
                 
                 # If levels parameter is provided, show averaged stats
                 if levels is not None:
-                    embed = get_averaged_stats_embed(row, levels, tier1_class, tier2_class)
+                    embed = get_averaged_stats_embed(row, level_string, tier1_class, tier2_class)
                     if embed is None:
                         await ctx.response.send_message(
                             "Invalid level format. Use format like `10`, `10/5`, or `10/10/5` (for trainees)."
