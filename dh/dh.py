@@ -99,6 +99,8 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             for stat in avg_stats:
                 if stat == 'Luck':
                     avg_stats[stat] = min(avg_stats[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     avg_stats[stat] = min(avg_stats[stat], 20)
             
@@ -134,6 +136,8 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             for stat in stats_at_promotion:
                 if stat == 'Luck':
                     stats_at_promotion[stat] = min(stats_at_promotion[stat], 30)
+                elif stat == 'HP':
+                    stats_at_promotion[stat] = min(stats_at_promotion[stat], 60)
                 else:
                     stats_at_promotion[stat] = min(stats_at_promotion[stat], 20)
             
@@ -186,6 +190,8 @@ def calculate_average_stats(row, level_string, promotion_class=None):
             
             # Apply promoted stat cap (30 for all stats)
             for stat in avg_stats:
+                if stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 avg_stats[stat] = min(avg_stats[stat], 30)
             
             final_class = selected_class if selected_class else "Promoted"

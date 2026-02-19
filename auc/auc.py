@@ -127,10 +127,12 @@ def calculate_average_stats(row, level_string):
             for stat in base_stats:
                 avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
             
-            # Apply unpromoted stat caps (20 for most stats, 30 for Luck)
+            # Apply unpromoted stat caps (20 for most stats, 30 for Luck, 60 for HP)
             for stat in avg_stats:
                 if stat == 'Luck':
                     avg_stats[stat] = min(avg_stats[stat], 30)
+                elif stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 else:
                     avg_stats[stat] = min(avg_stats[stat], 20)
             
@@ -189,14 +191,25 @@ def calculate_average_stats(row, level_string):
             for stat in stats_after_tier0:
                 avg_stats[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
             
-            # Apply tier 1 stat cap (20 for most stats, 30 for Luck - same as unpromoted)
-            for stat in avg_stats:
-                if stat == 'Luck':
-                    avg_stats[stat] = min(avg_stats[stat], 30)
-                elif stat == 'HP':
-                    avg_stats[stat] = min(avg_stats[stat], 60)
-                else:
-                    avg_stats[stat] = min(avg_stats[stat], 20)
+            # Check if this character has a second promotion (only Athos)
+            has_second_promotion = row['Promotes 2'] == 'Yes'
+            
+            if has_second_promotion:
+                # Athos: tier 0 → tier 1, still caps at 20 (30 for Luck, 60 for HP)
+                for stat in avg_stats:
+                    if stat == 'Luck':
+                        avg_stats[stat] = min(avg_stats[stat], 30)
+                    elif stat == 'HP':
+                        avg_stats[stat] = min(avg_stats[stat], 60)
+                    else:
+                        avg_stats[stat] = min(avg_stats[stat], 20)
+            else:
+                # Everyone else: tier 1 → tier 2, caps at 30 (60 for HP)
+                for stat in avg_stats:
+                    if stat == 'HP':
+                        avg_stats[stat] = min(avg_stats[stat], 60)
+                    else:
+                        avg_stats[stat] = min(avg_stats[stat], 30)
             
             promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
             
@@ -235,7 +248,7 @@ def calculate_average_stats(row, level_string):
                 if stat == 'Luck':
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 30)
                 elif stat == 'HP':
-                    avg_stats[stat] = min(avg_stats[stat], 60)
+                    stats_after_tier0[stat] = min(stats_after_tier0[stat], 60)
                 else:
                     stats_after_tier0[stat] = min(stats_after_tier0[stat], 20)
             
@@ -259,7 +272,7 @@ def calculate_average_stats(row, level_string):
             for stat in stats_after_tier0:
                 stats_after_tier1[stat] = stats_after_tier0[stat] + (growths[stat] / 100.0) * tier1_levels
             
-            # Apply tier 1 stat cap before second promotion (20 for most stats, 30 for Luck)
+            # Apply tier 1 stat cap before second promotion (20 for most stats, 30 for Luck, 60 for HP)
             for stat in stats_after_tier1:
                 if stat == 'Luck':
                     stats_after_tier1[stat] = min(stats_after_tier1[stat], 30)
@@ -288,11 +301,12 @@ def calculate_average_stats(row, level_string):
             for stat in stats_after_tier1:
                 avg_stats[stat] = stats_after_tier1[stat] + (growths[stat] / 100.0) * tier2_levels
             
-            # Apply promoted stat cap (30 for all stats)
+            # Apply tier 2 stat cap (30 for all stats except HP at 60)
             for stat in avg_stats:
                 if stat == 'HP':
                     avg_stats[stat] = min(avg_stats[stat], 60)
-                avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 30)
             
             tier2_class = row['Promotion Class 2'] if row['Promotion Class 2'] else "Promoted (Tier 2)"
             

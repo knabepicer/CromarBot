@@ -65,6 +65,9 @@ def calculate_average_stats(row, level_string):
             avg_stats = {}
             for stat in base_stats:
                 avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
+
+            for stat in avg_stats:
+                avg_stats[stat] = min(avg_stats[stat], 20)
             
             return {
                 'stats': avg_stats,
@@ -117,6 +120,11 @@ def calculate_average_stats(row, level_string):
             avg_stats = {}
             for stat in stats_at_promotion:
                 avg_stats[stat] = stats_at_promotion[stat] + (growths[stat] / 100.0) * promoted_levels
+            
+            for stat in avg_stats:
+                if stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
+                avg_stats[stat] = min(avg_stats[stat], 20)
             
             promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
             
