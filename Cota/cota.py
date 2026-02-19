@@ -433,7 +433,7 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
     else:
         embed.add_field(name="Class", value=result['class_name'], inline=True)
     
-    embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
+    #embed.add_field(name="Total Levels Gained", value=str(result['levels_gained']), inline=True)
     
     # Format averaged stats (rounded to 1 decimal)
     avg_bases = (f"HP {stats['HP']:.1f} | "
@@ -445,23 +445,6 @@ def get_averaged_stats_embed(row, level_string, tier1_class=None, tier2_class=No
                  f"Res {stats['Res']:.1f}")
     
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
-    
-    # Show growths for reference
-    growths = (f"HP {row['HP Growth']}% | "
-               f"Atk {row['Atk Growth']}% | "
-               f"Skl {row['Skl Growth']}% | "
-               f"Spd {row['Spd Growth']}% | "
-               f"Lck {row['Luck Growth']}% | "
-               f"Def {row['Def Growth']}% | "
-               f"Res {row['Res Growth']}%")
-    embed.add_field(name="Growths", value=growths, inline=False)
-    
-    if 'tier0_levels' in result:
-        if result['tier'] == 2:
-            details = f"Base levels: {result['tier0_levels']} | Tier 1 levels: {result['tier1_levels']} | Tier 2 levels: {result['tier2_levels']}"
-        else:
-            details = f"Base levels: {result['tier0_levels']} | Tier 1 levels: {result['tier1_levels']}"
-        embed.add_field(name="Level Breakdown", value=details, inline=False)
     
     return embed
 
