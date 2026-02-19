@@ -143,7 +143,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'tlp'):
         await tlp.tlp.unit(ctx, name)
     elif (hack == '7s'):
-        await sevensibs.sevens.unit(ctx, name)
+        await sevensibs.sevens.unit(ctx, name, levels)
     elif (hack == 'bob'):
         await bob.bob.unit(ctx, name, levels)
     elif (hack == 'trtr'):
@@ -157,7 +157,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == '4k'):
         await fourkings.fourkings.unit(ctx, name, levels)
     elif (hack == 'dow'):
-        await dow.dow.unit(ctx, name)
+        await dow.dow.unit(ctx, name, levels)
     elif (hack == 'sp'):
         await sp.sp.unit(ctx, name)
     elif (hack == 'dlatmol'):
@@ -171,7 +171,7 @@ async def unit(ctx, hack: str, name: str, levels: str = None):
     elif (hack == 'john'):
         await john.john.unit(ctx, name)
     elif (hack == 'don'):
-        await don.don.unit(ctx, name)
+        await don.don.unit(ctx, name, levels)
     elif (hack == 'avt'):
         await avt.avt.unit(ctx, name, levels)
     elif (hack == 'oc'):
