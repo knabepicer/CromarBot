@@ -70,7 +70,8 @@ def calculate_average_stats(row, level_string):
             for stat in avg_stats:
                 if stat == 'HP':
                     avg_stats[stat] = min(avg_stats[stat], 60)
-                avg_stats[stat] = min(avg_stats[stat], 20)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
             
             return {
                 'stats': avg_stats,
@@ -127,7 +128,8 @@ def calculate_average_stats(row, level_string):
             for stat in avg_stats:
                 if stat == 'HP':
                     avg_stats[stat] = min(avg_stats[stat], 60)
-                avg_stats[stat] = min(avg_stats[stat], 20)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 20)
             
             promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
             
@@ -176,23 +178,6 @@ def get_averaged_stats_embed(row, level_string):
                  f"Mov {stats['Mov']:.1f}")
     
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
-    
-    # Show growths for reference
-    growths = (f"HP {row['HP Growth']}% | "
-               f"Str {row['Str Growth']}% | "
-               f"Mag {row['Mag Growth']}% | "
-               f"Skl {row['Skl Growth']}% | "
-               f"Spd {row['Spd Growth']}% | "
-               f"Lck {row['Luck Growth']}% | "
-               f"Def {row['Def Growth']}% | "
-               f"Res {row['Res Growth']}% | "
-               f"Bld {row['Bld Growth']}% | "
-               f"Mov {row['Mov Growth']}%")
-    embed.add_field(name="Growths", value=growths, inline=False)
-    
-    if 'unpromoted_levels' in result:
-        details = f"Unpromoted levels: {result['unpromoted_levels']} | Promoted levels: {result['promoted_levels']}"
-        embed.add_field(name="Level Breakdown", value=details, inline=False)
     
     return embed
 
