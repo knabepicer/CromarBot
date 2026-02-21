@@ -67,6 +67,8 @@ def calculate_average_stats(row, level_string):
                 avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
 
             for stat in avg_stats:
+                if stat == 'HP':
+                    avg_stats[stat] = min(avg_stats[stat], 60)
                 avg_stats[stat] = min(avg_stats[stat], 20)
             
             return {
