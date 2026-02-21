@@ -52,7 +52,7 @@ def calculate_average_stats(row, level_string):
             'Mov': int(row['Mov Growth'])
         }
         
-        
+
         # Calculate total levels gained
         if len(level_parts) == 1:
             # Simple case: just one level value
@@ -176,7 +176,7 @@ def get_averaged_stats_embed(row, level_string):
                  f"Mov {stats['Mov']:.1f}")
     
     embed.add_field(name="Average Stats", value=avg_bases, inline=False)
-    """
+    
     # Show growths for reference
     growths = (f"HP {row['HP Growth']}% | "
                f"Str {row['Str Growth']}% | "
@@ -193,7 +193,7 @@ def get_averaged_stats_embed(row, level_string):
     if 'unpromoted_levels' in result:
         details = f"Unpromoted levels: {result['unpromoted_levels']} | Promoted levels: {result['promoted_levels']}"
         embed.add_field(name="Level Breakdown", value=details, inline=False)
-    """
+    
     return embed
 
 
