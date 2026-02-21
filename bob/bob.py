@@ -52,6 +52,7 @@ def calculate_average_stats(row, level_string):
             'Mov': int(row['Mov Growth'])
         }
         
+        
         # Calculate total levels gained
         if len(level_parts) == 1:
             # Simple case: just one level value
