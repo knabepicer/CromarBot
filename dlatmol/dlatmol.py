@@ -238,7 +238,8 @@ def calculate_average_stats(row, level_string):
             for stat in avg_stats:
                 if stat == 'HP':
                     avg_stats[stat] = min(avg_stats[stat], 60)
-                avg_stats[stat] = min(avg_stats[stat], 30)
+                else:
+                    avg_stats[stat] = min(avg_stats[stat], 30)
             
             promotion_class = row['Promotion Class'] if row['Promotion Class'] else "Promoted"
             
