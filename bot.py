@@ -25,6 +25,8 @@ import cc.cc
 import tmgc.tmgc
 import dof.dof
 import dh.dh
+import lots.lots
+import hag.hag
 from discord.ext import commands
 from discord import option
 import sys
@@ -62,9 +64,9 @@ async def help(ctx):
     unitembed.add_field(name='Invite Link', value='https://discord.com/api/oauth2/authorize?client_id=1039342081245724723&permissions=277025672192&scope=bot', inline=False)
     unitembed.add_field(name="Hack Abbreviations", value="https://github.com/knabepicer/CromarBot/blob/main/Hack%20abbreviations.txt",inline=False)
     unitembed.add_field(name='/cromar [command] [hack] [name]', value= "Alternative way to call bot- faster to type, but no autocorrect", inline=False)
-    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, dh, ee, fehr, john, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
+    unitembed.add_field(name='/unit [hack] [name]', value="Get unit data - currently supports 4k, 7s, auc, avt, bob, burger, cc, cota, dlatmol, do5, dow, don, dh, ee, fehr, hag, john, lots, oc, sp, tlp, tmgc, trtr, vq, vba", inline=False)
     unitembed.add_field(name='/item [hack] [name]', value="Get item data - currently supports auc, bob, cc, don, oc", inline=False)
-    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, vq, fehr", inline=False)
+    unitembed.add_field(name='/skill [hack] [name]', value="Get skill data - currently supports bob, fehr, hag, vq", inline=False)
     unitembed.add_field(name='/boss [hack] [name]', value="Get boss data - currently supports burger, tlp", inline=False)
     
     await ctx.response.send_message(embed=unitembed)
@@ -119,6 +121,10 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
         return dof.dof.get_unit_names(ctx)
     elif (hack == 'dh'):
         return dh.dh.get_unit_names(ctx)
+    elif (hack == 'lots'):
+        return lots.lots.get_unit_names(ctx)
+    elif (hack == 'hag'):
+        return hag.hag.get_unit_names(ctx)
     else:
         return []
     
@@ -127,58 +133,63 @@ async def get_unit_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get playable unit data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","dh","ee","fehr","john","oc", "sp","tlp","tmgc","trtr","vba","vq"]
+        ["4k","7s","avt","auc","bob","burger","cota","cc","dlatmol","do5","don","dow","dh","ee","fehr","hag","john","lots","oc", "sp","tlp","tmgc","trtr","vba","vq"]
     ))
 @option("name", description = "Name of the character to get data for", autocomplete=get_unit_names)
-async def unit(ctx, hack: str, name: str):
+@option("levels", description = "For average stats, can add promotion class after levels, but no spaces (eg: 10/10 MageKnight)")
+async def unit(ctx, hack: str, name: str, levels: str = None):
     if (hack == 'cota'):
-        await Cota.cota.unit(ctx, name)
+        await Cota.cota.unit(ctx, name, levels)
     elif (hack == 'tlp'):
         await tlp.tlp.unit(ctx, name)
     elif (hack == '7s'):
-        await sevensibs.sevens.unit(ctx, name)
+        await sevensibs.sevens.unit(ctx, name, levels)
     elif (hack == 'bob'):
-        await bob.bob.unit(ctx, name)
+        await bob.bob.unit(ctx, name, levels)
     elif (hack == 'trtr'):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'rtr'):
         await trtr.trtr.unit(ctx, name)
     elif (hack == 'vq'):
-        await vq.vq.unit(ctx, name)
+        await vq.vq.unit(ctx, name, levels)
     elif (hack == 'vba'):
         await vba.vba.unit(ctx, name)
     elif (hack == '4k'):
-        await fourkings.fourkings.unit(ctx, name)
+        await fourkings.fourkings.unit(ctx, name, levels)
     elif (hack == 'dow'):
-        await dow.dow.unit(ctx, name)
+        await dow.dow.unit(ctx, name, levels)
     elif (hack == 'sp'):
         await sp.sp.unit(ctx, name)
     elif (hack == 'dlatmol'):
-        await dlatmol.dlatmol.unit(ctx, name)
+        await dlatmol.dlatmol.unit(ctx, name, levels)
     elif (hack == 'burger'):
         await burger.burger.unit(ctx, name)
     elif (hack == 'ee'):
-        await ee.ee.unit(ctx, name)
+        await ee.ee.unit(ctx, name, levels)
     elif (hack == 'fehr'):
         await fehr.fehr.unit(ctx, name)
     elif (hack == 'john'):
         await john.john.unit(ctx, name)
     elif (hack == 'don'):
-        await don.don.unit(ctx, name)
+        await don.don.unit(ctx, name, levels)
     elif (hack == 'avt'):
-        await avt.avt.unit(ctx, name)
+        await avt.avt.unit(ctx, name, levels)
     elif (hack == 'oc'):
         await oc.oc.unit(ctx, name)
     elif (hack == 'auc'):
-        await auc.auc.unit(ctx, name)
+        await auc.auc.unit(ctx, name, levels)
     elif (hack == 'cc'):
-        await cc.cc.unit(ctx, name)
+        await cc.cc.unit(ctx, name, levels)
     elif (hack == 'tmgc'):
         await tmgc.tmgc.unit(ctx, name)
     elif (hack == 'do5'):
-        await dof.dof.unit(ctx, name)
+        await dof.dof.unit(ctx, name, levels)
     elif (hack == 'dh'):
-        await dh.dh.unit(ctx, name)
+        await dh.dh.unit(ctx, name, levels)
+    elif (hack == 'lots'):
+        await lots.lots.unit(ctx, name)
+    elif (hack == 'hag'):
+        await hag.hag.unit(ctx, name, levels)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 
@@ -257,6 +268,8 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
         return vq.vq.get_skill_names(ctx)
     elif (hack == 'fehr'):
         return fehr.fehr.get_skill_names(ctx)
+    elif (hack == 'hag'):
+        return hag.hag.get_skill_names(ctx)
     else:
         return[]
 
@@ -264,7 +277,7 @@ async def get_skill_names(ctx: discord.AutocompleteContext):
 @bot.slash_command(description = "Get skill data")
 @option("hack", description = "Name of the hack to get data for",
         autocomplete=discord.utils.basic_autocomplete(
-        ["bob", 'vq', 'fehr']
+        ["bob", 'vq', 'fehr', 'hag']
     ))
 @option("name", description = "Name of the skill to get data for", autocomplete=get_skill_names)
 async def skill(ctx, hack: str, name: str):
@@ -274,6 +287,8 @@ async def skill(ctx, hack: str, name: str):
         await vq.vq.skill(ctx, name)
     elif (hack == 'fehr'):
         await fehr.fehr.skill(ctx, name)
+    elif (hack == 'hag'):
+        await hag.hag.skill(ctx, name)
     else:
         await ctx.response.send_message("That hack does not exist or is not supported by this command.")
 

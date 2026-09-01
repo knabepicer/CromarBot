@@ -6,7 +6,7 @@ from discord.ext import commands, pages
 from discord import option
 
 def get_unit_pages(row):
-    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x7c00c9)
+    unitembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0xb6bfb8)
     #supportembed=discord.Embed(title=row['Name'] + " " + row['Affinity'], color=0x34c290)
     unitembed.set_thumbnail(url=row['Portrait'])
     #supportembed.set_thumbnail(url=row['Portrait'])
@@ -15,14 +15,12 @@ def get_unit_pages(row):
     unitembed.add_field(name="Bases", value=bases, inline=False)
     growths = "HP " + row['HP Growth'] + "% | " + "Str " + row['Str Growth'] + "% | " + "Mag " + row['Mag Growth'] + "% | Skl " + row['Skl Growth'] + "% | " + "Spd " + row['Spd Growth'] + "% | " + "Lck " + row['Luck Growth'] + "% | " + "Def " + row['Def Growth'] + "% | " + "Res " + row['Res Growth'] + "%"
     unitembed.add_field(name="Growths", value=growths, inline=False)
-    ranks = oc_get_ranks(row)
+    ranks = hag_get_ranks(row)
     unitembed.add_field(name="Skills", value=row['Skills'], inline=False)
     unitembed.add_field(name="Ranks", value=ranks, inline=False)
     if (row['Promotion Class'] != ""):
-        gains = oc_get_gains(row)
+        gains = hag_get_gains(row)
         unitembed.add_field(name="Promotion Gains", value=gains, inline=False)
-    if (row['Bonus'] != ''):
-        unitembed.set_footer(text="Unit also has access to: " + row['Bonus'])
     
     
     # with open('trtr/trtr supports.csv', newline='') as csvfile:
@@ -57,7 +55,7 @@ def get_unit_pages(row):
 
 async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('oc/oc_unit.csv', newline='', encoding="utf-8-sig") as csvfile:
+    with open('hag/hag_unit.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
@@ -70,67 +68,25 @@ async def unit(ctx, name: str):
         if (not was_found):
             await ctx.response.send_message("That unit does not exist.")
 
-""" async def skill(ctx, name: str):
+async def skill(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-    with open('avt/avt skill.csv', newline='') as csvfile:
+    with open('hag/hag_skill.csv', newline='', encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         was_found = False
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
-                unitembed=discord.Embed(title=row['Name'], color=0x34c290)
+                unitembed=discord.Embed(title=row['Name'], color=0xb6bfb8)
                 unitembed.add_field(name='Description: ', value=row['Description'], inline=False)
                 was_found = True
                 await ctx.response.send_message(embed=unitembed)
                 break
         if (not was_found):
-                await ctx.response.send_message("That skill does not exist.") """
-async def item(ctx, name: str):
-    stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)            
-    with open('oc/oc_item.csv', newline='', encoding="utf-8-sig") as csvfile:
-            reader = csv.DictReader(csvfile)
-            was_found = False
-            for row in reader:
-                stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
-                if(stripped_row.lower() == stripped_name.lower()):
-                    unitembed=discord.Embed(title=row['Display Name'], color=0x7c00c9)
-                    unitembed.set_thumbnail(url=row['Icon'])
-                    if(row['Type'] == 'Weapon'):
-                        stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP']
-                        if (row['Uses'] == '255'):
-                            stats += " | Unbreakable"
-                        else:
-                            stats += " | Uses: " + row['Uses']
-                        if (row['Description'] != "None"):
-                            stats += '\n'
-                            stats += row['Description']
-                        unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
-                    elif(row['Type'] == 'Staff'):
-                        stats  = "Rank: " + row['Weapon Level'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] + " | WEXP: " + row['WEXP'] + " | Uses: " + row['Uses']
-                        stats += '\n'
-                        stats += row['Description']
-                        unitembed.add_field(name='Staff', value=stats, inline=False)
-                    elif(row['Type'] == 'Item'):
-                        stats = ""
-                        if (row['Uses'] == '255'):
-                            stats += "Unbreakable"
-                        else:
-                            stats += "Uses: " + row['Uses']
-                        stats += '\n'
-                        stats += row['Description']
-                        unitembed.add_field(name='Item', value=stats, inline=False)
-                    if(row['Display Price'] == 'Yes'):
-                        price = int(row['Uses']) * int(row['Price Per Use'])
-                        price_string = str(price) + "G"
-                        unitembed.add_field(name='Price: ', value=price_string, inline=False)
-                    await ctx.response.send_message(embed=unitembed)
-                    was_found = True
-                    break
-            if (not was_found):
-                await ctx.response.send_message("That item does not exist.")
+                await ctx.response.send_message("That skill does not exist.") 
 
 
-def oc_get_ranks(row):
+
+def hag_get_ranks(row):
     ranks = ""
     if (row['Sword'] != 'None'):
         ranks += "<:RankSword:1083549037585768510>Sword: " + row['Sword'] + " | "
@@ -154,7 +110,7 @@ def oc_get_ranks(row):
         ranks = "None"
     return ranks
 
-def oc_get_gains(row):
+def hag_get_gains(row):
     gains = ""
     gains += row['Promotion Class'] + '\n'
     if (row['HP Gains'] != '0'):
@@ -201,7 +157,7 @@ def oc_get_gains(row):
         gains2 = gains2[:-3]
     if (row['Promotion Skills'] != 'None'):
          gains2 += "\n" + row['Promotion Skills']
-    gains2 += '\n'
+    #gains2 += '\n'
     gains3 = ""
     gains4 = ""
     if (row['Promotion Class 2'] != ''): 
@@ -255,17 +211,13 @@ def oc_get_gains(row):
     return gains + gains2 + gains3 + gains4
 
 def get_unit_names(ctx):
-    names = ["Matthew","Melina","Emily","Yukiko","Labrys","Rickson","Violet","Diana","Elowyn","Skye","Yuro","Rosalyn","Salazar","Safira","Ashley","Tarif","Kirk","Selpan","Eirika","Manok","Koryn","Hikari","Aries","Leonid","Reggie","Killian","Elsbeth","Valentin","Khix","Krielle","Emiko","Judmila","Esera","Alexis","Martin","Nadia","Nikana","Ashiya","Seimei","Stephen","Nalim","Selene","Sirianne","Waffles","Lizabel","Artemis","Valentina","Amy","Kay"]
+    names = ["Kyra","Apate","Phobos","Soter","Hecate","Kairos","Raleigh","Begoña","Fango","López","Edward","Agari","Pericles","Nikolaos","Jane","Hestia","Eupraxia","Tiresias","Wulfric","Pluto","Ofelia","Polonius","Alonso","Teresa","Delilah","Zaccheus","Simeon","Beatrix","Barlowe","Fiadh","Conan","Dahl","Nicaea","Telemus","Plato","Fazang","Jingyi","Xinyi","Ziying","Demeter","Jason","Laertes","Pheme","Vasiliki","Scymerius","Fructuoso","Mopsus","Coronis","Glaucus","Lorenzo","Thyone","Órlaith","Sandraudiga","Aura","Cybele","Dolus V", "Nestor", "Marina", "Alastor", "Dolus", "Elias", "Antiope", "Eudoxus", "Hippalus"]
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
 
-""" def get_skill_names(ctx):
-    names = ["Charisma","Pass","Nihil","Gentilhomme","Miracle","Light Weight","Swap","Strong Riposte","Wrath","Spur Resistance","Bond","Quick Burn","Intimidate","Savior","Reposition","Spur Strength","Pivot","Knight Aspirant","Slow Burn","Acrobat","Vantage","Spur Magic","Darting Blow","Thunderstorm","Puissance","Demoiselle","Charm","Spur Speed","Spur Defense","Summon","Paragon","Hex","Pursuit","Heavy Strikes","Inspiration","Lily's Poise","Chivalry","Pragmatic","Anathema","Death Blow","Boon","Armored Blow","Perfectionist","Fiery Blood","Even Rhythm","Frenzy","Triangle Adept","Tantivy","Nullify","Duelist's Blow","Odd Rhythm","Vanity","Infiltrator","Opportunist","Relief","Desperation","Staff Savant","Shove","Quick Draw","Natural Cover","Cunning","Steal","Crit Boost","Certain Blow","Forager","Discipline+","Live to Serve","Locktouch","Steal+","Breath of Life","Wind Disciple","Voice of Peace","Camaraderie"]
-    names.sort()
-    return [name for name in names if name.lower().startswith(ctx.value.lower())] """
-
-def get_item_names(ctx):
-    names = ["Chaos Breath", "Iron Sword","Steel Sword","Mythril Sword","Diamond Sword","Ancient Sword","Boomerang","Q-Merang","Killing Edge","Cold Sword","Lancereaver","Wyrmslayer","Kampilan","Iron Lance","Steel Lance","Mythril Lance","Diamond Shovel","Ancient Lance","Javelin","Yamato Spear","Killer Lance","Fire Lance","Axereaver","Ridersbane","Iron Axe","Steel Axe","Mythril Axe","Diamond Axe","Ancient Axe","Hand Axe","Tomahawk","Killer Axe","Bolt Axe","Swordreaver","Hammer","Daedric Axe","Iron Bow","Steel Bow","Mythril Bow","Ancient Bow","Gale Bow","Crossbow","Longbow","Longerbow","Longestbow","Musket","Machine Gun","Mega Buster","Laser Gun","Arrowspate","Hoistflamme","Thunderbolt","Cob Cannon","Elephant","Flames","Frostbite","Sparks","Fireball","Tri Attack","Bombos","Ether","Quake","Thunderstorm","Blizzard","Photon","Belmont","Stendarr","Banish","Meridia","Talos","Flux","D'Void","Nosferatu","Vaermina","Maleficent","Nothebis","Mehrunes","Heal","Mend","Recover","Physic","Pizza Time","Esuna","Byrna Cane","Fire Rod","Ice Rod","Lightning Rod","Somaria Cane","Pacci Cane","Unlock","Icestone","Firestone","Magestone","Earthstone","Unrelenting Force","Ice Form","Dragonrend","Basic Tie","Cone Helm","Bucket Helm","Knight Helm","Rock Core","Ice Core","Steel Core","Ancient Beam","Charm Ray","Freeze Ray","Enervation Ray","Telekinesis","Disintegration","Death Ray","Stone","Ray of Frost","FierySaber","Hookshot","Freeze-Dry","Gauldur Blade","Chainsaw","Amihan","Habagat","Ramuh","Dunblade","Levin Sword","Flameblade","Mispell Blade","Monado","Master Sword","Neapolisword","Lightsaber","Arectaris","Reginleif Plus","Mjölnir","Rocket Bow","Seven Scimitar","Adamant","Lustrous","Gemini Laser","Axe Launcher","Scorching Ray","Neapolibeam","Bagpipes","Amagidyne","Neuroshock","Solar Flare","Brainshock","Meteor","Wabbajack","Divinestone","Ascalon","Keening","Bitter Mercy","Pugi","Sunder","Griseous","Cryolator","Excalipoor","Shí Huán","Vishanti","Darkhold","Hammerne","Centrifuge","Warp","Rescue","Wraithguard","Bread","Nuggets","Ice Cream","Milk","Sweet Roll","Chocolate Milk","Burger Meal","Wall Poultry","Milkshake","Cake","Door Key","Chest Key","Lockpick","Potato Mine","Plantern","Diploma","Heart Crystal","Power Beans","Charm of Bezel","Fanfics","Cheese","Icosahedron","Wall-Nut","Chocolate Bar","Minecart","Sandvich","Super Serum","Gold Ingot","Ruby","Emerald","Diamond","Platinum","Delta Shield","Smogon Seal","Oro Card","Metro Card","Ninis's Grace","Hela's Wrath","Thor's Ire","Loki's Mischief","Dwemer Gyro","Zeal Machine","Sheikah Core","Agarthan UI","Sub-Energy","El Vibrato Key","DNA Extractor","Atlantean Gem","40m/s Gauge","Arc Reactor","Reality Stone","Soul Stone","Mind Stone","Time Stone","Space Stone","Power Stone"]
+def get_skill_names(ctx):
+    names = ["Story Boon","Canto","Canto+","Outdoorswoman","Certain Blow","Renewal","Powerstaff","Crit Boost","Aptitude","Trauma","Reposition","Savior","Triangle Adept","Thunderstorm","Opportunist","Locktouch","Assassinate","Poison Strike","Reckless","Bow Range +1","Tome Range +1","Bow Breaker","Tomebreaker","Nullify","Daunt","Inspiration","Rally Spectrum","Rally Movement","Despoil","Stink","Perfume","Paragon","Discipline","Miracle","Method Acting","Bargain","Peacebringer","Forager","Shade","Provoke","Clumsy","Gamble","Frenzy","White Pool","Resolve","Intimidate","Savage Blow","Staff Savant","Void Curse","Blood Bounty","Supply"] 
     names.sort()
     return [name for name in names if name.lower().startswith(ctx.value.lower())]
+
 

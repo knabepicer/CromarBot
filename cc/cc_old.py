@@ -31,7 +31,6 @@ def get_unit_pages(row):
     
 
 
-
     page_groups = [
         pages.PageGroup(
         pages=[unitembed], 
@@ -99,225 +98,8 @@ def get_unit_pages(row):
         ))
     return page_groups
 
-def calculate_average_stats(row, level, promotion_class=None):
-    """
-    Calculate average stats for a unit at given level with optional promotion class.
-    
-    Args:
-        row: CSV row containing unit data
-        level: Integer level
-        promotion_class: Optional string specifying which promotion tier/class to use
-    
-    Returns:
-        Dictionary with calculated stats, or None if invalid input
-    """
-    try:
-        # Get base level and stats
-        base_level = int(row['Lv'])
-        base_stats = {
-            'HP': int(row['HP']),
-            'Str': int(row['Str']),
-            'Mag': int(row['Mag']),
-            'Skl': int(row['Skl']),
-            'Spd': int(row['Spd']),
-            'Luck': int(row['Luck']),
-            'Def': int(row['Def']),
-            'Res': int(row['Res'])
-        }
-        
-        # Get growth rates (as percentages)
-        growths = {
-            'HP': int(row['HP Growth']),
-            'Str': int(row['Str Growth']),
-            'Mag': int(row['Mag Growth']),
-            'Skl': int(row['Skl Growth']),
-            'Spd': int(row['Spd Growth']),
-            'Luck': int(row['Luck Growth']),
-            'Def': int(row['Def Growth']),
-            'Res': int(row['Res Growth'])
-        }
-        
-        # Calculate levels gained
-        levels_gained = level - base_level
-        if levels_gained < 0:
-            return None  # Can't go below base level
-        
-        # Calculate stats with growth
-        avg_stats = {}
-        for stat in base_stats:
-            avg_stats[stat] = base_stats[stat] + (growths[stat] / 100.0) * levels_gained
-        
-        # Determine promotion tier
-        promotion_tier = 0  # 0 = unpromoted, 1 = tier 1, 2 = tier 2
-        selected_class = row['Class']
-        
-        if promotion_class:
-            # Check if the specified class matches a promotion tier
-            stripped_input = re.sub(r'[^a-zA-Z0-9]', '', promotion_class).lower()
-            
-            promo_class_1 = re.sub(r'[^a-zA-Z0-9]', '', row['Promotion Class']).lower() if row['Promotion Class'] else ''
-            promo_class_2 = re.sub(r'[^a-zA-Z0-9]', '', row['Promotion Class 2']).lower() if row['Promotion Class 2'] else ''
-            
-            if promo_class_2 and stripped_input == promo_class_2:
-                promotion_tier = 2
-                selected_class = row['Promotion Class 2']
-            elif promo_class_1 and stripped_input == promo_class_1:
-                promotion_tier = 1
-                selected_class = row['Promotion Class']
-        
-        # Apply promotion gains based on tier
-        if promotion_tier >= 1:
-            # Apply tier 1 promotion gains
-            tier1_gains = {
-                'HP': int(row['HP Gains']) if row['HP Gains'] else 0,
-                'Str': int(row['Str Gains']) if row['Str Gains'] else 0,
-                'Mag': int(row['Mag Gains']) if row['Mag Gains'] else 0,
-                'Skl': int(row['Skl Gains']) if row['Skl Gains'] else 0,
-                'Spd': int(row['Spd Gains']) if row['Spd Gains'] else 0,
-                'Def': int(row['Def Gains']) if row['Def Gains'] else 0,
-                'Res': int(row['Res Gains']) if row['Res Gains'] else 0,
-                'Luck': 0  # Luck typically doesn't get promotion gains
-            }
-            
-            for stat in avg_stats:
-                avg_stats[stat] += tier1_gains[stat]
-        
-        if promotion_tier >= 2:
-            # Apply tier 2 promotion gains
-            tier2_gains = {
-                'HP': int(row['HP Gains 2']) if row['HP Gains 2'] else 0,
-                'Str': int(row['Str Gains 2']) if row['Str Gains 2'] else 0,
-                'Mag': int(row['Mag Gains 2']) if row['Mag Gains 2'] else 0,
-                'Skl': int(row['Skl Gains 2']) if row['Skl Gains 2'] else 0,
-                'Spd': int(row['Spd Gains 2']) if row['Spd Gains 2'] else 0,
-                'Def': int(row['Def Gains 2']) if row['Def Gains 2'] else 0,
-                'Res': int(row['Res Gains 2']) if row['Res Gains 2'] else 0,
-                'Luck': 0  # Luck typically doesn't get promotion gains
-            }
-            
-            for stat in avg_stats:
-                avg_stats[stat] += tier2_gains[stat]
-        
-        return {
-            'stats': avg_stats,
-            'levels_gained': levels_gained,
-            'level': level,
-            'class_name': selected_class,
-            'promotion_tier': promotion_tier
-        }
-    
-    except (ValueError, KeyError):
-        return None
 
-def get_averaged_stats_embed(row, level, promotion_class=None):
-    """
-    Create an embed showing averaged stats for a unit at a given level.
-    """
-    result = calculate_average_stats(row, level, promotion_class)
-    
-    if result is None:
-        return None
-    
-    stats = result['stats']
-    
-    # Create embed
-    embed = discord.Embed(
-        title=f"{row['Name']} - Level {result['level']}", 
-        color=0x59cad9
-    )
-    embed.set_thumbnail(url=row['Portrait'])
-    embed.add_field(name="Class", value=result['class_name'], inline=True)
-    #embed.add_field(name="Levels Gained", value=str(result['levels_gained']), inline=True)
-    
-    # Show promotion tier info
-    tier_text = "Base (Unpromoted)"
-    if result['promotion_tier'] == 1:
-        tier_text = "Tier 1 (First Promotion)"
-    elif result['promotion_tier'] == 2:
-        tier_text = "Tier 2 (Second Promotion)"
-    embed.add_field(name="Promotion Tier", value=tier_text, inline=True)
-    
-    # Format averaged stats (rounded to 1 decimal)
-    avg_bases = (f"HP {stats['HP']:.1f} | "
-                 f"Str {stats['Str']:.1f} | "
-                 f"Mag {stats['Mag']:.1f} | "
-                 f"Skl {stats['Skl']:.1f} | "
-                 f"Spd {stats['Spd']:.1f} | "
-                 f"Lck {stats['Luck']:.1f} | "
-                 f"Def {stats['Def']:.1f} | "
-                 f"Res {stats['Res']:.1f}")
-    
-    embed.add_field(name="Average Stats", value=avg_bases, inline=False)
-    """
-    # Show growths for reference
-    growths = (f"HP {row['HP Growth']}% | "
-               f"Str {row['Str Growth']}% | "
-               f"Mag {row['Mag Growth']}% | "
-               f"Skl {row['Skl Growth']}% | "
-               f"Spd {row['Spd Growth']}% | "
-               f"Lck {row['Luck Growth']}% | "
-               f"Def {row['Def Growth']}% | "
-               f"Res {row['Res Growth']}%")
-    embed.add_field(name="Growths", value=growths, inline=False)
-    """
-    return embed
-
-async def unit(ctx, name: str, level: str = None):
-    """
-    Display unit data. Optionally calculate average stats at a given level.
-    
-    Usage:
-        /unit [name] - Show base unit data
-        /unit [name] [level] - Show average stats at level (e.g., /unit Gecko 15)
-        /unit [name] [level] [class] - Show stats with specific promotion (e.g., /unit Gecko 25 Dread Fighter)
-    
-    Note: Level should be a single number. The promotion tier is determined by the class parameter.
-    """
-    # Parse the input to separate level from promotion class
-    promotion_class = None
-    level_value = None
-    
-    if level is not None:
-        # Check if level contains a '/' which would be invalid
-        if '/' in level:
-            stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-            with open('cc/cc units.csv', newline='') as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
-                    if(stripped_row.lower() == stripped_name.lower()):
-                        await ctx.response.send_message(
-                            "Invalid format. Level should be a single number (e.g., `/unit Gecko 25 Dread Fighter`), not in the format `10/5`."
-                        )
-                        return
-                await ctx.response.send_message("That unit does not exist.")
-                return
-        
-        # Split by spaces to check if there's a class name
-        parts = level.split(None, 1)  # Split on first whitespace only
-        if len(parts) > 1:
-            level_value = parts[0]
-            promotion_class = parts[1]
-        else:
-            level_value = parts[0]
-        
-        # Validate that level is a number
-        try:
-            level_int = int(level_value)
-        except ValueError:
-            stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
-            with open('cc/cc units.csv', newline='') as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
-                    if(stripped_row.lower() == stripped_name.lower()):
-                        await ctx.response.send_message(
-                            "Invalid level format. Level must be a number."
-                        )
-                        return
-                await ctx.response.send_message("That unit does not exist.")
-                return
-    
+async def unit(ctx, name: str):
     stripped_name = re.sub(r'[^a-zA-Z0-9]','', name)
     with open('cc/cc units.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -325,32 +107,11 @@ async def unit(ctx, name: str, level: str = None):
         for row in reader:
             stripped_row = re.sub(r'[^a-zA-Z0-9]','', row['Name'])
             if(stripped_row.lower() == stripped_name.lower()):
+                paginator = pages.Paginator(pages=get_unit_pages(row), show_menu=True, show_disabled=False, show_indicator=False, menu_placeholder="Select page to view", timeout =120, disable_on_timeout = True)
+                await paginator.respond(ctx.interaction)
                 was_found = True
-                
-                # If level parameter is provided, show averaged stats
-                if level is not None:
-                    embed = get_averaged_stats_embed(row, level_int, promotion_class)
-                    if embed is None:
-                        await ctx.response.send_message(
-                            "Invalid input. Make sure the level is valid and greater than or equal to the base level."
-                        )
-                    else:
-                        await ctx.response.send_message(embed=embed)
-                else:
-                    # Show standard unit data
-                    paginator = pages.Paginator(
-                        pages=get_unit_pages(row), 
-                        show_menu=True, 
-                        show_disabled=False, 
-                        show_indicator=False, 
-                        menu_placeholder="Select page to view", 
-                        timeout=120, 
-                        disable_on_timeout=True
-                    )
-                    await paginator.respond(ctx.interaction)
                 break
-        
-        if not was_found:
+        if (not was_found):
             await ctx.response.send_message("That unit does not exist.")
 
 async def item(ctx, name: str):
@@ -364,29 +125,36 @@ async def item(ctx, name: str):
             if(stripped_row.lower() == stripped_name.lower()):
                 unitembed=discord.Embed(title=row['Name'], color=0x59cad9)
                 #unitembed.set_thumbnail(url=row['Icon'])
-                if(row['Weapon'] == 'Weapon'):
-                    if(row['Type'] != 'Staff'):
-                        stats = "Type: " + row['Type'] + " | Mt: " + row['Might'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Weight'] + " | Range: " + row['Range']
-                        if (row['Uses'] != ''):
-                            stats += " | Uses: " + row['Uses']
-                        if(row['Effect'] != ""):
-                            stats += '\n'
-                            stats += row['Effect']
+                if(row['Type'] == 'Weapon'):
+                    stats = "Rank: " + row['Weapon Level'] + " | Mt: " + row['Mt'] + " | Hit: " + row['Hit'] + " | Crit: " + row['Crit'] + " | Wt: " + row['Wt'] + " | Range: " + row['Range'] #+ " | WEXP: " + row['WEXP']
+                    if (row['Uses'] == '255'):
+                        stats += " | Unbreakable"
                     else:
-                        stats  = "Type: " + row['Type'] + " | Range: " + row['Range']
-                        if (row['Uses'] != ''):
-                            stats += " | Uses: " + row['Uses']
+                        stats += " | Uses: " + row['Uses']
+                    if (row['Description'] != ""):
                         stats += '\n'
-                        stats += row['Effect']
-                    unitembed.add_field(name='Stats', value=stats, inline=False)
-                    if(row['Usable By'] != ''):
-                        unitembed.add_field(name='Usable By', value=row['Usable By'], inline=False)
-                    if(row['Equippable'] != ''):
-                        unitembed.add_field(name='Rank', value=row['Equippable'], inline=False)
-                else:
-                    unitembed.add_field(name="Effect", value=row['Effect'], inline=False)
-                was_found = True
+                        stats += row['Description']
+                    unitembed.add_field(name=row['Weapon Type'], value=stats, inline=False)
+                elif(row['Type'] == 'Staff'):
+                    stats  = "Rank: " + row['Weapon Level'] + " | Range: " + row['Range'] + " | Uses: " + row['Uses']
+                    stats += '\n'
+                    stats += row['Description']
+                    unitembed.add_field(name='Staff', value=stats, inline=False)
+                elif(row['Type'] == 'Item'):
+                    stats = ""
+                    if (row['Uses'] == '255'):
+                        stats += "Unbreakable"
+                    else:
+                        stats += "Uses: " + row['Uses']
+                    stats += '\n'
+                    stats += row['Description']
+                    unitembed.add_field(name='Item', value=stats, inline=False)
+                if(row['Display Price'] == 'Yes'):
+                    price = int(row['Uses']) * int(row['Price Per Use'])
+                    price_string = str(price) + "G"
+                    unitembed.add_field(name='Price: ', value=price_string, inline=False)
                 await ctx.response.send_message(embed=unitembed)
+                was_found = True
                 break
         if (not was_found):
             await ctx.response.send_message("That item does not exist.")
