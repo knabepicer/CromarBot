@@ -85,7 +85,7 @@ ByrnaCane,Byrna Cane,Barrier,Staff,Staff,18,0,100,0,0,1,100,Yes,D,4,https://i.ib
 FireRod,Fire Rod,Torch,Staff,Staff,8,0,100,0,0,Mag/2,200,Yes,C,4,https://i.ibb.co/pf4RJ6C/row-5-column-7.png
 IceRod,Ice Rod,Inflicts Freeze (Sleep),Staff,Staff,4,0,30,0,0,Mag/2,400,Yes,C,4,https://i.ibb.co/FHDm2kj/row-5-column-6.png
 LightningRod,Lightning Rod,Inflicts Paralyze (Silence),Staff,Staff,3,0,30,0,0,Mag/2,500,Yes,B,4,https://i.ibb.co/TKKNp6Z/row-5-column-8.png
-SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,0,100,0,0,Mag/2,400,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
+SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,0,100,0,0,Mag/2,200,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
 PacciCane,Pacci Cane,Inflicts Confuse (Berserk),Staff,Staff,3,0,30,0,0,Mag/2,600,Yes,A,4,https://i.ibb.co/Ss7j1gB/row-5-column-11.png
 Unlock,Unlock,Opens doors at range.,Staff,Staff,10,0,100,0,0, 1-2,100,Yes,D,4,https://i.ibb.co/P1tBz8d/row-4-column-8.png
 Icestone,Icestone,"Gives +4 Str, 4 Mag, 8 Skl, 4 Spd, 12 Def, 8 Res, Magical at range, Inflicts -3 Spd, Effective vs fliers. [Freezing]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/mJ0PmHW/row-11-column-8.png
@@ -129,7 +129,7 @@ MasterSword,Master Sword,"Elowyn only. Gives +3 Str/Mag/Spd, Magical at range, E
 Neapolisword,Neapolisword,Selpan only. Inflicts -1 Str/Skl/Spd. [Spur Strength],Weapon,Sword,255,6,75,6,0, 1-2,0,No,Prf,2,https://i.ibb.co/CwQw8qy/row-12-column-9.png
 Lightsaber,Lightsaber,"Nikana only. Gives +9 Luck, Ignore 60% Def [Corrosion]",Weapon,Sword,60,12,77,9,15,1,0,No,Prf,1,https://i.ibb.co/3MR9X8Z/row-13-column-7.png
 Arectaris,Arectaris,"Diana/Violet/Nadia only. Gives +10 Spd, 3 Str/Skl, Effective vs swordsmen. [Swordbreaker]",Weapon,Sword,30,18,85,15,0, 1-2,0,No,S,1,https://i.ibb.co/XSDf3Rs/row-13-column-3.png
-ReginleifPlus,"Reginleif+","Tarif/Eirika only. Effective vs knights.",Weapon,Lance,45,12,90,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
+ReginleifPlus,Reginleif+,Tarif/Eirika only. Effective vs knights.,Weapon,Lance,45,12,90,8,10,1,0,No,Prf,2,https://i.ibb.co/hLvPqLL/row-12-column-8.png
 Mjolnir,Mjölnir,"For the worthy. Gives +4 Str/Spd, +3 Mag/Res, +1 Con, Magical at range, Inflicts -3 Skl, Effective vs mages. [Thunderstorm]",Weapon,Axe,55,17,62,13,0, 1-4,0,No,Prf,1,https://i.ibb.co/VQ9Lj0k/row-13-column-12.png
 RocketBow,Rocket Bow,"Rosalyn only. Inflicts -2 Luck, Effective vs mages.",Weapon,Bow,45,7,85,7,10, 1-2,0,No,Prf,2,https://i.ibb.co/G2Qyq0B/row-10-column-10.png
 SevenScimitar,Seven Scimitar,Nalim only. [Aegis],Weapon,Sword,60,14,70,7,35,1,0,No,Prf,1,https://i.ibb.co/Gc5zN8d/row-13-column-8.png
