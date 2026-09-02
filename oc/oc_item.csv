@@ -85,7 +85,7 @@ ByrnaCane,Byrna Cane,Barrier,Staff,Staff,18,0,100,0,0,1,100,Yes,D,4,https://i.ib
 FireRod,Fire Rod,Torch,Staff,Staff,8,0,100,0,0,Mag/2,200,Yes,C,4,https://i.ibb.co/pf4RJ6C/row-5-column-7.png
 IceRod,Ice Rod,Inflicts Freeze (Sleep),Staff,Staff,4,0,30,0,0,Mag/2,400,Yes,C,4,https://i.ibb.co/FHDm2kj/row-5-column-6.png
 LightningRod,Lightning Rod,Inflicts Paralyze (Silence),Staff,Staff,3,0,30,0,0,Mag/2,500,Yes,B,4,https://i.ibb.co/TKKNp6Z/row-5-column-8.png
-SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,0,100,0,0,Mag/2,400,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
+SomariaCane,Somaria Cane,Light Rune,Staff,Staff,8,0,100,0,0,Mag/2,200,Yes,B,4,https://i.ibb.co/0cqWPpR/row-5-column-9.png
 PacciCane,Pacci Cane,Inflicts Confuse (Berserk),Staff,Staff,3,0,30,0,0,Mag/2,600,Yes,A,4,https://i.ibb.co/Ss7j1gB/row-5-column-11.png
 Unlock,Unlock,Opens doors at range.,Staff,Staff,10,0,100,0,0, 1-2,100,Yes,D,4,https://i.ibb.co/P1tBz8d/row-4-column-8.png
 Icestone,Icestone,"Gives +4 Str, 4 Mag, 8 Skl, 4 Spd, 12 Def, 8 Res, Magical at range, Inflicts -3 Spd, Effective vs fliers. [Freezing]",Weapon,Stone,255,10,75,5,5, 1-2,0,No,NoRank,0,https://i.ibb.co/mJ0PmHW/row-11-column-8.png
